@@ -15,10 +15,8 @@ export default function Impressum() {
         <p>
           <strong>Anna Thoma</strong>
           <br />
-          {/* TODO: Deine Straße + Hausnummer eintragen */}
-          Musterstraße 1<br />
-          {/* TODO: Deine PLZ + Ort eintragen */}
-          12345 Musterstadt
+          Kapuzinerstraße 15<br />
+          55411 Bingen am Rhein
           <br />
           Deutschland
         </p>

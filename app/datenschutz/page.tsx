@@ -112,7 +112,29 @@ export default function Datenschutz() {
         Calendly ist im EU-U.S. Data Privacy Framework zertifiziert.
       </p>
 
-      <h2>6. Kontakt per E-Mail</h2>
+      <h2>6. Instagram</h2>
+      <p>
+        Diese Website enthält Links zu meinem Instagram-Profil (Meta Platforms
+        Ireland Ltd., 4 Grand Canal Square, Dublin 2, Irland). Wenn du auf den
+        Instagram-Link klickst, verlässt du diese Website und wirst zu Instagram
+        weitergeleitet. Dort gelten die Datenschutzbestimmungen von Meta/Instagram:
+      </p>
+      <p>
+        <a
+          href="https://privacycenter.instagram.com/policy"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram Datenschutzrichtlinie
+        </a>
+      </p>
+      <p>
+        Es sind auf dieser Website <strong>keine</strong> Instagram-Plugins oder
+        -Widgets eingebettet. Der Link führt nur zu meinem Profil, ohne dass
+        Daten an Instagram übertragen werden, bevor du darauf klickst.
+      </p>
+
+      <h2>7. Kontakt per E-Mail</h2>
       <p>
         Wenn du mir eine E-Mail schreibst, werden deine Anfrage und alle
         mitgeteilten persönlichen Daten (Name, E-Mail-Adresse, Inhalt der
@@ -128,7 +150,7 @@ export default function Datenschutz() {
         Aufbewahrungspflichten entgegenstehen.
       </p>
 
-      <h2>7. Deine Rechte als betroffene Person</h2>
+      <h2>8. Deine Rechte als betroffene Person</h2>
       <p>
         Du hast gemäß DSGVO folgende Rechte:
       </p>
@@ -175,14 +197,14 @@ export default function Datenschutz() {
         .
       </p>
 
-      <h2>8. Keine Cookies</h2>
+      <h2>9. Keine Cookies</h2>
       <p>
         Diese Website setzt <strong>keine</strong> eigenen Cookies. Es werden
         keine Tracking-Cookies, Analyse-Cookies oder Marketing-Cookies
         verwendet. Ein Cookie-Banner ist daher nicht erforderlich.
       </p>
 
-      <h2>9. Aktualität dieser Datenschutzerklärung</h2>
+      <h2>10. Aktualität dieser Datenschutzerklärung</h2>
       <p>
         Diese Datenschutzerklärung ist aktuell gültig und hat den Stand{" "}
         <strong>Mai 2026</strong>. Durch die Weiterentwicklung meiner Website
