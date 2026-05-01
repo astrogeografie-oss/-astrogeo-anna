@@ -44,7 +44,7 @@ export default function About() {
                 style={{ border: "1px solid rgba(201,168,76,0.25)" }}
               >
                 <Image
-                  src="https://d3v0px0pttie1i.cloudfront.net/uploads/user/avatar/13003380/2c870fde.jpg"
+                  src="/anna-portrait.jpg"
                   alt="Anna – Astrogeografie Expertin"
                   fill
                   className="object-cover object-top"
