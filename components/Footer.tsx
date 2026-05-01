@@ -55,22 +55,22 @@ export default function Footer() {
             <ul className="space-y-4">
               <li>
                 <a
-                  href="mailto:hallo@astrogeo-anna.de"
+                  href="mailto:astrogeografie@gmail.com"
                   className="flex items-center gap-3 font-[family-name:var(--font-cormorant)] text-base text-[#9b8fa8] hover:text-[#c9a84c] transition-colors duration-300"
                 >
                   <Mail size={16} className="text-[#c9a84c] flex-shrink-0" />
-                  hallo@astrogeo-anna.de
+                  astrogeografie@gmail.com
                 </a>
               </li>
               <li>
                 <a
-                  href="https://instagram.com/astrogeo.anna"
+                  href="https://calendly.com/astrogeo"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 font-[family-name:var(--font-cormorant)] text-base text-[#9b8fa8] hover:text-[#c9a84c] transition-colors duration-300"
                 >
-                  <span className="text-[#c9a84c] flex-shrink-0 text-xs">IG</span>
-                  @astrogeo.anna
+                  <span className="text-[#c9a84c] flex-shrink-0 text-xs">📅</span>
+                  Termine buchen · calendly.com/astrogeo
                 </a>
               </li>
             </ul>
