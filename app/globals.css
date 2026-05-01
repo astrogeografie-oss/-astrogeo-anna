@@ -165,6 +165,59 @@ body {
   animation: rotateSlow linear infinite;
 }
 
+/* Legal page typography */
+.legal-content h2 {
+  font-family: var(--font-cormorant);
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: #f0ead6;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+.legal-content h3 {
+  font-family: var(--font-cormorant);
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #c9a84c;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+.legal-content p {
+  font-family: var(--font-cormorant);
+  font-size: 1.1rem;
+  color: #9b8fa8;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+.legal-content a {
+  color: #c9a84c;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.legal-content a:hover {
+  color: #e8c97a;
+}
+.legal-content ul {
+  margin: 0.75rem 0 1rem 1.5rem;
+  list-style: disc;
+}
+.legal-content ul li {
+  font-family: var(--font-cormorant);
+  font-size: 1.1rem;
+  color: #9b8fa8;
+  line-height: 1.8;
+  font-weight: 300;
+  margin-bottom: 0.25rem;
+}
+.legal-content strong {
+  color: #f0ead6;
+  font-weight: 500;
+}
+.legal-content address {
+  font-style: normal;
+}
+
 .number-circle {
   width: 56px;
   height: 56px;
