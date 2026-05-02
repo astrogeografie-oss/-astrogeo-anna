@@ -90,9 +90,10 @@ export default function About() {
                 inneren Ausgleich oder neue Kapitel.
               </p>
               <p className="text-[#2c2010]">
-                Seit über 6 Jahren begleite ich Menschen auf diesem Weg.
-                Mit Präzision, Tiefe — und der Überzeugung, dass der richtige
-                Ort alles verändern kann.
+                Seit über 6 Jahren begleite ich Menschen auf diesem Weg —
+                mit Astrogeografie, Astrokartografie, Local Space Astrology
+                und Raumastrologie. Mit Präzision, Tiefe und der Überzeugung,
+                dass der richtige Ort alles verändern kann.
               </p>
             </div>
 
