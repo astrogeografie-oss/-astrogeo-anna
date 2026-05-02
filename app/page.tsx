@@ -10,7 +10,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="cosmic-bg">
+    <main className="bg-[#faf7f2]">
       <Navigation />
       <Hero />
       <About />

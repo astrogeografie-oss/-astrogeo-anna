@@ -82,7 +82,7 @@ export default function RootLayout({
       lang="de"
       className={`${cormorant.variable} ${montserrat.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-[#07060f] text-[#f0ead6]">
+      <body className="min-h-full flex flex-col bg-[#faf7f2] text-[#2c2010]">
         <JsonLd />
         {children}
       </body>

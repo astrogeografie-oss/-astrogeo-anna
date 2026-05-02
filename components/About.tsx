@@ -25,11 +25,7 @@ export default function About() {
   return (
     <section
       id="ueber-mich"
-      className="relative py-32 overflow-hidden"
-      style={{
-        background:
-          "radial-gradient(ellipse at bottom left, #1a0f2e22 0%, transparent 60%)",
-      }}
+      className="relative py-32 overflow-hidden bg-[#faf7f2]"
     >
       <div className="section-divider mb-0" />
 
@@ -38,53 +34,32 @@ export default function About() {
           {/* Portrait */}
           <div className="relative flex justify-center lg:justify-start order-2 lg:order-1">
             <div className="relative">
-              {/* Photo frame */}
               <div
                 className="w-80 h-96 md:w-96 md:h-[480px] rounded-sm relative overflow-hidden"
-                style={{ border: "1px solid rgba(201,168,76,0.25)" }}
+                style={{ border: "1px solid rgba(201,168,76,0.3)" }}
               >
                 <Image
                   src="/anna-portrait.jpg"
-                  alt="Anna – Astrogeografie Expertin"
+                  alt="Anna – Astrogeografie & Astrokartografie Expertin"
                   fill
                   className="object-cover object-top"
                   sizes="(max-width: 768px) 320px, 384px"
                   priority
                 />
-                {/* Golden overlay gradient at bottom */}
                 <div
                   className="absolute bottom-0 left-0 right-0 h-24"
-                  style={{
-                    background:
-                      "linear-gradient(to top, rgba(7,6,15,0.7), transparent)",
-                  }}
+                  style={{ background: "linear-gradient(to top, rgba(250,247,242,0.6), transparent)" }}
                 />
               </div>
 
               {/* Decorative corner accents */}
-              <div
-                className="absolute -top-3 -left-3 w-8 h-8"
-                style={{
-                  borderTop: "1px solid rgba(201,168,76,0.5)",
-                  borderLeft: "1px solid rgba(201,168,76,0.5)",
-                }}
-              />
-              <div
-                className="absolute -bottom-3 -right-3 w-8 h-8"
-                style={{
-                  borderBottom: "1px solid rgba(201,168,76,0.5)",
-                  borderRight: "1px solid rgba(201,168,76,0.5)",
-                }}
-              />
+              <div className="absolute -top-3 -left-3 w-8 h-8" style={{ borderTop: "1px solid rgba(201,168,76,0.6)", borderLeft: "1px solid rgba(201,168,76,0.6)" }} />
+              <div className="absolute -bottom-3 -right-3 w-8 h-8" style={{ borderBottom: "1px solid rgba(201,168,76,0.6)", borderRight: "1px solid rgba(201,168,76,0.6)" }} />
 
               {/* Floating badge */}
-              <div className="absolute -bottom-6 -right-6 card-cosmic rounded-sm px-6 py-4">
-                <p className="font-[family-name:var(--font-cormorant)] text-2xl font-semibold text-[#c9a84c]">
-                  500+
-                </p>
-                <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.1em] text-[#9b8fa8] uppercase">
-                  Transformationen
-                </p>
+              <div className="absolute -bottom-6 -right-6 card-warm rounded-sm px-6 py-4 shadow-md">
+                <p className="font-[family-name:var(--font-cormorant)] text-2xl font-semibold text-[#c9a84c]">500+</p>
+                <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.1em] text-[#7a6a58] uppercase">Transformationen</p>
               </div>
             </div>
           </div>
@@ -95,16 +70,13 @@ export default function About() {
               Über mich
             </p>
 
-            <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl lg:text-6xl font-light text-[#f0ead6] mb-8 leading-[1.15]">
+            <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl lg:text-6xl font-light text-[#2c2010] mb-8 leading-[1.15]">
               Ich bin Anna —<br />
-              <em className="gold-gradient not-italic font-medium">
-                deine Lotsin
-              </em>{" "}
-              zu deinem<br />
-              Kraftort auf der Erde.
+              <em className="gold-gradient not-italic font-medium">deine Lotsin</em>{" "}
+              zu deinem<br />Kraftort auf der Erde.
             </h2>
 
-            <div className="space-y-6 font-[family-name:var(--font-cormorant)] text-lg text-[#9b8fa8] leading-relaxed font-light">
+            <div className="space-y-6 font-[family-name:var(--font-cormorant)] text-lg text-[#7a6a58] leading-relaxed font-light">
               <p>
                 Vor Jahren stand ich selbst vor einer Entscheidung: Wohin soll
                 mein Leben führen? Nicht metaphorisch — sondern buchstäblich:
@@ -117,7 +89,7 @@ export default function About() {
                 der Erde deine planetaren Energien wirken: für Liebe, Karriere,
                 inneren Ausgleich oder neue Kapitel.
               </p>
-              <p className="text-[#f0ead6]">
+              <p className="text-[#2c2010]">
                 Seit über 6 Jahren begleite ich Menschen auf diesem Weg.
                 Mit Präzision, Tiefe — und der Überzeugung, dass der richtige
                 Ort alles verändern kann.
@@ -130,10 +102,10 @@ export default function About() {
                 <div key={v.title} className="flex gap-4 items-start">
                   <div className="mt-1 text-[#c9a84c] flex-shrink-0">{v.icon}</div>
                   <div>
-                    <p className="font-[family-name:var(--font-montserrat)] text-sm font-semibold text-[#f0ead6] tracking-wider uppercase mb-1">
+                    <p className="font-[family-name:var(--font-montserrat)] text-sm font-semibold text-[#2c2010] tracking-wider uppercase mb-1">
                       {v.title}
                     </p>
-                    <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#9b8fa8] font-light">
+                    <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#7a6a58] font-light">
                       {v.text}
                     </p>
                   </div>
@@ -151,7 +123,7 @@ export default function About() {
               >
                 Kostenloses Kennenlerngespräch →
               </a>
-              <p className="font-[family-name:var(--font-cormorant)] text-sm text-[#9b8fa8] mt-2 font-light">
+              <p className="font-[family-name:var(--font-cormorant)] text-sm text-[#7a6a58] mt-2 font-light">
                 30 Min. · Zoom · Kostenlos
               </p>
             </div>
