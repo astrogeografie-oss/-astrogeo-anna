@@ -1,6 +1,6 @@
 "use client";
 
-import { Check, Globe, Star, Users, Clock, Gift, Calendar, BookOpen, Compass } from "lucide-react";
+import { Check, Globe, Star, Users, Clock, Gift, Calendar, BookOpen, Compass, Map } from "lucide-react";
 
 const mainServices = [
   {
@@ -108,17 +108,24 @@ const additionalServices = [
     free: false,
   },
   {
-    icon: <BookOpen size={18} />,
-    name: "Raumastrologie – Das Buch",
-    desc: "Das Standardwerk zur Raumastrologie: Energien in Räumen erkennen, verstehen & transformieren.",
-    url: "#raumastrologie-buch",
+    icon: <Map size={18} />,
+    name: "Mini-Kurs Raumastrologie",
+    desc: "Lerne, wie astrologische Energien Räume prägen — und wie du bewusst mit ihnen lebst.",
+    url: "#raumastrologie",
     free: false,
   },
   {
     icon: <Compass size={18} />,
     name: "Mini-Kurs Cosmic Coordinates",
-    desc: "Selbststudium — Entdecke die astrologischen Kraftlinien deines Lebens auf der Weltkarte.",
-    url: "#cosmic-coordinates",
+    desc: "Dein Wegweiser zum Wohlfühlort — Azimuth, Häuser & die 10 Planeten der Astrogeografie.",
+    url: "https://astrogeoanna.thrivecart.com/cosmic-coordinates-2026/",
+    free: false,
+  },
+  {
+    icon: <BookOpen size={18} />,
+    name: "Astro-Code – Das Buch",
+    desc: "Deine Seele hat ein GPS. Zeit, es endlich zu aktivieren. Das Buch zur Astrogeografie von Anna Thoma.",
+    url: "https://publishde.bookmundo.com/books/22022143",
     free: false,
   },
 ];
