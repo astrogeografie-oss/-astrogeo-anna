@@ -8,7 +8,7 @@ const mainServices = [
     badge: "Flagship",
     icon: <Globe size={32} />,
     name: "Astrogeografie (Orts-Horoskop)",
-    tagline: "Astrogeografie · Astrokartografie · Astrocartography",
+    tagline: "Astrokartografie · Astrocartography · Orts-Horoskop",
     duration: "120 Min. · Zoom",
     description:
       "Astrogeografie (Astrokartografie / Astrocartography) verbindet dein persönliches Horoskop (Radix) mit einer Weltkarte — und zeigt dir, welche Orte auf der Erde ideal für Liebe, Karriere oder inneren Ausgleich sind.",
