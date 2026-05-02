@@ -7,29 +7,31 @@ export default function Hero() {
     <section
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
       style={{
-        background: "linear-gradient(160deg, #f5efe4 0%, #faf7f2 40%, #eee8d8 100%)",
+        backgroundImage: "url('/hero-bg.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center 40%",
       }}
     >
-      {/* Subtle warm radial glow */}
+      {/* Dark warm overlay so text is readable */}
       <div
         aria-hidden
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse at 60% 30%, rgba(232,201,122,0.18) 0%, transparent 60%), radial-gradient(ellipse at 20% 80%, rgba(201,168,76,0.08) 0%, transparent 50%)",
+            "linear-gradient(160deg, rgba(20,14,6,0.55) 0%, rgba(30,20,8,0.45) 50%, rgba(15,10,4,0.6) 100%)",
         }}
       />
 
       {/* Decorative thin gold lines */}
-      <div aria-hidden className="absolute top-0 left-0 right-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(201,168,76,0.4), transparent)" }} />
-      <div aria-hidden className="absolute bottom-0 left-0 right-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(201,168,76,0.25), transparent)" }} />
+      <div aria-hidden className="absolute top-0 left-0 right-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(201,168,76,0.5), transparent)" }} />
+      <div aria-hidden className="absolute bottom-0 left-0 right-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(201,168,76,0.3), transparent)" }} />
 
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
 
         {/* Overline */}
         <p
-          className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.45em] text-[#c9a84c] uppercase mb-8 opacity-0"
+          className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.45em] text-[#e8c97a] uppercase mb-8 opacity-0"
           style={{ animation: "fadeInUp 0.8s 0.2s ease forwards" }}
         >
           Deutschlands führende Astrogeografie &amp; Astrokartografie-Expertin
@@ -37,7 +39,7 @@ export default function Hero() {
 
         {/* Main Headline */}
         <h1
-          className="font-[family-name:var(--font-cormorant)] font-light text-5xl md:text-7xl lg:text-8xl leading-[1.08] text-[#2c2010] mb-8 opacity-0"
+          className="font-[family-name:var(--font-cormorant)] font-light text-5xl md:text-7xl lg:text-8xl leading-[1.08] text-white mb-8 opacity-0"
           style={{ animation: "fadeInUp 0.9s 0.4s ease forwards" }}
         >
           Dein Leben beginnt
@@ -49,7 +51,7 @@ export default function Hero() {
 
         {/* Subheadline */}
         <p
-          className="font-[family-name:var(--font-cormorant)] text-xl md:text-2xl text-[#7a6a58] max-w-2xl mx-auto mb-12 leading-relaxed font-light opacity-0"
+          className="font-[family-name:var(--font-cormorant)] text-xl md:text-2xl text-[#e8e0d0] max-w-2xl mx-auto mb-12 leading-relaxed font-light opacity-0"
           style={{ animation: "fadeInUp 0.9s 0.6s ease forwards" }}
         >
           Astrogeografie · Astrokartografie · Astrocartography — es gibt Orte
@@ -93,7 +95,7 @@ export default function Hero() {
               <p className="font-[family-name:var(--font-cormorant)] text-3xl md:text-4xl font-semibold text-[#c9a84c]">
                 {stat.number}
               </p>
-              <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#7a6a58] uppercase mt-1">
+              <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#c8bfb0] uppercase mt-1">
                 {stat.label}
               </p>
             </div>
