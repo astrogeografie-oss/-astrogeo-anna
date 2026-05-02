@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Anna Thoma" }],
   creator: "Anna Thoma",
   alternates: {
-    canonical: "https://astrogeo-anna.de",
+    canonical: "https://astrogeoanna.com",
   },
   openGraph: {
     title: "Astrogeografie & Astrokartografie mit Anna | Astrocartography Deutschland",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "de_DE",
     siteName: "Astrogeografie & Astrokartografie – Anna Thoma",
-    url: "https://astrogeo-anna.de",
+    url: "https://astrogeoanna.com",
   },
   twitter: {
     card: "summary_large_image",

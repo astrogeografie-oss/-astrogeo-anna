@@ -4,13 +4,13 @@ export default function JsonLd() {
     "@graph": [
       {
         "@type": "Person",
-        "@id": "https://astrogeo-anna.de/#anna",
+        "@id": "https://astrogeoanna.com/#anna",
         name: "Anna Thoma",
         jobTitle: "Astrogeografie-Expertin & Astrologin",
         description:
           "Deutschlands führende Expertin für Astrogeografie und Astrocartography. Ich helfe dir, deinen Kraftort auf der Erde zu finden — durch präzise astrologische Analyse.",
         email: "astrogeografie@gmail.com",
-        url: "https://astrogeo-anna.de",
+        url: "https://astrogeoanna.com",
         sameAs: ["https://calendly.com/astrogeo"],
         knowsAbout: [
           "Astrogeografie",
@@ -27,16 +27,16 @@ export default function JsonLd() {
       },
       {
         "@type": "LocalBusiness",
-        "@id": "https://astrogeo-anna.de/#business",
+        "@id": "https://astrogeoanna.com/#business",
         name: "Anna Thoma – Astrogeografie & Astrokartografie",
         description:
           "Astrogeografie, Astrokartografie & Astrocartography-Beratung. Finde deinen Kraftort auf der Erde.",
-        url: "https://astrogeo-anna.de",
+        url: "https://astrogeoanna.com",
         email: "astrogeografie@gmail.com",
         image:
           "https://d3v0px0pttie1i.cloudfront.net/uploads/user/avatar/13003380/2c870fde.jpg",
         priceRange: "€€",
-        founder: { "@id": "https://astrogeo-anna.de/#anna" },
+        founder: { "@id": "https://astrogeoanna.com/#anna" },
         areaServed: {
           "@type": "Country",
           name: "Germany",
@@ -91,13 +91,13 @@ export default function JsonLd() {
       },
       {
         "@type": "WebSite",
-        "@id": "https://astrogeo-anna.de/#website",
-        url: "https://astrogeo-anna.de",
+        "@id": "https://astrogeoanna.com/#website",
+        url: "https://astrogeoanna.com",
         name: "Anna Astrogeografie",
         description:
           "Finde deinen Kraftort auf der Erde. Deutschlands führende Astrogeografie-Expertin.",
         inLanguage: "de-DE",
-        publisher: { "@id": "https://astrogeo-anna.de/#anna" },
+        publisher: { "@id": "https://astrogeoanna.com/#anna" },
       },
       {
         "@type": "FAQPage",
