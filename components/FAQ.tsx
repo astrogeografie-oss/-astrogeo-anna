@@ -37,8 +37,12 @@ const faqs = [
     a: "Cosmic Coordinates fokussiert sich auf die Geografie: Welche Orte der Erde unterstützen welche Lebensbereiche bei dir? Das astrologische Reading fokussiert sich auf deinen inneren Kosmos: Wer bist du astrologisch, welche Themen prägen dich, was steht aktuell an? Beide Angebote ergänzen sich wunderbar.",
   },
   {
-    q: "Was ist Local Space Astrology und Raumastrologie?",
-    a: "Local Space Astrology (auf Deutsch: Raumastrologie oder Standortastrologie) ist eine Ergänzung zur Astrokartografie. Während Astrocartography weltweite Kraftorte zeigt, analysiert Local Space wie planetare Energien deinen direkten Lebensraum — dein Zuhause, deine Stadt, deine Wohnung — beeinflussen. Parans und Destiny Crossings sind dabei besondere Schnittpunkte, die besonders kraftvolle Orte markieren.",
+    q: "Was sind Parans in der Astrokartografie?",
+    a: "Parans entstehen, wenn sich zwei ACG-Linien (Astrocartography-Linien) auf der Weltkarte kreuzen. An diesen Kreuzungspunkten überlagern sich zwei Planetenenergien gleichzeitig — das macht sie zu besonders kraftvollen und bedeutsamen Orten. Parans gehören zur klassischen Astrocartography-Analyse und sind ein zentraler Bestandteil jeder Astrogeografie-Session.",
+  },
+  {
+    q: "Was ist Raumastrologie und Local Space Astrology?",
+    a: "Raumastrologie (auch Local Space Astrology) ist eine eigenständige Methode — getrennt von der Astrocartography. Sie zeigt, wie planetare Energien deinen unmittelbaren Lebensraum prägen: deine Wohnung, deine Stadt, deine täglichen Wege. Während Astrogeografie weltweite Kraftorte analysiert, fokussiert sich die Raumastrologie auf deinen direkten Alltag.",
   },
   {
     q: "Gibt es eine Geld-zurück-Garantie?",
