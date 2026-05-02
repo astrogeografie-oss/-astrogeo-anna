@@ -6,7 +6,7 @@ import { Plus, Minus } from "lucide-react";
 const faqs = [
   {
     q: "Was genau ist Astrogeografie?",
-    a: "Astrogeografie (auch Astrokartografie oder Astrocartography genannt) ist eine Methode der Astrologie, die deinen Geburtsmoment auf eine Weltkarte überträgt. Bestimmte Planetenenergien wirken an bestimmten Orten besonders stark — manche Orte unterstützen dich in Liebe, andere in Karriere, Kreativität oder Heilung. Die Methode wurde in den 1970er Jahren von Jim Lewis entwickelt und ist heute weltweit bekannt.",
+    a: "Astrogeografie ist eine Methode der Astrologie, die deinen Geburtsmoment auf eine Weltkarte überträgt. Bestimmte Planetenenergien wirken an bestimmten Orten besonders stark — manche Orte unterstützen dich in Liebe, andere in Karriere, Kreativität oder Heilung. Die Methode wurde in den 1970er Jahren von Jim Lewis entwickelt und ist heute weltweit bekannt.",
   },
   {
     q: "Was ist der Unterschied zwischen Astrogeografie, Astrokartografie und Astrocartography?",
@@ -38,7 +38,7 @@ const faqs = [
   },
   {
     q: "Was sind Parans in der Astrokartografie?",
-    a: "Parans entstehen, wenn sich zwei ACG-Linien (Astrocartography-Linien) auf der Weltkarte kreuzen. An diesen Kreuzungspunkten überlagern sich zwei Planetenenergien gleichzeitig — das macht sie zu besonders kraftvollen und bedeutsamen Orten. Parans gehören zur klassischen Astrocartography-Analyse und sind ein zentraler Bestandteil jeder Astrogeografie-Session.",
+    a: "Parans entstehen, wenn sich zwei ACG-Linien auf der Weltkarte kreuzen. An diesen Kreuzungspunkten überlagern sich zwei Planetenenergien gleichzeitig — das macht sie zu besonders kraftvollen und bedeutsamen Orten. Parans sind ein zentraler Bestandteil jeder Astrokartografie-Session.",
   },
   {
     q: "Was ist Raumastrologie und Local Space Astrology?",

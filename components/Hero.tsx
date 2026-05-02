@@ -34,7 +34,7 @@ export default function Hero() {
           className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.45em] text-[#e8c97a] uppercase mb-8 opacity-0"
           style={{ animation: "fadeInUp 0.8s 0.2s ease forwards" }}
         >
-          Deutschlands führende Astrogeografie &amp; Astrokartografie-Expertin
+          Deutschlands führende Astrogeografie-Expertin
         </p>
 
         {/* Main Headline */}
@@ -54,7 +54,7 @@ export default function Hero() {
           className="font-[family-name:var(--font-cormorant)] text-xl md:text-2xl text-[#e8e0d0] max-w-2xl mx-auto mb-12 leading-relaxed font-light opacity-0"
           style={{ animation: "fadeInUp 0.9s 0.6s ease forwards" }}
         >
-          Astrogeografie · Astrokartografie · Astrocartography — es gibt Orte
+          Astrocartography — es gibt Orte
           auf dieser Erde, wo du leichter liebst, klarer denkst und
           erfolgreicher wirst. Ich zeige dir, wo diese Orte sind.
         </p>
