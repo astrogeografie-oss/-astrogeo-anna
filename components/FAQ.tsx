@@ -37,6 +37,10 @@ const faqs = [
     a: "Cosmic Coordinates fokussiert sich auf die Geografie: Welche Orte der Erde unterstützen welche Lebensbereiche bei dir? Das astrologische Reading fokussiert sich auf deinen inneren Kosmos: Wer bist du astrologisch, welche Themen prägen dich, was steht aktuell an? Beide Angebote ergänzen sich wunderbar.",
   },
   {
+    q: "Was ist Local Space Astrology und Raumastrologie?",
+    a: "Local Space Astrology (auf Deutsch: Raumastrologie oder Standortastrologie) ist eine Ergänzung zur Astrokartografie. Während Astrocartography weltweite Kraftorte zeigt, analysiert Local Space wie planetare Energien deinen direkten Lebensraum — dein Zuhause, deine Stadt, deine Wohnung — beeinflussen. Parans und Destiny Crossings sind dabei besondere Schnittpunkte, die besonders kraftvolle Orte markieren.",
+  },
+  {
     q: "Gibt es eine Geld-zurück-Garantie?",
     a: "Ich stehe zu 100% für die Qualität meiner Arbeit. Wenn du nach der Session das Gefühl hast, keinen Mehrwert erhalten zu haben, sprechen wir. Bisher ist das noch nie passiert — aber mein Versprechen steht.",
   },
