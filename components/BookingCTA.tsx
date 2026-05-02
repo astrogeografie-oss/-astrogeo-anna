@@ -67,12 +67,12 @@ export default function BookingCTA() {
 
         <div className="flex justify-center mb-8">
           <a
-            href="https://calendly.com/astrogeo/kipperkarten-reading-grosse-tafel-klon"
+            href="https://calendly.com/astrogeo/60"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-outline-gold inline-flex items-center justify-center gap-3 px-10 py-5 text-sm font-[family-name:var(--font-montserrat)] tracking-[0.15em] rounded-sm"
           >
-            Das große Reading
+            Das große Reading der Astrogeografie
             <ArrowRight size={16} />
           </a>
         </div>
