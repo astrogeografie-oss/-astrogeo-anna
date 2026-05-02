@@ -88,7 +88,7 @@ export default function Hero() {
           {[
             { number: "500+", label: "Transformationen" },
             { number: "98%", label: "Weiterempfehlung" },
-            { number: "6+", label: "Jahre Erfahrung" },
+            { number: "20+", label: "Jahre Erfahrung" },
             { number: "30+", label: "Länder analysiert" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">

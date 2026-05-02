@@ -66,7 +66,7 @@ export default function About() {
 
           {/* Text side */}
           <div className="order-1 lg:order-2">
-            <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#c9a84c] uppercase mb-6">
+            <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#7a5c18] uppercase mb-6">
               Über mich
             </p>
 
@@ -90,10 +90,10 @@ export default function About() {
                 inneren Ausgleich oder neue Kapitel.
               </p>
               <p className="text-[#2c2010]">
-                Seit über 6 Jahren begleite ich Menschen auf diesem Weg —
+                Seit 2005 begleite ich Menschen auf diesem Weg —
                 mit Astrogeografie, Astrokartografie, Local Space Astrology
-                und Raumastrologie. Mit Präzision, Tiefe und der Überzeugung,
-                dass der richtige Ort alles verändern kann.
+                und Raumastrologie. Über 20 Jahre Erfahrung, Präzision und
+                die tiefe Überzeugung: der richtige Ort verändert alles.
               </p>
             </div>
 

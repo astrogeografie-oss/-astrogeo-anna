@@ -22,7 +22,7 @@ export default function BookingCTA() {
       />
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-        <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#c9a84c] uppercase mb-6">
+        <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#7a5c18] uppercase mb-6">
           Bereit?
         </p>
 

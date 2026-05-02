@@ -47,7 +47,7 @@ export default function Footer() {
 
           {/* Links */}
           <div>
-            <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.3em] text-[#c9a84c] uppercase mb-6">
+            <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.3em] text-[#7a5c18] uppercase mb-6">
               Navigation
             </p>
             <ul className="space-y-3">
@@ -73,7 +73,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.3em] text-[#c9a84c] uppercase mb-6">
+            <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.3em] text-[#7a5c18] uppercase mb-6">
               Kontakt
             </p>
             <ul className="space-y-4">
