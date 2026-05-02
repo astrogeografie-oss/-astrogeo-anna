@@ -33,9 +33,9 @@ export default function JsonLd() {
       {
         "@type": "LocalBusiness",
         "@id": "https://astrogeoanna.com/#business",
-        name: "Anna Thoma – Astrogeografie & Astrokartografie",
+        name: "Anna Thoma – Astrogeografie",
         description:
-          "Astrogeografie, Astrokartografie & Astrocartography-Beratung. Finde deinen Kraftort auf der Erde.",
+          "Astrogeografie-Beratung. Finde deinen Kraftort auf der Erde.",
         url: "https://astrogeoanna.com",
         email: "astrogeografie@gmail.com",
         image:
@@ -112,7 +112,7 @@ export default function JsonLd() {
             name: "Was ist Astrogeografie?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Astrogeografie (auch Astrokartografie oder Astrocartography) verbindet dein persönliches Horoskop mit einer Weltkarte und zeigt dir, welche Orte auf der Erde ideal für Liebe, Karriere oder inneres Wachstum sind.",
+              text: "Astrogeografie verbindet dein persönliches Horoskop mit einer Weltkarte und zeigt dir, welche Orte auf der Erde ideal für Liebe, Karriere oder inneres Wachstum sind.",
             },
           },
           {
@@ -120,7 +120,7 @@ export default function JsonLd() {
             name: "Was ist Astrokartografie?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Astrokartografie ist der deutsche Begriff für Astrogeografie bzw. Astrocartography. Alle drei Begriffe beschreiben dieselbe Methode: die Verbindung deines Geburtshoroskops mit einer geografischen Weltkarte, um deine persönlichen Kraftorte zu finden.",
+              text: "Astrokartografie verbindet dein Geburtshoroskop mit einer geografischen Weltkarte — und zeigt dir deine persönlichen Kraftorte auf der Erde.",
             },
           },
           {
