@@ -1,6 +1,6 @@
 "use client";
 
-import { Check, Globe, Star, Users, Clock, Gift, Calendar } from "lucide-react";
+import { Check, Globe, Star, Users, Clock, Gift, Calendar, BookOpen, Compass, Map } from "lucide-react";
 
 const mainServices = [
   {
@@ -105,6 +105,27 @@ const additionalServices = [
     name: "Gutschein",
     desc: "Für alle Angebote — das perfekte Geschenk. Dauerhaft gültig.",
     url: "https://calendly.com/astrogeo/gutschein",
+    free: false,
+  },
+  {
+    icon: <Map size={18} />,
+    name: "Mini-Kurs Raumastrologie",
+    desc: "Lerne, wie astrologische Energien Räume prägen — und wie du bewusst mit ihnen lebst.",
+    url: "https://astrogeoanna.thrivecart.com/die-folie-die-dein-leben-vereandert/",
+    free: false,
+  },
+  {
+    icon: <Compass size={18} />,
+    name: "Mini-Kurs Cosmic Coordinates",
+    desc: "Dein Wegweiser zum Wohlfühlort — Azimuth, Häuser & die 10 Planeten der Astrogeografie.",
+    url: "https://astrogeoanna.thrivecart.com/cosmic-coordinates-2026/",
+    free: false,
+  },
+  {
+    icon: <BookOpen size={18} />,
+    name: "Astro-Code – Das Buch",
+    desc: "Deine Seele hat ein GPS. Zeit, es endlich zu aktivieren. Das Buch zur Astrogeografie von Anna Thoma.",
+    url: "https://publishde.bookmundo.com/books/22022143",
     free: false,
   },
 ];
