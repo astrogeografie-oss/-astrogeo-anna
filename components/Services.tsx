@@ -8,10 +8,10 @@ const mainServices = [
     badge: "Flagship",
     icon: <Globe size={32} />,
     name: "Astrogeografie (Orts-Horoskop)",
-    tagline: "Die vollständige Astrocartography-Analyse",
+    tagline: "Astrogeografie · Astrokartografie · Astrocartography",
     duration: "120 Min. · Zoom",
     description:
-      "Die Orts-Astrologie verbindet dein persönliches Horoskop (Radix) mit Google Maps — und zeigt dir, welche Orte auf der Welt ideal für Liebe, Karriere oder inneren Ausgleich sind.",
+      "Astrogeografie (Astrokartografie / Astrocartography) verbindet dein persönliches Horoskop (Radix) mit einer Weltkarte — und zeigt dir, welche Orte auf der Erde ideal für Liebe, Karriere oder inneren Ausgleich sind.",
     includes: [
       "Einführung in die Astrogeografie & Planeten-Erklärungen (PDF)",
       "Analyse: Seelenformel, Best Planet, Mondknoten, Chiron, Human Design",
@@ -39,7 +39,7 @@ const mainServices = [
       "Gesamteindruck der Beziehung & worum es euch wirklich geht",
       "Seelische Verbundenheit: was euch zusammengeführt hat",
       "Entwicklungs- & Konfliktpotenziale erkennen",
-      "Gemeinsame Astrocartography-Karte für beide Geburtsmomente",
+      "Gemeinsame Astrokartografie (Astrocartography) für beide Geburtsmomente",
       "Top-Empfehlungen für euren gemeinsamen Wohnort",
       "Viele Unterlagen, Screenshots & Aufzeichnung",
     ],

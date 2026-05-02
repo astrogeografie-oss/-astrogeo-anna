@@ -6,7 +6,11 @@ import { Plus, Minus } from "lucide-react";
 const faqs = [
   {
     q: "Was genau ist Astrogeografie?",
-    a: "Astrogeografie (auch Astrocartography genannt) ist eine Methode der Astrologie, die deinen Geburtsmoment auf eine Weltkarte überträgt. Bestimmte Planetenenergien wirken an bestimmten Orten besonders stark — manche Orte unterstützen dich in Liebe, andere in Karriere, Kreativität oder Heilung. Die Methode wurde in den 1970er Jahren von Jim Lewis entwickelt und ist heute wissenschaftlich gut dokumentiert.",
+    a: "Astrogeografie (auch Astrokartografie oder Astrocartography genannt) ist eine Methode der Astrologie, die deinen Geburtsmoment auf eine Weltkarte überträgt. Bestimmte Planetenenergien wirken an bestimmten Orten besonders stark — manche Orte unterstützen dich in Liebe, andere in Karriere, Kreativität oder Heilung. Die Methode wurde in den 1970er Jahren von Jim Lewis entwickelt und ist heute weltweit bekannt.",
+  },
+  {
+    q: "Was ist der Unterschied zwischen Astrogeografie, Astrokartografie und Astrocartography?",
+    a: "Alle drei Begriffe meinen dasselbe: die Kunst, dein persönliches Horoskop auf eine Weltkarte zu übertragen. 'Astrokartografie' und 'Astrogeografie' sind die deutschen Bezeichnungen, 'Astrocartography' der englische Fachbegriff, der sich international etabliert hat. In meiner Arbeit verwende ich alle drei — inhaltlich gibt es keinen Unterschied.",
   },
   {
     q: "Muss ich mich mit Astrologie auskennen?",

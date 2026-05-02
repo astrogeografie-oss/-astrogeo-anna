@@ -97,7 +97,7 @@ export default function Hero() {
           className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#c9a84c] uppercase mb-8 opacity-0 animate-[fadeInUp_0.8s_0.2s_ease_forwards]"
           style={{ animationFillMode: "forwards" }}
         >
-          Deutschlands führende Astrogeografie-Expertin
+          Deutschlands führende Astrogeografie &amp; Astrokartografie-Expertin
         </p>
 
         {/* Main Headline */}
@@ -117,9 +117,9 @@ export default function Hero() {
           className="font-[family-name:var(--font-cormorant)] text-xl md:text-2xl text-[#9b8fa8] max-w-2xl mx-auto mb-12 leading-relaxed font-light opacity-0"
           style={{ animation: "fadeInUp 0.9s 0.6s ease forwards" }}
         >
-          Es gibt Orte auf dieser Erde, wo du leichter liebst, klarer denkst
-          und erfolgreicher wirst. Ich zeige dir, wo diese Orte sind — in
-          deiner ganz persönlichen Sternenkarte.
+          Astrogeografie · Astrokartografie · Astrocartography — es gibt Orte
+          auf dieser Erde, wo du leichter liebst, klarer denkst und
+          erfolgreicher wirst. Ich zeige dir, wo diese Orte sind.
         </p>
 
         {/* CTAs */}

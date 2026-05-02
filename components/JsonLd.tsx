@@ -14,9 +14,11 @@ export default function JsonLd() {
         sameAs: ["https://calendly.com/astrogeo"],
         knowsAbout: [
           "Astrogeografie",
+          "Astrokartografie",
           "Astrocartography",
           "Lokale Astrologie",
           "Orts-Astrologie",
+          "Orts-Horoskop",
           "Kipperkarten",
           "Skatkarten",
         ],
@@ -26,9 +28,9 @@ export default function JsonLd() {
       {
         "@type": "LocalBusiness",
         "@id": "https://astrogeo-anna.de/#business",
-        name: "Anna Thoma – Astrogeografie",
+        name: "Anna Thoma – Astrogeografie & Astrokartografie",
         description:
-          "Astrogeografie- und Astrologie-Beratung. Finde deinen Kraftort auf der Erde.",
+          "Astrogeografie, Astrokartografie & Astrocartography-Beratung. Finde deinen Kraftort auf der Erde.",
         url: "https://astrogeo-anna.de",
         email: "astrogeografie@gmail.com",
         image:
@@ -41,10 +43,12 @@ export default function JsonLd() {
         },
         serviceType: [
           "Astrogeografie-Reading",
+          "Astrokartografie-Beratung",
+          "Astrocartography",
           "Astrologisches Reading",
           "Kipperkarten Reading",
           "Skatkarten Orakel",
-          "Astrocartography",
+          "Orts-Horoskop",
         ],
         hasOfferCatalog: {
           "@type": "OfferCatalog",
@@ -103,7 +107,15 @@ export default function JsonLd() {
             name: "Was ist Astrogeografie?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Astrogeografie (auch Astrocartography) verbindet dein persönliches Horoskop mit Google Maps und zeigt dir, welche Orte auf der Welt ideal für Liebe, Karriere oder inneren Ausgleich sind.",
+              text: "Astrogeografie (auch Astrokartografie oder Astrocartography) verbindet dein persönliches Horoskop mit einer Weltkarte und zeigt dir, welche Orte auf der Erde ideal für Liebe, Karriere oder inneres Wachstum sind.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Was ist Astrokartografie?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Astrokartografie ist der deutsche Begriff für Astrogeografie bzw. Astrocartography. Alle drei Begriffe beschreiben dieselbe Methode: die Verbindung deines Geburtshoroskops mit einer geografischen Weltkarte, um deine persönlichen Kraftorte zu finden.",
             },
           },
           {

@@ -111,10 +111,11 @@ export default function About() {
                 Welcher Ort passt zu mir?
               </p>
               <p>
-                Die Antwort fand ich in der Astrogeografie — der Kunst, dein
-                persönliches Horoskop mit Google Maps zu verbinden. Sie zeigt
-                uns, wo auf der Erde unsere planetaren Energien wirken: für
-                Liebe, Karriere, inneren Ausgleich oder neue Kapitel.
+                Die Antwort fand ich in der Astrogeografie — auch Astrokartografie
+                oder Astrocartography genannt. Diese Methode verbindet dein
+                persönliches Horoskop mit einer Weltkarte und zeigt, wo auf
+                der Erde deine planetaren Energien wirken: für Liebe, Karriere,
+                inneren Ausgleich oder neue Kapitel.
               </p>
               <p className="text-[#f0ead6]">
                 Seit über 6 Jahren begleite ich Menschen auf diesem Weg.
