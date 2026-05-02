@@ -1,6 +1,6 @@
 "use client";
 
-import { Check, Globe, Star, Users, Clock, Gift, Calendar } from "lucide-react";
+import { Check, Globe, Star, Users, Clock, Gift, Calendar, BookOpen, Compass } from "lucide-react";
 
 const mainServices = [
   {
@@ -105,6 +105,20 @@ const additionalServices = [
     name: "Gutschein",
     desc: "Für alle Angebote — das perfekte Geschenk. Dauerhaft gültig.",
     url: "https://calendly.com/astrogeo/gutschein",
+    free: false,
+  },
+  {
+    icon: <BookOpen size={18} />,
+    name: "Raumastrologie – Das Buch",
+    desc: "Das Standardwerk zur Raumastrologie: Energien in Räumen erkennen, verstehen & transformieren.",
+    url: "#raumastrologie-buch",
+    free: false,
+  },
+  {
+    icon: <Compass size={18} />,
+    name: "Mini-Kurs Cosmic Coordinates",
+    desc: "Selbststudium — Entdecke die astrologischen Kraftlinien deines Lebens auf der Weltkarte.",
+    url: "#cosmic-coordinates",
     free: false,
   },
 ];
