@@ -11,7 +11,7 @@ const mainServices = [
     tagline: "Astrokartografie · Astrocartography · Orts-Horoskop",
     duration: "120 Min. · Zoom",
     description:
-      "Astrogeografie (Astrokartografie / Astrocartography) verbindet dein persönliches Horoskop (Radix) mit einer Weltkarte — und zeigt dir, welche Orte auf der Erde ideal für Liebe, Karriere oder inneren Ausgleich sind.",
+      "Diese Methode verbindet dein persönliches Horoskop (Radix) mit einer Weltkarte — und zeigt dir, welche Orte auf der Erde ideal für Liebe, Karriere oder inneren Ausgleich sind.",
     includes: [
       "Einführung in die Astrogeografie & Planeten-Erklärungen (PDF)",
       "Analyse: Seelenformel, Best Planet, Mondknoten, Chiron, Human Design",

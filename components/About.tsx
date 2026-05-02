@@ -83,15 +83,15 @@ export default function About() {
                 Welcher Ort passt zu mir?
               </p>
               <p>
-                Die Antwort fand ich in der Astrogeografie — auch Astrokartografie
-                oder Astrocartography genannt. Diese Methode verbindet dein
+                Die Antwort fand ich in der Astrokartografie — auch bekannt
+                als Astrocartography. Diese Methode verbindet dein
                 persönliches Horoskop mit einer Weltkarte und zeigt, wo auf
                 der Erde deine planetaren Energien wirken: für Liebe, Karriere,
                 inneren Ausgleich oder neue Kapitel.
               </p>
               <p className="text-[#2c2010]">
                 Seit 2005 begleite ich Menschen auf diesem Weg —
-                mit Astrogeografie, Astrokartografie, Local Space Astrology
+                mit Astrogeografie, Local Space Astrology
                 und Raumastrologie. Über 20 Jahre Erfahrung, Präzision und
                 die tiefe Überzeugung: der richtige Ort verändert alles.
               </p>

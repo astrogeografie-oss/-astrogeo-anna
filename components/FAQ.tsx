@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Plus, Minus } from "lucide-react";
 
-const faqs = [
+const faqs: { q: string; a: React.ReactNode }[] = [
   {
     q: "Was genau ist Astrogeografie?",
     a: "Astrogeografie (auch Astrokartografie oder Astrocartography genannt) ist eine Methode der Astrologie, die deinen Geburtsmoment auf eine Weltkarte überträgt. Bestimmte Planetenenergien wirken an bestimmten Orten besonders stark — manche Orte unterstützen dich in Liebe, andere in Karriere, Kreativität oder Heilung. Die Methode wurde in den 1970er Jahren von Jim Lewis entwickelt und ist heute weltweit bekannt.",
@@ -26,7 +26,24 @@ const faqs = [
   },
   {
     q: "Was passiert, wenn mein Kraftort weit weg ist?",
-    a: "Das ist häufig der Fall und kein Problem. Kraftorte können für Urlaube, Arbeitsreisen oder als langfristiges Ziel dienen. Außerdem schauen wir uns immer auch deinen aktuellen Wohnort und wie du seine Energien optimal nutzen kannst.",
+    a: (
+      <>
+        Das ist häufig der Fall und kein Problem. Es gibt eine sogenannte{" "}
+        <em>Remote-Aktivierung</em> — du musst deinen Kraftort nicht persönlich
+        besuchen, um seine Energie zu nutzen. Das Prinzip dahinter lernst du
+        ausführlich im{" "}
+        <a
+          href="https://astrogeoanna.thrivecart.com/die-folie-die-dein-leben-vereandert/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#c9a84c] underline underline-offset-4 hover:text-[#e8c97a] transition-colors"
+        >
+          Mini-Kurs Raumastrologie
+        </a>{" "}
+        — und in jedem Reading erkläre ich es ausführlich und auf deine
+        Situation zugeschnitten.
+      </>
+    ),
   },
   {
     q: "Wie schnell bekomme ich einen Termin?",
@@ -34,7 +51,23 @@ const faqs = [
   },
   {
     q: "Was ist der Unterschied zwischen Cosmic Coordinates und dem astrologischen Reading?",
-    a: "Cosmic Coordinates fokussiert sich auf die Geografie: Welche Orte der Erde unterstützen welche Lebensbereiche bei dir? Das astrologische Reading fokussiert sich auf deinen inneren Kosmos: Wer bist du astrologisch, welche Themen prägen dich, was steht aktuell an? Beide Angebote ergänzen sich wunderbar.",
+    a: (
+      <>
+        Im{" "}
+        <a
+          href="https://astrogeoanna.thrivecart.com/cosmic-coordinates-2026/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#c9a84c] underline underline-offset-4 hover:text-[#e8c97a] transition-colors"
+        >
+          Mini-Kurs Cosmic Coordinates
+        </a>{" "}
+        lernst du als Einsteigerin die Standortastrologie und kannst selbst
+        deinen Ort aussuchen — in deinem eigenen Tempo, ohne Vorkenntnisse.
+        Das astrologische Reading ist das persönliche 1:1 mit mir: individuell,
+        tiefgehend und auf deine konkrete Lebenssituation zugeschnitten.
+      </>
+    ),
   },
   {
     q: "Was sind Parans in der Astrokartografie?",
@@ -50,7 +83,7 @@ const faqs = [
   },
 ];
 
-function FAQItem({ q, a }: { q: string; a: string }) {
+function FAQItem({ q, a }: { q: string; a: React.ReactNode }) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -68,9 +101,9 @@ function FAQItem({ q, a }: { q: string; a: string }) {
       </div>
       {open && (
         <div className="pb-6 pr-10">
-          <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#7a6a58] font-light leading-relaxed">
+          <div className="font-[family-name:var(--font-cormorant)] text-lg text-[#7a6a58] font-light leading-relaxed">
             {a}
-          </p>
+          </div>
         </div>
       )}
     </div>
