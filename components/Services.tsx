@@ -111,7 +111,7 @@ const additionalServices = [
     icon: <Map size={18} />,
     name: "Mini-Kurs Raumastrologie",
     desc: "Lerne, wie astrologische Energien Räume prägen — und wie du bewusst mit ihnen lebst.",
-    url: "#raumastrologie",
+    url: "https://astrogeoanna.thrivecart.com/die-folie-die-dein-leben-vereandert/",
     free: false,
   },
   {
