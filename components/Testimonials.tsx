@@ -62,10 +62,7 @@ export default function Testimonials() {
     <section
       id="testimonials"
       className="relative py-32 overflow-hidden"
-      style={{
-        background:
-          "radial-gradient(ellipse at bottom right, #1a0f2e22 0%, transparent 60%)",
-      }}
+      style={{ background: "#f5efe4" }}
     >
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
@@ -73,7 +70,7 @@ export default function Testimonials() {
           <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#c9a84c] uppercase mb-6">
             Erfahrungen
           </p>
-          <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl lg:text-6xl font-light text-[#f0ead6] leading-[1.15]">
+          <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl lg:text-6xl font-light text-[#2c2010] leading-[1.15]">
             Was sie sagen —
             <br />
             <em className="gold-gradient not-italic font-medium">
@@ -87,28 +84,19 @@ export default function Testimonials() {
           {testimonials.map((t, index) => (
             <div
               key={index}
-              className="card-cosmic rounded-sm p-8 hover:border-[rgba(201,168,76,0.3)] transition-all duration-300 hover:-translate-y-1"
+              className="card-warm rounded-sm p-8"
             >
-              {/* Quote icon */}
               <Quote size={24} className="text-[#c9a84c] opacity-40 mb-4" />
-
-              {/* Stars */}
               <Stars count={t.stars} />
-
-              {/* Text */}
-              <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#9b8fa8] font-light leading-relaxed mt-4 mb-6">
+              <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#7a6a58] font-light leading-relaxed mt-4 mb-6">
                 &ldquo;{t.text}&rdquo;
               </p>
-
-              {/* Divider */}
               <div className="section-divider mb-6" />
-
-              {/* Author */}
               <div>
-                <p className="font-[family-name:var(--font-cormorant)] text-base font-semibold text-[#f0ead6]">
+                <p className="font-[family-name:var(--font-cormorant)] text-base font-semibold text-[#2c2010]">
                   {t.name}
                 </p>
-                <p className="font-[family-name:var(--font-montserrat)] text-xs text-[#9b8fa8] tracking-wider mt-0.5">
+                <p className="font-[family-name:var(--font-montserrat)] text-xs text-[#7a6a58] tracking-wider mt-0.5">
                   {t.location}
                 </p>
                 <p className="font-[family-name:var(--font-montserrat)] text-xs text-[#c9a84c] tracking-wider mt-1 uppercase">
@@ -121,7 +109,7 @@ export default function Testimonials() {
 
         {/* Bottom note */}
         <div className="text-center mt-16">
-          <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#9b8fa8] font-light">
+          <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#7a6a58] font-light">
             Über{" "}
             <span className="text-[#c9a84c] font-semibold">500 Klientinnen</span>{" "}
             haben bereits ihre kosmischen Koordinaten entdeckt.

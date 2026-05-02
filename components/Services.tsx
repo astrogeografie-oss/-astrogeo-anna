@@ -8,10 +8,10 @@ const mainServices = [
     badge: "Flagship",
     icon: <Globe size={32} />,
     name: "Astrogeografie (Orts-Horoskop)",
-    tagline: "Die vollständige Astrocartography-Analyse",
+    tagline: "Astrogeografie · Astrokartografie · Astrocartography",
     duration: "120 Min. · Zoom",
     description:
-      "Die Orts-Astrologie verbindet dein persönliches Horoskop (Radix) mit Google Maps — und zeigt dir, welche Orte auf der Welt ideal für Liebe, Karriere oder inneren Ausgleich sind.",
+      "Astrogeografie (Astrokartografie / Astrocartography) verbindet dein persönliches Horoskop (Radix) mit einer Weltkarte — und zeigt dir, welche Orte auf der Erde ideal für Liebe, Karriere oder inneren Ausgleich sind.",
     includes: [
       "Einführung in die Astrogeografie & Planeten-Erklärungen (PDF)",
       "Analyse: Seelenformel, Best Planet, Mondknoten, Chiron, Human Design",
@@ -39,7 +39,7 @@ const mainServices = [
       "Gesamteindruck der Beziehung & worum es euch wirklich geht",
       "Seelische Verbundenheit: was euch zusammengeführt hat",
       "Entwicklungs- & Konfliktpotenziale erkennen",
-      "Gemeinsame Astrocartography-Karte für beide Geburtsmomente",
+      "Gemeinsame Astrokartografie (Astrocartography) für beide Geburtsmomente",
       "Top-Empfehlungen für euren gemeinsamen Wohnort",
       "Viele Unterlagen, Screenshots & Aufzeichnung",
     ],
@@ -137,7 +137,7 @@ export default function Services() {
       className="relative py-32 overflow-hidden"
       style={{
         background:
-          "radial-gradient(ellipse at top right, #0d1b3e22 0%, transparent 60%)",
+          "none",
       }}
     >
       <div className="max-w-7xl mx-auto px-6">
@@ -146,14 +146,14 @@ export default function Services() {
           <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#c9a84c] uppercase mb-6">
             Meine Angebote
           </p>
-          <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl lg:text-6xl font-light text-[#f0ead6] leading-[1.15] mb-6">
+          <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl lg:text-6xl font-light text-[#2c2010] leading-[1.15] mb-6">
             Finde deinen Weg zu
             <br />
             <em className="gold-gradient not-italic font-medium">
               deinem Kraftort
             </em>
           </h2>
-          <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#9b8fa8] max-w-2xl mx-auto font-light">
+          <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#7a6a58] max-w-2xl mx-auto font-light">
             Ob du solo deinen idealen Ort suchst, als Paar umziehen möchtest
             oder schnelle Klarheit brauchst — hier findest du das Richtige.
           </p>
@@ -169,8 +169,8 @@ export default function Services() {
               }`}
               style={{
                 background: service.highlight
-                  ? "linear-gradient(145deg, #1a0f2e, #0d1b3e)"
-                  : "linear-gradient(145deg, #0f0c1a, #0d1020)",
+                  ? "linear-gradient(145deg, #fffdf9, #f5efe4)"
+                  : "linear-gradient(145deg, #fffdf9, #faf7f2)",
                 border: service.highlight
                   ? "1px solid rgba(201,168,76,0.4)"
                   : "1px solid rgba(201,168,76,0.1)",
@@ -195,17 +195,17 @@ export default function Services() {
               <div className="p-8 md:p-10">
                 <div className="text-[#c9a84c] mb-6">{service.icon}</div>
 
-                <h3 className="font-[family-name:var(--font-cormorant)] text-3xl font-medium text-[#f0ead6] mb-2">
+                <h3 className="font-[family-name:var(--font-cormorant)] text-3xl font-medium text-[#2c2010] mb-2">
                   {service.name}
                 </h3>
-                <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#9b8fa8] uppercase mb-2">
+                <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#7a6a58] uppercase mb-2">
                   {service.tagline}
                 </p>
                 <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.1em] text-[#c9a84c] mb-6">
                   {service.duration}
                 </p>
 
-                <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#9b8fa8] font-light leading-relaxed mb-8">
+                <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#7a6a58] font-light leading-relaxed mb-8">
                   {service.description}
                 </p>
 
@@ -215,7 +215,7 @@ export default function Services() {
                   {service.includes.map((item) => (
                     <li key={item} className="flex gap-3 items-start">
                       <Check size={16} className="text-[#c9a84c] mt-0.5 flex-shrink-0" />
-                      <span className="font-[family-name:var(--font-cormorant)] text-[#9b8fa8] text-base font-light leading-snug">
+                      <span className="font-[family-name:var(--font-cormorant)] text-[#7a6a58] text-base font-light leading-snug">
                         {item}
                       </span>
                     </li>
@@ -233,7 +233,7 @@ export default function Services() {
                   {service.cta}
                 </a>
 
-                <p className="text-center font-[family-name:var(--font-montserrat)] text-xs text-[#9b8fa8] mt-3 tracking-wider">
+                <p className="text-center font-[family-name:var(--font-montserrat)] text-xs text-[#7a6a58] mt-3 tracking-wider">
                   {service.note}
                 </p>
               </div>
@@ -263,10 +263,10 @@ export default function Services() {
                     </span>
                   )}
                 </div>
-                <h4 className="font-[family-name:var(--font-cormorant)] text-lg font-medium text-[#f0ead6] mb-2 group-hover:text-[#c9a84c] transition-colors">
+                <h4 className="font-[family-name:var(--font-cormorant)] text-lg font-medium text-[#2c2010] mb-2 group-hover:text-[#c9a84c] transition-colors">
                   {s.name}
                 </h4>
-                <p className="font-[family-name:var(--font-cormorant)] text-sm text-[#9b8fa8] font-light leading-snug">
+                <p className="font-[family-name:var(--font-cormorant)] text-sm text-[#7a6a58] font-light leading-snug">
                   {s.desc}
                 </p>
               </a>
@@ -275,7 +275,7 @@ export default function Services() {
         </div>
 
         {/* Reassurance */}
-        <p className="text-center font-[family-name:var(--font-cormorant)] text-base text-[#9b8fa8] mt-14 font-light">
+        <p className="text-center font-[family-name:var(--font-cormorant)] text-base text-[#7a6a58] mt-14 font-light">
           Nicht sicher, was passt? Starte mit dem{" "}
           <a
             href="https://calendly.com/astrogeo/orientierungs-call"

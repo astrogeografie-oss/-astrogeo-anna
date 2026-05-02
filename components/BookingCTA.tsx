@@ -7,32 +7,18 @@ export default function BookingCTA() {
     <section
       id="buchen"
       className="relative py-40 overflow-hidden"
-      style={{
-        background:
-          "radial-gradient(ellipse at center, #1a0f2e 0%, #07060f 60%)",
-      }}
+      style={{ background: "linear-gradient(160deg, #f5efe4 0%, #ede5d4 100%)" }}
     >
-      {/* Decorative rings */}
+      {/* Decorative gold circle */}
       <div
         aria-hidden
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full pointer-events-none"
-        style={{ border: "1px solid rgba(201,168,76,0.06)" }}
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full pointer-events-none"
+        style={{ border: "1px solid rgba(201,168,76,0.12)" }}
       />
       <div
         aria-hidden
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] rounded-full pointer-events-none"
-        style={{ border: "1px solid rgba(201,168,76,0.04)" }}
-      />
-
-      {/* Glow */}
-      <div
-        aria-hidden
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[200px] pointer-events-none"
-        style={{
-          background:
-            "radial-gradient(ellipse, rgba(201,168,76,0.1) 0%, transparent 70%)",
-          filter: "blur(40px)",
-        }}
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full pointer-events-none"
+        style={{ border: "1px solid rgba(201,168,76,0.07)" }}
       />
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
@@ -40,20 +26,17 @@ export default function BookingCTA() {
           Bereit?
         </p>
 
-        <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl lg:text-7xl font-light text-[#f0ead6] leading-[1.1] mb-8">
+        <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl lg:text-7xl font-light text-[#2c2010] leading-[1.1] mb-8">
           Dein Kraftort wartet.
           <br />
-          <em className="gold-shimmer not-italic font-medium">
-            Ich auch.
-          </em>
+          <em className="gold-shimmer not-italic font-semibold">Ich auch.</em>
         </h2>
 
-        <p className="font-[family-name:var(--font-cormorant)] text-xl md:text-2xl text-[#9b8fa8] font-light max-w-2xl mx-auto mb-14 leading-relaxed">
+        <p className="font-[family-name:var(--font-cormorant)] text-xl md:text-2xl text-[#7a6a58] font-light max-w-2xl mx-auto mb-14 leading-relaxed">
           Buch direkt deinen Wunschtermin — oder starte kostenlos mit einem
           Orientierungs-Call. Ich freue mich auf dich.
         </p>
 
-        {/* Primary CTA */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
           <a
             href="https://calendly.com/astrogeo/orientierungs-call"
@@ -75,18 +58,16 @@ export default function BookingCTA() {
           </a>
         </div>
 
-        {/* Email fallback */}
         <div className="mb-16">
           <a
             href="mailto:astrogeografie@gmail.com"
-            className="inline-flex items-center gap-2 font-[family-name:var(--font-cormorant)] text-base text-[#9b8fa8] hover:text-[#c9a84c] transition-colors duration-300"
+            className="inline-flex items-center gap-2 font-[family-name:var(--font-cormorant)] text-base text-[#7a6a58] hover:text-[#c9a84c] transition-colors duration-300"
           >
             <Mail size={14} />
             astrogeografie@gmail.com
           </a>
         </div>
 
-        {/* Quick reassurances */}
         <div className="flex flex-wrap justify-center gap-8">
           {[
             "Antwort innerhalb 24h",
@@ -96,7 +77,7 @@ export default function BookingCTA() {
           ].map((item) => (
             <div key={item} className="flex items-center gap-2">
               <div className="w-1 h-1 rounded-full bg-[#c9a84c]" />
-              <span className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.1em] text-[#9b8fa8] uppercase">
+              <span className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.1em] text-[#7a6a58] uppercase">
                 {item}
               </span>
             </div>

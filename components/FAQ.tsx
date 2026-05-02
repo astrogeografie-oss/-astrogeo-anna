@@ -6,7 +6,11 @@ import { Plus, Minus } from "lucide-react";
 const faqs = [
   {
     q: "Was genau ist Astrogeografie?",
-    a: "Astrogeografie (auch Astrocartography genannt) ist eine Methode der Astrologie, die deinen Geburtsmoment auf eine Weltkarte überträgt. Bestimmte Planetenenergien wirken an bestimmten Orten besonders stark — manche Orte unterstützen dich in Liebe, andere in Karriere, Kreativität oder Heilung. Die Methode wurde in den 1970er Jahren von Jim Lewis entwickelt und ist heute wissenschaftlich gut dokumentiert.",
+    a: "Astrogeografie (auch Astrokartografie oder Astrocartography genannt) ist eine Methode der Astrologie, die deinen Geburtsmoment auf eine Weltkarte überträgt. Bestimmte Planetenenergien wirken an bestimmten Orten besonders stark — manche Orte unterstützen dich in Liebe, andere in Karriere, Kreativität oder Heilung. Die Methode wurde in den 1970er Jahren von Jim Lewis entwickelt und ist heute weltweit bekannt.",
+  },
+  {
+    q: "Was ist der Unterschied zwischen Astrogeografie, Astrokartografie und Astrocartography?",
+    a: "Alle drei Begriffe meinen dasselbe: die Kunst, dein persönliches Horoskop auf eine Weltkarte zu übertragen. 'Astrokartografie' und 'Astrogeografie' sind die deutschen Bezeichnungen, 'Astrocartography' der englische Fachbegriff, der sich international etabliert hat. In meiner Arbeit verwende ich alle drei — inhaltlich gibt es keinen Unterschied.",
   },
   {
     q: "Muss ich mich mit Astrologie auskennen?",
@@ -47,7 +51,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
       onClick={() => setOpen(!open)}
     >
       <div className="flex justify-between items-start gap-6 py-6">
-        <h3 className="font-[family-name:var(--font-cormorant)] text-xl md:text-2xl font-light text-[#f0ead6] group-hover:text-[#c9a84c] transition-colors duration-300 leading-snug">
+        <h3 className="font-[family-name:var(--font-cormorant)] text-xl md:text-2xl font-light text-[#2c2010] group-hover:text-[#c9a84c] transition-colors duration-300 leading-snug">
           {q}
         </h3>
         <div className="text-[#c9a84c] flex-shrink-0 mt-1">
@@ -56,7 +60,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
       </div>
       {open && (
         <div className="pb-6 pr-10">
-          <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#9b8fa8] font-light leading-relaxed">
+          <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#7a6a58] font-light leading-relaxed">
             {a}
           </p>
         </div>
@@ -77,7 +81,7 @@ export default function FAQ() {
           <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#c9a84c] uppercase mb-6">
             Häufige Fragen
           </p>
-          <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl lg:text-6xl font-light text-[#f0ead6] leading-[1.15]">
+          <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl lg:text-6xl font-light text-[#2c2010] leading-[1.15]">
             Deine Fragen —
             <br />
             <em className="gold-gradient not-italic font-medium">meine Antworten</em>
@@ -93,7 +97,7 @@ export default function FAQ() {
 
         {/* More questions */}
         <div className="mt-16 text-center">
-          <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#9b8fa8] font-light mb-6">
+          <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#7a6a58] font-light mb-6">
             Noch eine Frage?
           </p>
           <a

@@ -4,19 +4,21 @@ export default function JsonLd() {
     "@graph": [
       {
         "@type": "Person",
-        "@id": "https://astrogeo-anna.de/#anna",
+        "@id": "https://astrogeoanna.com/#anna",
         name: "Anna Thoma",
         jobTitle: "Astrogeografie-Expertin & Astrologin",
         description:
           "Deutschlands führende Expertin für Astrogeografie und Astrocartography. Ich helfe dir, deinen Kraftort auf der Erde zu finden — durch präzise astrologische Analyse.",
         email: "astrogeografie@gmail.com",
-        url: "https://astrogeo-anna.de",
+        url: "https://astrogeoanna.com",
         sameAs: ["https://calendly.com/astrogeo"],
         knowsAbout: [
           "Astrogeografie",
+          "Astrokartografie",
           "Astrocartography",
           "Lokale Astrologie",
           "Orts-Astrologie",
+          "Orts-Horoskop",
           "Kipperkarten",
           "Skatkarten",
         ],
@@ -25,26 +27,28 @@ export default function JsonLd() {
       },
       {
         "@type": "LocalBusiness",
-        "@id": "https://astrogeo-anna.de/#business",
-        name: "Anna Thoma – Astrogeografie",
+        "@id": "https://astrogeoanna.com/#business",
+        name: "Anna Thoma – Astrogeografie & Astrokartografie",
         description:
-          "Astrogeografie- und Astrologie-Beratung. Finde deinen Kraftort auf der Erde.",
-        url: "https://astrogeo-anna.de",
+          "Astrogeografie, Astrokartografie & Astrocartography-Beratung. Finde deinen Kraftort auf der Erde.",
+        url: "https://astrogeoanna.com",
         email: "astrogeografie@gmail.com",
         image:
           "https://d3v0px0pttie1i.cloudfront.net/uploads/user/avatar/13003380/2c870fde.jpg",
         priceRange: "€€",
-        founder: { "@id": "https://astrogeo-anna.de/#anna" },
+        founder: { "@id": "https://astrogeoanna.com/#anna" },
         areaServed: {
           "@type": "Country",
           name: "Germany",
         },
         serviceType: [
           "Astrogeografie-Reading",
+          "Astrokartografie-Beratung",
+          "Astrocartography",
           "Astrologisches Reading",
           "Kipperkarten Reading",
           "Skatkarten Orakel",
-          "Astrocartography",
+          "Orts-Horoskop",
         ],
         hasOfferCatalog: {
           "@type": "OfferCatalog",
@@ -87,13 +91,13 @@ export default function JsonLd() {
       },
       {
         "@type": "WebSite",
-        "@id": "https://astrogeo-anna.de/#website",
-        url: "https://astrogeo-anna.de",
+        "@id": "https://astrogeoanna.com/#website",
+        url: "https://astrogeoanna.com",
         name: "Anna Astrogeografie",
         description:
           "Finde deinen Kraftort auf der Erde. Deutschlands führende Astrogeografie-Expertin.",
         inLanguage: "de-DE",
-        publisher: { "@id": "https://astrogeo-anna.de/#anna" },
+        publisher: { "@id": "https://astrogeoanna.com/#anna" },
       },
       {
         "@type": "FAQPage",
@@ -103,7 +107,15 @@ export default function JsonLd() {
             name: "Was ist Astrogeografie?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Astrogeografie (auch Astrocartography) verbindet dein persönliches Horoskop mit Google Maps und zeigt dir, welche Orte auf der Welt ideal für Liebe, Karriere oder inneren Ausgleich sind.",
+              text: "Astrogeografie (auch Astrokartografie oder Astrocartography) verbindet dein persönliches Horoskop mit einer Weltkarte und zeigt dir, welche Orte auf der Erde ideal für Liebe, Karriere oder inneres Wachstum sind.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Was ist Astrokartografie?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Astrokartografie ist der deutsche Begriff für Astrogeografie bzw. Astrocartography. Alle drei Begriffe beschreiben dieselbe Methode: die Verbindung deines Geburtshoroskops mit einer geografischen Weltkarte, um deine persönlichen Kraftorte zu finden.",
             },
           },
           {

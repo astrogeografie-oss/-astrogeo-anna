@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/impressum", "/datenschutz"],
     },
-    sitemap: "https://astrogeo-anna.de/sitemap.xml",
+    sitemap: "https://astrogeoanna.com/sitemap.xml",
   };
 }

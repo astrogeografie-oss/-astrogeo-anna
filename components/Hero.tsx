@@ -1,125 +1,62 @@
 "use client";
 
-import { useEffect, useRef } from "react";
 import { ChevronDown } from "lucide-react";
-
-function Stars() {
-  const starsRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (!starsRef.current) return;
-    const container = starsRef.current;
-    const count = 150;
-
-    for (let i = 0; i < count; i++) {
-      const star = document.createElement("div");
-      const size = Math.random() * 2.5 + 0.5;
-      const delay = Math.random() * 5;
-      const duration = Math.random() * 4 + 3;
-      const opacity = Math.random() * 0.6 + 0.2;
-
-      star.style.cssText = `
-        position: absolute;
-        width: ${size}px;
-        height: ${size}px;
-        border-radius: 50%;
-        background: white;
-        top: ${Math.random() * 100}%;
-        left: ${Math.random() * 100}%;
-        opacity: ${opacity};
-        animation: twinkle ${duration}s ${delay}s ease-in-out infinite;
-        pointer-events: none;
-      `;
-      container.appendChild(star);
-    }
-
-    return () => {
-      while (container.firstChild) container.removeChild(container.firstChild);
-    };
-  }, []);
-
-  return <div ref={starsRef} className="absolute inset-0 overflow-hidden" aria-hidden />;
-}
 
 export default function Hero() {
   return (
     <section
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
       style={{
-        background:
-          "radial-gradient(ellipse at 30% 20%, #1a0f2e 0%, #07060f 40%), radial-gradient(ellipse at 70% 80%, #0d1b3e 0%, #07060f 50%)",
+        backgroundImage: "url('/hero-bg.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center 40%",
       }}
     >
-      <Stars />
-
-      {/* Orbit rings */}
+      {/* Dark warm overlay so text is readable */}
       <div
         aria-hidden
-        className="orbit-ring"
-        style={{
-          width: "600px",
-          height: "600px",
-          top: "50%",
-          left: "50%",
-          transform: "translate(-50%, -50%) rotate(0deg)",
-          animationDuration: "40s",
-        }}
-      />
-      <div
-        aria-hidden
-        className="orbit-ring"
-        style={{
-          width: "900px",
-          height: "900px",
-          top: "50%",
-          left: "50%",
-          transform: "translate(-50%, -50%) rotate(20deg)",
-          animationDuration: "70s",
-          animationDirection: "reverse",
-        }}
-      />
-
-      {/* Glowing orb */}
-      <div
-        aria-hidden
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] rounded-full pointer-events-none"
+        className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            "radial-gradient(circle, rgba(201,168,76,0.08) 0%, transparent 70%)",
-          filter: "blur(40px)",
+            "linear-gradient(160deg, rgba(20,14,6,0.55) 0%, rgba(30,20,8,0.45) 50%, rgba(15,10,4,0.6) 100%)",
         }}
       />
+
+      {/* Decorative thin gold lines */}
+      <div aria-hidden className="absolute top-0 left-0 right-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(201,168,76,0.5), transparent)" }} />
+      <div aria-hidden className="absolute bottom-0 left-0 right-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(201,168,76,0.3), transparent)" }} />
 
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
+
         {/* Overline */}
         <p
-          className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#c9a84c] uppercase mb-8 opacity-0 animate-[fadeInUp_0.8s_0.2s_ease_forwards]"
-          style={{ animationFillMode: "forwards" }}
+          className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.45em] text-[#e8c97a] uppercase mb-8 opacity-0"
+          style={{ animation: "fadeInUp 0.8s 0.2s ease forwards" }}
         >
-          Deutschlands führende Astrogeografie-Expertin
+          Deutschlands führende Astrogeografie &amp; Astrokartografie-Expertin
         </p>
 
         {/* Main Headline */}
         <h1
-          className="font-[family-name:var(--font-cormorant)] font-light text-5xl md:text-7xl lg:text-8xl leading-[1.1] text-[#f0ead6] mb-8 opacity-0"
+          className="font-[family-name:var(--font-cormorant)] font-light text-5xl md:text-7xl lg:text-8xl leading-[1.08] text-white mb-8 opacity-0"
           style={{ animation: "fadeInUp 0.9s 0.4s ease forwards" }}
         >
           Dein Leben beginnt
           <br />
-          <em className="gold-shimmer not-italic font-medium">
+          <em className="gold-shimmer not-italic font-semibold">
             am richtigen Ort.
           </em>
         </h1>
 
         {/* Subheadline */}
         <p
-          className="font-[family-name:var(--font-cormorant)] text-xl md:text-2xl text-[#9b8fa8] max-w-2xl mx-auto mb-12 leading-relaxed font-light opacity-0"
+          className="font-[family-name:var(--font-cormorant)] text-xl md:text-2xl text-[#e8e0d0] max-w-2xl mx-auto mb-12 leading-relaxed font-light opacity-0"
           style={{ animation: "fadeInUp 0.9s 0.6s ease forwards" }}
         >
-          Es gibt Orte auf dieser Erde, wo du leichter liebst, klarer denkst
-          und erfolgreicher wirst. Ich zeige dir, wo diese Orte sind — in
-          deiner ganz persönlichen Sternenkarte.
+          Astrogeografie · Astrokartografie · Astrocartography — es gibt Orte
+          auf dieser Erde, wo du leichter liebst, klarer denkst und
+          erfolgreicher wirst. Ich zeige dir, wo diese Orte sind.
         </p>
 
         {/* CTAs */}
@@ -158,7 +95,7 @@ export default function Hero() {
               <p className="font-[family-name:var(--font-cormorant)] text-3xl md:text-4xl font-semibold text-[#c9a84c]">
                 {stat.number}
               </p>
-              <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#9b8fa8] uppercase mt-1">
+              <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#c8bfb0] uppercase mt-1">
                 {stat.label}
               </p>
             </div>
