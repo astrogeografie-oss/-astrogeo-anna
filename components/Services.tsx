@@ -52,11 +52,25 @@ const mainServices = [
 
 const additionalServices = [
   {
-    icon: <Clock size={18} />,
-    name: "Orientierungs-Call",
-    desc: "Kostenlos · 30 Min. — Wir schauen, ob die Chemie stimmt.",
-    url: "https://calendly.com/astrogeo/orientierungs-call",
-    free: true,
+    icon: <Compass size={18} />,
+    name: "Mini-Kurs Cosmic Coordinates",
+    desc: "Dein Wegweiser zum Wohlfühlort — Azimuth, Häuser & die 10 Planeten der Astrokartographie.",
+    url: "https://astrogeoanna.thrivecart.com/cosmic-coordinates-2026/",
+    free: false,
+  },
+  {
+    icon: <Map size={18} />,
+    name: "Mini-Kurs Raumastrologie",
+    desc: "Lerne, wie astrologische Energien Räume prägen — und wie du bewusst mit ihnen lebst.",
+    url: "https://astrogeoanna.thrivecart.com/die-folie-die-dein-leben-vereandert/",
+    free: false,
+  },
+  {
+    icon: <BookOpen size={18} />,
+    name: "Astro-Code – Das Buch",
+    desc: "Deine Seele hat ein GPS. Zeit, es endlich zu aktivieren. Das Buch zur Astrokartographie von Anna Thoma.",
+    url: "https://publishde.bookmundo.com/books/22022143",
+    free: false,
   },
   {
     icon: <Star size={18} />,
@@ -81,13 +95,6 @@ const additionalServices = [
   },
   {
     icon: <Star size={18} />,
-    name: "Progression Chart",
-    desc: "30 Min. — Deine innere Seelenentwicklung im Zeitverlauf.",
-    url: "https://calendly.com/astrogeo/porgessions-chart",
-    free: false,
-  },
-  {
-    icon: <Star size={18} />,
     name: "Kipperkarten Reading",
     desc: "45 Min. — Klarheit in Liebe, Beruf & persönlicher Entwicklung.",
     url: "https://calendly.com/astrogeo/kipperkarten-reading-grosse-tafel-klon",
@@ -101,6 +108,13 @@ const additionalServices = [
     free: false,
   },
   {
+    icon: <Star size={18} />,
+    name: "Progression Chart",
+    desc: "30 Min. — Deine innere Seelenentwicklung im Zeitverlauf.",
+    url: "https://calendly.com/astrogeo/porgessions-chart",
+    free: false,
+  },
+  {
     icon: <Gift size={18} />,
     name: "Gutschein",
     desc: "Für alle Angebote — das perfekte Geschenk. Dauerhaft gültig.",
@@ -108,25 +122,11 @@ const additionalServices = [
     free: false,
   },
   {
-    icon: <Map size={18} />,
-    name: "Mini-Kurs Raumastrologie",
-    desc: "Lerne, wie astrologische Energien Räume prägen — und wie du bewusst mit ihnen lebst.",
-    url: "https://astrogeoanna.thrivecart.com/die-folie-die-dein-leben-vereandert/",
-    free: false,
-  },
-  {
-    icon: <Compass size={18} />,
-    name: "Mini-Kurs Cosmic Coordinates",
-    desc: "Dein Wegweiser zum Wohlfühlort — Azimuth, Häuser & die 10 Planeten der Astrokartographie.",
-    url: "https://astrogeoanna.thrivecart.com/cosmic-coordinates-2026/",
-    free: false,
-  },
-  {
-    icon: <BookOpen size={18} />,
-    name: "Astro-Code – Das Buch",
-    desc: "Deine Seele hat ein GPS. Zeit, es endlich zu aktivieren. Das Buch zur Astrokartographie von Anna Thoma.",
-    url: "https://publishde.bookmundo.com/books/22022143",
-    free: false,
+    icon: <Clock size={18} />,
+    name: "Orientierungs-Call",
+    desc: "Kostenlos · 30 Min. — Wir schauen, ob die Chemie stimmt.",
+    url: "https://calendly.com/astrogeo/orientierungs-call",
+    free: true,
   },
 ];
 
