@@ -1,6 +1,6 @@
 "use client";
 
-import { Check, Globe, Star, Users, Clock, Gift, Calendar, BookOpen, Compass, Map } from "lucide-react";
+import { Check, Globe, Star, Users, Clock, Gift, Calendar, BookOpen, Compass, Map, Euro } from "lucide-react";
 
 const mainServices = [
   {
@@ -9,7 +9,12 @@ const mainServices = [
     icon: <Globe size={32} />,
     name: "Astrogeografie (Orts-Horoskop)",
     tagline: "Astrokartografie · Astrocartography · Orts-Horoskop",
-    duration: "120 Min. · Zoom",
+    duration: "120 Min.",
+    format: "Zoom",
+    // TODO: Preis eintragen, z. B. "297 €"
+    price: "",
+    outcome:
+      "Du weißt danach genau, welche Orte der Welt dich in Liebe, Karriere oder innerem Ausgleich wirklich tragen.",
     description:
       "Astrogeografie (Astrokartografie / Astrocartography) verbindet dein persönliches Horoskop (Radix) mit einer Weltkarte — und zeigt dir, welche Orte auf der Erde ideal für Liebe, Karriere oder inneren Ausgleich sind.",
     includes: [
@@ -23,7 +28,7 @@ const mainServices = [
     ],
     highlight: true,
     url: "https://calendly.com/astrogeo/60",
-    cta: "Jetzt buchen",
+    cta: "Session buchen",
     note: "Benötigt: genaues Geburtsdatum, Uhrzeit & Geburtsort",
   },
   {
@@ -32,7 +37,12 @@ const mainServices = [
     icon: <Users size={32} />,
     name: "Astrogeografie für Paare",
     tagline: "Euer gemeinsamer Traumort auf der Erde",
-    duration: "120 Min. · Zoom",
+    duration: "120 Min.",
+    format: "Zoom",
+    // TODO: Preis eintragen, z. B. "397 €"
+    price: "",
+    outcome:
+      "Ihr kennt danach euren gemeinsamen Kraftort — und versteht, was eure Beziehung wirklich trägt.",
     description:
       "Astrogeografie berechnet den idealen Traumort für Paare, die ins Ausland ziehen möchten — mit Blick auf Beziehungsdynamik, seelische Verbundenheit und Entwicklungspotenziale.",
     includes: [
@@ -54,77 +64,105 @@ const additionalServices = [
   {
     icon: <Clock size={18} />,
     name: "Orientierungs-Call",
-    desc: "Kostenlos · 30 Min. — Wir schauen, ob die Chemie stimmt.",
+    duration: "30 Min.",
+    outcome: "Wir schauen gemeinsam, ob die Chemie stimmt.",
+    price: "Kostenlos",
     url: "https://calendly.com/astrogeo/orientierungs-call",
     free: true,
   },
   {
     icon: <Star size={18} />,
     name: "Frag Anna – Astro-Session",
-    desc: "30 Min. — Alle deine Fragen zu Astrogeografie, gezielt & auf den Punkt.",
+    duration: "30 Min.",
+    outcome: "Gezielte Antworten auf deine Fragen zur Astrogeografie.",
+    // TODO: Preis eintragen
+    price: "",
     url: "https://calendly.com/astrogeo/frag-anna-deine-personliche-astro-session",
     free: false,
   },
   {
     icon: <Calendar size={18} />,
     name: "Follow-Up Session",
-    desc: "45 Min. — Für bestehende Klientinnen: aktuelle Themen & neue Zyklen.",
+    duration: "45 Min.",
+    outcome: "Aktuelle Themen & neue Zyklen — für bestehende Klientinnen.",
+    // TODO: Preis eintragen
+    price: "",
     url: "https://calendly.com/astrogeo/astrogeo-follow-up",
     free: false,
   },
   {
     icon: <Star size={18} />,
     name: "Birthday Astrogeo",
-    desc: "30 Min. — Finde den perfekten Geburtstags-Ort für dein nächstes Solarjahr.",
+    duration: "30 Min.",
+    outcome: "Dein perfekter Geburtstags-Ort für das kommende Solarjahr.",
+    // TODO: Preis eintragen
+    price: "",
     url: "https://calendly.com/astrogeo/birthday-astrogeo",
     free: false,
   },
   {
     icon: <Star size={18} />,
     name: "Progression Chart",
-    desc: "30 Min. — Deine innere Seelenentwicklung im Zeitverlauf.",
+    duration: "30 Min.",
+    outcome: "Deine innere Seelenentwicklung im Zeitverlauf sichtbar gemacht.",
+    // TODO: Preis eintragen
+    price: "",
     url: "https://calendly.com/astrogeo/porgessions-chart",
     free: false,
   },
   {
     icon: <Star size={18} />,
     name: "Kipperkarten Reading",
-    desc: "45 Min. — Klarheit in Liebe, Beruf & persönlicher Entwicklung.",
+    duration: "45 Min.",
+    outcome: "Klarheit in Liebe, Beruf & persönlicher Entwicklung.",
+    // TODO: Preis eintragen
+    price: "",
     url: "https://calendly.com/astrogeo/kipperkarten-reading-grosse-tafel-klon",
     free: false,
   },
   {
     icon: <Star size={18} />,
     name: "Skatkarten Orakel",
-    desc: "30 Min. — Vergangenheit, Gegenwart & Zukunft mit empathischer Führung.",
+    duration: "30 Min.",
+    outcome: "Vergangenheit, Gegenwart & Zukunft mit empathischer Führung.",
+    // TODO: Preis eintragen
+    price: "",
     url: "https://calendly.com/astrogeo/skatkarten",
     free: false,
   },
   {
     icon: <Gift size={18} />,
     name: "Gutschein",
-    desc: "Für alle Angebote — das perfekte Geschenk. Dauerhaft gültig.",
+    duration: "",
+    outcome: "Für alle Angebote — das perfekte Geschenk. Dauerhaft gültig.",
+    price: "",
     url: "https://calendly.com/astrogeo/gutschein",
     free: false,
   },
   {
     icon: <Map size={18} />,
     name: "Mini-Kurs Raumastrologie",
-    desc: "Lerne, wie astrologische Energien Räume prägen — und wie du bewusst mit ihnen lebst.",
+    duration: "",
+    outcome: "Lerne, wie astrologische Energien Räume prägen — und wie du bewusst mit ihnen lebst.",
+    price: "",
     url: "https://astrogeoanna.thrivecart.com/die-folie-die-dein-leben-vereandert/",
     free: false,
   },
   {
     icon: <Compass size={18} />,
     name: "Mini-Kurs Cosmic Coordinates",
-    desc: "Dein Wegweiser zum Wohlfühlort — Azimuth, Häuser & die 10 Planeten der Astrogeografie.",
+    duration: "",
+    outcome: "Dein Wegweiser zum Wohlfühlort — Azimuth, Häuser & die 10 Planeten der Astrogeografie.",
+    price: "",
     url: "https://astrogeoanna.thrivecart.com/cosmic-coordinates-2026/",
     free: false,
   },
   {
     icon: <BookOpen size={18} />,
     name: "Astro-Code – Das Buch",
-    desc: "Deine Seele hat ein GPS. Zeit, es endlich zu aktivieren. Das Buch zur Astrogeografie von Anna Thoma.",
+    duration: "",
+    outcome: "Deine Seele hat ein GPS. Zeit, es endlich zu aktivieren.",
+    price: "",
     url: "https://publishde.bookmundo.com/books/22022143",
     free: false,
   },
@@ -135,10 +173,7 @@ export default function Services() {
     <section
       id="angebote"
       className="relative py-32 overflow-hidden"
-      style={{
-        background:
-          "none",
-      }}
+      style={{ background: "none" }}
     >
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
@@ -198,14 +233,54 @@ export default function Services() {
                 <h3 className="font-[family-name:var(--font-cormorant)] text-3xl font-medium text-[#2c2010] mb-2">
                   {service.name}
                 </h3>
-                <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#7a6a58] uppercase mb-2">
+                <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#7a6a58] uppercase mb-5">
                   {service.tagline}
                 </p>
-                <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.1em] text-[#c9a84c] mb-6">
-                  {service.duration}
+
+                {/* Meta: Dauer · Format · Preis */}
+                <div className="flex flex-wrap items-center gap-3 mb-6">
+                  <span
+                    className="inline-flex items-center gap-1.5 font-[family-name:var(--font-montserrat)] text-xs tracking-[0.08em] px-3 py-1.5 rounded-full"
+                    style={{
+                      background: "rgba(201,168,76,0.12)",
+                      border: "1px solid rgba(201,168,76,0.25)",
+                      color: "#7a5c18",
+                    }}
+                  >
+                    <Clock size={11} />
+                    {service.duration}
+                  </span>
+                  <span
+                    className="inline-flex items-center gap-1.5 font-[family-name:var(--font-montserrat)] text-xs tracking-[0.08em] px-3 py-1.5 rounded-full"
+                    style={{
+                      background: "rgba(201,168,76,0.08)",
+                      border: "1px solid rgba(201,168,76,0.15)",
+                      color: "#7a6a58",
+                    }}
+                  >
+                    {service.format}
+                  </span>
+                  {service.price && (
+                    <span
+                      className="inline-flex items-center gap-1 font-[family-name:var(--font-montserrat)] text-xs font-semibold tracking-[0.08em] px-3 py-1.5 rounded-full"
+                      style={{
+                        background: "rgba(201,168,76,0.18)",
+                        border: "1px solid rgba(201,168,76,0.35)",
+                        color: "#7a5c18",
+                      }}
+                    >
+                      <Euro size={11} />
+                      {service.price}
+                    </span>
+                  )}
+                </div>
+
+                {/* Outcome — was du bekommst */}
+                <p className="font-[family-name:var(--font-cormorant)] text-xl font-medium text-[#2c2010] leading-snug mb-5 italic">
+                  „{service.outcome}"
                 </p>
 
-                <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#7a6a58] font-light leading-relaxed mb-8">
+                <p className="font-[family-name:var(--font-cormorant)] text-base text-[#7a6a58] font-light leading-relaxed mb-8">
                   {service.description}
                 </p>
 
@@ -230,7 +305,7 @@ export default function Services() {
                     service.highlight ? "btn-gold" : "btn-outline-gold"
                   }`}
                 >
-                  {service.cta}
+                  {service.cta} · {service.duration}
                 </a>
 
                 <p className="text-center font-[family-name:var(--font-montserrat)] text-xs text-[#7a6a58] mt-3 tracking-wider">
@@ -253,7 +328,7 @@ export default function Services() {
                 href={s.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="card-cosmic rounded-sm p-6 hover:border-[rgba(201,168,76,0.3)] transition-all duration-300 hover:-translate-y-1 group"
+                className="card-cosmic rounded-sm p-6 hover:border-[rgba(201,168,76,0.3)] transition-all duration-300 hover:-translate-y-1 group flex flex-col"
               >
                 <div className="flex items-center gap-2 mb-3">
                   <span className="text-[#c9a84c]">{s.icon}</span>
@@ -263,11 +338,26 @@ export default function Services() {
                     </span>
                   )}
                 </div>
-                <h4 className="font-[family-name:var(--font-cormorant)] text-lg font-medium text-[#2c2010] mb-2 group-hover:text-[#c9a84c] transition-colors">
+                <h4 className="font-[family-name:var(--font-cormorant)] text-lg font-medium text-[#2c2010] mb-1 group-hover:text-[#c9a84c] transition-colors">
                   {s.name}
                 </h4>
-                <p className="font-[family-name:var(--font-cormorant)] text-sm text-[#7a6a58] font-light leading-snug">
-                  {s.desc}
+                {/* Dauer + Preis */}
+                {(s.duration || s.price) && (
+                  <div className="flex flex-wrap gap-2 mb-2">
+                    {s.duration && (
+                      <span className="font-[family-name:var(--font-montserrat)] text-[10px] tracking-[0.08em] text-[#c9a84c]">
+                        {s.duration}
+                      </span>
+                    )}
+                    {s.price && (
+                      <span className="font-[family-name:var(--font-montserrat)] text-[10px] tracking-[0.08em] font-semibold text-[#7a5c18]">
+                        · {s.price}
+                      </span>
+                    )}
+                  </div>
+                )}
+                <p className="font-[family-name:var(--font-cormorant)] text-sm text-[#7a6a58] font-light leading-snug mt-auto">
+                  {s.outcome}
                 </p>
               </a>
             ))}
