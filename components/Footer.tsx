@@ -26,7 +26,7 @@ export default function Footer() {
               ANNA<span className="text-[#c9a84c] mx-1">·</span>ASTROGEOGRAFIE
             </p>
             <p className="font-[family-name:var(--font-cormorant)] text-base text-[#7a6a58] font-light leading-relaxed mb-6">
-              Deutschlands führende Expertin für Astrogeografie, Astrokartografie &amp; Astrocartography.
+              Deutschlands führende Astrokartographie-Expertin.
               Dein Leben beginnt am richtigen Ort.
             </p>
             <a
