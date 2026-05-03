@@ -83,8 +83,8 @@ export default function About() {
                 Welcher Ort passt zu mir?
               </p>
               <p>
-                Die Antwort fand ich in der Astrokartographie. Diese Methode verbindet dein
-                persönliches Horoskop mit einer Weltkarte und zeigt, wo auf
+                Die Antwort fand ich in der Astrocartography — sie verbindet
+                dein persönliches Horoskop mit einer Weltkarte und zeigt, wo auf
                 der Erde deine planetaren Energien wirken: für Liebe, Karriere,
                 inneren Ausgleich oder neue Kapitel.
               </p>
