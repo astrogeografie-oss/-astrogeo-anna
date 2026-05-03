@@ -37,7 +37,7 @@ export default function BookingCTA() {
           Orientierungs-Call. Ich freue mich auf dich.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-4">
           <a
             href="https://calendly.com/astrogeo/orientierungs-call"
             target="_blank"
@@ -45,18 +45,22 @@ export default function BookingCTA() {
             className="btn-gold inline-flex items-center justify-center gap-3 px-10 py-5 text-sm font-[family-name:var(--font-montserrat)] tracking-[0.15em] rounded-sm"
           >
             <Calendar size={16} />
-            Kostenloser Orientierungs-Call
+            Orientierungs-Call buchen · 30 Min. kostenlos
           </a>
           <a
-            href="https://calendly.com/astrogeo"
+            href="https://calendly.com/astrogeo/60"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-outline-gold inline-flex items-center justify-center gap-3 px-10 py-5 text-sm font-[family-name:var(--font-montserrat)] tracking-[0.15em] rounded-sm"
           >
-            Alle Termine ansehen
+            Astrogeografie-Session · 120 Min.
             <ArrowRight size={16} />
           </a>
         </div>
+
+        <p className="font-[family-name:var(--font-cormorant)] text-base text-[#7a6a58] font-light mb-10">
+          Noch unsicher? Im Orientierungs-Call besprechen wir, welches Angebot wirklich zu dir passt.
+        </p>
 
         <div className="mb-16">
           <a
