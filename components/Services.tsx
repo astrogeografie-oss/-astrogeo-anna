@@ -4,6 +4,28 @@ import { Check, Globe, Star, Users, Clock, Gift, Calendar, BookOpen, Compass, Ma
 
 const mainServices = [
   {
+    id: "paare",
+    badge: "Für Paare",
+    icon: <Users size={32} />,
+    name: "Astrogeografie für Paare",
+    tagline: "Euer gemeinsamer Traumort auf der Erde",
+    duration: "120 Min. · Zoom",
+    description:
+      "Berechnet den idealen Traumort für Paare, die ins Ausland ziehen möchten — mit Blick auf Beziehungsdynamik, seelische Verbundenheit und Entwicklungspotenziale.",
+    includes: [
+      "Gesamteindruck der Beziehung & worum es euch wirklich geht",
+      "Seelische Verbundenheit: was euch zusammengeführt hat",
+      "Entwicklungs- & Konfliktpotenziale erkennen",
+      "Gemeinsame Astrokartografie (Astrocartography) für beide Geburtsmomente",
+      "Top-Empfehlungen für euren gemeinsamen Wohnort",
+      "Viele Unterlagen, Screenshots & Aufzeichnung",
+    ],
+    highlight: false,
+    url: "https://calendly.com/astrogeo/astrogeografie-fur-paare",
+    cta: "Als Paar buchen",
+    note: "Beide Geburtszeiten & -orte notwendig",
+  },
+  {
     id: "orts-horoskop",
     badge: "Flagship",
     icon: <Globe size={32} />,
@@ -11,7 +33,7 @@ const mainServices = [
     tagline: "Astrokartografie · Astrocartography · Orts-Horoskop",
     duration: "120 Min. · Zoom",
     description:
-      "Astrogeografie (Astrokartografie / Astrocartography) verbindet dein persönliches Horoskop (Radix) mit einer Weltkarte — und zeigt dir, welche Orte auf der Erde ideal für Liebe, Karriere oder inneren Ausgleich sind.",
+      "Verbindet dein persönliches Horoskop (Radix) mit einer Weltkarte — und zeigt dir, welche Orte auf der Erde ideal für Liebe, Karriere oder inneren Ausgleich sind.",
     includes: [
       "Einführung in die Astrogeografie & Planeten-Erklärungen (PDF)",
       "Analyse: Seelenformel, Best Planet, Mondknoten, Chiron, Human Design",
@@ -26,42 +48,13 @@ const mainServices = [
     cta: "Jetzt buchen",
     note: "Benötigt: genaues Geburtsdatum, Uhrzeit & Geburtsort",
   },
-  {
-    id: "paare",
-    badge: "Für Paare",
-    icon: <Users size={32} />,
-    name: "Astrogeografie für Paare",
-    tagline: "Euer gemeinsamer Traumort auf der Erde",
-    duration: "120 Min. · Zoom",
-    description:
-      "Astrogeografie berechnet den idealen Traumort für Paare, die ins Ausland ziehen möchten — mit Blick auf Beziehungsdynamik, seelische Verbundenheit und Entwicklungspotenziale.",
-    includes: [
-      "Gesamteindruck der Beziehung & worum es euch wirklich geht",
-      "Seelische Verbundenheit: was euch zusammengeführt hat",
-      "Entwicklungs- & Konfliktpotenziale erkennen",
-      "Gemeinsame Astrokartografie (Astrocartography) für beide Geburtsmomente",
-      "Top-Empfehlungen für euren gemeinsamen Wohnort",
-      "Viele Unterlagen, Screenshots & Aufzeichnung",
-    ],
-    highlight: false,
-    url: "https://calendly.com/astrogeo/astrogeografie-fur-paare",
-    cta: "Als Paar buchen",
-    note: "Beide Geburtszeiten & -orte notwendig",
-  },
 ];
 
 const additionalServices = [
   {
-    icon: <Clock size={18} />,
-    name: "Orientierungs-Call",
-    desc: "Kostenlos · 30 Min. — Wir schauen, ob die Chemie stimmt.",
-    url: "https://calendly.com/astrogeo/orientierungs-call",
-    free: true,
-  },
-  {
     icon: <Star size={18} />,
     name: "Frag Anna – Astro-Session",
-    desc: "30 Min. — Alle deine Fragen zu Astrogeografie, gezielt & auf den Punkt.",
+    desc: "30 Min. — Gezielt & auf den Punkt: deine persönlichen Fragen, klar beantwortet.",
     url: "https://calendly.com/astrogeo/frag-anna-deine-personliche-astro-session",
     free: false,
   },
@@ -127,6 +120,13 @@ const additionalServices = [
     desc: "Deine Seele hat ein GPS. Zeit, es endlich zu aktivieren. Das Buch zur Astrogeografie von Anna Thoma.",
     url: "https://publishde.bookmundo.com/books/22022143",
     free: false,
+  },
+  {
+    icon: <Clock size={18} />,
+    name: "Orientierungs-Call",
+    desc: "Kostenlos · 30 Min. — Wir schauen, ob die Chemie stimmt.",
+    url: "https://calendly.com/astrogeo/orientierungs-call",
+    free: true,
   },
 ];
 
