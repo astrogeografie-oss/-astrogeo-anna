@@ -5,12 +5,8 @@ import { Plus, Minus } from "lucide-react";
 
 const faqs = [
   {
-    q: "Was genau ist Astrogeografie?",
-    a: "Astrogeografie (auch Astrokartografie oder Astrocartography genannt) ist eine Methode der Astrologie, die deinen Geburtsmoment auf eine Weltkarte überträgt. Bestimmte Planetenenergien wirken an bestimmten Orten besonders stark — manche Orte unterstützen dich in Liebe, andere in Karriere, Kreativität oder Heilung. Die Methode wurde in den 1970er Jahren von Jim Lewis entwickelt und ist heute weltweit bekannt.",
-  },
-  {
-    q: "Was ist der Unterschied zwischen Astrogeografie, Astrokartografie und Astrocartography?",
-    a: "Alle drei Begriffe meinen dasselbe: die Kunst, dein persönliches Horoskop auf eine Weltkarte zu übertragen. 'Astrokartografie' und 'Astrogeografie' sind die deutschen Bezeichnungen, 'Astrocartography' der englische Fachbegriff, der sich international etabliert hat. In meiner Arbeit verwende ich alle drei — inhaltlich gibt es keinen Unterschied.",
+    q: "Was genau ist Astrokartographie?",
+    a: "Astrokartographie ist eine Methode der Astrologie, die deinen Geburtsmoment auf eine Weltkarte überträgt. Bestimmte Planetenenergien wirken an bestimmten Orten besonders stark — manche Orte unterstützen dich in Liebe, andere in Karriere, Kreativität oder Heilung. Die Methode wurde in den 1970er Jahren von Jim Lewis entwickelt und ist heute weltweit bekannt.",
   },
   {
     q: "Muss ich mich mit Astrologie auskennen?",
@@ -22,7 +18,7 @@ const faqs = [
   },
   {
     q: "Heißt das, ich muss umziehen?",
-    a: "Nein. Astrogeografie zeigt dir Optionen — keine Verpflichtungen. Manchmal reicht eine bewusste Reise an einen bestimmten Ort. Manchmal hilft es einfach zu wissen, welche Orte dir Energie geben und welche sie dir nehmen. Und manchmal führt die Erkenntnis zu einem Umzug. Das ist deine Entscheidung.",
+    a: "Nein. Astrokartographie zeigt dir Optionen — keine Verpflichtungen. Manchmal reicht eine bewusste Reise an einen bestimmten Ort. Manchmal hilft es einfach zu wissen, welche Orte dir Energie geben und welche sie dir nehmen. Und manchmal führt die Erkenntnis zu einem Umzug. Das ist deine Entscheidung.",
   },
   {
     q: "Was passiert, wenn mein Kraftort weit weg ist?",
@@ -37,12 +33,12 @@ const faqs = [
     a: "Cosmic Coordinates fokussiert sich auf die Geografie: Welche Orte der Erde unterstützen welche Lebensbereiche bei dir? Das astrologische Reading fokussiert sich auf deinen inneren Kosmos: Wer bist du astrologisch, welche Themen prägen dich, was steht aktuell an? Beide Angebote ergänzen sich wunderbar.",
   },
   {
-    q: "Was sind Parans in der Astrokartografie?",
-    a: "Parans entstehen, wenn sich zwei ACG-Linien (Astrocartography-Linien) auf der Weltkarte kreuzen. An diesen Kreuzungspunkten überlagern sich zwei Planetenenergien gleichzeitig — das macht sie zu besonders kraftvollen und bedeutsamen Orten. Parans gehören zur klassischen Astrocartography-Analyse und sind ein zentraler Bestandteil jeder Astrogeografie-Session.",
+    q: "Was sind Parans in der Astrokartographie?",
+    a: "Parans entstehen, wenn sich zwei ACG-Linien auf der Weltkarte kreuzen. An diesen Kreuzungspunkten überlagern sich zwei Planetenenergien gleichzeitig — das macht sie zu besonders kraftvollen und bedeutsamen Orten. Parans sind ein zentraler Bestandteil jeder Astrokartographie-Session.",
   },
   {
     q: "Was ist Raumastrologie und Local Space Astrology?",
-    a: "Raumastrologie (auch Local Space Astrology) ist eine eigenständige Methode — getrennt von der Astrocartography. Sie zeigt, wie planetare Energien deinen unmittelbaren Lebensraum prägen: deine Wohnung, deine Stadt, deine täglichen Wege. Während Astrogeografie weltweite Kraftorte analysiert, fokussiert sich die Raumastrologie auf deinen direkten Alltag.",
+    a: "Raumastrologie (auch Local Space Astrology) ist eine eigenständige Methode. Sie zeigt, wie planetare Energien deinen unmittelbaren Lebensraum prägen: deine Wohnung, deine Stadt, deine täglichen Wege. Während Astrokartographie weltweite Kraftorte analysiert, fokussiert sich die Raumastrologie auf deinen direkten Alltag.",
   },
   {
     q: "Gibt es eine Geld-zurück-Garantie?",

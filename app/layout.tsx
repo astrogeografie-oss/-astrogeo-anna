@@ -18,9 +18,9 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Astrogeografie & Astrokartografie mit Anna | Astrocartography Deutschland",
+  title: "Astrokartographie mit Anna | Deutschlands führende Expertin",
   description:
-    "Finde deinen Kraftort auf der Erde. Anna Thoma ist Deutschlands führende Expertin für Astrogeografie, Astrokartografie & Astrocartography. Entdecke, wo dein Leben aufblüht — durch präzise astrologische Ortsanalyse & Cosmic Coordinates.",
+    "Finde deinen Kraftort auf der Erde. Anna Thoma ist Deutschlands führende Astrokartographie-Expertin. Entdecke, wo dein Leben aufblüht — durch präzise astrologische Ortsanalyse & Cosmic Coordinates.",
   keywords: [
     "Astrogeografie",
     "Astrokartografie",
@@ -54,19 +54,19 @@ export const metadata: Metadata = {
     canonical: "https://astrogeoanna.com",
   },
   openGraph: {
-    title: "Astrogeografie & Astrokartografie mit Anna | Astrocartography Deutschland",
+    title: "Astrokartographie mit Anna | Deutschlands führende Expertin",
     description:
-      "Finde den Ort, wo dein Leben aufblüht. Deutschlands führende Expertin für Astrogeografie, Astrokartografie & Astrocartography.",
+      "Finde den Ort, wo dein Leben aufblüht. Deutschlands führende Astrokartographie-Expertin.",
     type: "website",
     locale: "de_DE",
-    siteName: "Astrogeografie & Astrokartografie – Anna Thoma",
+    siteName: "Astrokartographie – Anna Thoma",
     url: "https://astrogeoanna.com",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Astrogeografie & Astrokartografie mit Anna",
+    title: "Astrokartographie mit Anna",
     description:
-      "Finde deinen Kraftort. Deutschlands führende Expertin für Astrogeografie, Astrokartografie & Astrocartography.",
+      "Finde deinen Kraftort. Deutschlands führende Astrokartographie-Expertin.",
   },
   robots: {
     index: true,

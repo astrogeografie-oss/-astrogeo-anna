@@ -5,14 +5,14 @@ const steps = [
     number: "01",
     title: "Buchung & Vorbereitung",
     description:
-      "Du buchst deine Session online und gibst mir deinen genauen Geburtsmoment (Datum, Uhrzeit, Ort). Ich erstelle im Voraus deine persönliche Astrokartografie-Karte und Geburtschart-Analyse.",
+      "Du buchst deine Session online und gibst mir deinen genauen Geburtsmoment (Datum, Uhrzeit, Ort). Ich erstelle im Voraus deine persönliche Astrokartographie-Karte und Geburtschart-Analyse.",
     detail: "Keine Vorkenntnisse in Astrologie nötig.",
   },
   {
     number: "02",
     title: "Unsere gemeinsame Session",
     description:
-      "Wir treffen uns per Zoom für 60–90 Minuten. Ich führe dich durch deine Astrogeografie-Karte, erkläre die Energien der verschiedenen Weltregionen und beantworte all deine Fragen.",
+      "Wir treffen uns per Zoom für 60–90 Minuten. Ich führe dich durch deine Astrokartographie-Karte, erkläre die Energien der verschiedenen Weltregionen und beantworte all deine Fragen.",
     detail: "Die Session wird aufgezeichnet — damit du sie immer wieder ansehen kannst.",
   },
   {
