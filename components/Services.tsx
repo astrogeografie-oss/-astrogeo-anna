@@ -50,6 +50,21 @@ const paarReading = {
   note: "Beide Geburtszeiten & -orte notwendig",
 };
 
+const akademie = {
+  icon: <GraduationCap size={32} />,
+  name: "Die Akademie",
+  tagline: "Nächster Schritt · Online-Akademie · Selbststudium",
+  badge: "Upsell aus Cosmic Coordinates",
+  desc: "Du hast Cosmic Coordinates gemacht und weißt, wie du Standort-Astrologie liest? Jetzt geht es tiefer: In der Akademie lernst du die ACG-Linien (Astrocartography) — das globale Pendant zu Local Space — und so vieles mehr. Deine Karte, deine Welt.",
+  url: "https://astrogeoanna.thrivecart.com/the-place-to-be-special-offer-copy-2/",
+  includes: [
+    "ACG-Linien: Astrocartography auf der Weltkarte",
+    "Planeten-Linien deuten & anwenden",
+    "Von Local Space zu globalem Kraftort",
+    "Und so vieles mehr …",
+  ],
+};
+
 const miniKurse = [
   {
     icon: <Compass size={24} />,
@@ -312,7 +327,68 @@ export default function Services() {
           </div>
         </div>
 
-        {/* 4. Ausbildung – Planetary Pathway */}
+        {/* 4. Akademie – Upsell aus Cosmic Coordinates */}
+        <div className="max-w-5xl mx-auto mb-16">
+          <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.3em] text-[#b8922e] uppercase text-center mb-10">
+            Nächster Schritt · Akademie
+          </p>
+          <a
+            href={akademie.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group block rounded-sm p-8 md:p-10 hover:-translate-y-1 transition-all duration-300 glow-gold"
+            style={{
+              background: "linear-gradient(145deg, #fffdf9, #f5efe4)",
+              border: "1px solid rgba(184,146,46,0.4)",
+            }}
+          >
+            <div className="flex flex-col md:flex-row md:items-start gap-6">
+              <div className="text-[#b8922e] flex-shrink-0">
+                {akademie.icon}
+              </div>
+              <div className="flex-1">
+                <div className="flex flex-wrap items-start justify-between gap-4 mb-3">
+                  <div>
+                    <h3 className="font-[family-name:var(--font-cormorant)] text-3xl font-medium text-[#2c2010] mb-1 group-hover:text-[#b8922e] transition-colors">
+                      {akademie.name}
+                    </h3>
+                    <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#b8922e] uppercase">
+                      {akademie.tagline}
+                    </p>
+                  </div>
+                  <span
+                    className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.2em] uppercase px-3 py-1 rounded-full flex-shrink-0"
+                    style={{
+                      background: "rgba(184,146,46,0.2)",
+                      border: "1px solid rgba(184,146,46,0.3)",
+                      color: "#b8922e",
+                    }}
+                  >
+                    Nach Cosmic Coordinates
+                  </span>
+                </div>
+                <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#52402e] font-light leading-relaxed mb-6">
+                  {akademie.desc}
+                </p>
+                <ul className="space-y-2 mb-6">
+                  {akademie.includes.map((item) => (
+                    <li key={item} className="flex gap-3 items-start">
+                      <Check size={15} className="text-[#b8922e] mt-0.5 flex-shrink-0" />
+                      <span className="font-[family-name:var(--font-cormorant)] text-[#52402e] text-base font-light leading-snug">
+                        {item}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.12em] text-[#8a6420] uppercase group-hover:text-[#b8922e] transition-colors">
+                  Jetzt zur Akademie →
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        {/* 5. Ausbildung – Planetary Pathway */}
         <div className="max-w-5xl mx-auto mb-16">
           <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.3em] text-[#b8922e] uppercase text-center mb-10">
             Ausbildung · Für Astrologinnen & Astro-Kenner
