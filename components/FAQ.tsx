@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     q: "Was passiert, wenn mein Kraftort weit weg ist?",
-    a: "Das ist häufig der Fall und kein Problem. Kraftorte können für Urlaube, Arbeitsreisen oder als langfristiges Ziel dienen. Außerdem schauen wir uns immer auch deinen aktuellen Wohnort und wie du seine Energien optimal nutzen kannst.",
+    a: "Das ist häufig der Fall — und kein Problem. Kraftorte lassen sich als Reiseziel, für bewusste Arbeitsaufenthalte oder als langfristiges Umzugsziel nutzen. Dazu kommt: Im Reading verrate ich dir eine geheime Methode, mit der du verstehst, wie weit eine Linie wirklich wirkt — also wie groß der Orb ist, in dem du eine Planetenenergie bereits spürst. Das verändert alles. Und wenn du deinen Kraftort erst einmal nicht verlassen kannst, zeigt die Raumastrologie, wie du planetare Energien direkt in deinem Zuhause aktivierst — ganz ohne umzuziehen.",
   },
   {
     q: "Wie schnell bekomme ich einen Termin?",
