@@ -23,8 +23,8 @@ export default function Hero() {
       />
 
       {/* Decorative thin gold lines */}
-      <div aria-hidden className="absolute top-0 left-0 right-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(201,168,76,0.5), transparent)" }} />
-      <div aria-hidden className="absolute bottom-0 left-0 right-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(201,168,76,0.3), transparent)" }} />
+      <div aria-hidden className="absolute top-0 left-0 right-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(184,146,46,0.5), transparent)" }} />
+      <div aria-hidden className="absolute bottom-0 left-0 right-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(184,146,46,0.3), transparent)" }} />
 
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
@@ -92,7 +92,7 @@ export default function Hero() {
             { number: "30+", label: "Länder analysiert" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
-              <p className="font-[family-name:var(--font-cormorant)] text-3xl md:text-4xl font-semibold text-[#c9a84c]">
+              <p className="font-[family-name:var(--font-cormorant)] text-3xl md:text-4xl font-semibold text-[#b8922e]">
                 {stat.number}
               </p>
               <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#c8bfb0] uppercase mt-1">
@@ -106,7 +106,7 @@ export default function Hero() {
       {/* Scroll Indicator */}
       <a
         href="#ueber-mich"
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 text-[#c9a84c] opacity-50 hover:opacity-100 transition-opacity duration-300 animate-bounce"
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 text-[#b8922e] opacity-50 hover:opacity-100 transition-opacity duration-300 animate-bounce"
         aria-label="Nach unten scrollen"
       >
         <ChevronDown size={28} />
