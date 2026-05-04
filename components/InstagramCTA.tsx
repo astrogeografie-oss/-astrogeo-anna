@@ -1,6 +1,6 @@
 "use client";
 
-import { ExternalLink } from "lucide-react";
+import { Globe, Star, Map, Compass, ExternalLink } from "lucide-react";
 
 function InstagramIcon({ size = 16 }: { size?: number }) {
   return (
@@ -12,22 +12,22 @@ function InstagramIcon({ size = 16 }: { size?: number }) {
 
 const posts = [
   {
-    emoji: "🌍",
+    icon: <Globe size={22} />,
     label: "Kraftort-Analyse",
     caption: "Warum manche Orte dich erden — und andere dich leer zurücklassen.",
   },
   {
-    emoji: "✨",
+    icon: <Star size={22} />,
     label: "Planetenlinien",
     caption: "Venus, Jupiter, Sonne — welche Linie zieht dich an? Ein Deep Dive.",
   },
   {
-    emoji: "🗺️",
+    icon: <Map size={22} />,
     label: "Local Space",
     caption: "Deine Wohnung als astrologische Karte: Raumastrologie im Alltag.",
   },
   {
-    emoji: "🌙",
+    icon: <Compass size={22} />,
     label: "Parans & Kreuzungen",
     caption: "Wenn zwei Planetenlinien sich treffen — Orte mit doppelter Energie.",
   },
@@ -59,7 +59,7 @@ export default function InstagramCTA() {
               key={post.label}
               className="card-warm rounded-sm p-6 text-center"
             >
-              <div className="text-4xl mb-3">{post.emoji}</div>
+              <div className="text-[#b8922e] flex justify-center mb-4">{post.icon}</div>
               <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.1em] text-[#b8922e] uppercase mb-2">
                 {post.label}
               </p>
