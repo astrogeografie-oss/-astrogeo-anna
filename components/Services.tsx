@@ -54,8 +54,8 @@ const miniKurse = [
   {
     icon: <Compass size={24} />,
     name: "Mini-Kurs Cosmic Coordinates",
-    tagline: "Einstieg · Online-Kurs",
-    desc: "Dein Wegweiser zum Wohlfühlort — Azimuth, Häuser & die 10 Planeten der Astrokartographie.",
+    tagline: "Einstieg · Online-Kurs · Selbststudium",
+    desc: "Lerne Astrokartographie in deinem eigenen Tempo. Du verstehst Azimuth, Häuser & die 10 Planetenlinien — und kannst deine eigene Karte selbst lesen.",
     url: "https://astrogeoanna.thrivecart.com/cosmic-coordinates-2026/",
   },
   {
@@ -97,6 +97,7 @@ const additionalServices = [
     desc: "45 Min. — Für bestehende Klientinnen: aktuelle Themen & neue Zyklen.",
     url: "https://calendly.com/astrogeo/astrogeo-follow-up",
     free: false,
+    price: "197 €",
   },
   {
     icon: <Star size={18} />,
@@ -112,6 +113,7 @@ const additionalServices = [
     desc: "30 Min. — Dein Urlaubsspot, der wirklich zu deiner Energie passt.",
     url: "https://calendly.com/astrogeo/urlaubsplanung-2026-schon-ready",
     free: false,
+    price: "147 €",
   },
   {
     icon: <Star size={18} />,
@@ -119,6 +121,7 @@ const additionalServices = [
     desc: "30 Min. — Deine innere Seelenentwicklung im Zeitverlauf.",
     url: "https://calendly.com/astrogeo/porgessions-chart",
     free: false,
+    price: "147 €",
   },
   {
     icon: <Star size={18} />,
@@ -142,6 +145,7 @@ const additionalServices = [
     desc: "45 Min. — Einblick in die Seele, Talente & Entwicklung deines Kindes.",
     url: "https://calendly.com/astrogeo/kinder-horoskop",
     free: false,
+    price: "197 €",
   },
   {
     icon: <Sun size={18} />,
@@ -149,6 +153,7 @@ const additionalServices = [
     desc: "30 Min. — Alle Herausforderungen des kommenden Jahres mit Lösungs-Tipps.",
     url: "https://calendly.com/astrogeo/jahreslegung-mit-den-orakelkarten",
     free: false,
+    price: "97 €",
   },
   {
     icon: <Smartphone size={18} />,
