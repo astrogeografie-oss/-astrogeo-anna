@@ -30,7 +30,7 @@ const faqs = [
   },
   {
     q: "Was ist der Unterschied zwischen Cosmic Coordinates und dem astrologischen Reading?",
-    a: "Cosmic Coordinates fokussiert sich auf die Geografie: Welche Orte der Erde unterstützen welche Lebensbereiche bei dir? Das astrologische Reading fokussiert sich auf deinen inneren Kosmos: Wer bist du astrologisch, welche Themen prägen dich, was steht aktuell an? Beide Angebote ergänzen sich wunderbar.",
+    a: "Im Mini-Kurs Cosmic Coordinates lernst du alles selbst: die Grundlagen der Astrokartographie, die wichtigsten Planetenlinien und wie du deine eigene Karte liest — in deinem Tempo, eigenständig. Im persönlichen Reading gehen wir gemeinsam in den Deep Dive: Ich analysiere mit dir 7 verschiedene Linienarten, die im Kurs nicht behandelt werden — von Karma-Linien über Destiny-Crossings bis zu sensitiven Punkten. Das ist der Unterschied zwischen Wissen und echter Transformation.",
   },
   {
     q: "Was sind Parans in der Astrokartographie?",
