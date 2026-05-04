@@ -61,8 +61,8 @@ const miniKurse = [
   {
     icon: <Map size={24} />,
     name: "Mini-Kurs Raumastrologie",
-    tagline: "Einstieg · Online-Kurs",
-    desc: "Lerne, wie planetare Energien deinen Wohnraum prägen — und wie du sie bewusst aktivierst. Im Reading erfährst du außerdem Annas geheime Methode: wie weit Linien wirklich reichen und wie du den Orb einer Planetenenergie für dich nutzt.",
+    tagline: "Einstieg · Online-Kurs · Selbststudium",
+    desc: "Lerne selbst, wie du deine persönliche Astro-Folie erstellst und deine Wohnung auf Vordermann bringst — das Café am Merkur-Tisch für lebhafte Gespräche, den Zoom-Call auf der Jupiter-Linie für Erfolg. Dein Alltag, astrologisch optimiert.",
     url: "https://astrogeoanna.thrivecart.com/die-folie-die-dein-leben-vereandert/",
   },
 ];
