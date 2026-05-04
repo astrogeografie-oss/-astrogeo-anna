@@ -227,6 +227,38 @@ export default function JsonLd() {
               text: "Parans entstehen, wenn sich zwei Planetenlinien auf der Weltkarte kreuzen. An diesen Kreuzungspunkten überlagern sich zwei Planetenenergien gleichzeitig — das macht sie zu besonders kraftvollen und bedeutsamen Orten.",
             },
           },
+          {
+            "@type": "Question",
+            name: "Was bekomme ich nach dem Reading?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Du erhältst die vollständige Zoom-Aufzeichnung, alle Screenshots deiner astrogeografischen Karte sowie ein PDF mit Einführung und Planeten-Erklärungen — alles zum Nachschlagen und Vertiefen.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Wie bereite ich mich am besten auf das Reading vor?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Halte dein genaues Geburtsdatum, die Uhrzeit und den Geburtsort bereit — je präziser, desto besser die Analyse. Überlege außerdem, welche Lebensbereiche du besonders beleuchten möchtest: Liebe, Karriere, Neustart?",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Kann das Reading auch auf Englisch stattfinden?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Ja — Readings sind sowohl auf Deutsch als auch auf Englisch möglich. Beim Buchen einfach den englischsprachigen Termin wählen.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Lässt sich ein Reading auch verschenken?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Absolut. Du kannst einen Gutschein für jedes Angebot erwerben — einfach beim Buchen die Gutschein-Option wählen, die Person und den gewünschten Betrag angeben. Der Gutschein ist dauerhaft gültig.",
+            },
+          },
         ],
       },
     ],
