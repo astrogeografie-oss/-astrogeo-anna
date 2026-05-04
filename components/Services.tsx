@@ -1,6 +1,6 @@
 "use client";
 
-import { Check, Globe, Star, Users, Clock, Gift, Calendar, BookOpen, Compass, Map, Sun, Baby, Smartphone } from "lucide-react";
+import { Check, Globe, Star, Users, Clock, Gift, Calendar, BookOpen, Compass, Map, Sun, Smartphone } from "lucide-react";
 
 const flagship = {
   id: "orts-horoskop",
@@ -153,13 +153,6 @@ const additionalServices = [
     name: "Gutschein",
     desc: "Für alle Angebote — das perfekte Geschenk. Dauerhaft gültig.",
     url: "https://calendly.com/astrogeo/gutschein",
-    free: false,
-  },
-  {
-    icon: <Baby size={18} />,
-    name: "Kinder-Horoskop",
-    desc: "45 Min. — Einblick in die Seele, Talente & Entwicklung deines Kindes.",
-    url: "https://calendly.com/astrogeo/kinder-horoskop",
     free: false,
   },
   {
