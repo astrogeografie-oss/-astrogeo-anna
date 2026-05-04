@@ -76,21 +76,16 @@ const buch = {
 };
 
 const additionalServices = [
-  {
-    icon: <Clock size={18} />,
-    name: "Orientierungs-Call",
-    desc: "Kostenlos · 30 Min. — Wir schauen, ob die Chemie stimmt.",
-    url: "https://calendly.com/astrogeo/orientierungs-call",
-    free: true,
-  },
+  // 222 €
   {
     icon: <Star size={18} />,
-    name: "Frag Anna – Astro-Session",
-    desc: "30 Min. — Alle deine Fragen zur Astrokartographie, gezielt & auf den Punkt.",
-    url: "https://calendly.com/astrogeo/frag-anna-deine-personliche-astro-session",
+    name: "Birthday Astrogeo",
+    desc: "45 Min. — Finde den perfekten Geburtstags-Ort für dein nächstes Solarjahr.",
+    url: "https://calendly.com/astrogeo/birthday-astrogeo",
     free: false,
-    price: "147 €",
+    price: "222 €",
   },
+  // 197 €
   {
     icon: <Calendar size={18} />,
     name: "Follow-Up Session",
@@ -100,12 +95,21 @@ const additionalServices = [
     price: "197 €",
   },
   {
-    icon: <Star size={18} />,
-    name: "Birthday Astrogeo",
-    desc: "45 Min. — Finde den perfekten Geburtstags-Ort für dein nächstes Solarjahr.",
-    url: "https://calendly.com/astrogeo/birthday-astrogeo",
+    icon: <Baby size={18} />,
+    name: "Kinder-Horoskop",
+    desc: "45 Min. — Einblick in die Seele, Talente & Entwicklung deines Kindes.",
+    url: "https://calendly.com/astrogeo/kinder-horoskop",
     free: false,
-    price: "222 €",
+    price: "197 €",
+  },
+  // 147 €
+  {
+    icon: <Star size={18} />,
+    name: "Frag Anna – Astro-Session",
+    desc: "30 Min. — Alle deine Fragen zur Astrokartographie, gezielt & auf den Punkt.",
+    url: "https://calendly.com/astrogeo/frag-anna-deine-personliche-astro-session",
+    free: false,
+    price: "147 €",
   },
   {
     icon: <Star size={18} />,
@@ -123,6 +127,24 @@ const additionalServices = [
     free: false,
     price: "147 €",
   },
+  // 97 €
+  {
+    icon: <Smartphone size={18} />,
+    name: "Masterclass Astro Gold App",
+    desc: "iPhone · Lerne die App für deine persönliche Astrokartographie-Analyse.",
+    url: "https://astrogeoanna.thrivecart.com/astrogoldappiphone/",
+    free: false,
+    price: "97 €",
+  },
+  {
+    icon: <Sun size={18} />,
+    name: "Jahreslegung Orakelkarten",
+    desc: "30 Min. — Alle Herausforderungen des kommenden Jahres mit Lösungs-Tipps.",
+    url: "https://calendly.com/astrogeo/jahreslegung-mit-den-orakelkarten",
+    free: false,
+    price: "97 €",
+  },
+  // 47 €
   {
     icon: <Star size={18} />,
     name: "Kipperkarten Reading",
@@ -139,36 +161,20 @@ const additionalServices = [
     free: false,
     price: "47 €",
   },
-  {
-    icon: <Baby size={18} />,
-    name: "Kinder-Horoskop",
-    desc: "45 Min. — Einblick in die Seele, Talente & Entwicklung deines Kindes.",
-    url: "https://calendly.com/astrogeo/kinder-horoskop",
-    free: false,
-    price: "197 €",
-  },
-  {
-    icon: <Sun size={18} />,
-    name: "Jahreslegung Orakelkarten",
-    desc: "30 Min. — Alle Herausforderungen des kommenden Jahres mit Lösungs-Tipps.",
-    url: "https://calendly.com/astrogeo/jahreslegung-mit-den-orakelkarten",
-    free: false,
-    price: "97 €",
-  },
-  {
-    icon: <Smartphone size={18} />,
-    name: "Masterclass Astro Gold App",
-    desc: "iPhone · Lerne die App für deine persönliche Astrokartographie-Analyse.",
-    url: "https://astrogeoanna.thrivecart.com/astrogoldappiphone/",
-    free: false,
-    price: "97 €",
-  },
+  // Gutschein & kostenlos zuletzt
   {
     icon: <Gift size={18} />,
     name: "Gutschein",
     desc: "Für alle Angebote — das perfekte Geschenk. Dauerhaft gültig.",
     url: "https://calendly.com/astrogeo/gutschein",
     free: false,
+  },
+  {
+    icon: <Clock size={18} />,
+    name: "Orientierungs-Call",
+    desc: "Kostenlos · 30 Min. — Wir schauen, ob die Chemie stimmt.",
+    url: "https://calendly.com/astrogeo/orientierungs-call",
+    free: true,
   },
 ];
 
