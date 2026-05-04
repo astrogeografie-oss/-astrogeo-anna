@@ -55,7 +55,7 @@ const miniKurse = [
     icon: <Compass size={24} />,
     name: "Mini-Kurs Cosmic Coordinates",
     tagline: "Einstieg · Online-Kurs · Selbststudium",
-    desc: "Lerne Astrokartographie in deinem eigenen Tempo. Du verstehst Azimuth, Häuser & die 10 Planetenlinien — und kannst deine eigene Karte selbst lesen.",
+    desc: "Lerne Standort-Astrologie (Local Space) in deinem eigenen Tempo. Du verstehst Azimuth, Häuser & die 10 Planetenlinien — und kannst deine eigene Karte selbst lesen.",
     url: "https://astrogeoanna.thrivecart.com/cosmic-coordinates-2026/",
   },
   {
