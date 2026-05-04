@@ -65,9 +65,7 @@ export default function Hero() {
           style={{ animation: "fadeInUp 0.9s 0.8s ease forwards" }}
         >
           <a
-            href="https://calendly.com/astrogeo/orientierungs-call"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#buchen"
             className="btn-gold px-10 py-4 text-sm font-[family-name:var(--font-montserrat)] tracking-[0.2em] rounded-sm w-full sm:w-auto"
           >
             Meinen Kraftort entdecken

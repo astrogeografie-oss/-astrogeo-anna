@@ -33,8 +33,8 @@ export default function BookingCTA() {
         </h2>
 
         <p className="font-[family-name:var(--font-cormorant)] text-xl md:text-2xl text-[#52402e] font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-          Buch direkt deinen Wunschtermin — oder starte kostenlos mit einem
-          Orientierungs-Call. Ich freue mich auf dich.
+          Buch direkt deinen Wunschtermin — oder schreib mir eine Nachricht.
+          Ich freue mich auf dich.
         </p>
 
         <div className="inline-flex items-center gap-2 bg-[#fffdf9] border border-[rgba(184,146,46,0.4)] rounded-sm px-5 py-3 mb-10">
@@ -46,21 +46,19 @@ export default function BookingCTA() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
           <a
-            href="https://calendly.com/astrogeo/orientierungs-call"
+            href="https://calendly.com/astrogeo"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-gold inline-flex items-center justify-center gap-3 px-10 py-5 text-sm font-[family-name:var(--font-montserrat)] tracking-[0.15em] rounded-sm"
           >
             <Calendar size={16} />
-            Kostenloser Orientierungs-Call
+            Jetzt Termin buchen
           </a>
           <a
-            href="https://calendly.com/astrogeo"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="mailto:astrogeografie@gmail.com"
             className="btn-outline-gold inline-flex items-center justify-center gap-3 px-10 py-5 text-sm font-[family-name:var(--font-montserrat)] tracking-[0.15em] rounded-sm"
           >
-            Alle Termine ansehen
+            Frage stellen
             <ArrowRight size={16} />
           </a>
         </div>
@@ -78,9 +76,9 @@ export default function BookingCTA() {
         <div className="flex flex-wrap justify-center gap-8">
           {[
             "Antwort innerhalb 24h",
-            "Orientierungs-Call kostenlos",
             "Flexible Terminwahl",
             "Zoom · Deutsch & Englisch",
+            "Geld-zurück-Garantie",
           ].map((item) => (
             <div key={item} className="flex items-center gap-2">
               <div className="w-1 h-1 rounded-full bg-[#b8922e]" />

@@ -1,6 +1,6 @@
 "use client";
 
-import { Check, Globe, Star, Users, Clock, Gift, Calendar, BookOpen, Compass, Map, Sun, Smartphone, GraduationCap } from "lucide-react";
+import { Check, Globe, Star, Users, Gift, Calendar, BookOpen, Compass, Map, Sun, Smartphone, GraduationCap } from "lucide-react";
 
 const flagship = {
   id: "orts-horoskop",
@@ -146,13 +146,6 @@ const additionalServices = [
     desc: "Für alle Angebote — das perfekte Geschenk. Dauerhaft gültig.",
     url: "https://calendly.com/astrogeo/gutschein",
     free: false,
-  },
-  {
-    icon: <Clock size={18} />,
-    name: "Orientierungs-Call",
-    desc: "Kostenlos · 30 Min. — Wir schauen, ob die Chemie stimmt.",
-    url: "https://calendly.com/astrogeo/orientierungs-call",
-    free: true,
   },
 ];
 
@@ -442,16 +435,14 @@ export default function Services() {
 
         {/* Reassurance */}
         <p className="text-center font-[family-name:var(--font-cormorant)] text-base text-[#52402e] mt-14 font-light">
-          Nicht sicher, was passt? Starte mit dem{" "}
+          Nicht sicher, was passt?{" "}
           <a
-            href="https://calendly.com/astrogeo/orientierungs-call"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[#b8922e] underline underline-offset-4 hover:text-[#e8c97a] transition-colors"
+            href="#buchen"
+            className="text-[#b8922e] underline underline-offset-4 hover:text-[#8a6420] transition-colors"
           >
-            kostenlosen Orientierungs-Call
+            Schreib mir direkt
           </a>
-          .
+          {" "}— ich helfe dir, das Richtige zu finden.
         </p>
       </div>
 

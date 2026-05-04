@@ -127,18 +127,6 @@ export default function JsonLd() {
                 url: "https://calendly.com/astrogeo/frag-anna-deine-personliche-astro-session",
               },
             },
-            {
-              "@type": "Offer",
-              price: "0",
-              priceCurrency: "EUR",
-              itemOffered: {
-                "@type": "Service",
-                name: "Orientierungs-Call",
-                description:
-                  "Kostenloser 30-minütiger Kennenlern-Call per Zoom.",
-                url: "https://calendly.com/astrogeo/orientierungs-call",
-              },
-            },
           ],
         },
       },
@@ -168,7 +156,7 @@ export default function JsonLd() {
             name: "Was kostet eine Astrokartographie-Session bei Anna Thoma?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Das Flagship-Reading (90 Min. per Zoom) kostet 495 €. Das Paar-Reading (2 × 90 Min.) kostet 777 €. Es gibt außerdem einen kostenlosen Orientierungs-Call (30 Min.) zum Kennenlernen.",
+              text: "Das Flagship-Reading (90 Min. per Zoom) kostet 495 €. Das Paar-Reading (2 × 90 Min.) kostet 777 €. Weitere Angebote beginnen ab 47 €.",
             },
           },
           {
