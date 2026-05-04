@@ -113,19 +113,14 @@ export default function About() {
               ))}
             </div>
 
-            {/* Free intro CTA */}
+            {/* Direct booking CTA */}
             <div className="mt-12">
               <a
-                href="https://calendly.com/astrogeo/orientierungs-call"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-outline-gold inline-block px-8 py-4 text-sm font-[family-name:var(--font-montserrat)] tracking-[0.15em] rounded-sm"
+                href="#buchen"
+                className="btn-gold inline-block px-8 py-4 text-sm font-[family-name:var(--font-montserrat)] tracking-[0.15em] rounded-sm"
               >
-                Kostenloses Kennenlerngespräch →
+                Jetzt Termin buchen →
               </a>
-              <p className="font-[family-name:var(--font-cormorant)] text-sm text-[#52402e] mt-2 font-light">
-                30 Min. · Zoom · Kostenlos
-              </p>
             </div>
           </div>
         </div>
