@@ -13,17 +13,17 @@ export default function LegalLayout({
       style={{ background: "radial-gradient(ellipse at top, #1a0f2e 0%, #07060f 50%)" }}
     >
       {/* Top bar */}
-      <div className="border-b border-[rgba(201,168,76,0.1)]">
+      <div className="border-b border-[rgba(184,146,46,0.1)]">
         <div className="max-w-4xl mx-auto px-6 py-5 flex items-center justify-between">
           <Link
             href="/"
-            className="font-[family-name:var(--font-cormorant)] text-lg font-light tracking-[0.15em] text-[#f0ead6] hover:text-[#c9a84c] transition-colors duration-300"
+            className="font-[family-name:var(--font-cormorant)] text-lg font-light tracking-[0.15em] text-[#f0ead6] hover:text-[#b8922e] transition-colors duration-300"
           >
-            ANNA<span className="text-[#c9a84c] mx-1">·</span>ASTROGEOGRAFIE
+            ANNA<span className="text-[#b8922e] mx-1">·</span>ASTROGEOGRAFIE
           </Link>
           <Link
             href="/"
-            className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#9b8fa8] hover:text-[#c9a84c] transition-colors duration-300 uppercase"
+            className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#9b8fa8] hover:text-[#b8922e] transition-colors duration-300 uppercase"
           >
             ← Zurück
           </Link>
@@ -37,13 +37,13 @@ export default function LegalLayout({
         </h1>
         <div
           className="w-16 h-px mb-12"
-          style={{ background: "linear-gradient(90deg, #c9a84c, transparent)" }}
+          style={{ background: "linear-gradient(90deg, #b8922e, transparent)" }}
         />
         <div className="legal-content">{children}</div>
       </div>
 
       {/* Footer strip */}
-      <div className="border-t border-[rgba(201,168,76,0.1)] py-8">
+      <div className="border-t border-[rgba(184,146,46,0.1)] py-8">
         <div className="max-w-4xl mx-auto px-6 flex flex-col md:flex-row justify-between gap-4">
           <p className="font-[family-name:var(--font-montserrat)] text-xs text-[#9b8fa8] tracking-wider">
             © {new Date().getFullYear()} Anna Thoma · Astrogeografie
@@ -51,13 +51,13 @@ export default function LegalLayout({
           <div className="flex gap-6">
             <Link
               href="/impressum"
-              className="font-[family-name:var(--font-montserrat)] text-xs text-[#9b8fa8] hover:text-[#c9a84c] transition-colors tracking-wider"
+              className="font-[family-name:var(--font-montserrat)] text-xs text-[#9b8fa8] hover:text-[#b8922e] transition-colors tracking-wider"
             >
               Impressum
             </Link>
             <Link
               href="/datenschutz"
-              className="font-[family-name:var(--font-montserrat)] text-xs text-[#9b8fa8] hover:text-[#c9a84c] transition-colors tracking-wider"
+              className="font-[family-name:var(--font-montserrat)] text-xs text-[#9b8fa8] hover:text-[#b8922e] transition-colors tracking-wider"
             >
               Datenschutz
             </Link>

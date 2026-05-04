@@ -13,16 +13,16 @@ export default function BookingCTA() {
       <div
         aria-hidden
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{ border: "1px solid rgba(201,168,76,0.12)" }}
+        style={{ border: "1px solid rgba(184,146,46,0.12)" }}
       />
       <div
         aria-hidden
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full pointer-events-none"
-        style={{ border: "1px solid rgba(201,168,76,0.07)" }}
+        style={{ border: "1px solid rgba(184,146,46,0.07)" }}
       />
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-        <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#7a5c18] uppercase mb-6">
+        <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#6a4c10] uppercase mb-6">
           Bereit?
         </p>
 
@@ -32,10 +32,17 @@ export default function BookingCTA() {
           <em className="gold-shimmer not-italic font-semibold">Ich auch.</em>
         </h2>
 
-        <p className="font-[family-name:var(--font-cormorant)] text-xl md:text-2xl text-[#7a6a58] font-light max-w-2xl mx-auto mb-14 leading-relaxed">
+        <p className="font-[family-name:var(--font-cormorant)] text-xl md:text-2xl text-[#52402e] font-light max-w-2xl mx-auto mb-8 leading-relaxed">
           Buch direkt deinen Wunschtermin — oder starte kostenlos mit einem
           Orientierungs-Call. Ich freue mich auf dich.
         </p>
+
+        <div className="inline-flex items-center gap-2 bg-[#fffdf9] border border-[rgba(184,146,46,0.4)] rounded-sm px-5 py-3 mb-10">
+          <span className="w-2 h-2 rounded-full bg-[#b8922e] animate-pulse flex-shrink-0" />
+          <span className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.12em] text-[#8a6420] uppercase">
+            Nächste freie Termine: innerhalb 1–2 Wochen
+          </span>
+        </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
           <a
@@ -61,7 +68,7 @@ export default function BookingCTA() {
         <div className="mb-16">
           <a
             href="mailto:astrogeografie@gmail.com"
-            className="inline-flex items-center gap-2 font-[family-name:var(--font-cormorant)] text-base text-[#7a6a58] hover:text-[#c9a84c] transition-colors duration-300"
+            className="inline-flex items-center gap-2 font-[family-name:var(--font-cormorant)] text-base text-[#52402e] hover:text-[#b8922e] transition-colors duration-300"
           >
             <Mail size={14} />
             astrogeografie@gmail.com
@@ -76,8 +83,8 @@ export default function BookingCTA() {
             "Zoom · Deutsch & Englisch",
           ].map((item) => (
             <div key={item} className="flex items-center gap-2">
-              <div className="w-1 h-1 rounded-full bg-[#c9a84c]" />
-              <span className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.1em] text-[#7a6a58] uppercase">
+              <div className="w-1 h-1 rounded-full bg-[#b8922e]" />
+              <span className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.1em] text-[#52402e] uppercase">
                 {item}
               </span>
             </div>

@@ -36,7 +36,7 @@ export default function About() {
             <div className="relative">
               <div
                 className="w-80 h-96 md:w-96 md:h-[480px] rounded-sm relative overflow-hidden"
-                style={{ border: "1px solid rgba(201,168,76,0.3)" }}
+                style={{ border: "1px solid rgba(184,146,46,0.3)" }}
               >
                 <Image
                   src="/anna-portrait.jpg"
@@ -53,20 +53,20 @@ export default function About() {
               </div>
 
               {/* Decorative corner accents */}
-              <div className="absolute -top-3 -left-3 w-8 h-8" style={{ borderTop: "1px solid rgba(201,168,76,0.6)", borderLeft: "1px solid rgba(201,168,76,0.6)" }} />
-              <div className="absolute -bottom-3 -right-3 w-8 h-8" style={{ borderBottom: "1px solid rgba(201,168,76,0.6)", borderRight: "1px solid rgba(201,168,76,0.6)" }} />
+              <div className="absolute -top-3 -left-3 w-8 h-8" style={{ borderTop: "1px solid rgba(184,146,46,0.6)", borderLeft: "1px solid rgba(184,146,46,0.6)" }} />
+              <div className="absolute -bottom-3 -right-3 w-8 h-8" style={{ borderBottom: "1px solid rgba(184,146,46,0.6)", borderRight: "1px solid rgba(184,146,46,0.6)" }} />
 
               {/* Floating badge */}
               <div className="absolute -bottom-6 -right-6 card-warm rounded-sm px-6 py-4 shadow-md">
-                <p className="font-[family-name:var(--font-cormorant)] text-2xl font-semibold text-[#c9a84c]">500+</p>
-                <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.1em] text-[#7a6a58] uppercase">Transformationen</p>
+                <p className="font-[family-name:var(--font-cormorant)] text-2xl font-semibold text-[#b8922e]">500+</p>
+                <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.1em] text-[#52402e] uppercase">Transformationen</p>
               </div>
             </div>
           </div>
 
           {/* Text side */}
           <div className="order-1 lg:order-2">
-            <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#7a5c18] uppercase mb-6">
+            <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#6a4c10] uppercase mb-6">
               Über mich
             </p>
 
@@ -76,7 +76,7 @@ export default function About() {
               zu deinem<br />Kraftort auf der Erde.
             </h2>
 
-            <div className="space-y-6 font-[family-name:var(--font-cormorant)] text-lg text-[#7a6a58] leading-relaxed font-light">
+            <div className="space-y-6 font-[family-name:var(--font-cormorant)] text-lg text-[#52402e] leading-relaxed font-light">
               <p>
                 Vor Jahren stand ich selbst vor einer Entscheidung: Wohin soll
                 mein Leben führen? Nicht metaphorisch — sondern buchstäblich:
@@ -100,12 +100,12 @@ export default function About() {
             <div className="mt-12 space-y-6">
               {values.map((v) => (
                 <div key={v.title} className="flex gap-4 items-start">
-                  <div className="mt-1 text-[#c9a84c] flex-shrink-0">{v.icon}</div>
+                  <div className="mt-1 text-[#b8922e] flex-shrink-0">{v.icon}</div>
                   <div>
                     <p className="font-[family-name:var(--font-montserrat)] text-sm font-semibold text-[#2c2010] tracking-wider uppercase mb-1">
                       {v.title}
                     </p>
-                    <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#7a6a58] font-light">
+                    <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#52402e] font-light">
                       {v.text}
                     </p>
                   </div>
@@ -123,7 +123,7 @@ export default function About() {
               >
                 Kostenloses Kennenlerngespräch →
               </a>
-              <p className="font-[family-name:var(--font-cormorant)] text-sm text-[#7a6a58] mt-2 font-light">
+              <p className="font-[family-name:var(--font-cormorant)] text-sm text-[#52402e] mt-2 font-light">
                 30 Min. · Zoom · Kostenlos
               </p>
             </div>

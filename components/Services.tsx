@@ -168,8 +168,8 @@ function MainCard({ service, fullWidth = false }: { service: typeof flagship | t
           ? "linear-gradient(145deg, #fffdf9, #f5efe4)"
           : "linear-gradient(145deg, #fffdf9, #faf7f2)",
         border: isHighlight
-          ? "1px solid rgba(201,168,76,0.4)"
-          : "1px solid rgba(201,168,76,0.1)",
+          ? "1px solid rgba(184,146,46,0.4)"
+          : "1px solid rgba(184,146,46,0.1)",
       }}
     >
       {/* Badge */}
@@ -178,10 +178,10 @@ function MainCard({ service, fullWidth = false }: { service: typeof flagship | t
           className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.2em] uppercase px-3 py-1 rounded-full"
           style={{
             background: isHighlight
-              ? "rgba(201,168,76,0.2)"
-              : "rgba(201,168,76,0.08)",
-            border: "1px solid rgba(201,168,76,0.3)",
-            color: "#c9a84c",
+              ? "rgba(184,146,46,0.2)"
+              : "rgba(184,146,46,0.08)",
+            border: "1px solid rgba(184,146,46,0.3)",
+            color: "#b8922e",
           }}
         >
           {service.badge}
@@ -189,32 +189,32 @@ function MainCard({ service, fullWidth = false }: { service: typeof flagship | t
       </div>
 
       <div className="p-8 md:p-10">
-        <div className="text-[#c9a84c] mb-6">{service.icon}</div>
+        <div className="text-[#b8922e] mb-6">{service.icon}</div>
 
         <h3 className="font-[family-name:var(--font-cormorant)] text-3xl font-medium text-[#2c2010] mb-2">
           {service.name}
         </h3>
-        <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#7a6a58] uppercase mb-2">
+        <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#52402e] uppercase mb-2">
           {service.tagline}
         </p>
         <div className="flex items-baseline gap-4 mb-6">
-          <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.1em] text-[#c9a84c]">
+          <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.1em] text-[#b8922e]">
             {service.duration}
           </p>
           <span
             className="font-[family-name:var(--font-cormorant)] text-2xl font-medium"
-            style={{ color: "#c9a84c" }}
+            style={{ color: "#b8922e" }}
           >
             {service.price}
           </span>
         </div>
         {"priceNote" in service && service.priceNote && (
-          <p className="font-[family-name:var(--font-montserrat)] text-xs text-[#7a6a58] tracking-wider mb-6 -mt-4">
+          <p className="font-[family-name:var(--font-montserrat)] text-xs text-[#52402e] tracking-wider mb-6 -mt-4">
             {service.priceNote}
           </p>
         )}
 
-        <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#7a6a58] font-light leading-relaxed mb-8">
+        <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#52402e] font-light leading-relaxed mb-8">
           {service.description}
         </p>
 
@@ -223,8 +223,8 @@ function MainCard({ service, fullWidth = false }: { service: typeof flagship | t
         <ul className="space-y-3 mb-10">
           {service.includes.map((item) => (
             <li key={item} className="flex gap-3 items-start">
-              <Check size={16} className="text-[#c9a84c] mt-0.5 flex-shrink-0" />
-              <span className="font-[family-name:var(--font-cormorant)] text-[#7a6a58] text-base font-light leading-snug">
+              <Check size={16} className="text-[#b8922e] mt-0.5 flex-shrink-0" />
+              <span className="font-[family-name:var(--font-cormorant)] text-[#52402e] text-base font-light leading-snug">
                 {item}
               </span>
             </li>
@@ -242,7 +242,7 @@ function MainCard({ service, fullWidth = false }: { service: typeof flagship | t
           {service.cta}
         </a>
 
-        <p className="text-center font-[family-name:var(--font-montserrat)] text-xs text-[#7a6a58] mt-3 tracking-wider">
+        <p className="text-center font-[family-name:var(--font-montserrat)] text-xs text-[#52402e] mt-3 tracking-wider">
           {service.note}
         </p>
       </div>
@@ -260,7 +260,7 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-20">
-          <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#7a5c18] uppercase mb-6">
+          <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#6a4c10] uppercase mb-6">
             Meine Angebote
           </p>
           <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl lg:text-6xl font-light text-[#2c2010] leading-[1.15] mb-6">
@@ -270,7 +270,7 @@ export default function Services() {
               deinem Kraftort
             </em>
           </h2>
-          <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#7a6a58] max-w-2xl mx-auto font-light">
+          <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#52402e] max-w-2xl mx-auto font-light">
             Ob du solo deinen idealen Ort suchst, als Paar umziehen möchtest
             oder schnelle Klarheit brauchst — hier findest du das Richtige.
           </p>
@@ -288,7 +288,7 @@ export default function Services() {
 
         {/* 3. Mini-Kurse – Einstieg */}
         <div className="max-w-5xl mx-auto mb-16">
-          <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.3em] text-[#c9a84c] uppercase text-center mb-10">
+          <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.3em] text-[#b8922e] uppercase text-center mb-10">
             Einstieg · Mini-Kurse
           </p>
           <div className="grid md:grid-cols-2 gap-6">
@@ -301,17 +301,17 @@ export default function Services() {
                 className="group rounded-sm p-8 hover:-translate-y-1 transition-all duration-300"
                 style={{
                   background: "linear-gradient(145deg, #fffdf9, #faf7f2)",
-                  border: "1px solid rgba(201,168,76,0.2)",
+                  border: "1px solid rgba(184,146,46,0.2)",
                 }}
               >
-                <div className="text-[#c9a84c] mb-4">{kurs.icon}</div>
-                <h3 className="font-[family-name:var(--font-cormorant)] text-2xl font-medium text-[#2c2010] mb-1 group-hover:text-[#c9a84c] transition-colors">
+                <div className="text-[#b8922e] mb-4">{kurs.icon}</div>
+                <h3 className="font-[family-name:var(--font-cormorant)] text-2xl font-medium text-[#2c2010] mb-1 group-hover:text-[#b8922e] transition-colors">
                   {kurs.name}
                 </h3>
-                <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#c9a84c] uppercase mb-4">
+                <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#b8922e] uppercase mb-4">
                   {kurs.tagline}
                 </p>
-                <p className="font-[family-name:var(--font-cormorant)] text-base text-[#7a6a58] font-light leading-relaxed">
+                <p className="font-[family-name:var(--font-cormorant)] text-base text-[#52402e] font-light leading-relaxed">
                   {kurs.desc}
                 </p>
               </a>
@@ -321,7 +321,7 @@ export default function Services() {
 
         {/* 4. Buch – Vertiefung */}
         <div className="max-w-5xl mx-auto mb-16">
-          <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.3em] text-[#c9a84c] uppercase text-center mb-10">
+          <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.3em] text-[#b8922e] uppercase text-center mb-10">
             Vertiefung · Das Buch
           </p>
           <a
@@ -331,18 +331,18 @@ export default function Services() {
             className="group flex flex-col sm:flex-row items-start sm:items-center gap-6 rounded-sm p-8 hover:-translate-y-1 transition-all duration-300"
             style={{
               background: "linear-gradient(145deg, #fffdf9, #faf7f2)",
-              border: "1px solid rgba(201,168,76,0.15)",
+              border: "1px solid rgba(184,146,46,0.15)",
             }}
           >
-            <div className="text-[#c9a84c] flex-shrink-0">{buch.icon}</div>
+            <div className="text-[#b8922e] flex-shrink-0">{buch.icon}</div>
             <div>
-              <h3 className="font-[family-name:var(--font-cormorant)] text-2xl font-medium text-[#2c2010] mb-1 group-hover:text-[#c9a84c] transition-colors">
+              <h3 className="font-[family-name:var(--font-cormorant)] text-2xl font-medium text-[#2c2010] mb-1 group-hover:text-[#b8922e] transition-colors">
                 {buch.name}
               </h3>
-              <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#c9a84c] uppercase mb-3">
+              <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#b8922e] uppercase mb-3">
                 {buch.tagline}
               </p>
-              <p className="font-[family-name:var(--font-cormorant)] text-base text-[#7a6a58] font-light leading-relaxed">
+              <p className="font-[family-name:var(--font-cormorant)] text-base text-[#52402e] font-light leading-relaxed">
                 {buch.desc}
               </p>
             </div>
@@ -351,7 +351,7 @@ export default function Services() {
 
         {/* 5. Weitere Angebote */}
         <div className="max-w-5xl mx-auto">
-          <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.3em] text-[#c9a84c] uppercase text-center mb-10">
+          <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.3em] text-[#b8922e] uppercase text-center mb-10">
             Weitere Angebote
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -361,27 +361,27 @@ export default function Services() {
                 href={s.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="card-cosmic rounded-sm p-6 hover:border-[rgba(201,168,76,0.3)] transition-all duration-300 hover:-translate-y-1 group"
+                className="card-cosmic rounded-sm p-6 hover:border-[rgba(184,146,46,0.3)] transition-all duration-300 hover:-translate-y-1 group"
               >
                 <div className="flex items-center justify-between mb-3">
                   <div className="flex items-center gap-2">
-                    <span className="text-[#c9a84c]">{s.icon}</span>
+                    <span className="text-[#b8922e]">{s.icon}</span>
                     {s.free && (
-                      <span className="font-[family-name:var(--font-montserrat)] text-xs text-[#c9a84c] border border-[rgba(201,168,76,0.4)] px-2 py-0.5 rounded-full tracking-wider">
+                      <span className="font-[family-name:var(--font-montserrat)] text-xs text-[#b8922e] border border-[rgba(184,146,46,0.4)] px-2 py-0.5 rounded-full tracking-wider">
                         Kostenlos
                       </span>
                     )}
                   </div>
                   {"price" in s && s.price && (
-                    <span className="font-[family-name:var(--font-cormorant)] text-base font-medium text-[#c9a84c]">
+                    <span className="font-[family-name:var(--font-cormorant)] text-base font-medium text-[#b8922e]">
                       {s.price}
                     </span>
                   )}
                 </div>
-                <h4 className="font-[family-name:var(--font-cormorant)] text-lg font-medium text-[#2c2010] mb-2 group-hover:text-[#c9a84c] transition-colors">
+                <h4 className="font-[family-name:var(--font-cormorant)] text-lg font-medium text-[#2c2010] mb-2 group-hover:text-[#b8922e] transition-colors">
                   {s.name}
                 </h4>
-                <p className="font-[family-name:var(--font-cormorant)] text-sm text-[#7a6a58] font-light leading-snug">
+                <p className="font-[family-name:var(--font-cormorant)] text-sm text-[#52402e] font-light leading-snug">
                   {s.desc}
                 </p>
               </a>
@@ -390,13 +390,13 @@ export default function Services() {
         </div>
 
         {/* Reassurance */}
-        <p className="text-center font-[family-name:var(--font-cormorant)] text-base text-[#7a6a58] mt-14 font-light">
+        <p className="text-center font-[family-name:var(--font-cormorant)] text-base text-[#52402e] mt-14 font-light">
           Nicht sicher, was passt? Starte mit dem{" "}
           <a
             href="https://calendly.com/astrogeo/orientierungs-call"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#c9a84c] underline underline-offset-4 hover:text-[#e8c97a] transition-colors"
+            className="text-[#b8922e] underline underline-offset-4 hover:text-[#e8c97a] transition-colors"
           >
             kostenlosen Orientierungs-Call
           </a>

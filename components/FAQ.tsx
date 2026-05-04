@@ -44,6 +44,22 @@ const faqs = [
     q: "Gibt es eine Geld-zurück-Garantie?",
     a: "Ich stehe zu 100% für die Qualität meiner Arbeit. Wenn du nach der Session das Gefühl hast, keinen Mehrwert erhalten zu haben, sprechen wir. Bisher ist das noch nie passiert — aber mein Versprechen steht.",
   },
+  {
+    q: "Was bekomme ich nach dem Reading?",
+    a: "Du erhältst die vollständige Zoom-Aufzeichnung, alle Screenshots deiner astrogeografischen Karte sowie ein PDF mit Einführung und Planeten-Erklärungen — alles zum Nachschlagen und Vertiefen.",
+  },
+  {
+    q: "Wie bereite ich mich am besten auf das Reading vor?",
+    a: "Halte dein genaues Geburtsdatum, die Uhrzeit und den Geburtsort bereit — je präziser, desto besser die Analyse. Überlege außerdem, welche Lebensbereiche du besonders beleuchten möchtest: Liebe, Karriere, Neustart? So nutzen wir die Zeit optimal.",
+  },
+  {
+    q: "Kann das Reading auch auf Englisch stattfinden?",
+    a: "Ja — Readings sind sowohl auf Deutsch als auch auf Englisch möglich. Wähle beim Buchen einfach den englischsprachigen Termin.",
+  },
+  {
+    q: "Lässt sich ein Reading auch verschenken?",
+    a: "Absolut. Du kannst einen Gutschein für jedes Angebot erwerben — einfach beim Buchen die Gutschein-Option wählen, die Person und den gewünschten Betrag angeben. Der Gutschein ist dauerhaft gültig.",
+  },
 ];
 
 function FAQItem({ q, a }: { q: string; a: string }) {
@@ -51,20 +67,20 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 
   return (
     <div
-      className="border-b border-[rgba(201,168,76,0.1)] cursor-pointer group"
+      className="border-b border-[rgba(184,146,46,0.1)] cursor-pointer group"
       onClick={() => setOpen(!open)}
     >
       <div className="flex justify-between items-start gap-6 py-6">
-        <h3 className="font-[family-name:var(--font-cormorant)] text-xl md:text-2xl font-light text-[#2c2010] group-hover:text-[#c9a84c] transition-colors duration-300 leading-snug">
+        <h3 className="font-[family-name:var(--font-cormorant)] text-xl md:text-2xl font-light text-[#2c2010] group-hover:text-[#b8922e] transition-colors duration-300 leading-snug">
           {q}
         </h3>
-        <div className="text-[#c9a84c] flex-shrink-0 mt-1">
+        <div className="text-[#b8922e] flex-shrink-0 mt-1">
           {open ? <Minus size={20} /> : <Plus size={20} />}
         </div>
       </div>
       {open && (
         <div className="pb-6 pr-10">
-          <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#7a6a58] font-light leading-relaxed">
+          <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#52402e] font-light leading-relaxed">
             {a}
           </p>
         </div>
@@ -82,7 +98,7 @@ export default function FAQ() {
       <div className="max-w-4xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
-          <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#7a5c18] uppercase mb-6">
+          <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#6a4c10] uppercase mb-6">
             Häufige Fragen
           </p>
           <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl lg:text-6xl font-light text-[#2c2010] leading-[1.15]">
@@ -101,7 +117,7 @@ export default function FAQ() {
 
         {/* More questions */}
         <div className="mt-16 text-center">
-          <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#7a6a58] font-light mb-6">
+          <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#52402e] font-light mb-6">
             Noch eine Frage?
           </p>
           <a

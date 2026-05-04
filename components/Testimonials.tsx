@@ -6,7 +6,7 @@ const testimonials = [
   {
     name: "Sarah M.",
     location: "München → Barcelona",
-    service: "Cosmic Coordinates",
+    service: "Astrokartographie Reading",
     stars: 5,
     text: "Anna hat mir in 90 Minuten mehr Klarheit gegeben als Jahre der Selbstreflexion. Ich bin jetzt in Barcelona — und es fühlt sich an, als wäre ich nach Hause gekommen. Kein Klischee: es ist buchstäblich wahr.",
   },
@@ -20,7 +20,7 @@ const testimonials = [
   {
     name: "Julia R.",
     location: "Wien → Lissabon",
-    service: "Cosmic Coordinates",
+    service: "Astrokartographie Reading",
     stars: 5,
     text: "Ich war skeptisch. Dann habe ich Annas Analyse gemacht, Lissabon auf meiner Karte gesehen — und drei Monate später bin ich umgezogen. Beste Entscheidung meines Lebens. Anna hat eine Gabe.",
   },
@@ -34,7 +34,7 @@ const testimonials = [
   {
     name: "Tanja B.",
     location: "Stuttgart → Teneriffa",
-    service: "Cosmic Coordinates",
+    service: "Astrokartographie Reading",
     stars: 5,
     text: "Die Investition war ein Geschenk an mich selbst. Ich lebe jetzt auf Teneriffa — auf der Venus-Linie. Meine Beziehungen, meine Kreativität, alles hat sich geöffnet. Danke, Anna.",
   },
@@ -51,7 +51,7 @@ function Stars({ count }: { count: number }) {
   return (
     <div className="flex gap-1">
       {Array.from({ length: count }).map((_, i) => (
-        <span key={i} className="text-[#c9a84c] text-sm">★</span>
+        <span key={i} className="text-[#b8922e] text-sm">★</span>
       ))}
     </div>
   );
@@ -67,7 +67,7 @@ export default function Testimonials() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-20">
-          <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#7a5c18] uppercase mb-6">
+          <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#6a4c10] uppercase mb-6">
             Erfahrungen
           </p>
           <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl lg:text-6xl font-light text-[#2c2010] leading-[1.15]">
@@ -86,9 +86,9 @@ export default function Testimonials() {
               key={index}
               className="card-warm rounded-sm p-8"
             >
-              <Quote size={24} className="text-[#c9a84c] opacity-40 mb-4" />
+              <Quote size={24} className="text-[#b8922e] opacity-40 mb-4" />
               <Stars count={t.stars} />
-              <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#7a6a58] font-light leading-relaxed mt-4 mb-6">
+              <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#52402e] font-light leading-relaxed mt-4 mb-6">
                 &ldquo;{t.text}&rdquo;
               </p>
               <div className="section-divider mb-6" />
@@ -96,10 +96,10 @@ export default function Testimonials() {
                 <p className="font-[family-name:var(--font-cormorant)] text-base font-semibold text-[#2c2010]">
                   {t.name}
                 </p>
-                <p className="font-[family-name:var(--font-montserrat)] text-xs text-[#7a6a58] tracking-wider mt-0.5">
+                <p className="font-[family-name:var(--font-montserrat)] text-xs text-[#52402e] tracking-wider mt-0.5">
                   {t.location}
                 </p>
-                <p className="font-[family-name:var(--font-montserrat)] text-xs text-[#c9a84c] tracking-wider mt-1 uppercase">
+                <p className="font-[family-name:var(--font-montserrat)] text-xs text-[#b8922e] tracking-wider mt-1 uppercase">
                   {t.service}
                 </p>
               </div>
@@ -109,9 +109,9 @@ export default function Testimonials() {
 
         {/* Bottom note */}
         <div className="text-center mt-16">
-          <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#7a6a58] font-light">
+          <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#52402e] font-light">
             Über{" "}
-            <span className="text-[#c9a84c] font-semibold">500 Klientinnen</span>{" "}
+            <span className="text-[#b8922e] font-semibold">500 Klientinnen</span>{" "}
             haben bereits ihre kosmischen Koordinaten entdeckt.
           </p>
         </div>
