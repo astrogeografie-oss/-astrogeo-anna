@@ -62,13 +62,22 @@ export const metadata: Metadata = {
     type: "website",
     locale: "de_DE",
     siteName: "Anna Thoma – Astrokartographie",
-    url: "https://astrogeoanna.com",
+    url: "https://www.astrogeoanna.com",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Astrokartographie mit Anna Thoma – Finde deinen Kraftort",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Astrokartographie mit Anna",
     description:
       "Finde deinen Kraftort. Deutschlands führende Astrokartographie-Expertin.",
+    images: ["/opengraph-image"],
   },
   verification: {
     google: "dt2KHDIlwJ3Vn3mveHPoxrD2f6K1q7B0oqLsPuAMutU",

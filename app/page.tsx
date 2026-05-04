@@ -6,8 +6,10 @@ import Process from "@/components/Process";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import InstagramCTA from "@/components/InstagramCTA";
+import NewsletterSection from "@/components/NewsletterSection";
 import BookingCTA from "@/components/BookingCTA";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 export default function Home() {
   return (
@@ -20,8 +22,10 @@ export default function Home() {
       <Testimonials />
       <FAQ />
       <InstagramCTA />
+      <NewsletterSection />
       <BookingCTA />
       <Footer />
+      <WhatsAppButton />
     </main>
   );
 }
