@@ -1,6 +1,6 @@
 "use client";
 
-import { Check, Globe, Star, Users, Clock, Gift, Calendar, BookOpen, Compass, Map, Sun, Smartphone } from "lucide-react";
+import { Check, Globe, Star, Users, Clock, Gift, Calendar, BookOpen, Compass, Map, Sun, Smartphone, GraduationCap } from "lucide-react";
 
 const flagship = {
   id: "orts-horoskop",
@@ -319,7 +319,58 @@ export default function Services() {
           </div>
         </div>
 
-        {/* 4. Buch – Vertiefung */}
+        {/* 4. Ausbildung – Planetary Pathway */}
+        <div className="max-w-5xl mx-auto mb-16">
+          <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.3em] text-[#b8922e] uppercase text-center mb-10">
+            Ausbildung · Für Astrologinnen & Astro-Kenner
+          </p>
+          <a
+            href="https://astrogeoanna.thrivecart.com/planetary-pathway--erfolg-astrogeografie/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group block rounded-sm p-8 md:p-10 hover:-translate-y-1 transition-all duration-300"
+            style={{
+              background: "linear-gradient(145deg, #fffdf9, #f5efe4)",
+              border: "1px solid rgba(184,146,46,0.35)",
+            }}
+          >
+            <div className="flex flex-col md:flex-row md:items-start gap-6">
+              <div className="text-[#b8922e] flex-shrink-0">
+                <GraduationCap size={32} />
+              </div>
+              <div className="flex-1">
+                <div className="flex flex-wrap items-start justify-between gap-4 mb-3">
+                  <div>
+                    <h3 className="font-[family-name:var(--font-cormorant)] text-3xl font-medium text-[#2c2010] mb-1 group-hover:text-[#b8922e] transition-colors">
+                      Planetary Pathway
+                    </h3>
+                    <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#b8922e] uppercase">
+                      Erfolg Astrogeografie · Ausbildung
+                    </p>
+                  </div>
+                  <span
+                    className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.2em] uppercase px-3 py-1 rounded-full flex-shrink-0"
+                    style={{
+                      background: "rgba(184,146,46,0.15)",
+                      border: "1px solid rgba(184,146,46,0.3)",
+                      color: "#b8922e",
+                    }}
+                  >
+                    Für Profis
+                  </span>
+                </div>
+                <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#52402e] font-light leading-relaxed">
+                  Du bist Astrologin, Coach oder begeisterte Astro-Kennerin und möchtest Astrogeografie professionell anbieten? Der Planetary Pathway ist Annas umfassendes Ausbildungsprogramm — von den Grundlagen der Astrokartographie bis zur eigenständigen Praxis mit Klientinnen.
+                </p>
+                <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.12em] text-[#8a6420] uppercase mt-5 group-hover:text-[#b8922e] transition-colors">
+                  Mehr erfahren →
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        {/* 6. Buch – Vertiefung */}
         <div className="max-w-5xl mx-auto mb-16">
           <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.3em] text-[#b8922e] uppercase text-center mb-10">
             Vertiefung · Das Buch
@@ -349,7 +400,7 @@ export default function Services() {
           </a>
         </div>
 
-        {/* 5. Weitere Angebote */}
+        {/* 7. Weitere Angebote */}
         <div className="max-w-5xl mx-auto">
           <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.3em] text-[#b8922e] uppercase text-center mb-10">
             Weitere Angebote
