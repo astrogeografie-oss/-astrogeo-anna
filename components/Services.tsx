@@ -62,7 +62,7 @@ const miniKurse = [
     icon: <Map size={24} />,
     name: "Mini-Kurs Raumastrologie",
     tagline: "Einstieg · Online-Kurs",
-    desc: "Lerne, wie astrologische Energien Räume prägen — und wie du bewusst mit ihnen lebst.",
+    desc: "Lerne, wie planetare Energien deinen Wohnraum prägen — und wie du sie bewusst aktivierst. Im Reading erfährst du außerdem Annas geheime Methode: wie weit Linien wirklich reichen und wie du den Orb einer Planetenenergie für dich nutzt.",
     url: "https://astrogeoanna.thrivecart.com/die-folie-die-dein-leben-vereandert/",
   },
 ];
@@ -101,9 +101,10 @@ const additionalServices = [
   {
     icon: <Star size={18} />,
     name: "Birthday Astrogeo",
-    desc: "30 Min. — Finde den perfekten Geburtstags-Ort für dein nächstes Solarjahr.",
+    desc: "45 Min. — Finde den perfekten Geburtstags-Ort für dein nächstes Solarjahr.",
     url: "https://calendly.com/astrogeo/birthday-astrogeo",
     free: false,
+    price: "222 €",
   },
   {
     icon: <Star size={18} />,
