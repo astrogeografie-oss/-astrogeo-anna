@@ -89,6 +89,7 @@ const additionalServices = [
     desc: "30 Min. — Alle deine Fragen zur Astrokartographie, gezielt & auf den Punkt.",
     url: "https://calendly.com/astrogeo/frag-anna-deine-personliche-astro-session",
     free: false,
+    price: "147 €",
   },
   {
     icon: <Calendar size={18} />,
