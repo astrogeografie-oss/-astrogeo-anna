@@ -42,13 +42,13 @@ export default async function Image() {
               objectPosition: "top",
             }}
           />
-          {/* Fade to right */}
           <div
             style={{
               position: "absolute",
               inset: 0,
               background:
                 "linear-gradient(to right, transparent 60%, #faf7f2 100%)",
+              display: "flex",
             }}
           />
         </div>
@@ -63,7 +63,6 @@ export default async function Image() {
             padding: "60px 80px 60px 40px",
           }}
         >
-          {/* Label */}
           <div
             style={{
               fontFamily: "serif",
@@ -72,20 +71,21 @@ export default async function Image() {
               color: "#6a4c10",
               textTransform: "uppercase",
               marginBottom: 24,
+              display: "flex",
             }}
           >
             Astrogeografie · Deutschland
           </div>
 
-          {/* Headline */}
           <div
             style={{
               fontFamily: "serif",
-              fontSize: 58,
+              fontSize: 54,
               fontWeight: 300,
               color: "#2c2010",
               lineHeight: 1.15,
-              marginBottom: 8,
+              marginBottom: 4,
+              display: "flex",
             }}
           >
             Astrokartographie
@@ -93,17 +93,17 @@ export default async function Image() {
           <div
             style={{
               fontFamily: "serif",
-              fontSize: 58,
+              fontSize: 54,
               fontWeight: 500,
               color: "#b8922e",
               lineHeight: 1.15,
               marginBottom: 32,
+              display: "flex",
             }}
           >
             mit Anna Thoma
           </div>
 
-          {/* Divider */}
           <div
             style={{
               width: 80,
@@ -111,10 +111,10 @@ export default async function Image() {
               background: "#b8922e",
               opacity: 0.5,
               marginBottom: 32,
+              display: "flex",
             }}
           />
 
-          {/* Tagline */}
           <div
             style={{
               fontFamily: "serif",
@@ -123,9 +123,10 @@ export default async function Image() {
               color: "#52402e",
               lineHeight: 1.5,
               marginBottom: 40,
+              display: "flex",
             }}
           >
-            Finde deinen Kraftort auf der Erde.{"\n"}90 Min. Deep-Dive · ab 495 €
+            Finde deinen Kraftort auf der Erde. 90 Min. · ab 495 €
           </div>
 
           {/* URL badge */}
@@ -138,7 +139,7 @@ export default async function Image() {
               border: "1px solid rgba(184,146,46,0.35)",
               borderRadius: 4,
               padding: "10px 18px",
-              width: "fit-content",
+              alignSelf: "flex-start",
             }}
           >
             <div
@@ -147,6 +148,7 @@ export default async function Image() {
                 height: 6,
                 borderRadius: "50%",
                 background: "#b8922e",
+                display: "flex",
               }}
             />
             <div
@@ -156,6 +158,7 @@ export default async function Image() {
                 letterSpacing: "0.1em",
                 color: "#8a6420",
                 textTransform: "uppercase",
+                display: "flex",
               }}
             >
               astrogeoanna.com
@@ -172,6 +175,7 @@ export default async function Image() {
             right: 0,
             height: 3,
             background: "linear-gradient(to right, transparent, #b8922e, transparent)",
+            display: "flex",
           }}
         />
       </div>
