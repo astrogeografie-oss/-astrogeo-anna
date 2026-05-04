@@ -1,6 +1,6 @@
 "use client";
 
-import { Globe, Star, Map, Compass, ExternalLink } from "lucide-react";
+import { Globe, Star, Map, Compass } from "lucide-react";
 
 function InstagramIcon({ size = 16 }: { size?: number }) {
   return (
@@ -75,11 +75,9 @@ export default function InstagramCTA() {
             href="https://www.instagram.com/astrogeo.anna"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-gold inline-flex items-center justify-center gap-3 px-10 py-4 text-sm font-[family-name:var(--font-montserrat)] tracking-[0.15em] rounded-sm"
+            className="btn-outline-gold inline-block px-10 py-4 text-sm font-[family-name:var(--font-montserrat)] tracking-[0.15em] rounded-sm"
           >
-            <InstagramIcon size={16} />
             @astrogeo.anna folgen
-            <ExternalLink size={14} className="opacity-70" />
           </a>
         </div>
       </div>
