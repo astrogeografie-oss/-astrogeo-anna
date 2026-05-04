@@ -1,6 +1,6 @@
 "use client";
 
-import { Check, Globe, Star, Users, Clock, Gift, Calendar, BookOpen, Compass, Map, Sun, Baby } from "lucide-react";
+import { Check, Globe, Star, Users, Clock, Gift, Calendar, BookOpen, Compass, Map, Sun, Baby, Smartphone } from "lucide-react";
 
 const flagship = {
   id: "orts-horoskop",
@@ -124,6 +124,7 @@ const additionalServices = [
     desc: "45 Min. — Klarheit in Liebe, Beruf & persönlicher Entwicklung.",
     url: "https://calendly.com/astrogeo/kipperkarten-reading-grosse-tafel-klon",
     free: false,
+    price: "47 €",
   },
   {
     icon: <Star size={18} />,
@@ -131,6 +132,7 @@ const additionalServices = [
     desc: "30 Min. — Vergangenheit, Gegenwart & Zukunft mit empathischer Führung.",
     url: "https://calendly.com/astrogeo/skatkarten",
     free: false,
+    price: "47 €",
   },
   {
     icon: <Baby size={18} />,
@@ -145,6 +147,14 @@ const additionalServices = [
     desc: "30 Min. — Alle Herausforderungen des kommenden Jahres mit Lösungs-Tipps.",
     url: "https://calendly.com/astrogeo/jahreslegung-mit-den-orakelkarten",
     free: false,
+  },
+  {
+    icon: <Smartphone size={18} />,
+    name: "Masterclass Astro Gold App",
+    desc: "iPhone · Lerne die App für deine persönliche Astrokartographie-Analyse.",
+    url: "https://astrogeoanna.thrivecart.com/astrogoldappiphone/",
+    free: false,
+    price: "97 €",
   },
   {
     icon: <Gift size={18} />,
@@ -362,11 +372,18 @@ export default function Services() {
                 rel="noopener noreferrer"
                 className="card-cosmic rounded-sm p-6 hover:border-[rgba(201,168,76,0.3)] transition-all duration-300 hover:-translate-y-1 group"
               >
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="text-[#c9a84c]">{s.icon}</span>
-                  {s.free && (
-                    <span className="font-[family-name:var(--font-montserrat)] text-xs text-[#c9a84c] border border-[rgba(201,168,76,0.4)] px-2 py-0.5 rounded-full tracking-wider">
-                      Kostenlos
+                <div className="flex items-center justify-between mb-3">
+                  <div className="flex items-center gap-2">
+                    <span className="text-[#c9a84c]">{s.icon}</span>
+                    {s.free && (
+                      <span className="font-[family-name:var(--font-montserrat)] text-xs text-[#c9a84c] border border-[rgba(201,168,76,0.4)] px-2 py-0.5 rounded-full tracking-wider">
+                        Kostenlos
+                      </span>
+                    )}
+                  </div>
+                  {"price" in s && s.price && (
+                    <span className="font-[family-name:var(--font-cormorant)] text-base font-medium text-[#c9a84c]">
+                      {s.price}
                     </span>
                   )}
                 </div>
