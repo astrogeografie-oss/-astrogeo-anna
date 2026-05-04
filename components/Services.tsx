@@ -76,7 +76,6 @@ const buch = {
 };
 
 const additionalServices = [
-  // 222 €
   {
     icon: <Star size={18} />,
     name: "Birthday Astrogeo",
@@ -85,7 +84,6 @@ const additionalServices = [
     free: false,
     price: "222 €",
   },
-  // 197 €
   {
     icon: <Calendar size={18} />,
     name: "Follow-Up Session",
@@ -95,14 +93,13 @@ const additionalServices = [
     price: "197 €",
   },
   {
-    icon: <Baby size={18} />,
-    name: "Kinder-Horoskop",
-    desc: "45 Min. — Einblick in die Seele, Talente & Entwicklung deines Kindes.",
-    url: "https://calendly.com/astrogeo/kinder-horoskop",
+    icon: <Smartphone size={18} />,
+    name: "Masterclass Astro Gold App",
+    desc: "iPhone · Lerne die App für deine persönliche Astrokartographie-Analyse.",
+    url: "https://astrogeoanna.thrivecart.com/astrogoldappiphone/",
     free: false,
-    price: "197 €",
+    price: "97 €",
   },
-  // 147 €
   {
     icon: <Star size={18} />,
     name: "Frag Anna – Astro-Session",
@@ -127,15 +124,6 @@ const additionalServices = [
     free: false,
     price: "147 €",
   },
-  // 97 €
-  {
-    icon: <Smartphone size={18} />,
-    name: "Masterclass Astro Gold App",
-    desc: "iPhone · Lerne die App für deine persönliche Astrokartographie-Analyse.",
-    url: "https://astrogeoanna.thrivecart.com/astrogoldappiphone/",
-    free: false,
-    price: "97 €",
-  },
   {
     icon: <Sun size={18} />,
     name: "Jahreslegung Orakelkarten",
@@ -144,7 +132,6 @@ const additionalServices = [
     free: false,
     price: "97 €",
   },
-  // 47 €
   {
     icon: <Star size={18} />,
     name: "Kipperkarten Reading",
@@ -161,12 +148,18 @@ const additionalServices = [
     free: false,
     price: "47 €",
   },
-  // Gutschein & kostenlos zuletzt
   {
     icon: <Gift size={18} />,
     name: "Gutschein",
     desc: "Für alle Angebote — das perfekte Geschenk. Dauerhaft gültig.",
     url: "https://calendly.com/astrogeo/gutschein",
+    free: false,
+  },
+  {
+    icon: <Baby size={18} />,
+    name: "Kinder-Horoskop",
+    desc: "45 Min. — Einblick in die Seele, Talente & Entwicklung deines Kindes.",
+    url: "https://calendly.com/astrogeo/kinder-horoskop",
     free: false,
   },
   {
