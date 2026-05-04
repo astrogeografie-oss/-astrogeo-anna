@@ -117,14 +117,6 @@ const additionalServices = [
     price: "147 €",
   },
   {
-    icon: <Star size={18} />,
-    name: "Progression Chart",
-    desc: "30 Min. — Deine innere Seelenentwicklung im Zeitverlauf.",
-    url: "https://calendly.com/astrogeo/porgessions-chart",
-    free: false,
-    price: "147 €",
-  },
-  {
     icon: <Sun size={18} />,
     name: "Jahreslegung Orakelkarten",
     desc: "30 Min. — Alle Herausforderungen des kommenden Jahres mit Lösungs-Tipps.",
