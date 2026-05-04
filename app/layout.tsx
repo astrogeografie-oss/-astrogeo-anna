@@ -70,6 +70,9 @@ export const metadata: Metadata = {
     description:
       "Finde deinen Kraftort. Deutschlands führende Astrokartographie-Expertin.",
   },
+  verification: {
+    google: "761c616b7cc676a8",
+  },
   robots: {
     index: true,
     follow: true,
