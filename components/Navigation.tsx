@@ -9,6 +9,7 @@ const navLinks = [
   { label: "Wie es funktioniert", href: "#prozess" },
   { label: "Stimmen", href: "#testimonials" },
   { label: "FAQ", href: "#faq" },
+  { label: "Blog", href: "/blog" },
 ];
 
 export default function Navigation() {
