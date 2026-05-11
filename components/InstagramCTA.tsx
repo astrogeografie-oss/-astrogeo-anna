@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { Globe, Star, Map, Compass } from "lucide-react";
 
 function InstagramIcon({ size = 16 }: { size?: number }) {
@@ -20,6 +21,8 @@ const posts = [
     icon: <Star size={22} />,
     label: "Planetenlinien",
     caption: "Venus, Jupiter, Sonne — welche Linie zieht dich an? Ein Deep Dive.",
+    blogLink: "/blog/sonnenlinie",
+    blogLabel: "Meine Sonnenlinie lesen",
   },
   {
     icon: <Map size={22} />,
@@ -57,15 +60,23 @@ export default function InstagramCTA() {
           {posts.map((post) => (
             <div
               key={post.label}
-              className="card-warm rounded-sm p-6 text-center"
+              className="card-warm rounded-sm p-6 text-center flex flex-col"
             >
               <div className="text-[#b8922e] flex justify-center mb-4">{post.icon}</div>
               <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.1em] text-[#b8922e] uppercase mb-2">
                 {post.label}
               </p>
-              <p className="font-[family-name:var(--font-cormorant)] text-base text-[#52402e] font-light leading-snug">
+              <p className="font-[family-name:var(--font-cormorant)] text-base text-[#52402e] font-light leading-snug flex-1">
                 {post.caption}
               </p>
+              {"blogLink" in post && (
+                <Link
+                  href={post.blogLink as string}
+                  className="mt-4 font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#b8922e] hover:text-[#8a6420] transition-colors uppercase"
+                >
+                  {post.blogLabel as string} →
+                </Link>
+              )}
             </div>
           ))}
         </div>
