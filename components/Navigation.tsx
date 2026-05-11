@@ -27,7 +27,7 @@ export default function Navigation() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
           ? "bg-[#faf7f2]/95 backdrop-blur-md border-b border-[rgba(184,146,46,0.2)] shadow-sm"
-          : "bg-transparent"
+          : "bg-[#1a0f0a]/40 backdrop-blur-sm lg:bg-transparent lg:backdrop-blur-none"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -48,8 +48,8 @@ export default function Navigation() {
               <line x1="25" y1="16" x2="31" y2="16" stroke="#b8922e" strokeWidth="0.8" opacity="0.8" />
             </svg>
           </div>
-          <span className="font-[family-name:var(--font-cormorant)] text-xl font-light tracking-[0.15em] text-[#2c2010] group-hover:text-[#b8922e] transition-colors duration-300">
-            ANNA<span className="text-[#b8922e] mx-1">·</span>ASTROGEOGRAFIE
+          <span className={`font-[family-name:var(--font-cormorant)] text-base lg:text-xl font-light tracking-[0.15em] transition-colors duration-300 group-hover:text-[#b8922e] ${scrolled ? "text-[#2c2010]" : "text-white"}`}>
+            ANNA<span className="text-[#b8922e] mx-1">·</span><span className="hidden sm:inline">ASTROGEOGRAFIE</span>
           </span>
         </a>
 
@@ -74,7 +74,7 @@ export default function Navigation() {
 
         {/* Mobile Menu Button */}
         <button
-          className="lg:hidden text-[#b8922e] p-2"
+          className={`lg:hidden p-2 transition-colors duration-300 ${scrolled ? "text-[#b8922e]" : "text-white"}`}
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Menü öffnen"
         >
