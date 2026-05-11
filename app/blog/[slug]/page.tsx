@@ -64,17 +64,17 @@ export default async function BlogPostPage({ params }: Props) {
         </div>
 
         {/* Title */}
-        <h1 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl lg:text-6xl font-light text-[#2c2010] leading-[1.1] mb-3">
+        <h1 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl lg:text-6xl font-semibold text-[#2c2010] leading-[1.1] mb-3">
           {post.title}
         </h1>
-        <p className="font-[family-name:var(--font-cormorant)] text-2xl text-[#6a4c10] italic font-light mb-10">
+        <p className="font-[family-name:var(--font-cormorant)] text-2xl text-[#6a4c10] italic font-normal mb-10">
           {post.subtitle}
         </p>
 
         <div className="w-16 h-px mb-10" style={{ background: "linear-gradient(90deg, #b8922e, transparent)" }} />
 
         {/* Intro */}
-        <p className="font-[family-name:var(--font-cormorant)] text-xl md:text-2xl text-[#52402e] font-light leading-relaxed mb-14">
+        <p className="font-[family-name:var(--font-cormorant)] text-xl md:text-2xl text-[#2c2010] font-medium leading-relaxed mb-14">
           {post.intro}
         </p>
 
@@ -83,26 +83,49 @@ export default async function BlogPostPage({ params }: Props) {
           {post.sections.map((section, i) => (
             <div key={i}>
               {section.heading && (
-                <h2 className="font-[family-name:var(--font-cormorant)] text-2xl md:text-3xl font-light text-[#2c2010] mb-5">
+                <h2 className="font-[family-name:var(--font-cormorant)] text-2xl md:text-3xl font-semibold text-[#2c2010] mb-5">
                   {section.heading}
                 </h2>
               )}
 
-              {section.body.split("\n\n").map((paragraph, j) => (
-                <p
-                  key={j}
-                  className="font-[family-name:var(--font-cormorant)] text-lg text-[#52402e] font-light leading-relaxed mb-4"
+              {section.highlight ? (
+                <div
+                  className="rounded-sm px-8 py-7 my-2"
+                  style={{
+                    background: "linear-gradient(135deg, #fffdf9, #fdf6e8)",
+                    border: "1px solid rgba(184,146,46,0.35)",
+                    borderLeft: "4px solid #b8922e",
+                  }}
                 >
-                  {paragraph}
-                </p>
-              ))}
+                  <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.3em] text-[#b8922e] uppercase mb-4">
+                    Meine Erfahrung
+                  </p>
+                  {section.body.split("\n\n").map((paragraph, j) => (
+                    <p
+                      key={j}
+                      className="font-[family-name:var(--font-cormorant)] text-xl text-[#2c2010] font-medium leading-relaxed mb-3 last:mb-0"
+                    >
+                      {paragraph}
+                    </p>
+                  ))}
+                </div>
+              ) : (
+                section.body.split("\n\n").map((paragraph, j) => (
+                  <p
+                    key={j}
+                    className="font-[family-name:var(--font-cormorant)] text-lg text-[#52402e] font-normal leading-relaxed mb-4"
+                  >
+                    {paragraph}
+                  </p>
+                ))
+              )}
 
               {section.bullets && (
                 <ul className="mt-4 flex flex-col gap-3">
                   {section.bullets.map((bullet, k) => (
                     <li key={k} className="flex items-start gap-3">
-                      <span className="mt-2 w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: "#b8922e" }} />
-                      <span className="font-[family-name:var(--font-cormorant)] text-lg text-[#52402e] font-light leading-relaxed">
+                      <span className="mt-2.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: "#b8922e" }} />
+                      <span className="font-[family-name:var(--font-cormorant)] text-lg text-[#52402e] font-normal leading-relaxed">
                         {bullet}
                       </span>
                     </li>
