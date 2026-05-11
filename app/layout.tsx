@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Anna Thoma" }],
   creator: "Anna Thoma",
   alternates: {
-    canonical: "https://astrogeoanna.com",
+    canonical: "https://www.astrogeoanna.com",
   },
   openGraph: {
     title: "Astrokartographie mit Anna Thoma | Kraftort finden · ab 495 €",
