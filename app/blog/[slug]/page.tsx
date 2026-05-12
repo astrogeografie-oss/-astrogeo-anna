@@ -119,6 +119,40 @@ export default async function BlogPostPage({ params }: Props) {
                     </p>
                   ))}
                 </div>
+              ) : section.planetBox ? (
+                <div
+                  className="rounded-sm px-8 py-7 mb-2"
+                  style={{
+                    background: "linear-gradient(135deg, #fffbf0, #fdf3d0)",
+                    border: "2px solid rgba(184,146,46,0.45)",
+                  }}
+                >
+                  <div className="flex items-center gap-3 mb-5">
+                    <span className="text-3xl">{section.planetBox.symbol}</span>
+                    <div>
+                      <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.35em] text-[#b8922e] uppercase mb-0.5">
+                        Planet
+                      </p>
+                      <p className="font-[family-name:var(--font-cormorant)] text-2xl font-semibold text-[#2c2010]">
+                        {section.planetBox.planet}
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {section.planetBox.keywords.map((kw, k) => (
+                      <span
+                        key={k}
+                        className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#6a4c10] px-3 py-1 rounded-sm uppercase"
+                        style={{ background: "rgba(184,146,46,0.15)", border: "1px solid rgba(184,146,46,0.3)" }}
+                      >
+                        {kw}
+                      </span>
+                    ))}
+                  </div>
+                  <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.2em] text-[#9b8272] uppercase">
+                    {section.planetBox.energy}
+                  </p>
+                </div>
               ) : section.highlight ? (
                 <div
                   className="rounded-sm px-8 py-7 my-2"
@@ -165,12 +199,19 @@ export default async function BlogPostPage({ params }: Props) {
               )}
 
               {section.cta && (
-                <div className="mt-8 pt-8 border-t border-[rgba(184,146,46,0.2)]">
+                <div className="mt-8 pt-8 border-t border-[rgba(184,146,46,0.2)] flex flex-col sm:flex-row gap-4">
+                  <a
+                    href="/#mini-kurs"
+                    className="btn-gold inline-block px-8 py-4 text-sm font-[family-name:var(--font-montserrat)] tracking-[0.15em] rounded-sm text-center"
+                  >
+                    Mini-Kurs entdecken
+                  </a>
                   <a
                     href="/#buchen"
-                    className="btn-gold inline-block px-8 py-4 text-sm font-[family-name:var(--font-montserrat)] tracking-[0.15em] rounded-sm"
+                    className="inline-block px-8 py-4 text-sm font-[family-name:var(--font-montserrat)] tracking-[0.15em] rounded-sm text-center text-[#6a4c10] hover:text-[#b8922e] transition-colors duration-300"
+                    style={{ border: "1px solid rgba(184,146,46,0.4)" }}
                   >
-                    Jetzt Beratung buchen
+                    1:1 Beratung buchen
                   </a>
                 </div>
               )}
