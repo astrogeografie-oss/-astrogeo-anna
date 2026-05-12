@@ -47,7 +47,7 @@ export const blogPosts: BlogPost[] = [
         body: "",
         planetBox: {
           planet: "Sonne",
-          symbol: "☀️",
+          symbol: "☼",
           energy: "Männliche Energie · Die eigene Bühne",
           keywords: [
             "Vitalität",

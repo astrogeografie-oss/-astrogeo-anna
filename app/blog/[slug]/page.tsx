@@ -123,12 +123,18 @@ export default async function BlogPostPage({ params }: Props) {
                 <div
                   className="rounded-sm px-8 py-7 mb-2"
                   style={{
-                    background: "linear-gradient(135deg, #fffbf0, #fdf3d0)",
-                    border: "2px solid rgba(184,146,46,0.45)",
+                    background: "linear-gradient(135deg, #fffdf9, #fdf6e8)",
+                    border: "1px solid rgba(184,146,46,0.35)",
+                    borderLeft: "4px solid #b8922e",
                   }}
                 >
-                  <div className="flex items-center gap-3 mb-5">
-                    <span className="text-3xl">{section.planetBox.symbol}</span>
+                  <div className="flex items-baseline gap-3 mb-5">
+                    <span
+                      className="font-[family-name:var(--font-cormorant)] text-4xl font-light leading-none"
+                      style={{ color: "#b8922e" }}
+                    >
+                      {section.planetBox.symbol}
+                    </span>
                     <div>
                       <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.35em] text-[#b8922e] uppercase mb-0.5">
                         Planet
@@ -143,7 +149,7 @@ export default async function BlogPostPage({ params }: Props) {
                       <span
                         key={k}
                         className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#6a4c10] px-3 py-1 rounded-sm uppercase"
-                        style={{ background: "rgba(184,146,46,0.15)", border: "1px solid rgba(184,146,46,0.3)" }}
+                        style={{ background: "rgba(184,146,46,0.12)", border: "1px solid rgba(184,146,46,0.2)" }}
                       >
                         {kw}
                       </span>
