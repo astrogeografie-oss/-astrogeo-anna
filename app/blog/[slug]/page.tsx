@@ -88,7 +88,38 @@ export default async function BlogPostPage({ params }: Props) {
                 </h2>
               )}
 
-              {section.highlight ? (
+              {section.definitionBox ? (
+                <div
+                  className="rounded-sm px-8 py-7 my-2"
+                  style={{
+                    background: "linear-gradient(135deg, #fffef8, #fef9ee)",
+                    border: "1px solid rgba(184,146,46,0.4)",
+                    borderLeft: "4px solid #b8922e",
+                  }}
+                >
+                  {section.keywords && (
+                    <div className="flex flex-wrap gap-3 mb-5">
+                      {section.keywords.map((kw, k) => (
+                        <span
+                          key={k}
+                          className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.2em] text-[#6a4c10] uppercase px-3 py-1 rounded-sm"
+                          style={{ background: "rgba(184,146,46,0.15)", border: "1px solid rgba(184,146,46,0.25)" }}
+                        >
+                          {kw}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                  {section.body.split("\n\n").map((paragraph, j) => (
+                    <p
+                      key={j}
+                      className="font-[family-name:var(--font-cormorant)] text-lg text-[#2c2010] font-normal leading-relaxed mb-3 last:mb-0"
+                    >
+                      {paragraph}
+                    </p>
+                  ))}
+                </div>
+              ) : section.highlight ? (
                 <div
                   className="rounded-sm px-8 py-7 my-2"
                   style={{

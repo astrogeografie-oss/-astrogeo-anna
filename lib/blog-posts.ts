@@ -10,6 +10,8 @@ export interface BlogPost {
     heading?: string;
     body: string;
     highlight?: boolean;
+    definitionBox?: boolean;
+    keywords?: string[];
     bullets?: string[];
     cta?: boolean;
   }[];
@@ -26,6 +28,12 @@ export const blogPosts: BlogPost[] = [
     intro:
       "Nürnberg. Auch eine Sonnenlinie. Sichtbarkeit, Klarheit, Fokus. Ich wurde mutiger, habe mehr gezeigt, wer ich bin. Und ich war dort lange — über zehn Jahre. Hier sind meine Kinder zur Schule gegangen, hier war mein Lebensmittelpunkt. Nürnberg stand für Struktur, Alltag, Verantwortung — aber auch für Business, Präsenz und erste echte Erfolge.",
     sections: [
+      {
+        heading: "Die Sonnenlinie auf einen Blick",
+        body: "Da wo deine individuelle Sonnenlinie verläuft, ist deine Löwen-Energie zuhause. Bei jedem Menschen liegt sie woanders — errechnet aus deinem persönlichen Geburtsbild (Datum, Uhrzeit, Ort). In meiner eigenen Astrokartografie-Landkarte verläuft meine Sonnenlinie durch Nürnberg und durch die Schweiz.\n\nWenn du deine Sonnenlinie kennenlernen möchtest, geht das im Mini-Kurs oder in einer 1:1-Beratung.",
+        definitionBox: true,
+        keywords: ["Lebensfreude", "Vitalität", "Männliche Energie"],
+      },
       {
         heading: "Was die Sonnenlinie in der Astrogeografie bedeutet",
         body: "In der Astrokartografie verbindet die Sonnenlinie all jene Orte der Welt, an denen die Sonne zum Zeitpunkt deiner Geburt in einem bestimmten Winkel am Himmel stand. Energetisch ist sie die Linie der Sichtbarkeit, der Identität und der Lebendigkeit. Hier wirst du nicht zu jemand anderem — du wirst mehr du selbst.",
