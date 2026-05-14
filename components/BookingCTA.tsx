@@ -46,7 +46,7 @@ export default function BookingCTA() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
           <a
-            href="https://calendly.com/astrogeo"
+            href="https://calendly.com/astrogeo/60"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-gold inline-flex items-center justify-center gap-3 px-10 py-5 text-sm font-[family-name:var(--font-montserrat)] tracking-[0.15em] rounded-sm"
