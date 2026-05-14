@@ -100,7 +100,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://calendly.com/astrogeo"
+                  href="https://calendly.com/astrogeo/60"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 font-[family-name:var(--font-cormorant)] text-base text-[#52402e] hover:text-[#b8922e] transition-colors duration-300"
