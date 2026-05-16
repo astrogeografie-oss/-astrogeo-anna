@@ -33,7 +33,7 @@ export default function NewsletterSection() {
             </p>
             <div className="section-divider mb-8" />
             <a
-              href="https://astrogeoanna.activehosted.com/f/5"
+              href="https://drive.google.com/file/d/12NfkiL3Cyv8QkS8EobHOoiKEn-qSz4i_/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-gold inline-block text-center px-8 py-4 text-sm font-[family-name:var(--font-montserrat)] tracking-[0.15em] rounded-sm"
