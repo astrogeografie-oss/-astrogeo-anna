@@ -23,9 +23,9 @@ export default function NewsletterSection() {
               Kostenlos
             </p>
             <h3 className="font-[family-name:var(--font-cormorant)] text-3xl font-light text-[#2c2010] leading-[1.2] mb-4">
-              Dein kostenloser
+              Dein
               <br />
-              <em className="gold-gradient not-italic font-medium">Astrogeografie-Guide</em>
+              <em className="gold-gradient not-italic font-medium">0 Euro Guide</em>
             </h3>
             <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#52402e] font-light leading-relaxed mb-8 flex-1">
               Die 3 wichtigsten Planetenlinien — und was sie für deinen
