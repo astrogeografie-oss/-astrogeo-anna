@@ -29,11 +29,11 @@ export default function NewsletterSection() {
             </h3>
             <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#52402e] font-light leading-relaxed mb-8 flex-1">
               Die 3 wichtigsten Planetenlinien — und was sie für deinen
-              Kraftort bedeuten. Gratis, sofort per E-Mail.
+              Kraftort bedeuten. Kostenlos, sofort zum Download.
             </p>
             <div className="section-divider mb-8" />
             <a
-              href="https://astrogeoanna.activehosted.com/f/5"
+              href="https://drive.google.com/file/d/12NfkiL3Cyv8QkS8EobHOoiKEn-qSz4i_/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-gold inline-block text-center px-8 py-4 text-sm font-[family-name:var(--font-montserrat)] tracking-[0.15em] rounded-sm"
