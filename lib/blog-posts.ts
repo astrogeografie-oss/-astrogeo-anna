@@ -1,3 +1,10 @@
+export interface PlanetBox {
+  planet: string;
+  keywords: string[];
+  energy: string;
+  symbol: string;
+}
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -14,6 +21,7 @@ export interface BlogPost {
     keywords?: string[];
     bullets?: string[];
     cta?: boolean;
+    planetBox?: PlanetBox;
   }[];
 }
 
@@ -33,6 +41,23 @@ export const blogPosts: BlogPost[] = [
         body: "Die Sonnenlinie verbindet all jene Punkte auf der Erde, an denen die Sonne zum Zeitpunkt deiner Geburt einen bestimmten Winkel einnahm. Wo sie verläuft, ist deine Löwen-Energie zuhause. Bei jedem Menschen liegt sie woanders — errechnet aus Geburtsdatum, Uhrzeit und Geburtsort.",
         definitionBox: true,
         keywords: ["Lebensfreude", "Vitalität", "Männliche Energie"],
+      },
+      {
+        heading: "Die Sonne — was diese Energie bedeutet",
+        body: "",
+        planetBox: {
+          planet: "Sonne",
+          symbol: "☼",
+          energy: "Männliche Energie · Die eigene Bühne",
+          keywords: [
+            "Vitalität",
+            "Lebenskraft",
+            "Lebensfreude",
+            "Sichtbarkeit",
+            "Identität",
+            "Selbstausdruck",
+          ],
+        },
       },
       {
         heading: "Was die Sonnenlinie bedeutet",
@@ -60,7 +85,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         heading: "Ist die Sonnenlinie die richtige für dich?",
-        body: "Die Sonnenlinie ist kraftvoll — aber nicht automatisch für alle gleich. Wie jede Linie muss sie im Kontext deines gesamten Geburtshoroskops gelesen werden. Eine Sonne unter schwierigen Aspekten kann auf ihrer Linie auch Druck oder das Gefühl erzeugen, ständig performen zu müssen.\n\nDeshalb: Schau nie nur auf die Linie — schau auf das ganze Bild. Wenn du wissen möchtest, wo deine Sonnenlinie liegt und was sie für dich persönlich bedeutet, dann lass uns gemeinsam hineinschauen — im Mini-Kurs oder in einer 1:1-Beratung.",
+        body: "Die Sonnenlinie ist kraftvoll — aber nicht automatisch für alle gleich. Wie jede Linie muss sie im Kontext deines gesamten Geburtshoroskops gelesen werden. Eine Sonne unter schwierigen Aspekten kann auf ihrer Linie auch Druck oder das Gefühl erzeugen, ständig performen zu müssen.\n\nDeshalb: Schau nie nur auf die Linie — schau auf das ganze Bild.\n\nWo sich deine persönliche Sonnenlinie befindet, kann nur durch dein individuelles Geburtsbild erkannt werden — denn jede Astro-Landkarte ist einzigartig. Du lernst das bei mir im Mini-Kurs oder im 1:1 und entdeckst, welche Orte dich wirklich tragen.",
         cta: true,
       },
     ],
