@@ -80,11 +80,11 @@ export default function Footer() {
             <ul className="space-y-4">
               <li>
                 <a
-                  href="mailto:astrogeografie@gmail.com"
+                  href="mailto:anna@astrogeoanna.info"
                   className="flex items-center gap-3 font-[family-name:var(--font-cormorant)] text-base text-[#52402e] hover:text-[#b8922e] transition-colors duration-300"
                 >
                   <Mail size={16} className="text-[#b8922e] flex-shrink-0" />
-                  astrogeografie@gmail.com
+                  anna@astrogeoanna.info
                 </a>
               </li>
               <li>
