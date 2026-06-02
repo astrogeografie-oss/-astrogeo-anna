@@ -71,27 +71,13 @@ export default function Hero() {
             Meinen Kraftort entdecken
           </a>
           <a
-            href="#angebote"
-            className="btn-outline-gold px-10 py-4 text-sm font-[family-name:var(--font-montserrat)] tracking-[0.15em] rounded-sm w-full sm:w-auto"
-          >
-            Angebote ansehen
-          </a>
-        </div>
-
-        {/* 0 Euro Guide */}
-        <div
-          className="mt-10 opacity-0"
-          style={{ animation: "fadeInUp 0.9s 1s ease forwards" }}
-        >
-          <a
             href="https://drive.google.com/file/d/12NfkiL3Cyv8QkS8EobHOoiKEn-qSz4i_/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-6 py-3 rounded-sm font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#e8c97a] transition-colors duration-300 hover:text-white"
-            style={{ border: "1px solid rgba(184,146,46,0.4)", background: "rgba(184,146,46,0.08)" }}
+            className="inline-flex items-center justify-center gap-2 btn-outline-gold px-10 py-4 text-sm font-[family-name:var(--font-montserrat)] tracking-[0.15em] rounded-sm w-full sm:w-auto"
           >
-            <span className="text-[#b8922e]">↓</span>
-            Gratis: 0 Euro Guide zu Astrokartographie herunterladen
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            0 Euro Guide — Gratis
           </a>
         </div>
 
