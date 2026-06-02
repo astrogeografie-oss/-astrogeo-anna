@@ -50,38 +50,6 @@ const paarReading = {
   note: "Beide Geburtszeiten & -orte notwendig",
 };
 
-const akademie = {
-  icon: <GraduationCap size={32} />,
-  name: "Die Akademie",
-  tagline: "Nächster Schritt · Online-Akademie · Selbststudium",
-  badge: "Upsell aus Cosmic Coordinates",
-  desc: "Du hast Cosmic Coordinates gemacht und weißt, wie du Standort-Astrologie liest? Jetzt geht es tiefer: In der Akademie lernst du die ACG-Linien (Astrocartography) — das globale Pendant zu Local Space — und so vieles mehr. Deine Karte, deine Welt.",
-  url: "https://astrogeoanna.thrivecart.com/the-place-to-be-special-offer-copy-2/",
-  includes: [
-    "ACG-Linien: Astrocartography auf der Weltkarte",
-    "Planeten-Linien deuten & anwenden",
-    "Von Local Space zu globalem Kraftort",
-    "Und so vieles mehr …",
-  ],
-};
-
-const miniKurse = [
-  {
-    icon: <Compass size={24} />,
-    name: "Mini-Kurs Cosmic Coordinates",
-    tagline: "Einstieg · Online-Kurs · Selbststudium",
-    desc: "Lerne Standort-Astrologie (Local Space) in deinem eigenen Tempo. Du verstehst Azimuth, Häuser & die 10 Planetenlinien — und kannst deine eigene Karte selbst lesen.",
-    url: "https://astrogeoanna.thrivecart.com/cosmic-coordinates-2026/",
-  },
-  {
-    icon: <Map size={24} />,
-    name: "Mini-Kurs Raumastrologie",
-    tagline: "Einstieg · Online-Kurs · Selbststudium",
-    desc: "Lerne selbst, wie du deine persönliche Astro-Folie erstellst und deine Wohnung auf Vordermann bringst — das Café am Merkur-Tisch für lebhafte Gespräche, den Zoom-Call auf der Jupiter-Linie für Erfolg. Dein Alltag, astrologisch optimiert.",
-    url: "https://astrogeoanna.thrivecart.com/die-folie-die-dein-leben-vereandert/",
-  },
-];
-
 const buch = {
   icon: <BookOpen size={32} />,
   name: "Astro-Code – Das Buch",
@@ -97,56 +65,6 @@ const buch = {
   ],
   url: "https://publishde.bookmundo.com/books/22022143",
 };
-
-const additionalServices = [
-  {
-    icon: <Star size={18} />,
-    name: "Birthday Astrogeo",
-    desc: "45 Min. — Finde den perfekten Geburtstags-Ort für dein nächstes Solarjahr.",
-    url: "https://calendly.com/astrogeo/birthday-astrogeo",
-    free: false,
-    price: "222 €",
-  },
-  {
-    icon: <Calendar size={18} />,
-    name: "Follow-Up Session",
-    desc: "45 Min. — Für bestehende Klientinnen: aktuelle Themen & neue Zyklen.",
-    url: "https://calendly.com/astrogeo/astrogeo-follow-up",
-    free: false,
-    price: "197 €",
-  },
-  {
-    icon: <Smartphone size={18} />,
-    name: "Masterclass Astro Gold App",
-    desc: "iPhone · Lerne die App für deine persönliche Astrokartographie-Analyse.",
-    url: "https://astrogeoanna.thrivecart.com/astrogoldappiphone/",
-    free: false,
-    price: "97 €",
-  },
-  {
-    icon: <Star size={18} />,
-    name: "Frag Anna – Astro-Session",
-    desc: "30 Min. — Alle deine Fragen zur Astrokartographie, gezielt & auf den Punkt.",
-    url: "https://calendly.com/astrogeo/frag-anna-deine-personliche-astro-session",
-    free: false,
-    price: "147 €",
-  },
-  {
-    icon: <Star size={18} />,
-    name: "Urlaubsplanung 2026",
-    desc: "30 Min. — Dein Urlaubsspot, der wirklich zu deiner Energie passt.",
-    url: "https://calendly.com/astrogeo/urlaubsplanung-2026-schon-ready",
-    free: false,
-    price: "147 €",
-  },
-  {
-    icon: <Gift size={18} />,
-    name: "Gutschein",
-    desc: "Für alle Angebote — das perfekte Geschenk. Dauerhaft gültig.",
-    url: "https://calendly.com/astrogeo/gutschein",
-    free: false,
-  },
-];
 
 function MainCard({ service, fullWidth = false }: { service: typeof flagship | typeof paarReading; fullWidth?: boolean }) {
   const isHighlight = service.id === "orts-horoskop";
@@ -164,7 +82,6 @@ function MainCard({ service, fullWidth = false }: { service: typeof flagship | t
           : "1px solid rgba(184,146,46,0.1)",
       }}
     >
-      {/* Badge */}
       <div className="absolute top-6 right-6">
         <span
           className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.2em] uppercase px-3 py-1 rounded-full"
@@ -264,123 +181,27 @@ export default function Services() {
           </h2>
           <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#52402e] max-w-2xl mx-auto font-light">
             Ob du solo deinen idealen Ort suchst, als Paar umziehen möchtest
-            oder schnelle Klarheit brauchst — hier findest du das Richtige.
+            oder als Profi Astrogeografie anbieten willst — hier findest du das Richtige.
           </p>
         </div>
 
-        {/* 1. Flagship – Hauptangebot */}
+        {/* 1. Flagship – Orts-Horoskop */}
         <div className="max-w-5xl mx-auto mb-8">
           <MainCard service={flagship} fullWidth />
         </div>
 
-        {/* 2. Paar Reading */}
+        {/* 2. Paar-Analyse */}
         <div className="max-w-5xl mx-auto mb-16">
           <MainCard service={paarReading} fullWidth />
         </div>
 
-        {/* 3. Mini-Kurse – Einstieg */}
+        {/* 3. Planetary Pathway – Ausbildung */}
         <div className="max-w-5xl mx-auto mb-16">
           <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.3em] text-[#b8922e] uppercase text-center mb-10">
-            Einstieg · Mini-Kurse
-          </p>
-          <div className="grid md:grid-cols-2 gap-6">
-            {miniKurse.map((kurs) => (
-              <a
-                key={kurs.name}
-                href={kurs.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group rounded-sm p-8 hover:-translate-y-1 transition-all duration-300"
-                style={{
-                  background: "linear-gradient(145deg, #fffdf9, #faf7f2)",
-                  border: "1px solid rgba(184,146,46,0.2)",
-                }}
-              >
-                <div className="text-[#b8922e] mb-4">{kurs.icon}</div>
-                <h3 className="font-[family-name:var(--font-cormorant)] text-2xl font-medium text-[#2c2010] mb-1 group-hover:text-[#b8922e] transition-colors">
-                  {kurs.name}
-                </h3>
-                <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#b8922e] uppercase mb-4">
-                  {kurs.tagline}
-                </p>
-                <p className="font-[family-name:var(--font-cormorant)] text-base text-[#52402e] font-light leading-relaxed">
-                  {kurs.desc}
-                </p>
-              </a>
-            ))}
-          </div>
-        </div>
-
-        {/* 4. Akademie – Upsell aus Cosmic Coordinates */}
-        <div className="max-w-5xl mx-auto mb-16">
-          <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.3em] text-[#b8922e] uppercase text-center mb-10">
-            Nächster Schritt · Akademie
-          </p>
-          <a
-            href={akademie.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group block rounded-sm p-8 md:p-10 hover:-translate-y-1 transition-all duration-300 glow-gold"
-            style={{
-              background: "linear-gradient(145deg, #fffdf9, #f5efe4)",
-              border: "1px solid rgba(184,146,46,0.4)",
-            }}
-          >
-            <div className="flex flex-col md:flex-row md:items-start gap-6">
-              <div className="text-[#b8922e] flex-shrink-0">
-                {akademie.icon}
-              </div>
-              <div className="flex-1">
-                <div className="flex flex-wrap items-start justify-between gap-4 mb-3">
-                  <div>
-                    <h3 className="font-[family-name:var(--font-cormorant)] text-3xl font-medium text-[#2c2010] mb-1 group-hover:text-[#b8922e] transition-colors">
-                      {akademie.name}
-                    </h3>
-                    <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#b8922e] uppercase">
-                      {akademie.tagline}
-                    </p>
-                  </div>
-                  <span
-                    className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.2em] uppercase px-3 py-1 rounded-full flex-shrink-0"
-                    style={{
-                      background: "rgba(184,146,46,0.2)",
-                      border: "1px solid rgba(184,146,46,0.3)",
-                      color: "#b8922e",
-                    }}
-                  >
-                    Nach Cosmic Coordinates
-                  </span>
-                </div>
-                <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#52402e] font-light leading-relaxed mb-6">
-                  {akademie.desc}
-                </p>
-                <ul className="space-y-2 mb-6">
-                  {akademie.includes.map((item) => (
-                    <li key={item} className="flex gap-3 items-start">
-                      <Check size={15} className="text-[#b8922e] mt-0.5 flex-shrink-0" />
-                      <span className="font-[family-name:var(--font-cormorant)] text-[#52402e] text-base font-light leading-snug">
-                        {item}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-                <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.12em] text-[#8a6420] uppercase group-hover:text-[#b8922e] transition-colors">
-                  Jetzt zur Akademie →
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        {/* 5. Ausbildung – Planetary Pathway */}
-        <div className="max-w-5xl mx-auto mb-16">
-          <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.3em] text-[#b8922e] uppercase text-center mb-10">
-            Ausbildung · Für Astrologinnen & Astro-Kenner
+            Ausbildung · Für Astrologinnen & Astro-Kennerinnen
           </p>
           <a
             href="/planetary-pathway"
-            target="_blank"
-            rel="noopener noreferrer"
             className="group block rounded-sm p-8 md:p-10 hover:-translate-y-1 transition-all duration-300"
             style={{
               background: "linear-gradient(145deg, #fffdf9, #f5efe4)",
@@ -423,7 +244,7 @@ export default function Services() {
           </a>
         </div>
 
-        {/* 6. Buch – Authority-Anker */}
+        {/* 4. Buch – Authority-Anker */}
         <div className="max-w-5xl mx-auto mb-16">
           <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.3em] text-[#b8922e] uppercase text-center mb-10">
             Das Buch · Authority
@@ -483,61 +304,58 @@ export default function Services() {
           </a>
         </div>
 
-        {/* 7. Weitere Angebote */}
+        {/* 5. Teaser-Links zu Unterseiten */}
         <div className="max-w-5xl mx-auto">
           <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.3em] text-[#b8922e] uppercase text-center mb-10">
             Weitere Angebote
           </p>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {additionalServices.map((s) => (
+          <div className="grid sm:grid-cols-3 gap-6">
+            {[
+              {
+                label: "Kurse & Akademie",
+                desc: "Mini-Kurse, Akademie & Masterclass Astro Gold — lerne Astrogeografie in deinem Tempo.",
+                href: "/kurse",
+                icon: <Compass size={24} />,
+              },
+              {
+                label: "Sessions & Extras",
+                desc: "Follow-Up, Birthday Astrogeo, Frag Anna, Urlaubsplanung & Gutschein.",
+                href: "/weitere-angebote",
+                icon: <Star size={24} />,
+              },
+              {
+                label: "Orakel & Karten",
+                desc: "Kipperkarten, Skatkarten & Jahreslegung Orakelkarten.",
+                href: "/orakel",
+                icon: <Star size={24} />,
+              },
+            ].map((tile) => (
               <a
-                key={s.name}
-                href={s.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="card-cosmic rounded-sm p-6 hover:border-[rgba(184,146,46,0.3)] transition-all duration-300 hover:-translate-y-1 group"
+                key={tile.href}
+                href={tile.href}
+                className="group rounded-sm p-8 hover:-translate-y-1 transition-all duration-300 flex flex-col"
+                style={{
+                  background: "linear-gradient(145deg, #fffdf9, #faf7f2)",
+                  border: "1px solid rgba(184,146,46,0.2)",
+                }}
               >
-                <div className="flex items-center justify-between mb-3">
-                  <div className="flex items-center gap-2">
-                    <span className="text-[#b8922e]">{s.icon}</span>
-                    {s.free && (
-                      <span className="font-[family-name:var(--font-montserrat)] text-xs text-[#b8922e] border border-[rgba(184,146,46,0.4)] px-2 py-0.5 rounded-full tracking-wider">
-                        Kostenlos
-                      </span>
-                    )}
-                  </div>
-                  {"price" in s && s.price && (
-                    <span className="font-[family-name:var(--font-cormorant)] text-base font-medium text-[#b8922e]">
-                      {s.price}
-                    </span>
-                  )}
-                </div>
-                <h4 className="font-[family-name:var(--font-cormorant)] text-lg font-medium text-[#2c2010] mb-2 group-hover:text-[#b8922e] transition-colors">
-                  {s.name}
-                </h4>
-                <p className="font-[family-name:var(--font-cormorant)] text-sm text-[#52402e] font-light leading-snug">
-                  {s.desc}
+                <div className="text-[#b8922e] mb-4">{tile.icon}</div>
+                <h3 className="font-[family-name:var(--font-cormorant)] text-xl font-medium text-[#2c2010] mb-3 group-hover:text-[#b8922e] transition-colors">
+                  {tile.label}
+                </h3>
+                <p className="font-[family-name:var(--font-cormorant)] text-base text-[#52402e] font-light leading-relaxed flex-1">
+                  {tile.desc}
+                </p>
+                <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.12em] text-[#8a6420] uppercase mt-5 group-hover:text-[#b8922e] transition-colors">
+                  Mehr entdecken →
                 </p>
               </a>
             ))}
           </div>
         </div>
 
-        {/* Orakel Teaser */}
-        <div className="max-w-5xl mx-auto mt-8 text-center">
-          <p className="font-[family-name:var(--font-cormorant)] text-base text-[#52402e] font-light">
-            Kipperkarten, Skatkarten & Orakelkarten:{" "}
-            <a
-              href="/orakel"
-              className="text-[#b8922e] underline underline-offset-4 hover:text-[#8a6420] transition-colors"
-            >
-              Alle Kartenlegungen →
-            </a>
-          </p>
-        </div>
-
         {/* Reassurance */}
-        <p className="text-center font-[family-name:var(--font-cormorant)] text-base text-[#52402e] mt-8 font-light">
+        <p className="text-center font-[family-name:var(--font-cormorant)] text-base text-[#52402e] mt-14 font-light">
           Nicht sicher, was passt?{" "}
           <a
             href="#buchen"
