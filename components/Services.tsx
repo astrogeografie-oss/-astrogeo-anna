@@ -11,7 +11,7 @@ const flagship = {
   duration: "90 Min. · Zoom",
   price: "495 €",
   description:
-    "Astrokartographie verbindet dein persönliches Horoskop (Radix) mit einer Weltkarte — und zeigt dir, welche Orte auf der Erde ideal für Liebe, Karriere oder inneren Ausgleich sind.",
+    "Hast du dich schon einmal gefragt, an welchem Ort auf der Welt du dein volles Potenzial entfalten, die Liebe finden, beruflich aufblühen oder wirklich zuhause ankommen kannst?",
   includes: [
     "Einführung in die Astrokartographie & Planeten-Erklärungen (PDF)",
     "Analyse: Seelenformel, Best Planet, Mondknoten, Chiron, Human Design",
