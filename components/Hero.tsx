@@ -78,6 +78,23 @@ export default function Hero() {
           </a>
         </div>
 
+        {/* 0 Euro Guide */}
+        <div
+          className="mt-10 opacity-0"
+          style={{ animation: "fadeInUp 0.9s 1s ease forwards" }}
+        >
+          <a
+            href="https://drive.google.com/file/d/12NfkiL3Cyv8QkS8EobHOoiKEn-qSz4i_/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 px-6 py-3 rounded-sm font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#e8c97a] transition-colors duration-300 hover:text-white"
+            style={{ border: "1px solid rgba(184,146,46,0.4)", background: "rgba(184,146,46,0.08)" }}
+          >
+            <span className="text-[#b8922e]">↓</span>
+            Gratis: 0 Euro Guide zu Astrokartographie herunterladen
+          </a>
+        </div>
+
         {/* Social proof bar */}
         <div
           className="mt-20 flex flex-wrap justify-center gap-12 opacity-0"
