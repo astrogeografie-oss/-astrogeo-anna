@@ -4,7 +4,7 @@ import { Check, Globe, Star, Users, Gift, Calendar, BookOpen, Compass, Map, Smar
 
 const flagship = {
   id: "orts-horoskop",
-  badge: "Flagship",
+  badge: "",
   icon: <Globe size={32} />,
   name: "Astrokartographie (Orts-Horoskop)",
   tagline: "Astrokartographie · Orts-Horoskop",
