@@ -27,7 +27,7 @@ export default function Navigation() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
           ? "bg-[#faf7f2]/95 backdrop-blur-md border-b border-[rgba(184,146,46,0.2)] shadow-sm"
-          : "bg-[#1a0f0a]/40 backdrop-blur-sm lg:bg-transparent lg:backdrop-blur-none"
+          : "bg-[#1a0f0a]/60 backdrop-blur-sm"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -59,7 +59,7 @@ export default function Navigation() {
             <a
               key={link.href}
               href={link.href}
-              className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#52402e] hover:text-[#b8922e] transition-colors duration-300 uppercase"
+              className={`font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] hover:text-[#b8922e] transition-colors duration-300 uppercase ${scrolled ? "text-[#52402e]" : "text-white"}`}
             >
               {link.label}
             </a>
