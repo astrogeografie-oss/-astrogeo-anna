@@ -25,7 +25,7 @@ export default function Impressum() {
       <h2>Kontakt</h2>
       <p>
         E-Mail:{" "}
-        <a href="mailto:astrogeografie@gmail.com">astrogeografie@gmail.com</a>
+        <a href="mailto:anna@astrogeoanna.info">anna@astrogeoanna.info</a>
         <br />
         Terminbuchung:{" "}
         <a href="https://calendly.com/astrogeo" target="_blank" rel="noopener noreferrer">

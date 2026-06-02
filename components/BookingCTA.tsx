@@ -55,7 +55,7 @@ export default function BookingCTA() {
             Jetzt Termin buchen
           </a>
           <a
-            href="mailto:astrogeografie@gmail.com"
+            href="mailto:anna@astrogeoanna.info"
             className="btn-outline-gold inline-flex items-center justify-center gap-3 px-10 py-5 text-sm font-[family-name:var(--font-montserrat)] tracking-[0.15em] rounded-sm"
           >
             Frage stellen
@@ -65,11 +65,11 @@ export default function BookingCTA() {
 
         <div className="mb-16">
           <a
-            href="mailto:astrogeografie@gmail.com"
+            href="mailto:anna@astrogeoanna.info"
             className="inline-flex items-center gap-2 font-[family-name:var(--font-cormorant)] text-base text-[#52402e] hover:text-[#b8922e] transition-colors duration-300"
           >
             <Mail size={14} />
-            astrogeografie@gmail.com
+            anna@astrogeoanna.info
           </a>
         </div>
 

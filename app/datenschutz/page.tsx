@@ -19,7 +19,7 @@ export default function Datenschutz() {
         <strong>Anna Thoma</strong>
         <br />
         E-Mail:{" "}
-        <a href="mailto:astrogeografie@gmail.com">astrogeografie@gmail.com</a>
+        <a href="mailto:anna@astrogeoanna.info">anna@astrogeoanna.info</a>
       </p>
 
       <h2>2. Allgemeines zur Datenverarbeitung</h2>
@@ -181,7 +181,7 @@ export default function Datenschutz() {
       </ul>
       <p>
         Zur Ausübung deiner Rechte wende dich an:{" "}
-        <a href="mailto:astrogeografie@gmail.com">astrogeografie@gmail.com</a>
+        <a href="mailto:anna@astrogeoanna.info">anna@astrogeoanna.info</a>
       </p>
       <p>
         Du hast außerdem das Recht, dich bei der zuständigen

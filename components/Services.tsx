@@ -83,10 +83,18 @@ const miniKurse = [
 ];
 
 const buch = {
-  icon: <BookOpen size={24} />,
+  icon: <BookOpen size={32} />,
   name: "Astro-Code – Das Buch",
-  tagline: "Vertiefung · Buch",
-  desc: "Deine Seele hat ein GPS. Zeit, es endlich zu aktivieren. Das Buch zur Astrokartographie von Anna Thoma.",
+  tagline: "Von Anna Thoma · Sachbuch · Astrokartographie",
+  badge: "Bestseller",
+  quote: "»Deine Seele hat ein GPS. Zeit, es endlich zu aktivieren.«",
+  desc: "Das Standardwerk zur Astrokartographie auf Deutsch. Anna Thoma zeigt, wie du deinen Kraftort auf der Erde findest — kompakt, praxisnah und transformativ.",
+  highlights: [
+    "Grundlagen der Astrokartographie verständlich erklärt",
+    "ACG-Linien, Local Space & Relocation-Charts",
+    "Praktische Anleitungen zum Selbst-Lesen deiner Karte",
+    "Von der Autorin persönlich empfohlen",
+  ],
   url: "https://publishde.bookmundo.com/books/22022143",
 };
 
@@ -370,7 +378,7 @@ export default function Services() {
             Ausbildung · Für Astrologinnen & Astro-Kenner
           </p>
           <a
-            href="https://astrogeoanna.thrivecart.com/planetary-pathway--erfolg-astrogeografie/"
+            href="/planetary-pathway"
             target="_blank"
             rel="noopener noreferrer"
             className="group block rounded-sm p-8 md:p-10 hover:-translate-y-1 transition-all duration-300"
@@ -415,32 +423,62 @@ export default function Services() {
           </a>
         </div>
 
-        {/* 6. Buch – Vertiefung */}
+        {/* 6. Buch – Authority-Anker */}
         <div className="max-w-5xl mx-auto mb-16">
           <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.3em] text-[#b8922e] uppercase text-center mb-10">
-            Vertiefung · Das Buch
+            Das Buch · Authority
           </p>
           <a
             href={buch.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex flex-col sm:flex-row items-start sm:items-center gap-6 rounded-sm p-8 hover:-translate-y-1 transition-all duration-300"
+            className="group block rounded-sm p-8 md:p-10 hover:-translate-y-1 transition-all duration-300"
             style={{
-              background: "linear-gradient(145deg, #fffdf9, #faf7f2)",
-              border: "1px solid rgba(184,146,46,0.15)",
+              background: "linear-gradient(145deg, #fffdf9, #f5efe4)",
+              border: "1px solid rgba(184,146,46,0.35)",
             }}
           >
-            <div className="text-[#b8922e] flex-shrink-0">{buch.icon}</div>
-            <div>
-              <h3 className="font-[family-name:var(--font-cormorant)] text-2xl font-medium text-[#2c2010] mb-1 group-hover:text-[#b8922e] transition-colors">
-                {buch.name}
-              </h3>
-              <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#b8922e] uppercase mb-3">
-                {buch.tagline}
-              </p>
-              <p className="font-[family-name:var(--font-cormorant)] text-base text-[#52402e] font-light leading-relaxed">
-                {buch.desc}
-              </p>
+            <div className="flex flex-col md:flex-row md:items-start gap-8">
+              <div className="flex-shrink-0 flex flex-col items-center gap-4 md:w-40">
+                <div className="text-[#b8922e]">{buch.icon}</div>
+                <span
+                  className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.2em] uppercase px-3 py-1 rounded-full"
+                  style={{
+                    background: "rgba(184,146,46,0.15)",
+                    border: "1px solid rgba(184,146,46,0.35)",
+                    color: "#b8922e",
+                  }}
+                >
+                  {buch.badge}
+                </span>
+              </div>
+              <div className="flex-1">
+                <h3 className="font-[family-name:var(--font-cormorant)] text-3xl font-medium text-[#2c2010] mb-1 group-hover:text-[#b8922e] transition-colors">
+                  {buch.name}
+                </h3>
+                <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#b8922e] uppercase mb-5">
+                  {buch.tagline}
+                </p>
+                <p className="font-[family-name:var(--font-cormorant)] text-xl italic text-[#6a4c10] font-light mb-4 leading-snug">
+                  {buch.quote}
+                </p>
+                <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#52402e] font-light leading-relaxed mb-6">
+                  {buch.desc}
+                </p>
+                <ul className="space-y-2 mb-6">
+                  {buch.highlights.map((item) => (
+                    <li key={item} className="flex gap-3 items-start">
+                      <Check size={15} className="text-[#b8922e] mt-0.5 flex-shrink-0" />
+                      <span className="font-[family-name:var(--font-cormorant)] text-[#52402e] text-base font-light leading-snug">
+                        {item}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.12em] text-[#8a6420] uppercase group-hover:text-[#b8922e] transition-colors">
+                  Jetzt bestellen →
+                </p>
+              </div>
             </div>
           </a>
         </div>

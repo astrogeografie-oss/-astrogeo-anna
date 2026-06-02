@@ -9,7 +9,7 @@ export default function JsonLd() {
         jobTitle: "Astrokartographie-Expertin & Astrologin",
         description:
           "Deutschlands führende Expertin für Astrokartographie und Astrogeografie. Ich helfe dir, deinen Kraftort auf der Erde zu finden — durch präzise astrologische Analyse mit 7 Linienarten.",
-        email: "astrogeografie@gmail.com",
+        email: "anna@astrogeoanna.info",
         url: "https://astrogeoanna.com",
         sameAs: [
           "https://calendly.com/astrogeo",
@@ -43,7 +43,7 @@ export default function JsonLd() {
         description:
           "Astrokartographie, Astrogeografie & Astrocartography-Beratung. Finde deinen Kraftort auf der Erde — mit 7 Linienarten, Karma-Linien, Destiny-Crossings und Vortex-Punkten.",
         url: "https://astrogeoanna.com",
-        email: "astrogeografie@gmail.com",
+        email: "anna@astrogeoanna.info",
         image:
           "https://d3v0px0pttie1i.cloudfront.net/uploads/user/avatar/13003380/2c870fde.jpg",
         priceRange: "€€€",
