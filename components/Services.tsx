@@ -1,10 +1,34 @@
 "use client";
 
-import { Check, Users, Gift, Calendar, BookOpen, Compass, Star, Map, Smartphone, GraduationCap } from "lucide-react";
+import { Check, Globe, Star, Users, Gift, Calendar, BookOpen, Compass, Map, Smartphone, GraduationCap } from "lucide-react";
+
+const flagship = {
+  id: "orts-horoskop",
+  badge: "Flagship",
+  icon: <Globe size={32} />,
+  name: "Astrokartographie (Orts-Horoskop)",
+  tagline: "Astrokartographie · Orts-Horoskop",
+  duration: "90 Min. · Zoom",
+  price: "495 €",
+  description:
+    "Astrokartographie verbindet dein persönliches Horoskop (Radix) mit einer Weltkarte — und zeigt dir, welche Orte auf der Erde ideal für Liebe, Karriere oder inneren Ausgleich sind.",
+  includes: [
+    "Einführung in die Astrokartographie & Planeten-Erklärungen (PDF)",
+    "Analyse: Seelenformel, Best Planet, Mondknoten, Chiron, Human Design",
+    "Überblick Geburtsort, aktueller Standort & Wunschort",
+    "Relocation-Chart, Karma-Linien, Destiny-Crossings, Vortex-Punkte",
+    "Asteroiden & sensitive Punkte",
+    "Progressions-Chart & Solar-Radix (bester Zeitpunkt für Veränderung)",
+    "Screenshots, Bilder & Aufzeichnung des Zoom-Calls",
+  ],
+  url: "https://calendly.com/astrogeo/60",
+  cta: "Jetzt buchen",
+  note: "Benötigt: genaues Geburtsdatum, Uhrzeit & Geburtsort",
+};
 
 const paarReading = {
   id: "paare",
-  badge: "",
+  badge: "Für Paare",
   icon: <Users size={32} />,
   name: "Astrokartographie für Paare",
   tagline: "Euer gemeinsamer Traumort auf der Erde",
@@ -42,29 +66,36 @@ const buch = {
   url: "https://publishde.bookmundo.com/books/22022143",
 };
 
-function PaarCard({ service }: { service: typeof paarReading }) {
+function MainCard({ service, fullWidth = false }: { service: typeof flagship | typeof paarReading; fullWidth?: boolean }) {
+  const isHighlight = service.id === "orts-horoskop";
   return (
     <div
-      className="relative rounded-sm overflow-hidden transition-all duration-500 hover:-translate-y-2 w-full"
+      className={`relative rounded-sm overflow-hidden transition-all duration-500 hover:-translate-y-2 ${
+        isHighlight ? "glow-gold" : ""
+      } ${fullWidth ? "w-full" : ""}`}
       style={{
-        background: "linear-gradient(145deg, #fffdf9, #faf7f2)",
-        border: "1px solid rgba(184,146,46,0.1)",
+        background: isHighlight
+          ? "linear-gradient(145deg, #fffdf9, #f5efe4)"
+          : "linear-gradient(145deg, #fffdf9, #faf7f2)",
+        border: isHighlight
+          ? "1px solid rgba(184,146,46,0.4)"
+          : "1px solid rgba(184,146,46,0.1)",
       }}
     >
-      {service.badge && (
-        <div className="absolute top-6 right-6">
-          <span
-            className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.2em] uppercase px-3 py-1 rounded-full"
-            style={{
-              background: "rgba(184,146,46,0.08)",
-              border: "1px solid rgba(184,146,46,0.3)",
-              color: "#b8922e",
-            }}
-          >
-            {service.badge}
-          </span>
-        </div>
-      )}
+      <div className="absolute top-6 right-6">
+        <span
+          className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.2em] uppercase px-3 py-1 rounded-full"
+          style={{
+            background: isHighlight
+              ? "rgba(184,146,46,0.2)"
+              : "rgba(184,146,46,0.08)",
+            border: "1px solid rgba(184,146,46,0.3)",
+            color: "#b8922e",
+          }}
+        >
+          {service.badge}
+        </span>
+      </div>
 
       <div className="p-8 md:p-10">
         <div className="text-[#b8922e] mb-6">{service.icon}</div>
@@ -79,11 +110,14 @@ function PaarCard({ service }: { service: typeof paarReading }) {
           <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.1em] text-[#b8922e]">
             {service.duration}
           </p>
-          <span className="font-[family-name:var(--font-cormorant)] text-2xl font-medium" style={{ color: "#b8922e" }}>
+          <span
+            className="font-[family-name:var(--font-cormorant)] text-2xl font-medium"
+            style={{ color: "#b8922e" }}
+          >
             {service.price}
           </span>
         </div>
-        {service.priceNote && (
+        {"priceNote" in service && service.priceNote && (
           <p className="font-[family-name:var(--font-montserrat)] text-xs text-[#52402e] tracking-wider mb-6 -mt-4">
             {service.priceNote}
           </p>
@@ -110,7 +144,9 @@ function PaarCard({ service }: { service: typeof paarReading }) {
           href={service.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="block text-center py-4 px-8 text-sm font-[family-name:var(--font-montserrat)] tracking-[0.15em] uppercase rounded-sm transition-all duration-300 btn-outline-gold"
+          className={`block text-center py-4 px-8 text-sm font-[family-name:var(--font-montserrat)] tracking-[0.15em] uppercase rounded-sm transition-all duration-300 ${
+            isHighlight ? "btn-gold" : "btn-outline-gold"
+          }`}
         >
           {service.cta}
         </a>
@@ -149,9 +185,14 @@ export default function Services() {
           </p>
         </div>
 
-        {/* 1. Paar-Analyse */}
+        {/* 1. Flagship – Orts-Horoskop */}
+        <div className="max-w-5xl mx-auto mb-8">
+          <MainCard service={flagship} fullWidth />
+        </div>
+
+        {/* 2. Paar-Analyse */}
         <div className="max-w-5xl mx-auto mb-16">
-          <PaarCard service={paarReading} />
+          <MainCard service={paarReading} fullWidth />
         </div>
 
         {/* 3. Planetary Pathway – Ausbildung */}
@@ -181,6 +222,16 @@ export default function Services() {
                       Erfolg Astrogeografie · Ausbildung
                     </p>
                   </div>
+                  <span
+                    className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.2em] uppercase px-3 py-1 rounded-full flex-shrink-0"
+                    style={{
+                      background: "rgba(184,146,46,0.15)",
+                      border: "1px solid rgba(184,146,46,0.3)",
+                      color: "#b8922e",
+                    }}
+                  >
+                    Für Profis
+                  </span>
                 </div>
                 <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#52402e] font-light leading-relaxed">
                   Du bist Astrologin, Coach oder begeisterte Astro-Kennerin und möchtest Astrogeografie professionell anbieten? Der Planetary Pathway ist Annas umfassendes Ausbildungsprogramm — von den Grundlagen der Astrokartographie bis zur eigenständigen Praxis mit Klientinnen.
