@@ -1,6 +1,6 @@
 "use client";
 
-import { Check, Globe, Star, Users, Gift, Calendar, BookOpen, Compass, Map, Sun, Smartphone, GraduationCap } from "lucide-react";
+import { Check, Globe, Star, Users, Gift, Calendar, BookOpen, Compass, Map, Smartphone, GraduationCap } from "lucide-react";
 
 const flagship = {
   id: "orts-horoskop",
@@ -130,30 +130,6 @@ const additionalServices = [
     url: "https://calendly.com/astrogeo/urlaubsplanung-2026-schon-ready",
     free: false,
     price: "147 €",
-  },
-  {
-    icon: <Sun size={18} />,
-    name: "Jahreslegung Orakelkarten",
-    desc: "30 Min. — Alle Herausforderungen des kommenden Jahres mit Lösungs-Tipps.",
-    url: "https://calendly.com/astrogeo/jahreslegung-mit-den-orakelkarten",
-    free: false,
-    price: "97 €",
-  },
-  {
-    icon: <Star size={18} />,
-    name: "Kipperkarten Reading",
-    desc: "45 Min. — Klarheit in Liebe, Beruf & persönlicher Entwicklung.",
-    url: "https://calendly.com/astrogeo/kipperkarten-reading-grosse-tafel-klon",
-    free: false,
-    price: "47 €",
-  },
-  {
-    icon: <Star size={18} />,
-    name: "Skatkarten Orakel",
-    desc: "30 Min. — Vergangenheit, Gegenwart & Zukunft mit empathischer Führung.",
-    url: "https://calendly.com/astrogeo/skatkarten",
-    free: false,
-    price: "47 €",
   },
   {
     icon: <Gift size={18} />,
@@ -509,8 +485,21 @@ export default function Services() {
           </div>
         </div>
 
+        {/* Orakel Teaser */}
+        <div className="max-w-5xl mx-auto mt-8 text-center">
+          <p className="font-[family-name:var(--font-cormorant)] text-base text-[#52402e] font-light">
+            Kipperkarten, Skatkarten & Orakelkarten:{" "}
+            <a
+              href="/orakel"
+              className="text-[#b8922e] underline underline-offset-4 hover:text-[#8a6420] transition-colors"
+            >
+              Alle Kartenlegungen →
+            </a>
+          </p>
+        </div>
+
         {/* Reassurance */}
-        <p className="text-center font-[family-name:var(--font-cormorant)] text-base text-[#52402e] mt-14 font-light">
+        <p className="text-center font-[family-name:var(--font-cormorant)] text-base text-[#52402e] mt-8 font-light">
           Nicht sicher, was passt?{" "}
           <a
             href="#buchen"
