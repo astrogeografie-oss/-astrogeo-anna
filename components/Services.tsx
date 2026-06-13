@@ -82,22 +82,8 @@ function MainCard({ service, fullWidth = false }: { service: typeof flagship | t
           : "1px solid rgba(184,146,46,0.1)",
       }}
     >
-      <div className="absolute top-6 right-6">
-        <span
-          className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.2em] uppercase px-3 py-1 rounded-full"
-          style={{
-            background: isHighlight
-              ? "rgba(184,146,46,0.2)"
-              : "rgba(184,146,46,0.08)",
-            border: "1px solid rgba(184,146,46,0.3)",
-            color: "#b8922e",
-          }}
-        >
-          {service.badge}
-        </span>
-      </div>
 
-      <div className="p-8 md:p-10">
+<div className="p-8 md:p-10">
         <div className="text-[#b8922e] mb-6">{service.icon}</div>
 
         <h3 className="font-[family-name:var(--font-cormorant)] text-3xl font-medium text-[#2c2010] mb-2">
@@ -222,16 +208,6 @@ export default function Services() {
                       Erfolg Astrogeografie · Ausbildung
                     </p>
                   </div>
-                  <span
-                    className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.2em] uppercase px-3 py-1 rounded-full flex-shrink-0"
-                    style={{
-                      background: "rgba(184,146,46,0.15)",
-                      border: "1px solid rgba(184,146,46,0.3)",
-                      color: "#b8922e",
-                    }}
-                  >
-                    Für Profis
-                  </span>
                 </div>
                 <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#52402e] font-light leading-relaxed">
                   Du bist Astrologin, Coach oder begeisterte Astro-Kennerin und möchtest Astrogeografie professionell anbieten? Der Planetary Pathway ist Annas umfassendes Ausbildungsprogramm — von den Grundlagen der Astrokartographie bis zur eigenständigen Praxis mit Klientinnen.
