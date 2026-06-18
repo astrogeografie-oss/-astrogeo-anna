@@ -54,9 +54,9 @@ export default function Hero() {
           className="font-[family-name:var(--font-cormorant)] text-xl md:text-2xl text-[#e8e0d0] max-w-2xl mx-auto mb-12 leading-relaxed font-light opacity-0"
           style={{ animation: "fadeInUp 0.9s 0.6s ease forwards" }}
         >
-          Astrokartographie — es gibt Orte
-          auf dieser Erde, wo du leichter liebst, klarer denkst und
-          erfolgreicher wirst. Ich zeige dir, wo diese Orte sind.
+          Astrokartographie für Menschen, die wirklich entscheiden:
+          Wohin ziehe ich? Wo entsteht finanzieller Flow? Wo gehört mein Business hin?
+          Ich gebe dir die Antwort — präzise, nicht unverbindlich.
         </p>
 
         {/* CTAs */}

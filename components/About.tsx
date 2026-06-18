@@ -94,6 +94,12 @@ export default function About() {
                 und Raumastrologie. Über 20 Jahre Erfahrung, Präzision und
                 die tiefe Überzeugung: der richtige Ort verändert alles.
               </p>
+              <p className="text-[#2c2010]">
+                Meine Klientinnen und Klienten sind keine Hobbiastrologen.
+                Sie stehen vor echten Entscheidungen — Auswanderung,
+                Unternehmensstandort, finanzieller Neustart. Sie wollen keine
+                Allgemeinplätze. Sie wollen wissen: wohin konkret.
+              </p>
             </div>
 
             {/* Values */}
