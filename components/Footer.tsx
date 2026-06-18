@@ -22,10 +22,10 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <p className="font-[family-name:var(--font-cormorant)] text-xl font-light tracking-[0.15em] text-[#2c2010] mb-4">
+            <p className="font-[family-name:var(--font-cormorant)] text-xl font-light tracking-[0.15em] text-[#100802] mb-4">
               ANNA<span className="text-[#b8922e] mx-1">·</span>ASTROGEOGRAFIE
             </p>
-            <p className="font-[family-name:var(--font-cormorant)] text-base text-[#52402e] font-light leading-relaxed mb-6">
+            <p className="font-[family-name:var(--font-cormorant)] text-base text-[#1c1008] font-light leading-relaxed mb-6">
               Deutschlands führende Astrokartographie-Expertin.
               Dein Leben beginnt am richtigen Ort.
             </p>
@@ -33,7 +33,7 @@ export default function Footer() {
               href="https://www.instagram.com/astrogeo.anna"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-[#b8922e] hover:text-[#8a6420] transition-colors duration-300 group"
+              className="inline-flex items-center gap-2 text-[#b8922e] hover:text-[#6b4800] transition-colors duration-300 group"
               aria-label="Anna auf Instagram folgen"
             >
               <span className="w-8 h-8 rounded-full border border-[rgba(184,146,46,0.4)] flex items-center justify-center group-hover:border-[#b8922e] transition-colors">
@@ -47,7 +47,7 @@ export default function Footer() {
 
           {/* Links */}
           <div>
-            <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.3em] text-[#6a4c10] uppercase mb-6">
+            <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.3em] text-[#3d2800] uppercase mb-6">
               Navigation
             </p>
             <ul className="space-y-3">
@@ -63,7 +63,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="font-[family-name:var(--font-cormorant)] text-base text-[#52402e] hover:text-[#b8922e] transition-colors duration-300"
+                    className="font-[family-name:var(--font-cormorant)] text-base text-[#1c1008] hover:text-[#b8922e] transition-colors duration-300"
                   >
                     {link.label}
                   </a>
@@ -74,14 +74,14 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.3em] text-[#6a4c10] uppercase mb-6">
+            <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.3em] text-[#3d2800] uppercase mb-6">
               Kontakt
             </p>
             <ul className="space-y-4">
               <li>
                 <a
                   href="mailto:anna@astrogeoanna.info"
-                  className="flex items-center gap-3 font-[family-name:var(--font-cormorant)] text-base text-[#52402e] hover:text-[#b8922e] transition-colors duration-300"
+                  className="flex items-center gap-3 font-[family-name:var(--font-cormorant)] text-base text-[#1c1008] hover:text-[#b8922e] transition-colors duration-300"
                 >
                   <Mail size={16} className="text-[#b8922e] flex-shrink-0" />
                   anna@astrogeoanna.info
@@ -92,7 +92,7 @@ export default function Footer() {
                   href="https://www.instagram.com/astrogeo.anna"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 font-[family-name:var(--font-cormorant)] text-base text-[#52402e] hover:text-[#b8922e] transition-colors duration-300"
+                  className="flex items-center gap-3 font-[family-name:var(--font-cormorant)] text-base text-[#1c1008] hover:text-[#b8922e] transition-colors duration-300"
                 >
                   <span className="text-[#b8922e] flex-shrink-0"><InstagramIcon /></span>
                   @astrogeo.anna · Instagram
@@ -103,7 +103,7 @@ export default function Footer() {
                   href="https://calendly.com/astrogeo/60"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 font-[family-name:var(--font-cormorant)] text-base text-[#52402e] hover:text-[#b8922e] transition-colors duration-300"
+                  className="flex items-center gap-3 font-[family-name:var(--font-cormorant)] text-base text-[#1c1008] hover:text-[#b8922e] transition-colors duration-300"
                 >
                   <Calendar size={16} className="text-[#b8922e] flex-shrink-0" />
                   Termine · calendly.com/astrogeo
@@ -115,14 +115,14 @@ export default function Footer() {
 
         <div className="section-divider mb-8" />
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="font-[family-name:var(--font-montserrat)] text-xs text-[#52402e] tracking-wider">
+          <p className="font-[family-name:var(--font-montserrat)] text-xs text-[#1c1008] tracking-wider">
             © {year} Anna Thoma · Astrogeografie · Bingen am Rhein
           </p>
           <div className="flex gap-6">
-            <a href="/impressum" className="font-[family-name:var(--font-montserrat)] text-xs text-[#52402e] hover:text-[#b8922e] transition-colors tracking-wider">
+            <a href="/impressum" className="font-[family-name:var(--font-montserrat)] text-xs text-[#1c1008] hover:text-[#b8922e] transition-colors tracking-wider">
               Impressum
             </a>
-            <a href="/datenschutz" className="font-[family-name:var(--font-montserrat)] text-xs text-[#52402e] hover:text-[#b8922e] transition-colors tracking-wider">
+            <a href="/datenschutz" className="font-[family-name:var(--font-montserrat)] text-xs text-[#1c1008] hover:text-[#b8922e] transition-colors tracking-wider">
               Datenschutz
             </a>
           </div>

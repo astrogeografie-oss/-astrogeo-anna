@@ -44,14 +44,14 @@ export default function OrakelPage() {
         <div className="max-w-4xl mx-auto px-6">
           {/* Header */}
           <div className="text-center mb-16">
-            <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#6a4c10] uppercase mb-6">
+            <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#3d2800] uppercase mb-6">
               Orakel & Kartenlegungen
             </p>
-            <h1 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl font-light text-[#2c2010] leading-[1.15] mb-6">
+            <h1 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl font-light text-[#100802] leading-[1.15] mb-6">
               Klarheit durch{" "}
               <em className="gold-gradient not-italic font-medium">die Karten</em>
             </h1>
-            <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#52402e] max-w-xl mx-auto font-light leading-relaxed">
+            <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#1c1008] max-w-xl mx-auto font-light leading-relaxed">
               Kipperkarten, Skatkarten & Orakelkarten — für direkte Antworten und ehrliche Führung in wichtigen Lebensfragen.
             </p>
           </div>
@@ -73,7 +73,7 @@ export default function OrakelPage() {
                 <div className="text-[#b8922e] flex-shrink-0 mt-1">{s.icon}</div>
                 <div className="flex-1">
                   <div className="flex flex-wrap items-baseline justify-between gap-3 mb-2">
-                    <h2 className="font-[family-name:var(--font-cormorant)] text-2xl font-medium text-[#2c2010] group-hover:text-[#b8922e] transition-colors">
+                    <h2 className="font-[family-name:var(--font-cormorant)] text-2xl font-medium text-[#100802] group-hover:text-[#b8922e] transition-colors">
                       {s.name}
                     </h2>
                     <span className="font-[family-name:var(--font-cormorant)] text-xl font-medium text-[#b8922e]">
@@ -83,10 +83,10 @@ export default function OrakelPage() {
                   <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#b8922e] uppercase mb-4">
                     {s.tagline}
                   </p>
-                  <p className="font-[family-name:var(--font-cormorant)] text-base text-[#52402e] font-light leading-relaxed">
+                  <p className="font-[family-name:var(--font-cormorant)] text-base text-[#1c1008] font-light leading-relaxed">
                     {s.desc}
                   </p>
-                  <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.12em] text-[#8a6420] uppercase mt-5 group-hover:text-[#b8922e] transition-colors">
+                  <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.12em] text-[#6b4800] uppercase mt-5 group-hover:text-[#b8922e] transition-colors">
                     Jetzt buchen →
                   </p>
                 </div>
@@ -98,7 +98,7 @@ export default function OrakelPage() {
           <div className="text-center mt-16">
             <a
               href="/#angebote"
-              className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.2em] text-[#8a6420] uppercase hover:text-[#b8922e] transition-colors"
+              className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.2em] text-[#6b4800] uppercase hover:text-[#b8922e] transition-colors"
             >
               ← Alle Angebote
             </a>

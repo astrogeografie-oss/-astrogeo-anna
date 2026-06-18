@@ -84,15 +84,15 @@ export default function KursePage() {
         <div className="max-w-4xl mx-auto px-6">
           {/* Header */}
           <div className="text-center mb-16">
-            <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#6a4c10] uppercase mb-6">
+            <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#3d2800] uppercase mb-6">
               Kurse & Akademie
             </p>
-            <h1 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl font-light text-[#2c2010] leading-[1.15] mb-6">
+            <h1 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl font-light text-[#100802] leading-[1.15] mb-6">
               Lerne Astrogeografie
               <br />
               <em className="gold-gradient not-italic font-medium">in deinem Tempo</em>
             </h1>
-            <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#52402e] max-w-2xl mx-auto font-light leading-relaxed">
+            <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#1c1008] max-w-2xl mx-auto font-light leading-relaxed">
               Von den ersten Schritten bis zur professionellen Praxis — alle Kurse und die Akademie auf einen Blick.
             </p>
           </div>
@@ -124,7 +124,7 @@ export default function KursePage() {
                   </div>
                   <div className="flex-1">
                     <div className="flex flex-wrap items-baseline justify-between gap-3 mb-1">
-                      <h2 className="font-[family-name:var(--font-cormorant)] text-2xl font-medium text-[#2c2010]">
+                      <h2 className="font-[family-name:var(--font-cormorant)] text-2xl font-medium text-[#100802]">
                         {k.name}
                       </h2>
                       {k.price && (
@@ -136,14 +136,14 @@ export default function KursePage() {
                     <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#b8922e] uppercase mb-4">
                       {k.tagline}
                     </p>
-                    <p className="font-[family-name:var(--font-cormorant)] text-base text-[#52402e] font-light leading-relaxed mb-5">
+                    <p className="font-[family-name:var(--font-cormorant)] text-base text-[#1c1008] font-light leading-relaxed mb-5">
                       {k.desc}
                     </p>
                     <ul className="space-y-2 mb-6">
                       {k.includes.map((item) => (
                         <li key={item} className="flex gap-3 items-start">
                           <Check size={14} className="text-[#b8922e] mt-0.5 flex-shrink-0" />
-                          <span className="font-[family-name:var(--font-cormorant)] text-[#52402e] text-sm font-light leading-snug">
+                          <span className="font-[family-name:var(--font-cormorant)] text-[#1c1008] text-sm font-light leading-snug">
                             {item}
                           </span>
                         </li>
@@ -171,12 +171,12 @@ export default function KursePage() {
               border: "1px solid rgba(184,146,46,0.2)",
             }}
           >
-            <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#52402e] font-light mb-4">
+            <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#1c1008] font-light mb-4">
               Willst du Astrogeografie professionell anbieten?
             </p>
             <a
               href="/planetary-pathway"
-              className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.2em] text-[#b8922e] uppercase hover:text-[#8a6420] transition-colors"
+              className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.2em] text-[#b8922e] uppercase hover:text-[#6b4800] transition-colors"
             >
               Zur Ausbildung Planetary Pathway →
             </a>
@@ -186,7 +186,7 @@ export default function KursePage() {
           <div className="text-center mt-12">
             <a
               href="/#angebote"
-              className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.2em] text-[#8a6420] uppercase hover:text-[#b8922e] transition-colors"
+              className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.2em] text-[#6b4800] uppercase hover:text-[#b8922e] transition-colors"
             >
               ← Alle Angebote
             </a>

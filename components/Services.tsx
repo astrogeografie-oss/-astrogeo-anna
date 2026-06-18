@@ -86,10 +86,10 @@ function MainCard({ service, fullWidth = false }: { service: typeof flagship | t
 <div className="p-8 md:p-10">
         <div className="text-[#b8922e] mb-6">{service.icon}</div>
 
-        <h3 className="font-[family-name:var(--font-cormorant)] text-3xl font-medium text-[#2c2010] mb-2">
+        <h3 className="font-[family-name:var(--font-cormorant)] text-3xl font-medium text-[#100802] mb-2">
           {service.name}
         </h3>
-        <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#52402e] uppercase mb-2">
+        <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#1c1008] uppercase mb-2">
           {service.tagline}
         </p>
         <div className="flex items-baseline gap-4 mb-6">
@@ -104,12 +104,12 @@ function MainCard({ service, fullWidth = false }: { service: typeof flagship | t
           </span>
         </div>
         {"priceNote" in service && service.priceNote && (
-          <p className="font-[family-name:var(--font-montserrat)] text-xs text-[#52402e] tracking-wider mb-6 -mt-4">
+          <p className="font-[family-name:var(--font-montserrat)] text-xs text-[#1c1008] tracking-wider mb-6 -mt-4">
             {service.priceNote}
           </p>
         )}
 
-        <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#52402e] font-light leading-relaxed mb-8">
+        <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#1c1008] font-light leading-relaxed mb-8">
           {service.description}
         </p>
 
@@ -119,7 +119,7 @@ function MainCard({ service, fullWidth = false }: { service: typeof flagship | t
           {service.includes.map((item) => (
             <li key={item} className="flex gap-3 items-start">
               <Check size={16} className="text-[#b8922e] mt-0.5 flex-shrink-0" />
-              <span className="font-[family-name:var(--font-cormorant)] text-[#52402e] text-base font-light leading-snug">
+              <span className="font-[family-name:var(--font-cormorant)] text-[#1c1008] text-base font-light leading-snug">
                 {item}
               </span>
             </li>
@@ -137,7 +137,7 @@ function MainCard({ service, fullWidth = false }: { service: typeof flagship | t
           {service.cta}
         </a>
 
-        <p className="text-center font-[family-name:var(--font-montserrat)] text-xs text-[#52402e] mt-3 tracking-wider">
+        <p className="text-center font-[family-name:var(--font-montserrat)] text-xs text-[#1c1008] mt-3 tracking-wider">
           {service.note}
         </p>
       </div>
@@ -155,17 +155,17 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-20">
-          <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#6a4c10] uppercase mb-6">
+          <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#3d2800] uppercase mb-6">
             Meine Angebote
           </p>
-          <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl lg:text-6xl font-light text-[#2c2010] leading-[1.15] mb-6">
+          <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl lg:text-6xl font-light text-[#100802] leading-[1.15] mb-6">
             Finde deinen Weg zu
             <br />
             <em className="gold-gradient not-italic font-medium">
               deinem Kraftort
             </em>
           </h2>
-          <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#52402e] max-w-2xl mx-auto font-light">
+          <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#1c1008] max-w-2xl mx-auto font-light">
             Nicht "Astrologin, die auch Astrogeografie macht" — sondern die Spezialistin für finanziell und persönlich bedeutsame Standortentscheidungen. Von der Einzelperson bis zum Unternehmer.
           </p>
         </div>
@@ -200,7 +200,7 @@ export default function Services() {
               <div className="flex-1">
                 <div className="flex flex-wrap items-start justify-between gap-4 mb-3">
                   <div>
-                    <h3 className="font-[family-name:var(--font-cormorant)] text-3xl font-medium text-[#2c2010] mb-1 group-hover:text-[#b8922e] transition-colors">
+                    <h3 className="font-[family-name:var(--font-cormorant)] text-3xl font-medium text-[#100802] mb-1 group-hover:text-[#b8922e] transition-colors">
                       Planetary Pathway
                     </h3>
                     <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#b8922e] uppercase">
@@ -208,10 +208,10 @@ export default function Services() {
                     </p>
                   </div>
                 </div>
-                <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#52402e] font-light leading-relaxed">
+                <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#1c1008] font-light leading-relaxed">
                   Du bist Astrologin, Coach oder begeisterte Astro-Kennerin und möchtest Astrogeografie professionell anbieten? Der Planetary Pathway ist Annas umfassendes Ausbildungsprogramm — von den Grundlagen der Astrokartographie bis zur eigenständigen Praxis mit Klientinnen.
                 </p>
-                <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.12em] text-[#8a6420] uppercase mt-5 group-hover:text-[#b8922e] transition-colors">
+                <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.12em] text-[#6b4800] uppercase mt-5 group-hover:text-[#b8922e] transition-colors">
                   Mehr erfahren →
                 </p>
               </div>
@@ -249,29 +249,29 @@ export default function Services() {
                 </span>
               </div>
               <div className="flex-1">
-                <h3 className="font-[family-name:var(--font-cormorant)] text-3xl font-medium text-[#2c2010] mb-1 group-hover:text-[#b8922e] transition-colors">
+                <h3 className="font-[family-name:var(--font-cormorant)] text-3xl font-medium text-[#100802] mb-1 group-hover:text-[#b8922e] transition-colors">
                   {buch.name}
                 </h3>
                 <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#b8922e] uppercase mb-5">
                   {buch.tagline}
                 </p>
-                <p className="font-[family-name:var(--font-cormorant)] text-xl italic text-[#6a4c10] font-light mb-4 leading-snug">
+                <p className="font-[family-name:var(--font-cormorant)] text-xl italic text-[#3d2800] font-light mb-4 leading-snug">
                   {buch.quote}
                 </p>
-                <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#52402e] font-light leading-relaxed mb-6">
+                <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#1c1008] font-light leading-relaxed mb-6">
                   {buch.desc}
                 </p>
                 <ul className="space-y-2 mb-6">
                   {buch.highlights.map((item) => (
                     <li key={item} className="flex gap-3 items-start">
                       <Check size={15} className="text-[#b8922e] mt-0.5 flex-shrink-0" />
-                      <span className="font-[family-name:var(--font-cormorant)] text-[#52402e] text-base font-light leading-snug">
+                      <span className="font-[family-name:var(--font-cormorant)] text-[#1c1008] text-base font-light leading-snug">
                         {item}
                       </span>
                     </li>
                   ))}
                 </ul>
-                <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.12em] text-[#8a6420] uppercase group-hover:text-[#b8922e] transition-colors">
+                <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.12em] text-[#6b4800] uppercase group-hover:text-[#b8922e] transition-colors">
                   Jetzt bestellen →
                 </p>
               </div>
@@ -315,13 +315,13 @@ export default function Services() {
                 }}
               >
                 <div className="text-[#b8922e] mb-4">{tile.icon}</div>
-                <h3 className="font-[family-name:var(--font-cormorant)] text-xl font-medium text-[#2c2010] mb-3 group-hover:text-[#b8922e] transition-colors">
+                <h3 className="font-[family-name:var(--font-cormorant)] text-xl font-medium text-[#100802] mb-3 group-hover:text-[#b8922e] transition-colors">
                   {tile.label}
                 </h3>
-                <p className="font-[family-name:var(--font-cormorant)] text-base text-[#52402e] font-light leading-relaxed flex-1">
+                <p className="font-[family-name:var(--font-cormorant)] text-base text-[#1c1008] font-light leading-relaxed flex-1">
                   {tile.desc}
                 </p>
-                <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.12em] text-[#8a6420] uppercase mt-5 group-hover:text-[#b8922e] transition-colors">
+                <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.12em] text-[#6b4800] uppercase mt-5 group-hover:text-[#b8922e] transition-colors">
                   Mehr entdecken →
                 </p>
               </a>
@@ -330,11 +330,11 @@ export default function Services() {
         </div>
 
         {/* Reassurance */}
-        <p className="text-center font-[family-name:var(--font-cormorant)] text-base text-[#52402e] mt-14 font-light">
+        <p className="text-center font-[family-name:var(--font-cormorant)] text-base text-[#1c1008] mt-14 font-light">
           Nicht sicher, was passt?{" "}
           <a
             href="#buchen"
-            className="text-[#b8922e] underline underline-offset-4 hover:text-[#8a6420] transition-colors"
+            className="text-[#b8922e] underline underline-offset-4 hover:text-[#6b4800] transition-colors"
           >
             Schreib mir direkt
           </a>

@@ -61,15 +61,15 @@ export default function PlanetaryPathwayPage() {
 
           {/* Hero */}
           <div className="text-center mb-16">
-            <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#6a4c10] uppercase mb-6">
+            <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#3d2800] uppercase mb-6">
               Ausbildung · Für Astrologinnen & Astro-Kennerinnen
             </p>
-            <h1 className="font-[family-name:var(--font-cormorant)] text-5xl md:text-6xl font-light text-[#2c2010] leading-[1.1] mb-6">
+            <h1 className="font-[family-name:var(--font-cormorant)] text-5xl md:text-6xl font-light text-[#100802] leading-[1.1] mb-6">
               Planetary
               <br />
               <em className="gold-gradient not-italic font-medium">Pathway</em>
             </h1>
-            <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#52402e] max-w-2xl mx-auto font-light leading-relaxed mb-10">
+            <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#1c1008] max-w-2xl mx-auto font-light leading-relaxed mb-10">
               Annas umfassendes Ausbildungsprogramm in Astrogeografie — von den Grundlagen der Astrokartographie bis zur eigenständigen Praxis mit Klientinnen.
             </p>
             <a
@@ -93,7 +93,7 @@ export default function PlanetaryPathwayPage() {
             <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.3em] text-[#b8922e] uppercase mb-6">
               Für wen ist das?
             </p>
-            <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#52402e] font-light leading-relaxed">
+            <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#1c1008] font-light leading-relaxed">
               Du bist Astrologin, Coach oder begeisterte Astro-Kennerin und möchtest Astrogeografie professionell anbieten? Du willst deinen Klientinnen zeigen, wo auf der Welt sie aufblühen — und dafür bezahlt werden?
               <br /><br />
               Der Planetary Pathway gibt dir das gesamte Handwerk, die Technik und das Selbstvertrauen dazu.
@@ -121,11 +121,11 @@ export default function PlanetaryPathwayPage() {
                   <div>
                     <div className="flex items-center gap-2 mb-2">
                       <span className="text-[#b8922e]">{m.icon}</span>
-                      <h3 className="font-[family-name:var(--font-cormorant)] text-lg font-medium text-[#2c2010]">
+                      <h3 className="font-[family-name:var(--font-cormorant)] text-lg font-medium text-[#100802]">
                         {m.title}
                       </h3>
                     </div>
-                    <p className="font-[family-name:var(--font-cormorant)] text-base text-[#52402e] font-light leading-relaxed">
+                    <p className="font-[family-name:var(--font-cormorant)] text-base text-[#1c1008] font-light leading-relaxed">
                       {m.desc}
                     </p>
                   </div>
@@ -149,7 +149,7 @@ export default function PlanetaryPathwayPage() {
               {includes.map((item) => (
                 <li key={item} className="flex gap-3 items-start">
                   <Check size={16} className="text-[#b8922e] mt-0.5 flex-shrink-0" />
-                  <span className="font-[family-name:var(--font-cormorant)] text-[#52402e] text-base font-light leading-snug">
+                  <span className="font-[family-name:var(--font-cormorant)] text-[#1c1008] text-base font-light leading-snug">
                     {item}
                   </span>
                 </li>
@@ -162,10 +162,10 @@ export default function PlanetaryPathwayPage() {
             <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.3em] text-[#b8922e] uppercase mb-4">
               Investment
             </p>
-            <p className="font-[family-name:var(--font-cormorant)] text-6xl font-medium text-[#2c2010] mb-2">
+            <p className="font-[family-name:var(--font-cormorant)] text-6xl font-medium text-[#100802] mb-2">
               {/* TODO: Preis eintragen */}
             </p>
-            <p className="font-[family-name:var(--font-cormorant)] text-base text-[#52402e] font-light mb-10">
+            <p className="font-[family-name:var(--font-cormorant)] text-base text-[#1c1008] font-light mb-10">
               Einmalzahlung · Ratenzahlung auf Anfrage möglich
             </p>
             <a
@@ -176,9 +176,9 @@ export default function PlanetaryPathwayPage() {
             >
               Planetary Pathway starten
             </a>
-            <p className="font-[family-name:var(--font-cormorant)] text-sm text-[#52402e] font-light">
+            <p className="font-[family-name:var(--font-cormorant)] text-sm text-[#1c1008] font-light">
               Fragen?{" "}
-              <a href="mailto:anna@astrogeoanna.info" className="text-[#b8922e] underline underline-offset-4 hover:text-[#8a6420] transition-colors">
+              <a href="mailto:anna@astrogeoanna.info" className="text-[#b8922e] underline underline-offset-4 hover:text-[#6b4800] transition-colors">
                 anna@astrogeoanna.info
               </a>
             </p>
@@ -188,7 +188,7 @@ export default function PlanetaryPathwayPage() {
           <div className="text-center">
             <a
               href="/#angebote"
-              className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.2em] text-[#8a6420] uppercase hover:text-[#b8922e] transition-colors"
+              className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.2em] text-[#6b4800] uppercase hover:text-[#b8922e] transition-colors"
             >
               ← Alle Angebote
             </a>

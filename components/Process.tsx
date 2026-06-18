@@ -33,10 +33,10 @@ export default function Process() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-20">
-          <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#6a4c10] uppercase mb-6">
+          <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#3d2800] uppercase mb-6">
             Der Prozess
           </p>
-          <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl lg:text-6xl font-light text-[#2c2010] leading-[1.15]">
+          <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl lg:text-6xl font-light text-[#100802] leading-[1.15]">
             So funktioniert es —
             <br />
             <em className="gold-gradient not-italic font-medium">einfach & klar</em>
@@ -62,10 +62,10 @@ export default function Process() {
                   </span>
                 </div>
                 <div className="pt-2 pb-8">
-                  <h3 className="font-[family-name:var(--font-cormorant)] text-2xl md:text-3xl font-medium text-[#2c2010] mb-4">
+                  <h3 className="font-[family-name:var(--font-cormorant)] text-2xl md:text-3xl font-medium text-[#100802] mb-4">
                     {step.title}
                   </h3>
-                  <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#52402e] font-light leading-relaxed mb-4">
+                  <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#1c1008] font-light leading-relaxed mb-4">
                     {step.description}
                   </p>
                   <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.1em] text-[#b8922e] uppercase">
@@ -85,7 +85,7 @@ export default function Process() {
           >
             Jetzt starten
           </a>
-          <p className="font-[family-name:var(--font-cormorant)] text-base text-[#52402e] mt-4 font-light">
+          <p className="font-[family-name:var(--font-cormorant)] text-base text-[#1c1008] mt-4 font-light">
             Nächste freie Termine:{" "}
             <span className="text-[#b8922e]">Diese Woche verfügbar</span>
           </p>
