@@ -3,9 +3,9 @@
 const types = [
   {
     number: "I",
-    headline: "Ich möchte umziehen.",
-    subline: "Du weißt, dass ein Wechsel kommt. Die Frage ist: wohin?",
-    body: "Du stehst vor einer der größten Entscheidungen deines Lebens. Ein neuer Ort, ein neues Kapitel. Hier brauchst du keine Inspiration — du brauchst Präzision. Das Deep-Dive Reading gibt dir Entscheidungssicherheit, die bleibt. Kein anderes Angebot geht so tief.",
+    headline: "Ich treffe eine große Entscheidung.",
+    subline: "Umzug, Unternehmensstandort, Auswanderung — du brauchst Klarheit, keine Inspiration.",
+    body: "Du stehst vor einer Entscheidung mit echtem Gewicht: vielleicht mit Familie, Kapital oder einem ganzen Lebensmodell im Gepäck. Bauchgefühl reicht hier nicht. Das Deep-Dive Reading gibt dir Entscheidungssicherheit auf Basis deines Horoskops — konkret, präzise, umsetzbar. Kein anderes Angebot geht so tief.",
     empfohlen: "Empfohlen: Astrokartographie Reading · 495 €",
     href: "#angebote",
     cta: "Meinen Kraftort finden",
@@ -23,9 +23,9 @@ const types = [
   },
   {
     number: "III",
-    headline: "Ich suche meinen Neustart.",
-    subline: "Etwas stimmt nicht. Du weißt nur noch nicht genau, was.",
-    body: "Du fühlst, dass du feststeckst — aber kannst es noch nicht klar benennen. Vielleicht ist es der Ort, der dich bremst. Vielleicht die Energie deines Zuhauses. Der erste Schritt muss nicht groß sein — er muss nur der richtige sein.",
+    headline: "Ich will mehr — aber wohin?",
+    subline: "Du spürst das Potenzial. Der Ort, an dem du lebst, fühlt sich wie Widerstand an.",
+    body: "Du feststeckst nicht — du bist einfach noch nicht da, wo du hingehörst. Vielleicht bremst dich dein aktueller Standort beruflich, finanziell oder energetisch. Der erste Schritt muss nicht groß sein — er muss nur der richtige sein.",
     empfohlen: "Einstieg: Raumastrologie-Kurs oder Das Buch",
     href: "#angebote",
     cta: "Meinen Einstieg finden",

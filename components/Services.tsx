@@ -11,7 +11,7 @@ const flagship = {
   duration: "90 Min. · Zoom",
   price: "495 €",
   description:
-    "Hast du dich schon einmal gefragt, an welchem Ort auf der Welt du dein volles Potenzial entfalten, die Liebe finden, beruflich aufblühen oder wirklich zuhause ankommen kannst?",
+    "Für Menschen, die eine echte Entscheidung zu treffen haben — Standortwahl, Umzug, Auswanderung, Business-Aufbau. Ich verbinde astrogeografische Tiefe mit deinem konkreten Horoskop und sage dir präzise: dieser Ort, dieser Zeitpunkt, diese Richtung.",
   includes: [
     "Einführung in die Astrokartographie & Planeten-Erklärungen (PDF)",
     "Analyse: Seelenformel, Best Planet, Mondknoten, Chiron, Human Design",
@@ -166,8 +166,7 @@ export default function Services() {
             </em>
           </h2>
           <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#52402e] max-w-2xl mx-auto font-light">
-            Ob du solo deinen idealen Ort suchst, als Paar umziehen möchtest
-            oder als Profi Astrogeografie anbieten willst — hier findest du das Richtige.
+            Nicht "Astrologin, die auch Astrogeografie macht" — sondern die Spezialistin für finanziell und persönlich bedeutsame Standortentscheidungen. Von der Einzelperson bis zum Unternehmer.
           </p>
         </div>
 
