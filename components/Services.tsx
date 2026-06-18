@@ -288,7 +288,7 @@ export default function Services() {
             {[
               {
                 label: "Kurse & Akademie",
-                desc: "Raumastrologie (147 €), Cosmic Coordinates (97 € / PRO 397 €), iPhone Masterclass (179 €) & Akademie — lerne Astrogeografie in deinem Tempo.",
+                desc: "Raumastrologie (49 €), Cosmic Coordinates (97 € / PRO 397 €), iPhone Masterclass (179 €) & Akademie — lerne Astrogeografie in deinem Tempo.",
                 href: "/kurse",
                 icon: <Compass size={24} />,
               },

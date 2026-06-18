@@ -33,7 +33,7 @@ const kurse = [
     badge: "Einstieg",
     name: "Mini-Kurs Raumastrologie",
     tagline: "Online-Kurs · Selbststudium",
-    price: "147 €",
+    price: "49 €",
     priceNote: null,
     desc: "Lerne selbst, wie du deine persönliche Astro-Folie erstellst und deine Wohnung auf Vordermann bringst — das Café am Merkur-Tisch für lebhafte Gespräche, der Zoom-Call auf der Jupiter-Linie für Erfolg.",
     includes: [
