@@ -44,9 +44,9 @@ const readings = [
       "Priorität bei Terminvergabe",
       "E-Mail-Support zwischen den Sessions",
     ],
-    url: "https://calendly.com/astrogeo/60",
-    cta: "VIP buchen",
-    note: "Für Unternehmer, Entscheider & Premium-Klientel",
+    url: "mailto:anna@astrogeoanna.info",
+    cta: "VIP anfragen",
+    note: "Persönliche Absprache · Zahlung individuell vereinbart",
   },
 ];
 
@@ -159,8 +159,8 @@ export default function Services() {
 
                   <a
                     href={r.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    target={r.url.startsWith("mailto") ? undefined : "_blank"}
+                    rel={r.url.startsWith("mailto") ? undefined : "noopener noreferrer"}
                     className={`block text-center py-4 px-8 text-sm font-[family-name:var(--font-montserrat)] tracking-[0.15em] uppercase rounded-sm transition-all duration-300 ${
                       r.highlight ? "btn-gold" : "btn-outline-gold"
                     }`}
