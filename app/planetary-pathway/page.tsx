@@ -47,6 +47,7 @@ const tiers = [
     name: "Self-Study",
     price: "1.700 €",
     highlight: false,
+    rateNote: null,
     includes: [
       "Alle 6 Video-Module (Selbststudium, jederzeit abrufbar)",
       "Schritt-für-Schritt-Anleitungen & Checklisten",
@@ -74,6 +75,7 @@ const tiers = [
     ],
     cta: "Persönliche Begleitung anfragen",
     url: "mailto:anna@astrogeoanna.info",
+    rateNote: "Raten über 6 Monate möglich",
   },
 ];
 
@@ -181,9 +183,16 @@ export default function PlanetaryPathwayPage() {
                   <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.3em] text-[#b8922e] uppercase mb-2">
                     {t.name}
                   </p>
-                  <p className="font-[family-name:var(--font-cormorant)] text-4xl font-medium text-[#100802] mb-6">
-                    {t.price}
-                  </p>
+                  <div className="mb-6">
+                    <p className="font-[family-name:var(--font-cormorant)] text-4xl font-medium text-[#100802]">
+                      {t.price}
+                    </p>
+                    {t.rateNote && (
+                      <p className="font-[family-name:var(--font-montserrat)] text-xs text-[#6b4800] tracking-wider mt-1">
+                        {t.rateNote}
+                      </p>
+                    )}
+                  </div>
                   <ul className="space-y-3 mb-8 flex-1">
                     {t.includes.map((item) => (
                       <li key={item} className="flex gap-3 items-start">

@@ -26,13 +26,14 @@ const kurse = [
     ],
     url: "https://astrogeoanna.thrivecart.com/cosmic-coordinates-2026/",
     cta: "Zum Kurs",
+    funnelBridge: null,
   },
   {
     icon: <Map size={32} />,
     badge: "Einstieg",
     name: "Mini-Kurs Raumastrologie",
     tagline: "Online-Kurs · Selbststudium",
-    price: "49 €",
+    price: "147 €",
     priceNote: null,
     desc: "Lerne selbst, wie du deine persönliche Astro-Folie erstellst und deine Wohnung auf Vordermann bringst — das Café am Merkur-Tisch für lebhafte Gespräche, der Zoom-Call auf der Jupiter-Linie für Erfolg.",
     includes: [
@@ -43,6 +44,7 @@ const kurse = [
     ],
     url: "https://astrogeoanna.thrivecart.com/die-folie-die-dein-leben-vereandert/",
     cta: "Zum Kurs",
+    funnelBridge: null,
   },
   {
     icon: <GraduationCap size={32} />,
@@ -60,23 +62,29 @@ const kurse = [
     ],
     url: "https://astrogeoanna.thrivecart.com/the-place-to-be-special-offer-copy-2/",
     cta: "Zur Akademie",
+    funnelBridge: null,
   },
   {
     icon: <Smartphone size={32} />,
-    badge: "Tool-Kurs",
+    badge: "Live-Kurs",
     name: "Masterclass Astro Gold App",
-    tagline: "iPhone · Online-Kurs · Selbststudium",
-    price: "97 €",
+    tagline: "iPhone · 2 Std. · Live",
+    price: "179 €",
     priceNote: null,
-    desc: "Lerne die Astro Gold App für deine persönliche Astrokartographie-Analyse. Schritt für Schritt vom ersten Start bis zur fertigen ACG-Karte.",
+    desc: "In zwei Stunden lernst du, deine eigenen Astrokartographie-Linien in der Astro Gold App zu lesen — konkret, Schritt für Schritt, live mit Anna. Du siehst, wo auf der Welt deine Planeten wirken. Und genau dort merken die meisten: die Linien zu sehen ist erst der Anfang.",
     includes: [
-      "Einrichtung & erste Schritte",
-      "ACG-Karte erstellen & exportieren",
-      "Linien lesen & speichern",
-      "Für iPhone · sofort verfügbar",
+      "Einrichtung & erste Schritte in der App",
+      "ACG-Karte erstellen, lesen & exportieren",
+      "Eigene Planeten-Linien verstehen",
+      "Live mit Anna — Fragen direkt beantworten",
     ],
     url: "https://astrogeoanna.thrivecart.com/astrogoldappiphone/",
     cta: "Zur Masterclass",
+    funnelBridge: {
+      text: "Jetzt kennst du deine Linien — aber was sie wirklich für deine Entscheidung bedeuten, das zeige ich dir im Reading.",
+      cta: "Zum Astrogeografie-Reading →",
+      href: "/#angebote",
+    },
   },
 ];
 
@@ -168,6 +176,26 @@ export default function KursePage() {
                     >
                       {k.cta}
                     </a>
+
+                    {k.funnelBridge && (
+                      <div
+                        className="mt-8 rounded-sm px-6 py-5"
+                        style={{
+                          background: "rgba(184,146,46,0.07)",
+                          border: "1px solid rgba(184,146,46,0.3)",
+                        }}
+                      >
+                        <p className="font-[family-name:var(--font-cormorant)] text-base text-[#100802] font-light leading-relaxed italic mb-3">
+                          »{k.funnelBridge.text}«
+                        </p>
+                        <a
+                          href={k.funnelBridge.href}
+                          className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#b8922e] uppercase hover:text-[#6b4800] transition-colors"
+                        >
+                          {k.funnelBridge.cta}
+                        </a>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
