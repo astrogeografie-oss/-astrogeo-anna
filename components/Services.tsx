@@ -298,12 +298,6 @@ export default function Services() {
                 href: "/weitere-angebote",
                 icon: <Star size={24} />,
               },
-              {
-                label: "Orakel & Karten",
-                desc: "Kipperkarten, Skatkarten & Jahreslegung Orakelkarten.",
-                href: "/orakel",
-                icon: <Star size={24} />,
-              },
             ].map((tile) => (
               <a
                 key={tile.href}
