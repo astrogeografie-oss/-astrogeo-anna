@@ -15,10 +15,11 @@ const readings = [
     includes: [
       "Einführung & Planeten-PDF",
       "Seelenformel, Best Planet, Mondknoten, Chiron",
+      "Human Design: Autorität & Profil (+ weitere Faktoren individuell)",
       "Geburtsort, aktueller Standort & Wunschort",
       "Relocation-Chart, Karma-Linien, Destiny-Crossings, Vortex-Punkte",
       "Asteroiden & sensitive Punkte",
-      "Progressions-Chart & Solar-Radix",
+      "Progressions-Chart & Solar-Radix (individuell, je nach Klient)",
       "Screenshots & Aufzeichnung beider Calls",
     ],
     url: "https://calendly.com/astrogeo/60",
