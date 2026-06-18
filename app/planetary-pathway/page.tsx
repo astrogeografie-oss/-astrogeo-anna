@@ -42,14 +42,39 @@ const modules = [
   },
 ];
 
-const includes = [
-  "6 tiefgehende Video-Module (Selbststudium, jederzeit abrufbar)",
-  "Schritt-für-Schritt-Anleitungen & Checklisten",
-  "Astrogold App-Tutorials für jede Technik",
-  "Live Q&A-Calls mit Anna (Termine auf Anfrage)",
-  "Private Community für alle Teilnehmerinnen",
-  "Zertifikat: Certified Astrogeografie Practitioner",
-  "Lebenslanger Zugang inkl. aller Updates",
+const tiers = [
+  {
+    name: "Self-Study",
+    price: "1.700 €",
+    highlight: false,
+    includes: [
+      "Alle 6 Video-Module (Selbststudium, jederzeit abrufbar)",
+      "Schritt-für-Schritt-Anleitungen & Checklisten",
+      "Astrogold App-Tutorials für jede Technik",
+      "Telegram-Gruppe mit allen Teilnehmerinnen",
+      "1:1-Call mit Anna alle 2 Wochen (3 Monate)",
+      "Zertifikat: Certified Astrogeografie Practitioner",
+      "Lebenslanger Zugang inkl. aller Updates",
+    ],
+    cta: "Self-Study starten",
+    url: "https://astrogeoanna.thrivecart.com/planetary-pathway--erfolg-astrogeografie/",
+  },
+  {
+    name: "Persönliche Begleitung",
+    price: "4.900 €",
+    highlight: true,
+    includes: [
+      "Alles aus Self-Study",
+      "Intensive 1:1-Begleitung über 3 Monate",
+      "Wöchentliche individuelle Calls mit Anna",
+      "Persönliches Feedback auf deine Sessions",
+      "Individuelle Positionierungs-Beratung",
+      "Priorität & direkte Erreichbarkeit",
+      "Für Coaches & Astrologinnen, die schnell skalieren wollen",
+    ],
+    cta: "Persönliche Begleitung anfragen",
+    url: "mailto:anna@astrogeoanna.info",
+  },
 ];
 
 export default function PlanetaryPathwayPage() {
@@ -134,50 +159,56 @@ export default function PlanetaryPathwayPage() {
             </div>
           </div>
 
-          {/* Includes */}
-          <div
-            className="rounded-sm p-8 md:p-10 mb-12"
-            style={{
-              background: "linear-gradient(145deg, #fffdf9, #f5efe4)",
-              border: "1px solid rgba(184,146,46,0.35)",
-            }}
-          >
-            <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.3em] text-[#b8922e] uppercase mb-6">
-              Enthalten
+          {/* Tiers */}
+          <div className="mb-16">
+            <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.3em] text-[#b8922e] uppercase text-center mb-10">
+              Investment · Wähle deine Variante
             </p>
-            <ul className="space-y-3">
-              {includes.map((item) => (
-                <li key={item} className="flex gap-3 items-start">
-                  <Check size={16} className="text-[#b8922e] mt-0.5 flex-shrink-0" />
-                  <span className="font-[family-name:var(--font-cormorant)] text-[#1c1008] text-base font-light leading-snug">
-                    {item}
-                  </span>
-                </li>
+            <div className="grid md:grid-cols-2 gap-6">
+              {tiers.map((t) => (
+                <div
+                  key={t.name}
+                  className={`rounded-sm p-8 md:p-10 flex flex-col ${t.highlight ? "glow-gold" : ""}`}
+                  style={{
+                    background: t.highlight
+                      ? "linear-gradient(145deg, #fffdf9, #f5efe4)"
+                      : "linear-gradient(145deg, #fffdf9, #faf7f2)",
+                    border: t.highlight
+                      ? "1px solid rgba(184,146,46,0.5)"
+                      : "1px solid rgba(184,146,46,0.2)",
+                  }}
+                >
+                  <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.3em] text-[#b8922e] uppercase mb-2">
+                    {t.name}
+                  </p>
+                  <p className="font-[family-name:var(--font-cormorant)] text-4xl font-medium text-[#100802] mb-6">
+                    {t.price}
+                  </p>
+                  <ul className="space-y-3 mb-8 flex-1">
+                    {t.includes.map((item) => (
+                      <li key={item} className="flex gap-3 items-start">
+                        <Check size={15} className="text-[#b8922e] mt-0.5 flex-shrink-0" />
+                        <span className="font-[family-name:var(--font-cormorant)] text-[#1c1008] text-base font-light leading-snug">
+                          {item}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                  <a
+                    href={t.url}
+                    target={t.url.startsWith("mailto") ? undefined : "_blank"}
+                    rel={t.url.startsWith("mailto") ? undefined : "noopener noreferrer"}
+                    className={`block text-center py-4 px-8 text-sm font-[family-name:var(--font-montserrat)] tracking-[0.15em] uppercase rounded-sm transition-all duration-300 ${
+                      t.highlight ? "btn-gold" : "btn-outline-gold"
+                    }`}
+                  >
+                    {t.cta}
+                  </a>
+                </div>
               ))}
-            </ul>
-          </div>
-
-          {/* Price + CTA */}
-          <div className="text-center mb-16">
-            <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.3em] text-[#b8922e] uppercase mb-4">
-              Investment
-            </p>
-            <p className="font-[family-name:var(--font-cormorant)] text-6xl font-medium text-[#100802] mb-2">
-              {/* TODO: Preis eintragen */}
-            </p>
-            <p className="font-[family-name:var(--font-cormorant)] text-base text-[#1c1008] font-light mb-10">
-              Einmalzahlung · Ratenzahlung auf Anfrage möglich
-            </p>
-            <a
-              href="https://astrogeoanna.thrivecart.com/planetary-pathway--erfolg-astrogeografie/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-gold inline-block px-12 py-4 text-sm font-[family-name:var(--font-montserrat)] tracking-[0.15em] uppercase rounded-sm mb-4"
-            >
-              Planetary Pathway starten
-            </a>
-            <p className="font-[family-name:var(--font-cormorant)] text-sm text-[#1c1008] font-light">
-              Fragen?{" "}
+            </div>
+            <p className="text-center font-[family-name:var(--font-cormorant)] text-sm text-[#1c1008] font-light mt-6">
+              Ratenzahlung auf Anfrage möglich ·{" "}
               <a href="mailto:anna@astrogeoanna.info" className="text-[#b8922e] underline underline-offset-4 hover:text-[#6b4800] transition-colors">
                 anna@astrogeoanna.info
               </a>

@@ -15,7 +15,8 @@ const kurse = [
     badge: "Einstieg",
     name: "Mini-Kurs Cosmic Coordinates",
     tagline: "Online-Kurs · Selbststudium",
-    price: null,
+    price: "97 €",
+    priceNote: "PRO-Version: 397 €",
     desc: "Lerne Standort-Astrologie (Local Space) in deinem eigenen Tempo. Du verstehst Azimuth, Häuser & die 10 Planetenlinien — und kannst deine eigene Karte selbst lesen.",
     includes: [
       "Azimuth & Häuser verstehen",
@@ -31,7 +32,8 @@ const kurse = [
     badge: "Einstieg",
     name: "Mini-Kurs Raumastrologie",
     tagline: "Online-Kurs · Selbststudium",
-    price: null,
+    price: "49 €",
+    priceNote: null,
     desc: "Lerne selbst, wie du deine persönliche Astro-Folie erstellst und deine Wohnung auf Vordermann bringst — das Café am Merkur-Tisch für lebhafte Gespräche, der Zoom-Call auf der Jupiter-Linie für Erfolg.",
     includes: [
       "Persönliche Astro-Folie erstellen",
@@ -48,6 +50,7 @@ const kurse = [
     name: "Die Akademie",
     tagline: "Online-Akademie · Selbststudium · Nach Cosmic Coordinates",
     price: null,
+    priceNote: null,
     desc: "Du hast Cosmic Coordinates gemacht und weißt, wie du Standort-Astrologie liest? Jetzt geht es tiefer: In der Akademie lernst du die ACG-Linien — das globale Pendant zu Local Space — und so vieles mehr.",
     includes: [
       "ACG-Linien: Astrocartography auf der Weltkarte",
@@ -64,6 +67,7 @@ const kurse = [
     name: "Masterclass Astro Gold App",
     tagline: "iPhone · Online-Kurs · Selbststudium",
     price: "97 €",
+    priceNote: null,
     desc: "Lerne die Astro Gold App für deine persönliche Astrokartographie-Analyse. Schritt für Schritt vom ersten Start bis zur fertigen ACG-Karte.",
     includes: [
       "Einrichtung & erste Schritte",
@@ -128,9 +132,16 @@ export default function KursePage() {
                         {k.name}
                       </h2>
                       {k.price && (
-                        <span className="font-[family-name:var(--font-cormorant)] text-xl font-medium text-[#b8922e]">
-                          {k.price}
-                        </span>
+                        <div className="text-right">
+                          <span className="font-[family-name:var(--font-cormorant)] text-xl font-medium text-[#b8922e]">
+                            {k.price}
+                          </span>
+                          {k.priceNote && (
+                            <p className="font-[family-name:var(--font-montserrat)] text-xs text-[#6b4800] tracking-wider mt-0.5">
+                              {k.priceNote}
+                            </p>
+                          )}
+                        </div>
                       )}
                     </div>
                     <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#b8922e] uppercase mb-4">

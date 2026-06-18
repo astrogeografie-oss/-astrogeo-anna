@@ -1,54 +1,53 @@
 "use client";
 
-import { Check, Globe, Star, Users, Gift, Calendar, BookOpen, Compass, Map, Smartphone, GraduationCap } from "lucide-react";
+import { Check, Globe, Star, Users, Gift, Calendar, BookOpen, Compass, Map, Smartphone, GraduationCap, Crown } from "lucide-react";
 
-const flagship = {
-  id: "orts-horoskop",
-  badge: "",
-  icon: <Globe size={32} />,
-  name: "Astrokartographie (Orts-Horoskop)",
-  tagline: "Astrokartographie · Orts-Horoskop",
-  duration: "90 Min. · Zoom",
-  price: "495 €",
-  description:
-    "Für Menschen, die eine echte Entscheidung zu treffen haben — Standortwahl, Umzug, Auswanderung, Business-Aufbau. Ich verbinde astrogeografische Tiefe mit deinem konkreten Horoskop und sage dir präzise: dieser Ort, dieser Zeitpunkt, diese Richtung.",
-  includes: [
-    "Einführung in die Astrokartographie & Planeten-Erklärungen (PDF)",
-    "Analyse: Seelenformel, Best Planet, Mondknoten, Chiron, Human Design",
-    "Überblick Geburtsort, aktueller Standort & Wunschort",
-    "Relocation-Chart, Karma-Linien, Destiny-Crossings, Vortex-Punkte",
-    "Asteroiden & sensitive Punkte",
-    "Progressions-Chart & Solar-Radix (bester Zeitpunkt für Veränderung)",
-    "Screenshots, Bilder & Aufzeichnung des Zoom-Calls",
-  ],
-  url: "https://calendly.com/astrogeo/60",
-  cta: "Jetzt buchen",
-  note: "Benötigt: genaues Geburtsdatum, Uhrzeit & Geburtsort",
-};
-
-const paarReading = {
-  id: "paare",
-  badge: "Für Paare",
-  icon: <Users size={32} />,
-  name: "Astrokartographie für Paare",
-  tagline: "Euer gemeinsamer Traumort auf der Erde",
-  duration: "2 × 90 Min. · Zoom",
-  price: "777 €",
-  priceNote: "Einzelperson 90 Min. | Paar 2 Sessions à 90 Min.",
-  description:
-    "Astrokartographie berechnet den idealen Traumort für Paare, die ins Ausland ziehen möchten — mit Blick auf Beziehungsdynamik, seelische Verbundenheit und Entwicklungspotenziale.",
-  includes: [
-    "Gesamteindruck der Beziehung & worum es euch wirklich geht",
-    "Seelische Verbundenheit: was euch zusammengeführt hat",
-    "Entwicklungs- & Konfliktpotenziale erkennen",
-    "Gemeinsame Astrokartographie für beide Geburtsmomente",
-    "Top-Empfehlungen für euren gemeinsamen Wohnort",
-    "Viele Unterlagen, Screenshots & Aufzeichnung",
-  ],
-  url: "https://calendly.com/astrogeo/astrogeografie-fur-paare",
-  cta: "Als Paar buchen",
-  note: "Beide Geburtszeiten & -orte notwendig",
-};
+const readings = [
+  {
+    id: "standard",
+    tier: "Standard",
+    name: "Astrogeografie-Reading",
+    tagline: "2 × 45 Min. · Zoom",
+    price: "690 €",
+    highlight: false,
+    description:
+      "Zwei intensive Sessions, die dir genau zeigen, wo auf der Erde dein Leben aufblüht — für Liebe, Karriere, finanzielle Energie oder einen Neuanfang.",
+    includes: [
+      "Einführung & Planeten-PDF",
+      "Seelenformel, Best Planet, Mondknoten, Chiron",
+      "Geburtsort, aktueller Standort & Wunschort",
+      "Relocation-Chart, Karma-Linien, Destiny-Crossings, Vortex-Punkte",
+      "Asteroiden & sensitive Punkte",
+      "Progressions-Chart & Solar-Radix",
+      "Screenshots & Aufzeichnung beider Calls",
+    ],
+    url: "https://calendly.com/astrogeo/60",
+    cta: "Standard buchen",
+    note: "Benötigt: genaues Geburtsdatum, Uhrzeit & Geburtsort",
+  },
+  {
+    id: "vip",
+    tier: "VIP",
+    name: "Astrogeografie-Reading",
+    tagline: "Standard + 2 Folgetermine · Premium PDF",
+    price: "1.499 €",
+    highlight: true,
+    description:
+      "Für Unternehmer und Menschen mit Kapital, die eine hochwertige Gesamtanalyse brauchen — mit persönlicher Begleitung über mehrere Monate und einer professionellen Auswertung als Dokument.",
+    includes: [
+      "Alles aus dem Standard-Reading",
+      "2 Folgetermine (je 45 Min.) zur Vertiefung",
+      "Hochwertige Premium-Auswertung als PDF",
+      "Konkrete Empfehlungen für Standort & Timing",
+      "Speziell buchbar als Unternehmer-Paket",
+      "Priorität bei Terminvergabe",
+      "E-Mail-Support zwischen den Sessions",
+    ],
+    url: "https://calendly.com/astrogeo/60",
+    cta: "VIP buchen",
+    note: "Für Unternehmer, Entscheider & Premium-Klientel",
+  },
+];
 
 const buch = {
   icon: <BookOpen size={32} />,
@@ -65,85 +64,6 @@ const buch = {
   ],
   url: "https://publishde.bookmundo.com/books/22022143",
 };
-
-function MainCard({ service, fullWidth = false }: { service: typeof flagship | typeof paarReading; fullWidth?: boolean }) {
-  const isHighlight = service.id === "orts-horoskop";
-  return (
-    <div
-      className={`relative rounded-sm overflow-hidden transition-all duration-500 hover:-translate-y-2 ${
-        isHighlight ? "glow-gold" : ""
-      } ${fullWidth ? "w-full" : ""}`}
-      style={{
-        background: isHighlight
-          ? "linear-gradient(145deg, #fffdf9, #f5efe4)"
-          : "linear-gradient(145deg, #fffdf9, #faf7f2)",
-        border: isHighlight
-          ? "1px solid rgba(184,146,46,0.4)"
-          : "1px solid rgba(184,146,46,0.1)",
-      }}
-    >
-
-<div className="p-8 md:p-10">
-        <div className="text-[#b8922e] mb-6">{service.icon}</div>
-
-        <h3 className="font-[family-name:var(--font-cormorant)] text-3xl font-medium text-[#100802] mb-2">
-          {service.name}
-        </h3>
-        <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#1c1008] uppercase mb-2">
-          {service.tagline}
-        </p>
-        <div className="flex items-baseline gap-4 mb-6">
-          <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.1em] text-[#b8922e]">
-            {service.duration}
-          </p>
-          <span
-            className="font-[family-name:var(--font-cormorant)] text-2xl font-medium"
-            style={{ color: "#b8922e" }}
-          >
-            {service.price}
-          </span>
-        </div>
-        {"priceNote" in service && service.priceNote && (
-          <p className="font-[family-name:var(--font-montserrat)] text-xs text-[#1c1008] tracking-wider mb-6 -mt-4">
-            {service.priceNote}
-          </p>
-        )}
-
-        <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#1c1008] font-light leading-relaxed mb-8">
-          {service.description}
-        </p>
-
-        <div className="section-divider mb-8" />
-
-        <ul className="space-y-3 mb-10">
-          {service.includes.map((item) => (
-            <li key={item} className="flex gap-3 items-start">
-              <Check size={16} className="text-[#b8922e] mt-0.5 flex-shrink-0" />
-              <span className="font-[family-name:var(--font-cormorant)] text-[#1c1008] text-base font-light leading-snug">
-                {item}
-              </span>
-            </li>
-          ))}
-        </ul>
-
-        <a
-          href={service.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={`block text-center py-4 px-8 text-sm font-[family-name:var(--font-montserrat)] tracking-[0.15em] uppercase rounded-sm transition-all duration-300 ${
-            isHighlight ? "btn-gold" : "btn-outline-gold"
-          }`}
-        >
-          {service.cta}
-        </a>
-
-        <p className="text-center font-[family-name:var(--font-montserrat)] text-xs text-[#1c1008] mt-3 tracking-wider">
-          {service.note}
-        </p>
-      </div>
-    </div>
-  );
-}
 
 export default function Services() {
   return (
@@ -170,17 +90,93 @@ export default function Services() {
           </p>
         </div>
 
-        {/* 1. Flagship – Orts-Horoskop */}
-        <div className="max-w-5xl mx-auto mb-8">
-          <MainCard service={flagship} fullWidth />
-        </div>
-
-        {/* 2. Paar-Analyse */}
+        {/* 1. Readings – Standard & VIP */}
         <div className="max-w-5xl mx-auto mb-16">
-          <MainCard service={paarReading} fullWidth />
+          <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.3em] text-[#b8922e] uppercase text-center mb-10">
+            Astrogeografie-Reading · 1:1 mit Anna
+          </p>
+          <div className="grid md:grid-cols-2 gap-6">
+            {readings.map((r) => (
+              <div
+                key={r.id}
+                className={`relative rounded-sm overflow-hidden transition-all duration-500 hover:-translate-y-2 ${r.highlight ? "glow-gold" : ""}`}
+                style={{
+                  background: r.highlight
+                    ? "linear-gradient(145deg, #fffdf9, #f5efe4)"
+                    : "linear-gradient(145deg, #fffdf9, #faf7f2)",
+                  border: r.highlight
+                    ? "1px solid rgba(184,146,46,0.5)"
+                    : "1px solid rgba(184,146,46,0.15)",
+                }}
+              >
+                {r.highlight && (
+                  <div
+                    className="flex items-center justify-center gap-2 py-2"
+                    style={{ background: "rgba(184,146,46,0.12)", borderBottom: "1px solid rgba(184,146,46,0.3)" }}
+                  >
+                    <Crown size={12} className="text-[#b8922e]" />
+                    <span className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.25em] text-[#b8922e] uppercase">
+                      Für Unternehmer & Premium-Klientel
+                    </span>
+                  </div>
+                )}
+                <div className="p-8 md:p-10">
+                  <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.3em] text-[#b8922e] uppercase mb-3">
+                    {r.tier}
+                  </p>
+                  <h3 className="font-[family-name:var(--font-cormorant)] text-3xl font-medium text-[#100802] mb-2">
+                    {r.name}
+                  </h3>
+                  <div className="flex items-baseline gap-4 mb-6">
+                    <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.1em] text-[#b8922e]">
+                      {r.tagline}
+                    </p>
+                    <span
+                      className="font-[family-name:var(--font-cormorant)] text-2xl font-medium"
+                      style={{ color: "#b8922e" }}
+                    >
+                      {r.price}
+                    </span>
+                  </div>
+
+                  <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#1c1008] font-light leading-relaxed mb-8">
+                    {r.description}
+                  </p>
+
+                  <div className="section-divider mb-8" />
+
+                  <ul className="space-y-3 mb-10">
+                    {r.includes.map((item) => (
+                      <li key={item} className="flex gap-3 items-start">
+                        <Check size={16} className="text-[#b8922e] mt-0.5 flex-shrink-0" />
+                        <span className="font-[family-name:var(--font-cormorant)] text-[#1c1008] text-base font-light leading-snug">
+                          {item}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  <a
+                    href={r.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`block text-center py-4 px-8 text-sm font-[family-name:var(--font-montserrat)] tracking-[0.15em] uppercase rounded-sm transition-all duration-300 ${
+                      r.highlight ? "btn-gold" : "btn-outline-gold"
+                    }`}
+                  >
+                    {r.cta}
+                  </a>
+
+                  <p className="text-center font-[family-name:var(--font-montserrat)] text-xs text-[#1c1008] mt-3 tracking-wider">
+                    {r.note}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
-        {/* 3. Planetary Pathway – Ausbildung */}
+        {/* 2. Planetary Pathway */}
         <div className="max-w-5xl mx-auto mb-16">
           <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.3em] text-[#b8922e] uppercase text-center mb-10">
             Ausbildung · Für Astrologinnen & Astro-Kennerinnen
@@ -204,8 +200,12 @@ export default function Services() {
                       Planetary Pathway
                     </h3>
                     <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#b8922e] uppercase">
-                      Erfolg Astrogeografie · Ausbildung
+                      3 Monate · Ausbildung Astrogeografie
                     </p>
+                  </div>
+                  <div className="text-right">
+                    <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#100802] font-medium">ab 1.700 €</p>
+                    <p className="font-[family-name:var(--font-montserrat)] text-xs text-[#b8922e] tracking-wider">Self-Study / 1:1 auf Anfrage</p>
                   </div>
                 </div>
                 <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#1c1008] font-light leading-relaxed">
@@ -219,7 +219,7 @@ export default function Services() {
           </a>
         </div>
 
-        {/* 4. Buch – Authority-Anker */}
+        {/* 3. Buch */}
         <div className="max-w-5xl mx-auto mb-16">
           <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.3em] text-[#b8922e] uppercase text-center mb-10">
             Das Buch · Authority
@@ -255,7 +255,7 @@ export default function Services() {
                 <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#b8922e] uppercase mb-5">
                   {buch.tagline}
                 </p>
-                <p className="font-[family-name:var(--font-cormorant)] text-xl italic text-[#3d2800] font-light mb-4 leading-snug">
+                <p className="font-[family-name:var(--font-cormorant)] text-xl italic text-[#6b4800] font-light mb-4 leading-snug">
                   {buch.quote}
                 </p>
                 <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#1c1008] font-light leading-relaxed mb-6">
@@ -279,7 +279,7 @@ export default function Services() {
           </a>
         </div>
 
-        {/* 5. Teaser-Links zu Unterseiten */}
+        {/* 4. Weitere Angebote */}
         <div className="max-w-5xl mx-auto">
           <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.3em] text-[#b8922e] uppercase text-center mb-10">
             Weitere Angebote
@@ -288,7 +288,7 @@ export default function Services() {
             {[
               {
                 label: "Kurse & Akademie",
-                desc: "Mini-Kurse, Akademie & Masterclass Astro Gold — lerne Astrogeografie in deinem Tempo.",
+                desc: "Raumastrologie (49 €), Cosmic Coordinates (97 € / PRO 397 €) & Akademie — lerne Astrogeografie in deinem Tempo.",
                 href: "/kurse",
                 icon: <Compass size={24} />,
               },
