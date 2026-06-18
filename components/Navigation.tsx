@@ -48,7 +48,7 @@ export default function Navigation() {
               <line x1="25" y1="16" x2="31" y2="16" stroke="#b8922e" strokeWidth="0.8" opacity="0.8" />
             </svg>
           </div>
-          <span className={`font-[family-name:var(--font-cormorant)] text-base lg:text-xl font-light tracking-[0.15em] transition-colors duration-300 group-hover:text-[#b8922e] ${scrolled ? "text-[#2c2010]" : "text-white"}`}>
+          <span className={`font-[family-name:var(--font-cormorant)] text-base lg:text-xl font-light tracking-[0.15em] transition-colors duration-300 group-hover:text-[#b8922e] ${scrolled ? "text-[#100802]" : "text-white"}`}>
             ANNA<span className="text-[#b8922e] mx-1">·</span><span className="hidden sm:inline">ASTROGEOGRAFIE</span>
           </span>
         </a>
@@ -59,7 +59,7 @@ export default function Navigation() {
             <a
               key={link.href}
               href={link.href}
-              className={`font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] hover:text-[#b8922e] transition-colors duration-300 uppercase ${scrolled ? "text-[#52402e]" : "text-white"}`}
+              className={`font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] hover:text-[#b8922e] transition-colors duration-300 uppercase ${scrolled ? "text-[#1c1008]" : "text-white"}`}
             >
               {link.label}
             </a>
@@ -90,7 +90,7 @@ export default function Navigation() {
               <a
                 key={link.href}
                 href={link.href}
-                className="font-[family-name:var(--font-montserrat)] text-sm tracking-[0.15em] text-[#52402e] hover:text-[#b8922e] transition-colors duration-300 uppercase"
+                className="font-[family-name:var(--font-montserrat)] text-sm tracking-[0.15em] text-[#1c1008] hover:text-[#b8922e] transition-colors duration-300 uppercase"
                 onClick={() => setIsOpen(false)}
               >
                 {link.label}

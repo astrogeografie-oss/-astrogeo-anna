@@ -34,13 +34,13 @@ export default async function BlogPostPage({ params }: Props) {
         <div className="max-w-3xl mx-auto px-6 py-5 flex items-center justify-between">
           <Link
             href="/"
-            className="font-[family-name:var(--font-cormorant)] text-xl font-light tracking-[0.15em] text-[#2c2010] hover:text-[#b8922e] transition-colors duration-300"
+            className="font-[family-name:var(--font-cormorant)] text-xl font-light tracking-[0.15em] text-[#100802] hover:text-[#b8922e] transition-colors duration-300"
           >
             ANNA<span className="text-[#b8922e] mx-1">·</span>ASTROGEOGRAFIE
           </Link>
           <Link
             href="/blog"
-            className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#52402e] hover:text-[#b8922e] transition-colors duration-300 uppercase"
+            className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#1c1008] hover:text-[#b8922e] transition-colors duration-300 uppercase"
           >
             ← Journal
           </Link>
@@ -53,7 +53,7 @@ export default async function BlogPostPage({ params }: Props) {
         {/* Meta */}
         <div className="flex items-center gap-4 mb-8">
           <span
-            className="inline-block px-3 py-1 font-[family-name:var(--font-montserrat)] text-xs tracking-[0.25em] text-[#6a4c10] uppercase rounded-sm"
+            className="inline-block px-3 py-1 font-[family-name:var(--font-montserrat)] text-xs tracking-[0.25em] text-[#3d2800] uppercase rounded-sm"
             style={{ background: "rgba(184,146,46,0.12)", border: "1px solid rgba(184,146,46,0.2)" }}
           >
             {post.label}
@@ -64,17 +64,17 @@ export default async function BlogPostPage({ params }: Props) {
         </div>
 
         {/* Title */}
-        <h1 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl lg:text-6xl font-semibold text-[#2c2010] leading-[1.1] mb-3">
+        <h1 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl lg:text-6xl font-semibold text-[#100802] leading-[1.1] mb-3">
           {post.title}
         </h1>
-        <p className="font-[family-name:var(--font-cormorant)] text-2xl text-[#6a4c10] italic font-normal mb-10">
+        <p className="font-[family-name:var(--font-cormorant)] text-2xl text-[#3d2800] italic font-normal mb-10">
           {post.subtitle}
         </p>
 
         <div className="w-16 h-px mb-10" style={{ background: "linear-gradient(90deg, #b8922e, transparent)" }} />
 
         {/* Intro */}
-        <p className="font-[family-name:var(--font-cormorant)] text-xl md:text-2xl text-[#2c2010] font-medium leading-relaxed mb-14">
+        <p className="font-[family-name:var(--font-cormorant)] text-xl md:text-2xl text-[#100802] font-medium leading-relaxed mb-14">
           {post.intro}
         </p>
 
@@ -83,7 +83,7 @@ export default async function BlogPostPage({ params }: Props) {
           {post.sections.map((section, i) => (
             <div key={i}>
               {section.heading && (
-                <h2 className="font-[family-name:var(--font-cormorant)] text-2xl md:text-3xl font-semibold text-[#2c2010] mb-5">
+                <h2 className="font-[family-name:var(--font-cormorant)] text-2xl md:text-3xl font-semibold text-[#100802] mb-5">
                   {section.heading}
                 </h2>
               )}
@@ -102,7 +102,7 @@ export default async function BlogPostPage({ params }: Props) {
                       {section.keywords.map((kw, k) => (
                         <span
                           key={k}
-                          className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.2em] text-[#6a4c10] uppercase px-3 py-1 rounded-sm"
+                          className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.2em] text-[#3d2800] uppercase px-3 py-1 rounded-sm"
                           style={{ background: "rgba(184,146,46,0.15)", border: "1px solid rgba(184,146,46,0.25)" }}
                         >
                           {kw}
@@ -113,7 +113,7 @@ export default async function BlogPostPage({ params }: Props) {
                   {section.body.split("\n\n").map((paragraph, j) => (
                     <p
                       key={j}
-                      className="font-[family-name:var(--font-cormorant)] text-lg text-[#2c2010] font-normal leading-relaxed mb-3 last:mb-0"
+                      className="font-[family-name:var(--font-cormorant)] text-lg text-[#100802] font-normal leading-relaxed mb-3 last:mb-0"
                     >
                       {paragraph}
                     </p>
@@ -139,7 +139,7 @@ export default async function BlogPostPage({ params }: Props) {
                       <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.35em] text-[#b8922e] uppercase mb-0.5">
                         Planet
                       </p>
-                      <p className="font-[family-name:var(--font-cormorant)] text-2xl font-semibold text-[#2c2010]">
+                      <p className="font-[family-name:var(--font-cormorant)] text-2xl font-semibold text-[#100802]">
                         {section.planetBox.planet}
                       </p>
                     </div>
@@ -148,7 +148,7 @@ export default async function BlogPostPage({ params }: Props) {
                     {section.planetBox.keywords.map((kw, k) => (
                       <span
                         key={k}
-                        className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#6a4c10] px-3 py-1 rounded-sm uppercase"
+                        className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#3d2800] px-3 py-1 rounded-sm uppercase"
                         style={{ background: "rgba(184,146,46,0.12)", border: "1px solid rgba(184,146,46,0.2)" }}
                       >
                         {kw}
@@ -174,7 +174,7 @@ export default async function BlogPostPage({ params }: Props) {
                   {section.body.split("\n\n").map((paragraph, j) => (
                     <p
                       key={j}
-                      className="font-[family-name:var(--font-cormorant)] text-xl text-[#2c2010] font-medium leading-relaxed mb-3 last:mb-0"
+                      className="font-[family-name:var(--font-cormorant)] text-xl text-[#100802] font-medium leading-relaxed mb-3 last:mb-0"
                     >
                       {paragraph}
                     </p>
@@ -184,7 +184,7 @@ export default async function BlogPostPage({ params }: Props) {
                 section.body.split("\n\n").map((paragraph, j) => (
                   <p
                     key={j}
-                    className="font-[family-name:var(--font-cormorant)] text-lg text-[#52402e] font-normal leading-relaxed mb-4"
+                    className="font-[family-name:var(--font-cormorant)] text-lg text-[#1c1008] font-normal leading-relaxed mb-4"
                   >
                     {paragraph}
                   </p>
@@ -196,7 +196,7 @@ export default async function BlogPostPage({ params }: Props) {
                   {section.bullets.map((bullet, k) => (
                     <li key={k} className="flex items-start gap-3">
                       <span className="mt-2.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: "#b8922e" }} />
-                      <span className="font-[family-name:var(--font-cormorant)] text-lg text-[#52402e] font-normal leading-relaxed">
+                      <span className="font-[family-name:var(--font-cormorant)] text-lg text-[#1c1008] font-normal leading-relaxed">
                         {bullet}
                       </span>
                     </li>
@@ -214,7 +214,7 @@ export default async function BlogPostPage({ params }: Props) {
                   </a>
                   <a
                     href="/#buchen"
-                    className="inline-block px-8 py-4 text-sm font-[family-name:var(--font-montserrat)] tracking-[0.15em] rounded-sm text-center text-[#6a4c10] hover:text-[#b8922e] transition-colors duration-300"
+                    className="inline-block px-8 py-4 text-sm font-[family-name:var(--font-montserrat)] tracking-[0.15em] rounded-sm text-center text-[#3d2800] hover:text-[#b8922e] transition-colors duration-300"
                     style={{ border: "1px solid rgba(184,146,46,0.4)" }}
                   >
                     1:1 Beratung buchen
@@ -232,15 +232,15 @@ export default async function BlogPostPage({ params }: Props) {
         <div className="max-w-3xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <Link
             href="/blog"
-            className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.2em] text-[#b8922e] hover:text-[#8a6420] transition-colors uppercase"
+            className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.2em] text-[#b8922e] hover:text-[#6b4800] transition-colors uppercase"
           >
             ← Zurück zum Journal
           </Link>
           <div className="flex gap-6">
-            <Link href="/impressum" className="font-[family-name:var(--font-montserrat)] text-xs text-[#52402e] hover:text-[#b8922e] transition-colors tracking-wider">
+            <Link href="/impressum" className="font-[family-name:var(--font-montserrat)] text-xs text-[#1c1008] hover:text-[#b8922e] transition-colors tracking-wider">
               Impressum
             </Link>
-            <Link href="/datenschutz" className="font-[family-name:var(--font-montserrat)] text-xs text-[#52402e] hover:text-[#b8922e] transition-colors tracking-wider">
+            <Link href="/datenschutz" className="font-[family-name:var(--font-montserrat)] text-xs text-[#1c1008] hover:text-[#b8922e] transition-colors tracking-wider">
               Datenschutz
             </Link>
           </div>

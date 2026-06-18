@@ -71,7 +71,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
       onClick={() => setOpen(!open)}
     >
       <div className="flex justify-between items-start gap-6 py-6">
-        <h3 className="font-[family-name:var(--font-cormorant)] text-xl md:text-2xl font-light text-[#2c2010] group-hover:text-[#b8922e] transition-colors duration-300 leading-snug">
+        <h3 className="font-[family-name:var(--font-cormorant)] text-xl md:text-2xl font-light text-[#100802] group-hover:text-[#b8922e] transition-colors duration-300 leading-snug">
           {q}
         </h3>
         <div className="text-[#b8922e] flex-shrink-0 mt-1">
@@ -80,7 +80,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
       </div>
       {open && (
         <div className="pb-6 pr-10">
-          <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#52402e] font-light leading-relaxed">
+          <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#1c1008] font-light leading-relaxed">
             {a}
           </p>
         </div>
@@ -98,10 +98,10 @@ export default function FAQ() {
       <div className="max-w-4xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
-          <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#6a4c10] uppercase mb-6">
+          <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#3d2800] uppercase mb-6">
             Häufige Fragen
           </p>
-          <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl lg:text-6xl font-light text-[#2c2010] leading-[1.15]">
+          <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl lg:text-6xl font-light text-[#100802] leading-[1.15]">
             Deine Fragen —
             <br />
             <em className="gold-gradient not-italic font-medium">meine Antworten</em>
@@ -117,7 +117,7 @@ export default function FAQ() {
 
         {/* More questions */}
         <div className="mt-16 text-center">
-          <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#52402e] font-light mb-6">
+          <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#1c1008] font-light mb-6">
             Noch eine Frage?
           </p>
           <a

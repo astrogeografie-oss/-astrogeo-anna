@@ -59,24 +59,24 @@ export default function About() {
               {/* Floating badge */}
               <div className="absolute -bottom-6 -right-6 card-warm rounded-sm px-6 py-4 shadow-md">
                 <p className="font-[family-name:var(--font-cormorant)] text-2xl font-semibold text-[#b8922e]">500+</p>
-                <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.1em] text-[#52402e] uppercase">Transformationen</p>
+                <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.1em] text-[#1c1008] uppercase">Transformationen</p>
               </div>
             </div>
           </div>
 
           {/* Text side */}
           <div className="order-1 lg:order-2">
-            <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#6a4c10] uppercase mb-6">
+            <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#3d2800] uppercase mb-6">
               Über mich
             </p>
 
-            <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl lg:text-6xl font-light text-[#2c2010] mb-8 leading-[1.15]">
+            <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl lg:text-6xl font-light text-[#100802] mb-8 leading-[1.15]">
               Ich bin Anna —<br />
               <em className="gold-gradient not-italic font-medium">deine Lotsin</em>{" "}
               zu deinem<br />Kraftort auf der Erde.
             </h2>
 
-            <div className="space-y-6 font-[family-name:var(--font-cormorant)] text-lg text-[#52402e] leading-relaxed font-light">
+            <div className="space-y-6 font-[family-name:var(--font-cormorant)] text-lg text-[#1c1008] leading-relaxed font-light">
               <p>
                 Vor Jahren stand ich selbst vor einer Entscheidung: Wohin soll
                 mein Leben führen? Nicht metaphorisch — sondern buchstäblich:
@@ -88,13 +88,13 @@ export default function About() {
                 der Erde deine planetaren Energien wirken: für Liebe, Karriere,
                 inneren Ausgleich oder neue Kapitel.
               </p>
-              <p className="text-[#2c2010]">
+              <p className="text-[#100802]">
                 Seit 2005 begleite ich Menschen auf diesem Weg —
                 mit Astrokartographie, Local Space Astrology
                 und Raumastrologie. Über 20 Jahre Erfahrung, Präzision und
                 die tiefe Überzeugung: der richtige Ort verändert alles.
               </p>
-              <p className="text-[#2c2010]">
+              <p className="text-[#100802]">
                 Meine Klientinnen und Klienten sind keine Hobbiastrologen.
                 Sie stehen vor echten Entscheidungen — Auswanderung,
                 Unternehmensstandort, finanzieller Neustart. Sie wollen keine
@@ -108,10 +108,10 @@ export default function About() {
                 <div key={v.title} className="flex gap-4 items-start">
                   <div className="mt-1 text-[#b8922e] flex-shrink-0">{v.icon}</div>
                   <div>
-                    <p className="font-[family-name:var(--font-montserrat)] text-sm font-semibold text-[#2c2010] tracking-wider uppercase mb-1">
+                    <p className="font-[family-name:var(--font-montserrat)] text-sm font-semibold text-[#100802] tracking-wider uppercase mb-1">
                       {v.title}
                     </p>
-                    <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#52402e] font-light">
+                    <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#1c1008] font-light">
                       {v.text}
                     </p>
                   </div>

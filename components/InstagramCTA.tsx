@@ -41,15 +41,15 @@ export default function InstagramCTA() {
     <section className="relative py-24 overflow-hidden" style={{ background: "#faf7f2" }}>
       <div className="max-w-5xl mx-auto px-6">
         <div className="text-center mb-14">
-          <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#6a4c10] uppercase mb-6">
+          <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#3d2800] uppercase mb-6">
             Follow Along
           </p>
-          <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl font-light text-[#2c2010] leading-[1.15] mb-6">
+          <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl font-light text-[#100802] leading-[1.15] mb-6">
             Astrokartographie im Alltag —
             <br />
             <em className="gold-gradient not-italic font-medium">täglich auf Instagram</em>
           </h2>
-          <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#52402e] font-light max-w-xl mx-auto">
+          <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#1c1008] font-light max-w-xl mx-auto">
             Hinter den Kulissen, Karten-Insights, Klientinnen-Geschichten und
             kosmische Impulse für deinen Alltag.
           </p>
@@ -66,13 +66,13 @@ export default function InstagramCTA() {
               <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.1em] text-[#b8922e] uppercase mb-2">
                 {post.label}
               </p>
-              <p className="font-[family-name:var(--font-cormorant)] text-base text-[#52402e] font-light leading-snug flex-1">
+              <p className="font-[family-name:var(--font-cormorant)] text-base text-[#1c1008] font-light leading-snug flex-1">
                 {post.caption}
               </p>
               {"blogLink" in post && (
                 <Link
                   href={post.blogLink as string}
-                  className="mt-4 font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#b8922e] hover:text-[#8a6420] transition-colors uppercase"
+                  className="mt-4 font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#b8922e] hover:text-[#6b4800] transition-colors uppercase"
                 >
                   {post.blogLabel as string} →
                 </Link>

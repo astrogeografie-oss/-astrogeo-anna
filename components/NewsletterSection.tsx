@@ -19,15 +19,15 @@ export default function NewsletterSection() {
             <div className="text-[#b8922e] mb-6">
               <BookOpen size={28} />
             </div>
-            <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#6a4c10] uppercase mb-4">
+            <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#3d2800] uppercase mb-4">
               Kostenlos
             </p>
-            <h3 className="font-[family-name:var(--font-cormorant)] text-3xl font-light text-[#2c2010] leading-[1.2] mb-4">
+            <h3 className="font-[family-name:var(--font-cormorant)] text-3xl font-light text-[#100802] leading-[1.2] mb-4">
               Dein
               <br />
               <em className="gold-gradient not-italic font-medium">0 Euro Guide</em>
             </h3>
-            <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#52402e] font-light leading-relaxed mb-8 flex-1">
+            <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#1c1008] font-light leading-relaxed mb-8 flex-1">
               Die 3 wichtigsten Planetenlinien — und was sie für deinen
               Kraftort bedeuten. Kostenlos, sofort zum Download.
             </p>
@@ -53,15 +53,15 @@ export default function NewsletterSection() {
             <div className="text-[#b8922e] mb-6">
               <Mail size={28} />
             </div>
-            <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#6a4c10] uppercase mb-4">
+            <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#3d2800] uppercase mb-4">
               Newsletter
             </p>
-            <h3 className="font-[family-name:var(--font-cormorant)] text-3xl font-light text-[#2c2010] leading-[1.2] mb-4">
+            <h3 className="font-[family-name:var(--font-cormorant)] text-3xl font-light text-[#100802] leading-[1.2] mb-4">
               Kosmische Impulse —
               <br />
               <em className="gold-gradient not-italic font-medium">direkt ins Postfach</em>
             </h3>
-            <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#52402e] font-light leading-relaxed mb-8 flex-1">
+            <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#1c1008] font-light leading-relaxed mb-8 flex-1">
               Planetenlinien, Kraftort-Insights und Annas persönliche
               Entdeckungen. Kein Spam — nur echte Tiefe.
             </p>

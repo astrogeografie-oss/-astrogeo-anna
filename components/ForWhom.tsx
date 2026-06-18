@@ -39,10 +39,10 @@ export default function ForWhom() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-20">
-          <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#6a4c10] uppercase mb-6">
+          <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#3d2800] uppercase mb-6">
             Für wen ist das?
           </p>
-          <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl lg:text-6xl font-light text-[#2c2010] leading-[1.15]">
+          <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl lg:text-6xl font-light text-[#100802] leading-[1.15]">
             Erkenne dich —
             <br />
             <em className="gold-gradient not-italic font-medium">und deinen nächsten Schritt</em>
@@ -65,7 +65,7 @@ export default function ForWhom() {
                 {t.number}
               </div>
 
-              <h3 className="font-[family-name:var(--font-cormorant)] text-2xl md:text-3xl font-medium text-[#2c2010] leading-snug mb-3">
+              <h3 className="font-[family-name:var(--font-cormorant)] text-2xl md:text-3xl font-medium text-[#100802] leading-snug mb-3">
                 {t.headline}
               </h3>
 
@@ -73,13 +73,13 @@ export default function ForWhom() {
                 {t.subline}
               </p>
 
-              <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#52402e] font-light leading-relaxed mb-8 flex-1">
+              <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#1c1008] font-light leading-relaxed mb-8 flex-1">
                 {t.body}
               </p>
 
               <div className="section-divider mb-6" />
 
-              <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.08em] text-[#8a6420] uppercase mb-6">
+              <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.08em] text-[#6b4800] uppercase mb-6">
                 {t.empfohlen}
               </p>
 

@@ -67,10 +67,10 @@ export default function Testimonials() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-20">
-          <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#6a4c10] uppercase mb-6">
+          <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#3d2800] uppercase mb-6">
             Erfahrungen
           </p>
-          <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl lg:text-6xl font-light text-[#2c2010] leading-[1.15]">
+          <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl lg:text-6xl font-light text-[#100802] leading-[1.15]">
             Was sie sagen —
             <br />
             <em className="gold-gradient not-italic font-medium">
@@ -88,15 +88,15 @@ export default function Testimonials() {
             >
               <Quote size={24} className="text-[#b8922e] opacity-40 mb-4" />
               <Stars count={t.stars} />
-              <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#52402e] font-light leading-relaxed mt-4 mb-6">
+              <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#1c1008] font-light leading-relaxed mt-4 mb-6">
                 &ldquo;{t.text}&rdquo;
               </p>
               <div className="section-divider mb-6" />
               <div>
-                <p className="font-[family-name:var(--font-cormorant)] text-base font-semibold text-[#2c2010]">
+                <p className="font-[family-name:var(--font-cormorant)] text-base font-semibold text-[#100802]">
                   {t.name}
                 </p>
-                <p className="font-[family-name:var(--font-montserrat)] text-xs text-[#52402e] tracking-wider mt-0.5">
+                <p className="font-[family-name:var(--font-montserrat)] text-xs text-[#1c1008] tracking-wider mt-0.5">
                   {t.location}
                 </p>
                 <p className="font-[family-name:var(--font-montserrat)] text-xs text-[#b8922e] tracking-wider mt-1 uppercase">
@@ -109,7 +109,7 @@ export default function Testimonials() {
 
         {/* Bottom note */}
         <div className="text-center mt-16">
-          <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#52402e] font-light">
+          <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#1c1008] font-light">
             Über{" "}
             <span className="text-[#b8922e] font-semibold">500 Klientinnen</span>{" "}
             haben bereits ihre kosmischen Koordinaten entdeckt.

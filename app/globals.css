@@ -2,14 +2,14 @@
 
 :root {
   --background: #faf7f2;
-  --foreground: #2c2010;
+  --foreground: #100802;
   --gold: #b8922e;
   --gold-light: #d4a830;
-  --gold-dark: #8a6420;
-  --gold-label: #6a4c10;
+  --gold-dark: #6b4800;
+  --gold-label: #3d2800;
   --warm-cream: #f5efe4;
   --warm-white: #fffdf9;
-  --text-muted: #52402e;
+  --text-muted: #1c1008;
   --border-gold: rgba(184,146,46,0.35);
 }
 
