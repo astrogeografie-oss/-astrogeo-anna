@@ -58,7 +58,7 @@ export default function About() {
 
               {/* Floating badge */}
               <div className="absolute -bottom-6 -right-6 card-warm rounded-sm px-6 py-4 shadow-md">
-                <p className="font-[family-name:var(--font-cormorant)] text-2xl font-semibold text-[#b8922e]">500+</p>
+                <p className="font-[family-name:var(--font-cormorant)] text-2xl font-semibold text-[#b8922e]">1.000+</p>
                 <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.1em] text-[#1c1008] uppercase">Transformationen</p>
               </div>
             </div>
@@ -77,13 +77,17 @@ export default function About() {
             </h2>
 
             <div className="space-y-6 font-[family-name:var(--font-cormorant)] text-lg text-[#1c1008] leading-relaxed font-light">
+              <p className="text-xl font-light italic text-[#3d2800]">
+                Seit über 20 Jahren lese ich Karten. Nicht für Inspiration —
+                für Entscheidungen.
+              </p>
               <p>
                 Vor Jahren stand ich selbst vor einer Entscheidung: Wohin soll
                 mein Leben führen? Nicht metaphorisch — sondern buchstäblich:
                 Welcher Ort passt zu mir?
               </p>
               <p>
-                Die Antwort fand ich in der Astrocartography — sie verbindet
+                Die Antwort fand ich in der Astrokartographie — sie verbindet
                 dein persönliches Horoskop mit einer Weltkarte und zeigt, wo auf
                 der Erde deine planetaren Energien wirken: für Liebe, Karriere,
                 inneren Ausgleich oder neue Kapitel.
@@ -95,10 +99,20 @@ export default function About() {
                 die tiefe Überzeugung: der richtige Ort verändert alles.
               </p>
               <p className="text-[#100802]">
+                Mehr als 1.000 Menschen haben durch meine Arbeit erkannt,
+                wo ihr Leben aufblüht — emotional, finanziell, energetisch.
+                Wo Liebe entsteht. Wo Geld fließt. Wo sie endlich{" "}
+                <em>sie selbst</em> sind.
+              </p>
+              <p className="text-[#100802]">
                 Meine Klientinnen und Klienten sind keine Hobbiastrologen.
                 Sie stehen vor echten Entscheidungen — Auswanderung,
                 Unternehmensstandort, finanzieller Neustart. Sie wollen keine
                 Allgemeinplätze. Sie wollen wissen: wohin konkret.
+              </p>
+              <p className="text-[#3d2800] font-medium">
+                Astrogeografie ist keine Theorie. Es ist die Landkarte deines
+                Lebens — und ich zeige dir, wie du sie liest.
               </p>
             </div>
 

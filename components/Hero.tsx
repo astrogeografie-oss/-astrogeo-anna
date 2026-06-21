@@ -87,7 +87,7 @@ export default function Hero() {
           style={{ animation: "fadeInUp 0.9s 1s ease forwards" }}
         >
           {[
-            { number: "500+", label: "Transformationen" },
+            { number: "1.000+", label: "Transformationen" },
             { number: "98%", label: "Weiterempfehlung" },
             { number: "20+", label: "Jahre Erfahrung" },
             { number: "30+", label: "Länder analysiert" },
