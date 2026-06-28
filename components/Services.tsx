@@ -31,7 +31,7 @@ const readings = [
     tier: "VIP",
     name: "Astrogeografie-Reading",
     tagline: "Standard + 2 Folgetermine · Premium PDF",
-    price: "499 €",
+    price: "1.499 €",
     highlight: true,
     description:
       "Für Unternehmer und Menschen mit Kapital, die eine hochwertige Gesamtanalyse brauchen — mit persönlicher Begleitung über mehrere Monate und einer professionellen Auswertung als Dokument.",

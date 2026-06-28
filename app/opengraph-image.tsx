@@ -126,7 +126,7 @@ export default async function Image() {
               display: "flex",
             }}
           >
-            Finde deinen Kraftort auf der Erde. 90 Min. · ab 499 €
+            Finde deinen Kraftort auf der Erde. 90 Min. · ab 495 €
           </div>
 
           {/* URL badge */}
