@@ -8,7 +8,7 @@ const readings = [
     tier: "Standard",
     name: "Astrogeografie-Reading",
     tagline: "2 × 45 Min. · Zoom",
-    price: "690 €",
+    price: "499 €",
     highlight: false,
     description:
       "Zwei intensive Sessions, die dir genau zeigen, wo auf der Erde dein Leben aufblüht — für Liebe, Karriere, finanzielle Energie oder einen Neuanfang.",
@@ -31,7 +31,7 @@ const readings = [
     tier: "VIP",
     name: "Astrogeografie-Reading",
     tagline: "Standard + 2 Folgetermine · Premium PDF",
-    price: "1.499 €",
+    price: "499 €",
     highlight: true,
     description:
       "Für Unternehmer und Menschen mit Kapital, die eine hochwertige Gesamtanalyse brauchen — mit persönlicher Begleitung über mehrere Monate und einer professionellen Auswertung als Dokument.",

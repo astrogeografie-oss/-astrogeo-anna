@@ -6,7 +6,7 @@ const types = [
     headline: "Ich treffe eine große Entscheidung.",
     subline: "Umzug, Unternehmensstandort, Auswanderung — du brauchst Klarheit, keine Inspiration.",
     body: "Du stehst vor einer Entscheidung mit echtem Gewicht: vielleicht mit Familie, Kapital oder einem ganzen Lebensmodell im Gepäck. Bauchgefühl reicht hier nicht. Das Deep-Dive Reading gibt dir Entscheidungssicherheit auf Basis deines Horoskops — konkret, präzise, umsetzbar. Kein anderes Angebot geht so tief.",
-    empfohlen: "Empfohlen: Astrokartographie Reading · 495 €",
+    empfohlen: "Empfohlen: Astrokartographie Reading · 499 €",
     href: "#angebote",
     cta: "Meinen Kraftort finden",
     outline: false,
