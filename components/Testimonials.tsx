@@ -45,6 +45,13 @@ const testimonials = [
     stars: 5,
     text: "Ich bedanke mich für die Fülle an Informationen. Wenn schon länger Entscheidungen ins Haus stehen, geht es hier mit einer Richtung voran, die wirklich für einen persönlich nährend ist. All die vergangenen Steps, die unbewusst bereits auf den richtigen Linien stattfanden — wahnsinn.",
   },
+  {
+    name: "Teilnehmerin",
+    location: "Zürisee, Schweiz",
+    service: "Workshop",
+    stars: 5,
+    text: "Ich ging nach unserem Workshop mit vielen Eindrücken, neugierig und sehr zufrieden weiter. Spannend, wie immer mal wieder ein Puzzlestein oder eben Linien Erkenntnisse aufzeigen und einen Schritt weiterführen. So freue ich mich, ganz in Ruhe meine Linien zu erforschen. Danke, Anna, für diese Möglichkeit!",
+  },
 ];
 
 function Stars({ count }: { count: number }) {
