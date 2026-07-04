@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
+import WorkshopBanner from "@/components/WorkshopBanner";
 import About from "@/components/About";
 import ForWhom from "@/components/ForWhom";
 import Services from "@/components/Services";
@@ -18,7 +19,8 @@ export default function Home() {
     <main className="bg-[#faf7f2]">
       <Navigation />
       <Hero />
-<About />
+      <WorkshopBanner />
+      <About />
       <ForWhom />
       <Services />
       <Process />
