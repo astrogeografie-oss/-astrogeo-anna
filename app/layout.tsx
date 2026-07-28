@@ -28,9 +28,9 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.astrogeoanna.com"),
-  title: "Astrokartographie mit Anna Thoma | Kraftort finden · ab 495 €",
+  title: "Astrokartographie mit Anna Thoma | Kraftort finden · ab 499 €",
   description:
-    "Finde deinen Kraftort auf der Erde. Anna Thoma — Astrokartographie-Expertin aus Deutschland. 90 Min. Deep-Dive mit 7 Linienarten, Karma-Linien & Destiny-Crossings. Jetzt Termin buchen.",
+    "Finde deinen Kraftort auf der Erde. Anna Thoma — Expertin für Astrokartographie (auch Astrokartografie geschrieben) aus Deutschland. 90 Min. Deep-Dive mit 7 Linienarten, Karma-Linien & Destiny-Crossings. Jetzt Termin buchen.",
   keywords: [
     "Astrokartographie",
     "Astrogeografie",
@@ -76,9 +76,9 @@ export const metadata: Metadata = {
     canonical: "https://www.astrogeoanna.com",
   },
   openGraph: {
-    title: "Astrokartographie mit Anna Thoma | Kraftort finden · ab 495 €",
+    title: "Astrokartographie mit Anna Thoma | Kraftort finden · ab 499 €",
     description:
-      "Finde den Ort, wo dein Leben aufblüht — mit 7 Linienarten, Karma-Linien & Destiny-Crossings. 90 Min. Deep-Dive ab 495 €.",
+      "Finde den Ort, wo dein Leben aufblüht — mit 7 Linienarten, Karma-Linien & Destiny-Crossings. 90 Min. Deep-Dive ab 499 €.",
     type: "website",
     locale: "de_DE",
     siteName: "Anna Thoma – Astrokartographie",

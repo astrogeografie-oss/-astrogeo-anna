@@ -69,7 +69,7 @@ export default function JsonLd() {
           itemListElement: [
             {
               "@type": "Offer",
-              price: "495",
+              price: "499",
               priceCurrency: "EUR",
               itemOffered: {
                 "@type": "Service",
@@ -156,7 +156,7 @@ export default function JsonLd() {
             name: "Was kostet eine Astrokartographie-Session bei Anna Thoma?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Das Flagship-Reading (90 Min. per Zoom) kostet 495 €. Das Paar-Reading (2 × 90 Min.) kostet 777 €. Weitere Angebote beginnen ab 47 €.",
+              text: "Das Standard-Reading (2 × 45 Min. per Zoom) kostet 499 €, das VIP-Reading 1.499 €. Weitere Angebote beginnen ab 49 €.",
             },
           },
           {
