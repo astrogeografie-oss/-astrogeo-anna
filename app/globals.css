@@ -23,7 +23,6 @@
   --color-warm-white: var(--warm-white);
   --color-text-muted: var(--text-muted);
   --font-playfair: var(--font-playfair);
-  --font-script: var(--font-script);
 }
 
 * { box-sizing: border-box; }
@@ -124,11 +123,6 @@ body {
   border-color: rgba(201,168,76,0.4);
   box-shadow: 0 12px 40px rgba(201,168,76,0.1);
   transform: translateY(-2px);
-}
-
-.script-accent {
-  font-family: var(--font-script), cursive;
-  color: var(--gold);
 }
 
 .nav-divider {

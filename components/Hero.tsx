@@ -12,9 +12,9 @@ export default function Hero() {
           Deutschlands führende Astrokartographie-Expertin
         </p>
 
-        {/* Flanking script headline + central portrait */}
+        {/* Flanking headline + central portrait */}
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] items-center gap-6 lg:gap-4">
-          <h1 className="script-accent text-4xl md:text-5xl text-center lg:text-right order-1 lg:order-1">
+          <h1 className="gold-shimmer font-[family-name:var(--font-montserrat)] font-medium uppercase tracking-[0.06em] text-2xl md:text-3xl text-center lg:text-right order-1 lg:order-1">
             Dein Leben beginnt
           </h1>
 
@@ -37,7 +37,7 @@ export default function Hero() {
             <div className="absolute -bottom-3 -right-3 w-8 h-8" style={{ borderBottom: "1px solid rgba(184,146,46,0.6)", borderRight: "1px solid rgba(184,146,46,0.6)" }} />
           </div>
 
-          <h1 className="script-accent text-4xl md:text-5xl text-center lg:text-left order-3 lg:order-3">
+          <h1 className="gold-shimmer font-[family-name:var(--font-montserrat)] font-medium uppercase tracking-[0.06em] text-2xl md:text-3xl text-center lg:text-left order-3 lg:order-3">
             am richtigen Ort.
           </h1>
         </div>

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Montserrat, Playfair_Display, Petit_Formal_Script } from "next/font/google";
+import { Cormorant_Garamond, Montserrat, Playfair_Display } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import JsonLd from "@/components/JsonLd";
@@ -23,13 +23,6 @@ const playfair = Playfair_Display({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800", "900"],
   style: ["normal", "italic"],
-  display: "swap",
-});
-
-const script = Petit_Formal_Script({
-  variable: "--font-script",
-  subsets: ["latin"],
-  weight: ["400"],
   display: "swap",
 });
 
@@ -127,7 +120,7 @@ export default function RootLayout({
   return (
     <html
       lang="de"
-      className={`${cormorant.variable} ${montserrat.variable} ${playfair.variable} ${script.variable} h-full antialiased`}
+      className={`${cormorant.variable} ${montserrat.variable} ${playfair.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-[#faf7f2] text-[#100802]">
         <JsonLd />

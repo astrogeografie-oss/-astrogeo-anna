@@ -42,7 +42,7 @@ export default function Navigation() {
           className="group mx-auto lg:mx-0"
           aria-label="Astrogeografie Anna – Startseite"
         >
-          <span className="font-[family-name:var(--font-playfair)] italic text-2xl lg:text-3xl font-semibold tracking-wide text-[#b8922e] transition-colors duration-300 group-hover:text-[#6b4800]">
+          <span className="font-[family-name:var(--font-montserrat)] text-base lg:text-lg font-semibold uppercase tracking-[0.25em] text-[#b8922e] transition-colors duration-300 group-hover:text-[#6b4800]">
             Anna Astrogeografie
           </span>
         </a>
