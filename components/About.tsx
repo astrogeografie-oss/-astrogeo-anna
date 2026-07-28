@@ -30,9 +30,9 @@ export default function About() {
       <div className="section-divider mb-0" />
 
       <div className="max-w-7xl mx-auto px-6 pt-24">
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
           {/* Portrait */}
-          <div className="relative flex justify-center lg:justify-start order-2 lg:order-1">
+          <div className="relative flex justify-center lg:justify-end order-2">
             <div className="relative">
               <div
                 className="w-80 h-[30rem] md:w-96 md:h-[600px] rounded-sm relative overflow-hidden"
@@ -70,7 +70,7 @@ export default function About() {
           </div>
 
           {/* Text side */}
-          <div className="order-1 lg:order-2">
+          <div className="order-1">
             <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#3d2800] uppercase mb-6">
               Über mich
             </p>
