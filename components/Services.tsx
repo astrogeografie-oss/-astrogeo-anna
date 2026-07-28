@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Check, Globe, Star, Users, Gift, Calendar, BookOpen, Compass, Map, Smartphone, GraduationCap, Crown } from "lucide-react";
 
 const readings = [
@@ -236,8 +237,16 @@ export default function Services() {
             }}
           >
             <div className="flex flex-col md:flex-row md:items-start gap-8">
-              <div className="flex-shrink-0 flex flex-col items-center gap-4 md:w-40">
-                <div className="text-[#b8922e]">{buch.icon}</div>
+              <div className="flex-shrink-0 flex flex-col items-center gap-4 md:w-44">
+                <div className="relative w-40 md:w-44 aspect-[2/3] rounded-sm overflow-hidden shadow-md" style={{ border: "1px solid rgba(184,146,46,0.35)" }}>
+                  <Image
+                    src="/photo_2026-01-09_13-12-25.jpg"
+                    alt="Buchcover Astro-Code von Anna Thoma"
+                    fill
+                    className="object-cover"
+                    sizes="176px"
+                  />
+                </div>
                 <span
                   className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.2em] uppercase px-3 py-1 rounded-full"
                   style={{
