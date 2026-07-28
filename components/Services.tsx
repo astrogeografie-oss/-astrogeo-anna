@@ -88,7 +88,8 @@ export default function Services() {
             </em>
           </h2>
           <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#1c1008] max-w-2xl mx-auto font-light">
-            Nicht "Astrologin, die auch Astrogeografie macht" — sondern die Spezialistin für finanziell und persönlich bedeutsame Standortentscheidungen. Von der Einzelperson bis zum Unternehmer.
+            Vom Einzelreading bis zur Begleitung für Unternehmer — wähle das Format,
+            das zu deiner Entscheidung passt.
           </p>
         </div>
 
