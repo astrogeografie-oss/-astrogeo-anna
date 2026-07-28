@@ -31,9 +31,18 @@ export default function Hero() {
 
       <div className="relative max-w-7xl mx-auto px-6">
         {/* Overline */}
-        <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.45em] text-[#6b4800] uppercase text-center mb-16">
-          Deutschlands führende Astrokartographie-Expertin
-        </p>
+        <div className="text-center mb-16">
+          <p
+            className="inline-block font-[family-name:var(--font-montserrat)] text-xs tracking-[0.45em] text-[#3d2800] uppercase px-6 py-3 rounded-full"
+            style={{
+              background: "rgba(250,247,242,0.75)",
+              border: "1px solid rgba(184,146,46,0.3)",
+              backdropFilter: "blur(4px)",
+            }}
+          >
+            Deutschlands führende Astrokartographie-Expertin
+          </p>
+        </div>
 
         {/* Flanking headline */}
         <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-16 lg:min-h-[900px]">
