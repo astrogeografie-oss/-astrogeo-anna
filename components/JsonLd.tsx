@@ -73,10 +73,22 @@ export default function JsonLd() {
               priceCurrency: "EUR",
               itemOffered: {
                 "@type": "Service",
-                name: "Astrokartographie (Orts-Horoskop)",
+                name: "Astrogeografie-Reading (Standard)",
                 description:
-                  "Die vollständige Astrokartographie-Analyse in 90 Minuten per Zoom: 7 Linienarten, Karma-Linien, Destiny-Crossings, Vortex-Punkte, Progressions-Chart & Solar-Radix.",
+                  "Zwei intensive Sessions à 45 Minuten per Zoom: 7 Linienarten, Karma-Linien, Destiny-Crossings, Vortex-Punkte, Progressions-Chart & Solar-Radix.",
                 url: "https://calendly.com/astrogeo/60",
+              },
+            },
+            {
+              "@type": "Offer",
+              price: "1499",
+              priceCurrency: "EUR",
+              itemOffered: {
+                "@type": "Service",
+                name: "Astrogeografie-Reading (VIP)",
+                description:
+                  "Für Unternehmer und Menschen mit Kapital: Standard-Reading plus 2 Folgetermine, hochwertige Premium-Auswertung als PDF, Priorität bei Terminvergabe und E-Mail-Support zwischen den Sessions.",
+                url: "mailto:anna@astrogeoanna.info",
               },
             },
             {
