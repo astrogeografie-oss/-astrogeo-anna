@@ -45,56 +45,49 @@ export default function Hero() {
         </div>
 
         {/* Flanking headline */}
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-16 lg:min-h-[340px]">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-16 lg:min-h-[340px] lg:-mx-16 xl:-mx-32">
           <h1
-            className="gold-shimmer font-[family-name:var(--font-montserrat)] font-medium uppercase tracking-[0.06em] text-2xl md:text-3xl text-center lg:text-right"
+            className="font-[family-name:var(--font-montserrat)] font-medium uppercase tracking-[0.06em] text-2xl md:text-3xl text-center lg:text-right text-[#8a6a1e]"
             style={{ filter: "drop-shadow(0 1px 3px rgba(0,0,0,0.35))" }}
           >
             Dein Leben beginnt
           </h1>
 
           <h1
-            className="gold-shimmer font-[family-name:var(--font-montserrat)] font-medium uppercase tracking-[0.06em] text-2xl md:text-3xl text-center lg:text-left"
+            className="font-[family-name:var(--font-montserrat)] font-medium uppercase tracking-[0.06em] text-2xl md:text-3xl text-center lg:text-left text-[#8a6a1e]"
             style={{ filter: "drop-shadow(0 1px 3px rgba(0,0,0,0.35))" }}
           >
             am richtigen Ort.
           </h1>
         </div>
 
-        {/* Overlapping statement banner */}
-        <div className="relative -mt-10 md:-mt-14 z-10">
-          <div
-            className="max-w-5xl mx-auto px-10 py-16 md:px-20 md:py-20 text-center"
-            style={{
-              background: "#f0e0bb",
-              maskImage: "radial-gradient(ellipse at 50% 50%, black calc(100% - 220px), transparent 100%)",
-              WebkitMaskImage: "radial-gradient(ellipse at 50% 50%, black calc(100% - 220px), transparent 100%)",
-            }}
-          >
-            <p className="font-[family-name:var(--font-cormorant)] text-xl md:text-2xl text-[#100802] leading-relaxed font-semibold mb-10">
-              Astrokartographie für Menschen, die wirklich entscheiden:
-              Wohin ziehe ich? Wo entsteht finanzieller Flow? Wo gehört mein Business hin?
-              Ich gebe dir die Antwort — präzise, nicht unverbindlich.
-            </p>
+        {/* Statement text — sits on the plain page background, no card/box at all */}
+        <div className="relative z-10 max-w-3xl mx-auto text-center pt-6">
+          <p className="font-[family-name:var(--font-cormorant)] text-xl md:text-2xl text-[#100802] leading-relaxed font-bold mb-10">
+            Dein nächster Ort entscheidet über mehr als eine Adresse —
+            über Geld, Liebe, Erfolg. Ich bin die Spezialistin für finanziell und
+            persönlich bedeutsame Standortentscheidungen, vom Einzelkunden bis zum
+            Unternehmer. Du spürst es bereits. Lass uns jetzt herausfinden,
+            wohin dein Leben dich ruft.
+          </p>
 
-            {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-stretch">
-              <a
-                href="#buchen"
-                className="btn-gold px-10 py-4 text-sm font-[family-name:var(--font-montserrat)] tracking-[0.2em] rounded-sm w-full sm:flex-1 text-center"
-              >
-                Meinen Kraftort entdecken
-              </a>
-              <a
-                href="https://drive.google.com/file/d/12NfkiL3Cyv8QkS8EobHOoiKEn-qSz4i_/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-outline-gold px-10 py-4 font-[family-name:var(--font-montserrat)] tracking-[0.2em] rounded-sm w-full sm:flex-1 inline-flex items-center justify-center gap-2"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                0 Euro Guide — Gratis
-              </a>
-            </div>
+          {/* CTAs */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-stretch">
+            <a
+              href="#buchen"
+              className="btn-gold px-10 py-4 text-sm font-[family-name:var(--font-montserrat)] tracking-[0.2em] rounded-sm w-full sm:flex-1 text-center"
+            >
+              Jetzt meinen Kraftort buchen
+            </a>
+            <a
+              href="https://drive.google.com/file/d/12NfkiL3Cyv8QkS8EobHOoiKEn-qSz4i_/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-outline-gold px-10 py-4 font-[family-name:var(--font-montserrat)] tracking-[0.2em] rounded-sm w-full sm:flex-1 inline-flex items-center justify-center gap-2"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              0 Euro Guide — Gratis
+            </a>
           </div>
         </div>
 
