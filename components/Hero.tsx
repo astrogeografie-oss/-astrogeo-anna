@@ -13,7 +13,7 @@ export default function Hero() {
           alt=""
           fill
           className="object-cover"
-          style={{ objectPosition: "50% 30%" }}
+          style={{ objectPosition: "50% 22%" }}
           sizes="100vw"
           priority
         />
@@ -36,7 +36,7 @@ export default function Hero() {
         </p>
 
         {/* Flanking headline */}
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-16 lg:min-h-[420px]">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-16 lg:min-h-[900px]">
           <h1 className="gold-shimmer font-[family-name:var(--font-montserrat)] font-medium uppercase tracking-[0.06em] text-2xl md:text-3xl text-center lg:text-right">
             Dein Leben beginnt
           </h1>
