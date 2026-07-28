@@ -46,26 +46,39 @@ export default function Hero() {
 
         {/* Flanking headline */}
         <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-16 lg:min-h-[380px]">
-          <h1 className="gold-shimmer font-[family-name:var(--font-montserrat)] font-medium uppercase tracking-[0.06em] text-2xl md:text-3xl text-center lg:text-right">
+          <h1
+            className="gold-shimmer font-[family-name:var(--font-montserrat)] font-medium uppercase tracking-[0.06em] text-2xl md:text-3xl text-center lg:text-right"
+            style={{ filter: "drop-shadow(0 1px 3px rgba(0,0,0,0.35))" }}
+          >
             Dein Leben beginnt
           </h1>
 
-          <h1 className="gold-shimmer font-[family-name:var(--font-montserrat)] font-medium uppercase tracking-[0.06em] text-2xl md:text-3xl text-center lg:text-left">
+          <h1
+            className="gold-shimmer font-[family-name:var(--font-montserrat)] font-medium uppercase tracking-[0.06em] text-2xl md:text-3xl text-center lg:text-left"
+            style={{ filter: "drop-shadow(0 1px 3px rgba(0,0,0,0.35))" }}
+          >
             am richtigen Ort.
           </h1>
         </div>
 
         {/* Overlapping statement banner */}
         <div className="relative -mt-10 md:-mt-14 z-10">
+          {/* Soft glow halo behind the card — purely decorative, never holds text */}
           <div
-            className="max-w-7xl mx-auto px-8 py-14 md:px-24 md:py-16 text-center"
+            aria-hidden
+            className="absolute inset-0 pointer-events-none"
             style={{
               background: "var(--warm-white)",
-              maskImage: "radial-gradient(ellipse 65% 45% at 50% 50%, black 45%, transparent 100%)",
-              WebkitMaskImage: "radial-gradient(ellipse 65% 45% at 50% 50%, black 45%, transparent 100%)",
+              filter: "blur(40px)",
+              opacity: 0.7,
+              borderRadius: "3rem",
             }}
+          />
+          <div
+            className="relative max-w-5xl mx-auto px-8 py-14 md:px-16 md:py-16 text-center rounded-[2.5rem]"
+            style={{ background: "var(--warm-white)" }}
           >
-            <p className="font-[family-name:var(--font-cormorant)] text-xl md:text-2xl text-[#1c1008] leading-relaxed font-light mb-10">
+            <p className="font-[family-name:var(--font-cormorant)] text-xl md:text-2xl text-[#100802] leading-relaxed font-semibold mb-10">
               Astrokartographie für Menschen, die wirklich entscheiden:
               Wohin ziehe ich? Wo entsteht finanzieller Flow? Wo gehört mein Business hin?
               Ich gebe dir die Antwort — präzise, nicht unverbindlich.
