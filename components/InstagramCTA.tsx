@@ -44,7 +44,7 @@ export default function InstagramCTA() {
           <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#3d2800] uppercase mb-6">
             Follow Along
           </p>
-          <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl font-light text-[#100802] leading-[1.15] mb-6">
+          <h2 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl font-bold text-[#100802] leading-[1.15] mb-6">
             Astrokartographie im Alltag —
             <br />
             <em className="gold-gradient not-italic font-medium">täglich auf Instagram</em>

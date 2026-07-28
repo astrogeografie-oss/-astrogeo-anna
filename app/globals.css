@@ -22,6 +22,7 @@
   --color-warm-cream: var(--warm-cream);
   --color-warm-white: var(--warm-white);
   --color-text-muted: var(--text-muted);
+  --font-playfair: var(--font-playfair);
 }
 
 * { box-sizing: border-box; }
@@ -122,6 +123,19 @@ body {
   border-color: rgba(201,168,76,0.4);
   box-shadow: 0 12px 40px rgba(201,168,76,0.1);
   transform: translateY(-2px);
+}
+
+.nav-divider {
+  width: 1px;
+  height: 14px;
+  background: rgba(184,146,46,0.35);
+  display: inline-block;
+}
+
+.quote-overlay {
+  font-family: var(--font-cormorant), serif;
+  font-style: italic;
+  font-weight: 500;
 }
 
 /* keep card-cosmic as alias so old code still compiles */

@@ -6,7 +6,7 @@ export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 export default async function Image() {
-  const imageData = await readFile(join(process.cwd(), "public/anna-portrait.jpg"));
+  const imageData = await readFile(join(process.cwd(), "public/photo_2026-07-28_07-13-23.jpg"));
   const portrait = `data:image/jpeg;base64,${imageData.toString("base64")}`;
 
   return new ImageResponse(
