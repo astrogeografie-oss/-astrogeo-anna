@@ -6,14 +6,27 @@ import { ChevronDown } from "lucide-react";
 export default function Hero() {
   return (
     <section className="relative bg-[#faf7f2] pt-20 pb-40 overflow-hidden">
-      {/* Soft flowing background: location photo */}
-      <div aria-hidden className="absolute inset-0 opacity-[0.16]">
-        <Image src="/hero-bg.jpg" alt="" fill className="object-cover" sizes="100vw" />
+      {/* Flowing full-bleed background: Anna portrait */}
+      <div aria-hidden className="absolute inset-0">
+        <Image
+          src="/photo_2026-07-28_07-13-07.jpg"
+          alt=""
+          fill
+          className="object-cover"
+          style={{ objectPosition: "50% 30%" }}
+          sizes="100vw"
+          priority
+        />
       </div>
       <div
         aria-hidden
         className="absolute inset-0 pointer-events-none"
-        style={{ background: "radial-gradient(ellipse 80% 70% at 50% 40%, transparent 0%, #faf7f2 72%)" }}
+        style={{ background: "rgba(250,247,242,0.38)" }}
+      />
+      <div
+        aria-hidden
+        className="absolute inset-0 pointer-events-none"
+        style={{ background: "radial-gradient(ellipse 75% 65% at 50% 38%, transparent 0%, #faf7f2 88%)" }}
       />
 
       <div className="relative max-w-7xl mx-auto px-6">
@@ -22,26 +35,13 @@ export default function Hero() {
           Deutschlands führende Astrokartographie-Expertin
         </p>
 
-        {/* Flanking headline + central portrait */}
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] items-center gap-10 lg:gap-16">
-          <h1 className="gold-shimmer font-[family-name:var(--font-montserrat)] font-medium uppercase tracking-[0.06em] text-2xl md:text-3xl text-center lg:text-right order-1 lg:order-1">
+        {/* Flanking headline */}
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-16 lg:min-h-[420px]">
+          <h1 className="gold-shimmer font-[family-name:var(--font-montserrat)] font-medium uppercase tracking-[0.06em] text-2xl md:text-3xl text-center lg:text-right">
             Dein Leben beginnt
           </h1>
 
-          <div className="relative order-2 mx-auto w-80 h-[26rem] md:w-[420px] md:h-[600px] lg:w-[460px] lg:h-[640px]">
-            <div className="glow-gold relative w-full h-full overflow-hidden rounded-[2.5rem]">
-              <Image
-                src="/photo_2026-07-28_07-13-07.jpg"
-                alt="Anna – Astrokartographie-Expertin"
-                fill
-                className="object-cover object-top"
-                sizes="(max-width: 768px) 320px, 460px"
-                priority
-              />
-            </div>
-          </div>
-
-          <h1 className="gold-shimmer font-[family-name:var(--font-montserrat)] font-medium uppercase tracking-[0.06em] text-2xl md:text-3xl text-center lg:text-left order-3 lg:order-3">
+          <h1 className="gold-shimmer font-[family-name:var(--font-montserrat)] font-medium uppercase tracking-[0.06em] text-2xl md:text-3xl text-center lg:text-left">
             am richtigen Ort.
           </h1>
         </div>
