@@ -13,7 +13,7 @@ export default function Hero() {
           alt=""
           fill
           className="object-cover"
-          style={{ objectPosition: "50% 22%" }}
+          style={{ objectPosition: "50% 26%" }}
           sizes="100vw"
           priority
         />
@@ -31,7 +31,7 @@ export default function Hero() {
 
       <div className="relative max-w-7xl mx-auto px-6">
         {/* Overline */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <p
             className="inline-block font-[family-name:var(--font-montserrat)] text-xs tracking-[0.45em] text-[#3d2800] uppercase px-6 py-3 rounded-full"
             style={{
@@ -45,7 +45,7 @@ export default function Hero() {
         </div>
 
         {/* Flanking headline */}
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-16 lg:min-h-[900px]">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-16 lg:min-h-[380px]">
           <h1 className="gold-shimmer font-[family-name:var(--font-montserrat)] font-medium uppercase tracking-[0.06em] text-2xl md:text-3xl text-center lg:text-right">
             Dein Leben beginnt
           </h1>
@@ -58,7 +58,7 @@ export default function Hero() {
         {/* Overlapping statement banner */}
         <div className="relative -mt-10 md:-mt-14 z-10">
           <div
-            className="max-w-7xl mx-auto px-8 py-24 md:px-32 md:py-40 text-center"
+            className="max-w-7xl mx-auto px-8 py-14 md:px-24 md:py-16 text-center"
             style={{
               background: "var(--warm-white)",
               maskImage: "radial-gradient(ellipse 65% 45% at 50% 50%, black 45%, transparent 100%)",
