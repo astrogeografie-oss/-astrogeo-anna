@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Mail, ArrowRight, Calendar } from "lucide-react";
 
 export default function BookingCTA() {
@@ -7,8 +8,22 @@ export default function BookingCTA() {
     <section
       id="buchen"
       className="relative py-40 overflow-hidden"
-      style={{ background: "linear-gradient(160deg, #f5efe4 0%, #ede5d4 100%)" }}
     >
+      {/* Background photo */}
+      <Image
+        src="/hero-bg.jpg"
+        alt=""
+        fill
+        aria-hidden
+        className="object-cover"
+        sizes="100vw"
+      />
+      <div
+        aria-hidden
+        className="absolute inset-0 pointer-events-none"
+        style={{ background: "linear-gradient(160deg, rgba(245,239,228,0.94) 0%, rgba(237,229,212,0.9) 100%)" }}
+      />
+
       {/* Decorative gold circle */}
       <div
         aria-hidden
