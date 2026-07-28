@@ -4,9 +4,9 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Kurse & Akademie | Anna Astrogeografie",
+  title: "Raumastrologie & Astrokartographie Kurse | Anna Astrogeografie",
   description:
-    "Lerne Astrogeografie in deinem Tempo. Mini-Kurse für Einsteiger, Die Akademie als nächster Schritt und die Masterclass Astro Gold App.",
+    "Lerne Raumastrologie (Local Space Astrology) und Astrokartographie in deinem eigenen Tempo. Mini-Kurse für Einsteiger, die Akademie als nächster Schritt und die Masterclass Astro Gold App.",
 };
 
 const kurse = [
@@ -100,12 +100,13 @@ export default function KursePage() {
               Kurse & Akademie
             </p>
             <h1 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl font-light text-[#100802] leading-[1.15] mb-6">
-              Lerne Astrogeografie
+              Lerne Raumastrologie & Astrogeografie
               <br />
               <em className="gold-gradient not-italic font-medium">in deinem Tempo</em>
             </h1>
             <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#1c1008] max-w-2xl mx-auto font-light leading-relaxed">
-              Von den ersten Schritten bis zur professionellen Praxis — alle Kurse und die Akademie auf einen Blick.
+              Von der Raumastrologie für dein Zuhause bis zur professionellen Astrokartographie-Praxis —
+              alle Kurse und die Akademie auf einen Blick.
             </p>
           </div>
 
