@@ -13,7 +13,7 @@ export default function Hero() {
           alt=""
           fill
           className="object-cover"
-          style={{ objectPosition: "50% 26%" }}
+          style={{ objectPosition: "50% 40%" }}
           sizes="100vw"
           priority
         />
@@ -45,7 +45,7 @@ export default function Hero() {
         </div>
 
         {/* Flanking headline */}
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-16 lg:min-h-[380px]">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-16 lg:min-h-[340px]">
           <h1
             className="gold-shimmer font-[family-name:var(--font-montserrat)] font-medium uppercase tracking-[0.06em] text-2xl md:text-3xl text-center lg:text-right"
             style={{ filter: "drop-shadow(0 1px 3px rgba(0,0,0,0.35))" }}
@@ -63,20 +63,13 @@ export default function Hero() {
 
         {/* Overlapping statement banner */}
         <div className="relative -mt-10 md:-mt-14 z-10">
-          {/* Soft glow halo behind the card — purely decorative, never holds text */}
           <div
-            aria-hidden
-            className="absolute inset-0 pointer-events-none"
+            className="max-w-5xl mx-auto px-10 py-16 md:px-20 md:py-20 text-center"
             style={{
               background: "var(--warm-white)",
-              filter: "blur(40px)",
-              opacity: 0.7,
-              borderRadius: "3rem",
+              maskImage: "radial-gradient(ellipse at 50% 50%, black calc(100% - 220px), transparent 100%)",
+              WebkitMaskImage: "radial-gradient(ellipse at 50% 50%, black calc(100% - 220px), transparent 100%)",
             }}
-          />
-          <div
-            className="relative max-w-5xl mx-auto px-8 py-14 md:px-16 md:py-16 text-center rounded-[2.5rem]"
-            style={{ background: "var(--warm-white)" }}
           >
             <p className="font-[family-name:var(--font-cormorant)] text-xl md:text-2xl text-[#100802] leading-relaxed font-semibold mb-10">
               Astrokartographie für Menschen, die wirklich entscheiden:
