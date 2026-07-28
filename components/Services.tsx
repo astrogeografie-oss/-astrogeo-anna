@@ -82,7 +82,7 @@ export default function Services() {
           <h2 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl lg:text-6xl font-bold uppercase text-[#100802] leading-[1.15] mb-6">
             Finde deinen Weg zu
             <br />
-            <em className="gold-gradient font-medium">
+            <em className="gold-gradient not-italic font-medium">
               deinem Kraftort
             </em>
           </h2>

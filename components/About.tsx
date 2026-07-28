@@ -77,7 +77,7 @@ export default function About() {
 
             <h2 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl lg:text-6xl font-semibold text-[#100802] mb-8 leading-[1.15]">
               Ich bin Anna —<br />
-              <em className="gold-gradient font-medium">deine Lotsin</em>{" "}
+              <em className="gold-gradient not-italic font-medium">deine Lotsin</em>{" "}
               zu deinem<br />Kraftort auf der Erde.
             </h2>
 

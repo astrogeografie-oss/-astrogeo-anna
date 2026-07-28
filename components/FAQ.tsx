@@ -104,7 +104,7 @@ export default function FAQ() {
           <h2 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl lg:text-6xl font-bold text-[#100802] leading-[1.15]">
             Deine Fragen —
             <br />
-            <em className="gold-gradient font-medium">meine Antworten</em>
+            <em className="gold-gradient not-italic font-medium">meine Antworten</em>
           </h2>
         </div>
 

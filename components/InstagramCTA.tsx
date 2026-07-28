@@ -47,7 +47,7 @@ export default function InstagramCTA() {
           <h2 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl font-bold text-[#100802] leading-[1.15] mb-6">
             Astrokartographie im Alltag —
             <br />
-            <em className="gold-gradient font-medium">täglich auf Instagram</em>
+            <em className="gold-gradient not-italic font-medium">täglich auf Instagram</em>
           </h2>
           <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#1c1008] font-light max-w-xl mx-auto">
             Hinter den Kulissen, Karten-Insights, Klientinnen-Geschichten und

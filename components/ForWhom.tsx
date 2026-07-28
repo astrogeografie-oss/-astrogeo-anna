@@ -45,7 +45,7 @@ export default function ForWhom() {
           <h2 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl lg:text-6xl font-bold text-[#100802] leading-[1.15]">
             Erkenne dich —
             <br />
-            <em className="gold-gradient font-medium">und deinen nächsten Schritt</em>
+            <em className="gold-gradient not-italic font-medium">und deinen nächsten Schritt</em>
           </h2>
         </div>
 
