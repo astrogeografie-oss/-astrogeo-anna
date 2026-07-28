@@ -66,7 +66,7 @@ export default function Hero() {
           <div
             className="max-w-5xl mx-auto px-10 py-16 md:px-20 md:py-20 text-center"
             style={{
-              background: "var(--warm-white)",
+              background: "#f0e0bb",
               maskImage: "radial-gradient(ellipse at 50% 50%, black calc(100% - 220px), transparent 100%)",
               WebkitMaskImage: "radial-gradient(ellipse at 50% 50%, black calc(100% - 220px), transparent 100%)",
             }}
