@@ -51,8 +51,7 @@ export default function About() {
                   style={{ background: "linear-gradient(to top, rgba(16,8,2,0.75), transparent)" }}
                 >
                   <p className="quote-overlay text-lg md:text-xl text-white text-center leading-snug">
-                    &ldquo;Astrogeografie ist keine Theorie. Es ist die Landkarte
-                    deines Lebens — und ich zeige dir, wie du sie liest.&rdquo;
+                    &ldquo;Dein Ort wartet. Ich zeige dir, wo.&rdquo;
                   </p>
                 </div>
               </div>
@@ -62,7 +61,7 @@ export default function About() {
               <div className="absolute -bottom-3 -right-3 w-8 h-8" style={{ borderBottom: "1px solid rgba(184,146,46,0.6)", borderRight: "1px solid rgba(184,146,46,0.6)" }} />
 
               {/* Floating badge */}
-              <div className="absolute -bottom-6 -left-6 card-warm rounded-sm px-6 py-4 shadow-md">
+              <div className="absolute -top-6 -right-6 card-warm rounded-sm px-6 py-4 shadow-md">
                 <p className="font-[family-name:var(--font-cormorant)] text-2xl font-semibold text-[#b8922e]">1.000+</p>
                 <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.1em] text-[#1c1008] uppercase">Transformationen</p>
               </div>
