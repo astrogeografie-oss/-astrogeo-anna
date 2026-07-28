@@ -14,9 +14,9 @@ export default function BlogTeaser() {
             <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#3d2800] uppercase mb-3">
               Aus meinem Journal
             </p>
-            <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl font-light text-[#100802] leading-[1.15]">
+            <h2 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl font-bold text-[#100802] leading-[1.15]">
               Meine Linien —{" "}
-              <em className="gold-gradient not-italic font-medium">meine Geschichten</em>
+              <em className="gold-gradient font-medium">meine Geschichten</em>
             </h2>
           </div>
           <Link

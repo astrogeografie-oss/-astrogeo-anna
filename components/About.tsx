@@ -35,7 +35,7 @@ export default function About() {
           <div className="relative flex justify-center lg:justify-start order-2 lg:order-1">
             <div className="relative">
               <div
-                className="w-80 h-96 md:w-96 md:h-[480px] rounded-sm relative overflow-hidden"
+                className="w-80 h-[30rem] md:w-96 md:h-[600px] rounded-sm relative overflow-hidden"
                 style={{ border: "1px solid rgba(184,146,46,0.3)" }}
               >
                 <Image
@@ -47,9 +47,14 @@ export default function About() {
                   priority
                 />
                 <div
-                  className="absolute bottom-0 left-0 right-0 h-24"
-                  style={{ background: "linear-gradient(to top, rgba(250,247,242,0.6), transparent)" }}
-                />
+                  className="absolute bottom-0 left-0 right-0 pt-24 pb-8 px-6"
+                  style={{ background: "linear-gradient(to top, rgba(16,8,2,0.75), transparent)" }}
+                >
+                  <p className="quote-overlay text-lg md:text-xl text-white text-center leading-snug">
+                    &ldquo;Astrogeografie ist keine Theorie. Es ist die Landkarte
+                    deines Lebens — und ich zeige dir, wie du sie liest.&rdquo;
+                  </p>
+                </div>
               </div>
 
               {/* Decorative corner accents */}
@@ -57,7 +62,7 @@ export default function About() {
               <div className="absolute -bottom-3 -right-3 w-8 h-8" style={{ borderBottom: "1px solid rgba(184,146,46,0.6)", borderRight: "1px solid rgba(184,146,46,0.6)" }} />
 
               {/* Floating badge */}
-              <div className="absolute -bottom-6 -right-6 card-warm rounded-sm px-6 py-4 shadow-md">
+              <div className="absolute -bottom-6 -left-6 card-warm rounded-sm px-6 py-4 shadow-md">
                 <p className="font-[family-name:var(--font-cormorant)] text-2xl font-semibold text-[#b8922e]">1.000+</p>
                 <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.1em] text-[#1c1008] uppercase">Transformationen</p>
               </div>
@@ -70,9 +75,9 @@ export default function About() {
               Über mich
             </p>
 
-            <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl lg:text-6xl font-light text-[#100802] mb-8 leading-[1.15]">
+            <h2 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl lg:text-6xl font-semibold text-[#100802] mb-8 leading-[1.15]">
               Ich bin Anna —<br />
-              <em className="gold-gradient not-italic font-medium">deine Lotsin</em>{" "}
+              <em className="gold-gradient font-medium">deine Lotsin</em>{" "}
               zu deinem<br />Kraftort auf der Erde.
             </h2>
 

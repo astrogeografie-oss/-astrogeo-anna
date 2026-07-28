@@ -26,10 +26,10 @@ export default function BookingCTA() {
           Bereit?
         </p>
 
-        <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl lg:text-7xl font-light text-[#100802] leading-[1.1] mb-8">
+        <h2 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl lg:text-7xl font-bold text-[#100802] leading-[1.1] mb-8">
           Dein Kraftort wartet.
           <br />
-          <em className="gold-shimmer not-italic font-semibold">Ich auch.</em>
+          <em className="gold-shimmer font-semibold">Ich auch.</em>
         </h2>
 
         <p className="font-[family-name:var(--font-cormorant)] text-xl md:text-2xl text-[#1c1008] font-light max-w-2xl mx-auto mb-8 leading-relaxed">

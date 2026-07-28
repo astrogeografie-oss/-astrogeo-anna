@@ -101,10 +101,10 @@ export default function FAQ() {
           <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#3d2800] uppercase mb-6">
             Häufige Fragen
           </p>
-          <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl lg:text-6xl font-light text-[#100802] leading-[1.15]">
+          <h2 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl lg:text-6xl font-bold text-[#100802] leading-[1.15]">
             Deine Fragen —
             <br />
-            <em className="gold-gradient not-italic font-medium">meine Antworten</em>
+            <em className="gold-gradient font-medium">meine Antworten</em>
           </h2>
         </div>
 

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
@@ -12,69 +12,66 @@ const navLinks = [
   { label: "Blog", href: "/blog" },
 ];
 
+const leftLinks = navLinks.slice(0, 3);
+const rightLinks = navLinks.slice(3);
+
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 50);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled
-          ? "bg-[#faf7f2]/95 backdrop-blur-md border-b border-[rgba(184,146,46,0.2)] shadow-sm"
-          : "bg-[#1a0f0a]/60 backdrop-blur-sm"
-      }`}
-    >
+    <nav className="sticky top-0 left-0 right-0 z-50 bg-[#faf7f2] border-b border-[rgba(184,146,46,0.25)]">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        {/* Left links */}
+        <div className="hidden lg:flex items-center gap-5">
+          {leftLinks.map((link, i) => (
+            <span key={link.href} className="flex items-center gap-5">
+              <a
+                href={link.href}
+                className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#1c1008] hover:text-[#b8922e] transition-colors duration-300 uppercase whitespace-nowrap"
+              >
+                {link.label}
+              </a>
+              {i < leftLinks.length - 1 && <span className="nav-divider" aria-hidden />}
+            </span>
+          ))}
+        </div>
+
         {/* Logo */}
         <a
           href="#"
-          className="flex items-center gap-3 group"
+          className="group mx-auto lg:mx-0"
           aria-label="Astrogeografie Anna – Startseite"
         >
-          <div className="w-8 h-8 relative">
-            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="16" cy="16" r="15" stroke="#b8922e" strokeWidth="0.5" opacity="0.7" />
-              <circle cx="16" cy="16" r="10" stroke="#b8922e" strokeWidth="0.5" opacity="0.5" />
-              <circle cx="16" cy="16" r="2.5" fill="#b8922e" />
-              <line x1="16" y1="1" x2="16" y2="7" stroke="#b8922e" strokeWidth="0.8" opacity="0.8" />
-              <line x1="16" y1="25" x2="16" y2="31" stroke="#b8922e" strokeWidth="0.8" opacity="0.8" />
-              <line x1="1" y1="16" x2="7" y2="16" stroke="#b8922e" strokeWidth="0.8" opacity="0.8" />
-              <line x1="25" y1="16" x2="31" y2="16" stroke="#b8922e" strokeWidth="0.8" opacity="0.8" />
-            </svg>
-          </div>
-          <span className={`font-[family-name:var(--font-cormorant)] text-base lg:text-xl font-light tracking-[0.15em] transition-colors duration-300 group-hover:text-[#b8922e] ${scrolled ? "text-[#100802]" : "text-white"}`}>
-            ANNA<span className="text-[#b8922e] mx-1">·</span><span className="hidden sm:inline">ASTROGEOGRAFIE</span>
+          <span className="font-[family-name:var(--font-playfair)] italic text-2xl lg:text-3xl font-semibold tracking-wide text-[#b8922e] transition-colors duration-300 group-hover:text-[#6b4800]">
+            Anna Astrogeografie
           </span>
         </a>
 
-        {/* Desktop Nav */}
-        <div className="hidden lg:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className={`font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] hover:text-[#b8922e] transition-colors duration-300 uppercase ${scrolled ? "text-[#1c1008]" : "text-white"}`}
-            >
-              {link.label}
-            </a>
+        {/* Right links + CTA */}
+        <div className="hidden lg:flex items-center gap-5">
+          {rightLinks.map((link) => (
+            <span key={link.href} className="flex items-center gap-5">
+              <a
+                href={link.href}
+                className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#1c1008] hover:text-[#b8922e] transition-colors duration-300 uppercase whitespace-nowrap"
+              >
+                {link.label}
+              </a>
+              <span className="nav-divider" aria-hidden />
+            </span>
           ))}
           <a
             href="#buchen"
-            className="btn-gold px-6 py-2.5 text-xs font-[family-name:var(--font-montserrat)] tracking-[0.15em] rounded-sm"
+            className="flex items-center justify-center w-11 h-11 bg-[#b8922e] text-white hover:bg-[#6b4800] transition-colors duration-300"
+            aria-label="Jetzt Termin buchen"
           >
-            Jetzt Buchen
+            <Menu size={18} />
           </a>
         </div>
 
         {/* Mobile Menu Button */}
         <button
-          className={`lg:hidden p-2 transition-colors duration-300 ${scrolled ? "text-[#b8922e]" : "text-white"}`}
+          className="lg:hidden p-2 text-[#b8922e] transition-colors duration-300"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Menü öffnen"
         >
@@ -84,7 +81,7 @@ export default function Navigation() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="lg:hidden bg-[#faf7f2]/98 backdrop-blur-md border-t border-[rgba(184,146,46,0.15)]">
+        <div className="lg:hidden bg-[#faf7f2] border-t border-[rgba(184,146,46,0.15)]">
           <div className="px-6 py-8 flex flex-col gap-6">
             {navLinks.map((link) => (
               <a

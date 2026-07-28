@@ -77,10 +77,10 @@ export default function Testimonials() {
           <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#3d2800] uppercase mb-6">
             Erfahrungen
           </p>
-          <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl lg:text-6xl font-light text-[#100802] leading-[1.15]">
+          <h2 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl lg:text-6xl font-bold text-[#100802] leading-[1.15]">
             Was sie sagen —
             <br />
-            <em className="gold-gradient not-italic font-medium">
+            <em className="gold-gradient font-medium">
               die Menschen, die es gewagt haben
             </em>
           </h2>

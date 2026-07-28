@@ -79,10 +79,10 @@ export default function Services() {
           <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#3d2800] uppercase mb-6">
             Meine Angebote
           </p>
-          <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl lg:text-6xl font-light text-[#100802] leading-[1.15] mb-6">
+          <h2 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl lg:text-6xl font-bold uppercase text-[#100802] leading-[1.15] mb-6">
             Finde deinen Weg zu
             <br />
-            <em className="gold-gradient not-italic font-medium">
+            <em className="gold-gradient font-medium">
               deinem Kraftort
             </em>
           </h2>
