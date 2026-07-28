@@ -49,11 +49,11 @@ export default function Hero() {
         {/* Overlapping statement banner */}
         <div className="relative -mt-10 md:-mt-14 z-10">
           <div
-            className="max-w-5xl mx-auto px-8 py-20 md:px-24 md:py-28 text-center"
+            className="max-w-7xl mx-auto px-8 py-24 md:px-32 md:py-40 text-center"
             style={{
               background: "var(--warm-white)",
-              maskImage: "radial-gradient(ellipse 60% 60% at 50% 50%, black 25%, transparent 100%)",
-              WebkitMaskImage: "radial-gradient(ellipse 60% 60% at 50% 50%, black 25%, transparent 100%)",
+              maskImage: "radial-gradient(ellipse 65% 45% at 50% 50%, black 0%, transparent 100%)",
+              WebkitMaskImage: "radial-gradient(ellipse 65% 45% at 50% 50%, black 0%, transparent 100%)",
             }}
           >
             <p className="font-[family-name:var(--font-cormorant)] text-xl md:text-2xl text-[#1c1008] leading-relaxed font-light mb-10">
