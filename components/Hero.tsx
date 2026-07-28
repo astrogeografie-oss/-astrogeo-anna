@@ -64,10 +64,10 @@ export default function Hero() {
         {/* Statement text — sits on the plain page background, no card/box at all */}
         <div className="relative z-10 max-w-3xl mx-auto text-center pt-6">
           <p className="font-[family-name:var(--font-cormorant)] text-xl md:text-2xl text-[#100802] leading-relaxed font-bold mb-10">
-            Dein nächster Ort entscheidet über mehr als eine Adresse —
-            über Geld, Liebe, Erfolg. Ich bin die Spezialistin für finanziell und
-            persönlich bedeutsame Standortentscheidungen, vom Einzelkunden bis zum
-            Unternehmer. Du spürst es bereits. Lass uns jetzt herausfinden,
+            Nicht einfach Astrologin, die auch Astrogeografie macht —
+            sondern die Spezialistin für finanziell und persönlich bedeutsame
+            Standortentscheidungen. Von der Einzelperson bis zum Unternehmer.
+            Du spürst es bereits. Lass uns jetzt herausfinden,
             wohin dein Leben dich ruft.
           </p>
 
