@@ -21,7 +21,7 @@ export default function BookingCTA() {
       <div
         aria-hidden
         className="absolute inset-0 pointer-events-none"
-        style={{ background: "linear-gradient(160deg, rgba(245,239,228,0.94) 0%, rgba(237,229,212,0.9) 100%)" }}
+        style={{ background: "linear-gradient(160deg, rgba(245,239,228,0.55) 0%, rgba(237,229,212,0.45) 100%)" }}
       />
 
       {/* Decorative gold circle */}
