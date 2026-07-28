@@ -39,7 +39,7 @@ export default function About() {
                 style={{ border: "1px solid rgba(184,146,46,0.3)" }}
               >
                 <Image
-                  src="/anna-portrait.jpg"
+                  src="/photo_2026-07-28_07-12-57.jpg"
                   alt="Anna – Astrokartographie-Expertin"
                   fill
                   className="object-cover object-top"

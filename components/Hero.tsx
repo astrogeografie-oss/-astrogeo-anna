@@ -24,7 +24,7 @@ export default function Hero() {
               style={{ border: "1px solid rgba(184,146,46,0.35)" }}
             >
               <Image
-                src="/anna-portrait.jpg"
+                src="/photo_2026-07-28_07-13-07.jpg"
                 alt="Anna – Astrokartographie-Expertin"
                 fill
                 className="object-cover object-top"
