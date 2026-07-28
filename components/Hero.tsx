@@ -6,7 +6,17 @@ import { ChevronDown } from "lucide-react";
 export default function Hero() {
   return (
     <section className="relative bg-[#faf7f2] pt-20 pb-40 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6">
+      {/* Soft flowing background: location photo */}
+      <div aria-hidden className="absolute inset-0 opacity-[0.16]">
+        <Image src="/hero-bg.jpg" alt="" fill className="object-cover" sizes="100vw" />
+      </div>
+      <div
+        aria-hidden
+        className="absolute inset-0 pointer-events-none"
+        style={{ background: "radial-gradient(ellipse 80% 70% at 50% 40%, transparent 0%, #faf7f2 72%)" }}
+      />
+
+      <div className="relative max-w-7xl mx-auto px-6">
         {/* Overline */}
         <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.45em] text-[#6b4800] uppercase text-center mb-16">
           Deutschlands führende Astrokartographie-Expertin
