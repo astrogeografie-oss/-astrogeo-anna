@@ -61,8 +61,8 @@ export default function Hero() {
             className="max-w-7xl mx-auto px-8 py-24 md:px-32 md:py-40 text-center"
             style={{
               background: "var(--warm-white)",
-              maskImage: "radial-gradient(ellipse 65% 45% at 50% 50%, black 0%, transparent 100%)",
-              WebkitMaskImage: "radial-gradient(ellipse 65% 45% at 50% 50%, black 0%, transparent 100%)",
+              maskImage: "radial-gradient(ellipse 65% 45% at 50% 50%, black 45%, transparent 100%)",
+              WebkitMaskImage: "radial-gradient(ellipse 65% 45% at 50% 50%, black 45%, transparent 100%)",
             }}
           >
             <p className="font-[family-name:var(--font-cormorant)] text-xl md:text-2xl text-[#1c1008] leading-relaxed font-light mb-10">
