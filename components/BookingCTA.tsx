@@ -59,7 +59,7 @@ export default function BookingCTA() {
           </span>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-4">
           <a
             href="https://calendly.com/astrogeo/60"
             target="_blank"
@@ -81,7 +81,7 @@ export default function BookingCTA() {
         <div className="mb-16">
           <a
             href="mailto:anna@astrogeoanna.info"
-            className="inline-flex items-center gap-2 font-[family-name:var(--font-cormorant)] text-base text-[#1c1008] hover:text-[#b8922e] transition-colors duration-300"
+            className="inline-flex items-center gap-2 font-[family-name:var(--font-cormorant)] text-base text-[#1c1008] hover:text-[#b8922e] transition-colors duration-300 bg-[#fffdf9] px-4 py-2 rounded-sm border border-[rgba(184,146,46,0.25)]"
           >
             <Mail size={14} />
             anna@astrogeoanna.info
