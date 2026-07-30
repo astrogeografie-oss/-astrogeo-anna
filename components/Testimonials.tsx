@@ -118,7 +118,7 @@ export default function Testimonials() {
         <div className="text-center mt-16">
           <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#1c1008] font-light">
             Über{" "}
-            <span className="text-[#b8922e] font-semibold">500 Klientinnen</span>{" "}
+            <span className="text-[#b8922e] font-semibold">1.000 Klientinnen</span>{" "}
             haben bereits ihre kosmischen Koordinaten entdeckt.
           </p>
         </div>
