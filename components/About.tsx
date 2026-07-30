@@ -46,13 +46,19 @@ export default function About() {
                   sizes="(max-width: 768px) 320px, 384px"
                   priority
                 />
-                <div
-                  className="absolute bottom-0 left-0 right-0 pt-24 pb-8 px-6"
-                  style={{ background: "linear-gradient(to top, rgba(16,8,2,0.75), transparent)" }}
-                >
-                  <p className="quote-overlay text-lg md:text-xl text-white text-center leading-snug">
-                    &ldquo;Dein Ort wartet. Ich zeige dir, wo.&rdquo;
-                  </p>
+                <div className="absolute inset-x-0 top-[46%] -translate-y-1/2 flex justify-center px-8">
+                  <div
+                    className="px-6 py-4 rounded-sm backdrop-blur-[2px]"
+                    style={{
+                      background: "rgba(16,8,2,0.28)",
+                      border: "1px solid rgba(212,175,110,0.65)",
+                      boxShadow: "0 0 0 4px rgba(212,175,110,0.12)",
+                    }}
+                  >
+                    <p className="quote-overlay text-lg md:text-xl text-white text-center leading-snug">
+                      &ldquo;Dein Ort wartet. Ich zeige dir, wo.&rdquo;
+                    </p>
+                  </div>
                 </div>
               </div>
 
