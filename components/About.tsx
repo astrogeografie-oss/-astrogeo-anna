@@ -46,7 +46,7 @@ export default function About() {
                   sizes="(max-width: 768px) 320px, 384px"
                   priority
                 />
-                <div className="absolute inset-x-0 top-[46%] -translate-y-1/2 flex justify-center px-8">
+                <div className="absolute inset-x-0 top-[54%] -translate-y-1/2 flex justify-center px-8">
                   <div
                     className="px-6 py-4 rounded-sm backdrop-blur-[2px]"
                     style={{
