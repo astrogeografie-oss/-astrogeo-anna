@@ -7,6 +7,7 @@ import Services from "@/components/Services";
 import Process from "@/components/Process";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
+import BeginnerQuizCTA from "@/components/BeginnerQuizCTA";
 import InstagramCTA from "@/components/InstagramCTA";
 import BlogTeaser from "@/components/BlogTeaser";
 import NewsletterSection from "@/components/NewsletterSection";
@@ -26,6 +27,7 @@ export default function Home() {
       <Process />
       <Testimonials />
       <FAQ />
+      <BeginnerQuizCTA />
       <InstagramCTA />
       <BlogTeaser />
       <NewsletterSection />
