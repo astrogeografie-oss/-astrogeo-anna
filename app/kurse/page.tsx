@@ -16,6 +16,7 @@ const kurse = [
     name: "Mini-Kurs Cosmic Coordinates",
     tagline: "Online-Kurs · Selbststudium",
     price: "97 €",
+    originalPrice: null,
     priceNote: "PRO-Version: 397 €",
     desc: "Lerne Standort-Astrologie (Local Space) in deinem eigenen Tempo. Du verstehst Azimuth, Häuser & die 10 Planetenlinien — und kannst deine eigene Karte selbst lesen.",
     includes: [
@@ -34,6 +35,7 @@ const kurse = [
     name: "Mini-Kurs Raumastrologie",
     tagline: "Online-Kurs · Selbststudium",
     price: "49 €",
+    originalPrice: null,
     priceNote: null,
     desc: "Lerne selbst, wie du deine persönliche Astro-Folie erstellst und deine Wohnung auf Vordermann bringst — das Café am Merkur-Tisch für lebhafte Gespräche, der Zoom-Call auf der Jupiter-Linie für Erfolg.",
     includes: [
@@ -52,6 +54,7 @@ const kurse = [
     name: "Die Akademie",
     tagline: "Online-Akademie · Selbststudium · Nach Cosmic Coordinates",
     price: null,
+    originalPrice: null,
     priceNote: null,
     desc: "Du hast Cosmic Coordinates gemacht und weißt, wie du Standort-Astrologie liest? Jetzt geht es tiefer: In der Akademie lernst du die ACG-Linien — das globale Pendant zu Local Space — und so vieles mehr.",
     includes: [
@@ -69,7 +72,8 @@ const kurse = [
     badge: "Live-Kurs",
     name: "Masterclass Astro Gold App",
     tagline: "iPhone · 2 Std. · Live",
-    price: "179 €",
+    price: "149 €",
+    originalPrice: "299 €",
     priceNote: null,
     desc: "In zwei Stunden lernst du, deine eigenen Astrokartographie-Linien in der Astro Gold App zu lesen — konkret, Schritt für Schritt, live mit Anna. Du siehst, wo auf der Welt deine Planeten wirken. Und genau dort merken die meisten: die Linien zu sehen ist erst der Anfang.",
     includes: [
@@ -142,6 +146,11 @@ export default function KursePage() {
                       </h2>
                       {k.price && (
                         <div className="text-right">
+                          {k.originalPrice && (
+                            <span className="font-[family-name:var(--font-cormorant)] text-sm text-[#6b4800] line-through mr-2">
+                              {k.originalPrice}
+                            </span>
+                          )}
                           <span className="font-[family-name:var(--font-cormorant)] text-xl font-medium text-[#b8922e]">
                             {k.price}
                           </span>
