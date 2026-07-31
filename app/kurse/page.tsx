@@ -78,7 +78,7 @@ const kurse = [
       "Eigene Planeten-Linien verstehen",
       "Live mit Anna — Fragen direkt beantworten",
     ],
-    url: "https://astrogeoanna.thrivecart.com/astrogoldappiphone/",
+    url: "https://comfy-cucurucho-c8c105.netlify.app/",
     cta: "Zur Masterclass",
     funnelBridge: {
       text: "Jetzt kennst du deine Linien — aber was sie wirklich für deine Entscheidung bedeuten, das zeige ich dir im Reading.",
