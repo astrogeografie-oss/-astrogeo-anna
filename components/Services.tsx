@@ -23,7 +23,7 @@ const readings = [
       "Progressions-Chart & Solar-Radix (individuell, je nach Klient)",
       "Screenshots & Aufzeichnung beider Calls",
     ],
-    url: "https://calendly.com/astrogeo/60",
+    url: "https://zesty-torte-b7c3f0.netlify.app/",
     cta: "Standard buchen",
     note: "Benötigt: genaues Geburtsdatum, Uhrzeit & Geburtsort",
   },
