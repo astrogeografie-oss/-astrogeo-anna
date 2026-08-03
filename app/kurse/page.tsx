@@ -44,7 +44,7 @@ const kurse = [
       "Alltag astrologisch optimieren",
       "Selbststudium, jederzeit abrufbar",
     ],
-    url: "https://astrogeoanna.thrivecart.com/die-folie-die-dein-leben-vereandert/",
+    url: "https://wondrous-rugelach-bfd4bb.netlify.app/",
     cta: "Zum Kurs",
     funnelBridge: null,
   },
