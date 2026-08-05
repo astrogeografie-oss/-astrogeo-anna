@@ -29,7 +29,8 @@ export default function NewsletterSection() {
             </h3>
             <p className="font-[family-name:var(--font-cormorant)] text-lg text-[#1c1008] font-light leading-relaxed mb-8 flex-1">
               Die 3 wichtigsten Planetenlinien — und was sie für deinen
-              Kraftort bedeuten. Kostenlos, sofort zum Download.
+              Kraftort bedeuten. Ein Geschenk von mir, sofort und kostenlos
+              zum Download.
             </p>
             <div className="section-divider mb-8" />
             <a

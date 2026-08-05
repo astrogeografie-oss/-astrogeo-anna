@@ -107,6 +107,7 @@ export default function About() {
                 mit Astrokartographie, Local Space Astrology
                 und Raumastrologie. Über 20 Jahre Erfahrung, Präzision und
                 die tiefe Überzeugung: der richtige Ort verändert alles.
+                Das wirst du selbst spüren.
               </p>
               <p className="text-[#100802]">
                 Mehr als 1.000 Menschen haben durch meine Arbeit erkannt,

@@ -12,7 +12,7 @@ const readings = [
     price: "499 €",
     highlight: false,
     description:
-      "Zwei intensive Sessions, die dir genau zeigen, wo auf der Erde dein Leben aufblüht — für Liebe, Karriere, finanzielle Energie oder einen Neuanfang.",
+      "Zwei intensive Sessions, die dir genau zeigen, wo auf der Erde dein Leben aufblüht — für Liebe, Karriere, finanzielle Energie oder einen Neuanfang. Stell dir vor, du weißt es schon in zwei Wochen.",
     includes: [
       "Einführung & Planeten-PDF",
       "Seelenformel, Best Planet, Mondknoten, Chiron",
@@ -35,7 +35,7 @@ const readings = [
     price: "1.499 €",
     highlight: true,
     description:
-      "Für Unternehmer und Menschen mit Kapital, die eine hochwertige Gesamtanalyse brauchen — mit persönlicher Begleitung über mehrere Monate und einer professionellen Auswertung als Dokument.",
+      "Für Unternehmer und Menschen mit Kapital, die keine halben Antworten wollen — nur die hochwertige Gesamtanalyse, persönliche Begleitung über mehrere Monate und eine Auswertung, die du jederzeit vorlegen kannst.",
     includes: [
       "Alles aus dem Standard-Reading",
       "2 Folgetermine (je 45 Min.) zur Vertiefung",

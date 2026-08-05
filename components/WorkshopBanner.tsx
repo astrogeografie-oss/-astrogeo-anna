@@ -41,7 +41,9 @@ export default function WorkshopBanner() {
               Der <em className="gold-shimmer not-italic font-semibold">Workshop im Herbst</em>
             </p>
             <p className="font-[family-name:var(--font-cormorant)] text-base md:text-lg text-[#c8bfb0] font-light mt-1">
-              Sichere dir jetzt deinen Platz und erforsche live mit Anna deine kosmischen Koordinaten.
+              Stell dir vor, du siehst in Echtzeit, wo auf der Welt deine Energie
+              explodiert — live, gemeinsam mit mir und Gleichgesinnten. Sichere dir
+              jetzt deinen Platz.
             </p>
           </div>
 

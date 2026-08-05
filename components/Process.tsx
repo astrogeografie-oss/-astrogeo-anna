@@ -20,7 +20,7 @@ const steps = [
     title: "Deine Klarheit & der nächste Schritt",
     description:
       "Du erhältst eine schriftliche Zusammenfassung mit deinen Top-Empfehlungen. Und du weißt, wohin dein nächster Schritt führt — ob Umzug, Reise oder bewusste Nutzung deines aktuellen Ortes.",
-    detail: "Viele meiner Klientinnen treffen innerhalb von Wochen lifechanging Entscheidungen.",
+    detail: "Viele meiner Klientinnen treffen innerhalb weniger Wochen Entscheidungen, die ihr Leben verändern.",
   },
 ];
 
