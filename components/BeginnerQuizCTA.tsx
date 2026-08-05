@@ -39,6 +39,18 @@ export default function BeginnerQuizCTA() {
             Meine Linien entdecken
             <ArrowRight size={16} />
           </a>
+
+          <p className="font-[family-name:var(--font-cormorant)] text-base text-[#1c1008] font-light mt-8">
+            Schon fortgeschritten?{" "}
+            <a
+              href="https://starlit-stroopwafel-12ab30.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#b8922e] underline underline-offset-4 hover:text-[#6b4800] transition-colors"
+            >
+              Zum Profi-Quiz →
+            </a>
+          </p>
         </div>
       </div>
 
