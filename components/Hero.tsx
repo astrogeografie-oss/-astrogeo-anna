@@ -64,10 +64,12 @@ export default function Hero() {
         {/* Statement text — sits on the plain page background, no card/box at all */}
         <div className="relative z-10 max-w-3xl mx-auto text-center pt-6">
           <p className="font-[family-name:var(--font-cormorant)] text-xl md:text-2xl text-[#100802] leading-relaxed font-bold mb-10">
-            Die Spezialistin für finanziell und persönlich bedeutsame
-            Standortentscheidungen — von der Einzelperson bis zum Unternehmer.
-            Du spürst es bereits. Lass uns jetzt herausfinden,
-            wohin dein Leben dich ruft.
+            Es gibt einen Ort auf dieser Erde, an dem sich alles leichter anfühlt —
+            klarer, freier, mehr du. Du spürst das schon lange, auch wenn du es dir
+            noch nicht eingestehst. Als Deutschlands führende Spezialistin für
+            finanziell und persönlich bedeutsame Standortentscheidungen zeige ich
+            dir genau diesen Ort — ob du eine Einzelperson bist oder ein Unternehmen
+            führst. Lass uns jetzt herausfinden, wohin dein Leben dich ruft.
           </p>
 
           {/* CTAs */}
@@ -85,7 +87,7 @@ export default function Hero() {
               className="btn-outline-gold px-10 py-4 font-[family-name:var(--font-montserrat)] tracking-[0.2em] rounded-sm w-full sm:flex-1 inline-flex items-center justify-center gap-2"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-              0 Euro Guide — Gratis
+              0€-Guide — in 5 Minuten deine ersten 3 Kraftorte entdecken
             </a>
           </div>
         </div>

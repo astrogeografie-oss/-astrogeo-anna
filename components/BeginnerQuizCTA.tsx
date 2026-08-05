@@ -21,14 +21,13 @@ export default function BeginnerQuizCTA() {
           </p>
 
           <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-[#100802] leading-[1.15] mb-6">
-            Wie gut kennst du dich schon
+            Kennst du schon deine
             <br />
-            <em className="gold-gradient not-italic font-medium">mit Astrogeografie aus?</em>
+            <em className="gold-gradient not-italic font-medium">3 stärksten Kraftlinien?</em>
           </h2>
 
           <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#1c1008] font-light max-w-xl mx-auto mb-10">
-            Teste in ein paar Minuten dein Wissen als Einsteiger:in — ganz unverbindlich
-            und kostenlos.
+            Finde es in 3 Minuten heraus — spielerisch, unverbindlich und kostenlos.
           </p>
 
           <a
@@ -37,7 +36,7 @@ export default function BeginnerQuizCTA() {
             rel="noopener noreferrer"
             className="btn-gold inline-flex items-center justify-center gap-3 px-10 py-4 text-sm font-[family-name:var(--font-montserrat)] tracking-[0.15em] rounded-sm"
           >
-            Jetzt Test starten
+            Meine Linien entdecken
             <ArrowRight size={16} />
           </a>
         </div>
