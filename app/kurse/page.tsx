@@ -25,7 +25,7 @@ const kurse = [
       "Eigene Local-Space-Karte selbst lesen",
       "Selbststudium, jederzeit abrufbar",
     ],
-    url: "https://astrogeoanna.thrivecart.com/cosmic-coordinates-2026/",
+    url: "https://peaceful-smakager-b2db11.netlify.app/",
     cta: "Zum Kurs",
     funnelBridge: null,
   },
