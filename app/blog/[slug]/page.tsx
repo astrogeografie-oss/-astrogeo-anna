@@ -207,7 +207,9 @@ export default async function BlogPostPage({ params }: Props) {
               {section.cta && (
                 <div className="mt-8 pt-8 border-t border-[rgba(184,146,46,0.2)] flex flex-col sm:flex-row gap-4">
                   <a
-                    href="/#mini-kurs"
+                    href="https://peaceful-smakager-b2db11.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="btn-gold inline-block px-8 py-4 text-sm font-[family-name:var(--font-montserrat)] tracking-[0.15em] rounded-sm text-center"
                   >
                     Mini-Kurs entdecken
