@@ -59,11 +59,11 @@ export default function Hero() {
             style={{ border: "1px solid rgba(184,146,46,0.3)" }}
           >
             <Image
-              src="/photo_2026-07-28_07-13-07.jpg"
+              src="/anna-portrait-hero.png"
               alt="Anna Thoma, Expertin für Astrokartographie"
               fill
               className="object-cover"
-              style={{ objectPosition: "60% 22%" }}
+              style={{ objectPosition: "60% 18%" }}
               sizes="(min-width: 1024px) 50vw, 100vw"
               priority
             />
