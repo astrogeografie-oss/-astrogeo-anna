@@ -27,10 +27,10 @@ export default function Hero() {
 
             <p className="font-[family-name:var(--font-bricolage)] font-medium text-lg md:text-xl text-[#100802] leading-relaxed tracking-[0.005em] max-w-xl mx-auto lg:mx-0 mb-10">
               Es gibt einen Ort auf dieser Erde, an dem sich alles leichter anfühlt —
-              klarer, freier, mehr du. Du spürst das schon lange, auch wenn du es dir
-              noch nicht eingestehst. Auf genau diese Entscheidung habe ich mich
-              spezialisiert — als Deutschlands führende Expertin dafür, privat wie
-              geschäftlich. Lass mich dir zeigen, wo dieser Ort für dich liegt.
+              klarer, freier, mehr du. Das spürst du schon lange, auch wenn du es dir
+              noch nicht eingestehst. Ich zeige ihn dir. Seit über 20 Jahren — für
+              dich genauso wie für dein Unternehmen. Lass uns herausfinden, welcher
+              Ort dich ruft.
             </p>
 
             {/* CTAs */}
