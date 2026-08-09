@@ -43,14 +43,14 @@ export default function OrakelPage() {
       <main className="min-h-screen pt-32 pb-24" style={{ background: "linear-gradient(to bottom, #fdf9f3, #faf7f2)" }}>
         <div className="max-w-4xl mx-auto px-6">
           {/* Header */}
-          <div className="text-center mb-16 rounded-sm px-6 py-14 md:py-16" style={{ background: "#17130d" }}>
-            <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#d9c896] uppercase mb-6">
+          <div className="text-center mb-16 rounded-sm px-6 py-14 md:py-16" style={{ background: "linear-gradient(135deg, #2c1f08 0%, #3d2a0a 50%, #2c1f08 100%)", border: "1px solid rgba(184,146,46,0.3)" }}>
+            <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#b8922e] uppercase mb-6">
               Orakel & Kartenlegungen
             </p>
-            <h1 className="font-[family-name:var(--font-archivo-black)] uppercase tracking-[0.005em] text-3xl md:text-5xl leading-[1.1] text-[#fdf9f0] mb-6">
+            <h1 className="font-[family-name:var(--font-archivo-black)] uppercase tracking-[0.005em] text-3xl md:text-5xl leading-[1.1] text-white mb-6">
               Klarheit durch <span className="gold-gradient-on-dark">die Karten</span>
             </h1>
-            <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#cbbfa9] max-w-xl mx-auto font-light leading-relaxed">
+            <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#c8bfb0] max-w-xl mx-auto font-light leading-relaxed">
               Kipperkarten, Skatkarten & Orakelkarten — für direkte Antworten und ehrliche Führung in wichtigen Lebensfragen.
             </p>
           </div>

@@ -87,14 +87,14 @@ export default function PlanetaryPathwayPage() {
         <div className="max-w-4xl mx-auto px-6">
 
           {/* Hero */}
-          <div className="text-center mb-16 rounded-sm px-6 py-14 md:py-16" style={{ background: "#17130d" }}>
-            <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#d9c896] uppercase mb-6">
+          <div className="text-center mb-16 rounded-sm px-6 py-14 md:py-16" style={{ background: "linear-gradient(135deg, #2c1f08 0%, #3d2a0a 50%, #2c1f08 100%)", border: "1px solid rgba(184,146,46,0.3)" }}>
+            <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#b8922e] uppercase mb-6">
               Ausbildung · Für Astrologinnen & Astro-Kennerinnen
             </p>
-            <h1 className="font-[family-name:var(--font-archivo-black)] uppercase tracking-[0.005em] text-4xl md:text-6xl leading-[1.05] text-[#fdf9f0] mb-6">
+            <h1 className="font-[family-name:var(--font-archivo-black)] uppercase tracking-[0.005em] text-4xl md:text-6xl leading-[1.05] text-white mb-6">
               Planetary <span className="gold-gradient-on-dark">Pathway</span>
             </h1>
-            <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#cbbfa9] max-w-2xl mx-auto font-light leading-relaxed mb-10">
+            <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#c8bfb0] max-w-2xl mx-auto font-light leading-relaxed mb-10">
               Annas umfassendes Ausbildungsprogramm in Astrogeografie — von den Grundlagen der Astrokartographie bis zur eigenständigen Praxis mit Klientinnen.
             </p>
             <a
