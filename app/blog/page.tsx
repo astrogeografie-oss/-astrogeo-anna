@@ -58,9 +58,9 @@ export default function BlogPage() {
               }}
             >
               <div className="flex flex-col md:flex-row md:items-start gap-6">
-                <div className="md:w-28 flex-shrink-0 flex flex-col gap-2">
+                <div className="md:w-36 flex-shrink-0 flex flex-col items-start gap-2">
                   <span
-                    className="inline-block px-3 py-1 font-[family-name:var(--font-montserrat)] text-xs tracking-[0.25em] text-[#3d2800] uppercase rounded-sm"
+                    className="inline-block px-3 py-1 font-[family-name:var(--font-montserrat)] text-xs tracking-[0.15em] text-[#3d2800] uppercase rounded-sm whitespace-nowrap"
                     style={{ background: "rgba(184,146,46,0.12)", border: "1px solid rgba(184,146,46,0.2)" }}
                   >
                     {post.label}
