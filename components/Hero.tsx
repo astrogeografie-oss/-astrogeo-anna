@@ -45,7 +45,7 @@ export default function Hero() {
         </div>
 
         {/* Flanking headline */}
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-10 lg:min-h-[340px] lg:-mx-4 xl:-mx-10 2xl:-mx-24">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-10 lg:min-h-[340px] lg:-mx-4 2xl:-mx-32">
           <h1
             className="font-[family-name:var(--font-playfair)] font-bold uppercase tracking-[0.01em] text-3xl md:text-4xl lg:text-4xl xl:text-5xl leading-[1.15] lg:flex-1 lg:min-w-0 lg:max-w-sm xl:max-w-md text-center lg:text-right text-[#8a6a1e]"
             style={{ filter: "drop-shadow(0 1px 3px rgba(0,0,0,0.35))" }}
@@ -63,7 +63,7 @@ export default function Hero() {
 
         {/* Statement text — sits on the plain page background, no card/box at all */}
         <div className="relative z-10 max-w-3xl mx-auto text-center pt-6">
-          <p className="font-[family-name:var(--font-cormorant)] text-xl md:text-2xl text-[#100802] leading-relaxed font-bold mb-10">
+          <p className="font-[family-name:var(--font-bricolage)] font-medium text-lg md:text-xl text-[#100802] leading-relaxed tracking-[0.005em] mb-10">
             Es gibt einen Ort auf dieser Erde, an dem sich alles leichter anfühlt —
             klarer, freier, mehr du. Du spürst das schon lange, auch wenn du es dir
             noch nicht eingestehst. Als Deutschlands führende Spezialistin für
