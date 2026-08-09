@@ -99,16 +99,15 @@ export default function KursePage() {
       <main className="min-h-screen pt-32 pb-24" style={{ background: "linear-gradient(to bottom, #fdf9f3, #faf7f2)" }}>
         <div className="max-w-4xl mx-auto px-6">
           {/* Header */}
-          <div className="text-center mb-16">
-            <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#3d2800] uppercase mb-6">
+          <div className="text-center mb-16 rounded-sm px-6 py-14 md:py-16" style={{ background: "#17130d" }}>
+            <p className="font-[family-name:var(--font-montserrat)] text-xs tracking-[0.4em] text-[#d9c896] uppercase mb-6">
               Kurse & Akademie
             </p>
-            <h1 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl font-light text-[#100802] leading-[1.15] mb-6">
-              Lerne Raumastrologie & Astrogeografie
-              <br />
-              <em className="gold-gradient not-italic font-medium">in deinem Tempo</em>
+            <h1 className="font-[family-name:var(--font-archivo-black)] uppercase tracking-[0.005em] text-3xl md:text-5xl leading-[1.1] text-[#fdf9f0] mb-6">
+              Lerne Raumastrologie & Astrogeografie{" "}
+              <span className="gold-gradient-on-dark">in deinem Tempo</span>
             </h1>
-            <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#1c1008] max-w-2xl mx-auto font-light leading-relaxed">
+            <p className="font-[family-name:var(--font-cormorant)] text-xl text-[#cbbfa9] max-w-2xl mx-auto font-light leading-relaxed">
               Von der Raumastrologie für dein Zuhause bis zur professionellen Astrokartographie-Praxis —
               alle Kurse und die Akademie auf einen Blick.
             </p>
