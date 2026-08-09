@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Archivo_Black, Cormorant_Garamond, Montserrat, Playfair_Display } from "next/font/google";
+import { Archivo_Black, Bricolage_Grotesque, Cormorant_Garamond, Montserrat, Playfair_Display } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import JsonLd from "@/components/JsonLd";
@@ -30,6 +30,13 @@ const archivoBlack = Archivo_Black({
   variable: "--font-archivo-black",
   subsets: ["latin"],
   weight: ["400"],
+  display: "swap",
+});
+
+const bricolage = Bricolage_Grotesque({
+  variable: "--font-bricolage",
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
   display: "swap",
 });
 
@@ -127,7 +134,7 @@ export default function RootLayout({
   return (
     <html
       lang="de"
-      className={`${cormorant.variable} ${montserrat.variable} ${playfair.variable} ${archivoBlack.variable} h-full antialiased`}
+      className={`${cormorant.variable} ${montserrat.variable} ${playfair.variable} ${archivoBlack.variable} ${bricolage.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-[#faf7f2] text-[#100802]">
         <JsonLd />
