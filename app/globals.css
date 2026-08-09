@@ -59,6 +59,16 @@ body {
   background-clip: text;
 }
 
+/* Same idea as .gold-gradient, but bright enough to stay legible on the
+   near-black "punch" headers used on the sub-pages. */
+.gold-gradient-on-dark {
+  background: linear-gradient(135deg, var(--gold-light), #f3d78a, var(--gold-light));
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 .gold-shimmer {
   background: linear-gradient(90deg, var(--gold-dark) 0%, var(--gold-light) 50%, var(--gold-dark) 100%);
   background-size: 200% auto;

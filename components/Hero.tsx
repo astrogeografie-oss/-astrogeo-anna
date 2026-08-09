@@ -45,16 +45,16 @@ export default function Hero() {
         </div>
 
         {/* Flanking headline */}
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-16 lg:min-h-[340px] lg:-mx-16 xl:-mx-32">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-10 lg:min-h-[340px] lg:-mx-4 xl:-mx-10 2xl:-mx-24">
           <h1
-            className="font-[family-name:var(--font-montserrat)] font-medium uppercase tracking-[0.06em] text-2xl md:text-3xl text-center lg:text-right text-[#8a6a1e]"
+            className="font-[family-name:var(--font-playfair)] font-bold uppercase tracking-[0.01em] text-3xl md:text-4xl lg:text-4xl xl:text-5xl leading-[1.15] lg:flex-1 lg:min-w-0 lg:max-w-sm xl:max-w-md text-center lg:text-right text-[#8a6a1e]"
             style={{ filter: "drop-shadow(0 1px 3px rgba(0,0,0,0.35))" }}
           >
             Dein Leben beginnt
           </h1>
 
           <h1
-            className="font-[family-name:var(--font-montserrat)] font-medium uppercase tracking-[0.06em] text-2xl md:text-3xl text-center lg:text-left text-[#8a6a1e]"
+            className="font-[family-name:var(--font-playfair)] font-bold uppercase tracking-[0.01em] text-3xl md:text-4xl lg:text-4xl xl:text-5xl leading-[1.15] lg:flex-1 lg:min-w-0 lg:max-w-sm xl:max-w-md text-center lg:text-left text-[#8a6a1e]"
             style={{ filter: "drop-shadow(0 1px 3px rgba(0,0,0,0.35))" }}
           >
             am richtigen Ort.
