@@ -8,7 +8,7 @@ export default function JsonLd() {
         name: "Anna Thoma",
         jobTitle: "Astrokartographie-Expertin & Astrologin",
         description:
-          "Deutschlands führende Expertin für Astrokartographie und Astrogeografie. Ich helfe dir, deinen Kraftort auf der Erde zu finden — durch präzise astrologische Analyse mit 7 Linienarten.",
+          "Leidenschaftliche Astrokartografie-Expertin mit langjähriger Erfahrung und über 1.000 durchgeführten Readings. Ich helfe dir, deinen Kraftort auf der Erde zu finden — durch präzise astrologische Analyse mit 7 Linienarten.",
         email: "anna@astrogeoanna.info",
         url: "https://astrogeoanna.com",
         sameAs: [
@@ -148,7 +148,7 @@ export default function JsonLd() {
         url: "https://astrogeoanna.com",
         name: "Anna Thoma – Astrokartographie",
         description:
-          "Finde deinen Kraftort auf der Erde. Deutschlands führende Astrokartographie-Expertin Anna Thoma.",
+          "Finde deinen Kraftort auf der Erde. Leidenschaftliche Astrokartografie-Expertin Anna Thoma — über 1.000 Readings.",
         inLanguage: "de-DE",
         publisher: { "@id": "https://astrogeoanna.com/#anna" },
       },
