@@ -17,7 +17,7 @@ export default function Hero() {
                 border: "1px solid rgba(184,146,46,0.3)",
               }}
             >
-              Deutschlands führende Astrokartographie-Expertin
+              Leidenschaftliche Astrokartografie-Expertin · 1.000+ Readings
             </p>
 
             <h1 className="font-[family-name:var(--font-playfair)] font-semibold text-4xl md:text-5xl lg:text-[3.4rem] leading-[1.15] text-[#100802] mb-6">

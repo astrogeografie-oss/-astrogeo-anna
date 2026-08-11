@@ -110,7 +110,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Astrokartographie mit Anna",
     description:
-      "Finde deinen Kraftort. Deutschlands führende Astrokartographie-Expertin.",
+      "Finde deinen Kraftort. Leidenschaftliche Astrokartografie-Expertin mit über 1.000 Readings.",
     images: ["/opengraph-image"],
   },
   verification: {
