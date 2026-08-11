@@ -59,6 +59,7 @@ export default function Footer() {
                 { label: "FAQ", href: "#faq" },
                 { label: "Jetzt buchen", href: "#buchen" },
                 { label: "Journal", href: "/blog" },
+                { label: "Podcast", href: "/podcast" },
               ].map((link) => (
                 <li key={link.href}>
                   <a
