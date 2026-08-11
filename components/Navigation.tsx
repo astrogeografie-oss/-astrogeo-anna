@@ -10,6 +10,7 @@ const navLinks = [
   { label: "Stimmen", href: "#testimonials" },
   { label: "FAQ", href: "#faq" },
   { label: "Blog", href: "/blog" },
+  { label: "Podcast", href: "/podcast" },
 ];
 
 const leftLinks = navLinks.slice(0, 3);
